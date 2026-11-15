@@ -2,7 +2,7 @@
    Nijuuei (二重影) - Edo Woodcut Frame & Crimson Talisman UI
    Modeled directly on the game's dark bamboo-lattice outer stage,
    beveled stone/wood viewport with corner brackets, blood-crimson gradient
-   dialogue bar, stark red/black combat panels, and Mincho typography.
+   dialogue bar, stark red/black combat panels, and sharp Gothic typography.
    ========================================================================== */
 
 :root {
@@ -21,8 +21,8 @@
   --antique-ochre: #c69c5b;
   --seal-jade: #3c694b;
   --seal-jade-bg: #122017;
-  --font-mincho: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", Georgia, "Times New Roman", serif;
-  --font-body: "Noto Serif JP", "Hiragino Mincho ProN", Georgia, serif;
+  --font-display: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-body: "Noto Sans JP", "Hiragino Kaku Gothic ProN", "Yu Gothic", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
 }
 
@@ -152,7 +152,7 @@ a:hover {
 
 .guide-brand {
   display: block;
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   font-size: 1.55rem;
   font-weight: 700;
   letter-spacing: 0.14em;
@@ -201,7 +201,7 @@ a:hover {
   align-items: center;
   gap: 7px;
   padding: 6px 9px;
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   font-size: 0.9rem;
   color: #d6c9b8;
   border: 1px solid transparent;
@@ -260,7 +260,7 @@ a:hover {
 .page-header::before,
 .page-header::after {
   content: "\5370";
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   font-size: 0.78rem;
   color: var(--antique-ochre);
   background-color: #090606;
@@ -278,7 +278,7 @@ a:hover {
   margin: 0;
   flex: 1;
   text-align: center;
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   font-size: 1.55rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -317,7 +317,7 @@ a:hover {
 .portrait-caption {
   margin-top: 5px;
   text-align: center;
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   font-size: 0.86rem;
   color: var(--antique-ochre);
   letter-spacing: 0.06em;
@@ -344,7 +344,7 @@ a:hover {
   background: linear-gradient(90deg, #4b0d0a 0%, #240908 65%, transparent 100%);
   border-top: 1px solid var(--frame-wood);
   border-bottom: 1px solid var(--frame-wood-dim);
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   font-size: 1.16rem;
   font-weight: 700;
   letter-spacing: 0.06em;
@@ -448,7 +448,7 @@ a:hover {
   background: linear-gradient(90deg, var(--talisman-crimson) 0%, #3a0b09 100%);
   color: #fdf6ec;
   padding: 7px 14px;
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   font-weight: 700;
   font-size: 0.92rem;
   letter-spacing: 0.04em;
@@ -477,7 +477,7 @@ a:hover {
   display: inline-block;
   background-color: var(--combat-red);
   color: #ffffff;
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   font-size: 0.78rem;
   font-weight: 700;
   letter-spacing: 0.08em;
@@ -513,7 +513,7 @@ a:hover {
 .hub-card h3 {
   margin: 0 0 6px;
   font-size: 1.03rem;
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   letter-spacing: 0.03em;
 }
 
@@ -552,7 +552,7 @@ a:hover {
 .prima-table th {
   background: linear-gradient(180deg, #4b100d 0%, #260908 100%);
   color: #fdf6ec;
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   font-weight: 700;
 }
 
@@ -601,7 +601,7 @@ a:hover {
 }
 
 .check-date {
-  font-family: var(--font-mincho);
+  font-family: var(--font-display);
   font-weight: 700;
   color: var(--antique-ochre);
   margin-right: 8px;

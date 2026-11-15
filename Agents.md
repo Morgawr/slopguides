@@ -238,6 +238,13 @@ In case of visual novels, you should add a picture of each character/heroine in
 the page related to that character's individual route. You can usually find
 those pictures from the vndb page for that VN.
 
+Do not use excessive borders for each "card" or section. Borders and cards are
+acceptable but just because you're embedding an image or adding a warning/note
+it doesn't mean it has to be encapsulated in a border. Too many borders close to
+each other make it hard to read.
+
+Do NOT use serif fonts. Only use sans-serif ones.
+
 Do NOT use "callout boxes" (labels with a left-border accent). Ever.
 
 Do not use "pills" or labels with a separate background color/text style in the
