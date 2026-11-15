@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shurelia Cosmosphere - アルトネリコ Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="elemia-masthead">
+    <div class="masthead-top">
+      <div class="brand-group">
+        <span class="grath-crest" aria-hidden="true"></span>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="アルトネリコ 世界の終わりで詩い続ける少女" data-en="Ar tonelico: Melody of Elemia" data-tip="Ar tonelico: Melody of Elemia">アルトネリコ 世界の終わりで詩い続ける少女</span></a>
+      </div>
+      <div class="masthead-meta">
+        <span class="guide-platform">PlayStation 2</span>
+        <a class="repo-back" href="../../index.html">All Guides</a>
+      </div>
+    </div>
+    <nav class="guide-nav" aria-label="Guide Sections">
+      <a href="index.html">Overview</a>
+      <a href="beginners-tips.html">Tips</a>
+      <a href="roadmap.html">Play Order</a>
+      <a href="missables.html">Missables</a>
+      <a href="main-story.html">Main Story</a>
+      <a href="cosmosphere-aurica.html">Aurica CS</a>
+      <a href="cosmosphere-misha.html">Misha CS</a>
+      <a href="cosmosphere-shurelia.html" class="active">Shurelia CS</a>
+      <a href="builds-party.html">Party Builds</a>
+      <a href="mechanics.html">Mechanics</a>
+      <a href="exploits.html">Exploits</a>
+      <a href="credits.html">Credits</a>
+    </nav>
+  </header>
+
+  <main class="prima-sheet">
+    <div class="page-header">
+      <h1>Shurelia Cosmosphere</h1>
+    </div>
+
+    <div class="char-banner">
+      <img class="char-portrait" src="resources/characters/shurelia.jpg" alt="Shurelia portrait">
+      <div class="char-banner-info">
+        <h2><span class="term" data-jp="シュレリア" data-en="Shurelia" data-tip="Shurelia">シュレリア</span></h2>
+        <p>
+          Administrator of the Tower of <span class="term" data-jp="アルトネリコ" data-en="Ar tonelico" data-tip="Ar tonelico">アルトネリコ</span>. Unlike <span class="term" data-jp="オリカ" data-en="Aurica" data-tip="Aurica">オリカ</span> and <span class="term" data-jp="ミシャ" data-en="Misha" data-tip="Misha">ミシャ</span>, her Binary Field spans Levels 1 through 5 and becomes accessible late in Phase 2 and Phase 3 on either heroine route.
+        </p>
+      </div>
+    </div>
+
+    <div class="spec-panel spec-panel-crimson">
+      <div class="spec-panel-head">Critical Warning &middot; Academy Event Deadlock</div>
+      <div class="spec-panel-body">
+        <p>
+          During the <span class="term" data-jp="学園" data-en="Academy" data-tip="Shurelia Binary Field hub">学園</span> scenario inside <span class="term" data-jp="シュレリア" data-en="Shurelia" data-tip="Shurelia">シュレリア</span>'s Cosmosphere, speak with both <span class="term" data-jp="どんすけ" data-en="Don Leon" data-tip="Don Leon">どんすけ</span> and <span class="term" data-jp="波摩" data-en="Hama" data-tip="Hama">波摩</span> before exhausting your daily conversation steps. Skipping either NPC can lock progression toward Lv.5 <span class="term" data-jp="世界の勇者" data-en="Hero of the World" data-tip="Shurelia Lv.5">世界の勇者</span>.
+        </p>
+      </div>
+    </div>
+
+    <div class="completion-bar-wrap" data-counter-label="Shurelia Levels Cleared" style="margin-top:1rem;">
+      <div class="completion-meta">
+        <span class="completion-text">Shurelia Levels Cleared: 0/5 (0%)</span>
+        <div class="completion-track"><div class="completion-fill"></div></div>
+      </div>
+      <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+    </div>
+
+    <div class="step-block">
+      <h3>Binary Field Levels Lv.1 &ndash; Lv.5 Checklist</h3>
+      <ul class="check-list">
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="css-1">
+          <div class="check-body">
+            <strong>Lv.1 <span class="term" data-jp="愛の使い手" data-en="Master of Love" data-tip="Shurelia Lv.1">愛の使い手</span>.</strong> Unlocks late in Phase 2 once Shurelia formally joins combat deployments. Introduces her humorous self-defense fantasies and provides starter Song Magic.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="css-2">
+          <div class="check-body">
+            <strong>Lv.2 <span class="term" data-jp="はち合わせ" data-en="Running Into Each Other" data-tip="Shurelia Lv.2">はち合わせ</span>.</strong> Features simulated school encounters where you learn about Shurelia's hidden longing for ordinary friendship and expand her offensive spells.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="css-3">
+          <div class="check-body">
+            <strong>Lv.3 <span class="term" data-jp="固い約束" data-en="Firm Promise" data-tip="Shurelia Lv.3">固い約束</span>.</strong> Talk thoroughly to both <span class="term" data-jp="どんすけ" data-en="Don Leon" data-tip="Don Leon">どんすけ</span> and <span class="term" data-jp="波摩" data-en="Hama" data-tip="Hama">波摩</span> around the <span class="term" data-jp="学園" data-en="Academy" data-tip="Academy">学園</span> grounds to keep every event flag intact.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="css-4">
+          <div class="check-body">
+            <strong>Lv.4 <span class="term" data-jp="二人の想い" data-en="Two Hearts" data-tip="Shurelia Lv.4">二人の想い</span>.</strong> Confronts the emotional isolation of guarding <span class="term" data-jp="ソル・シエール" data-en="Sol Ciel" data-tip="Sol Ciel">ソル・シエール</span> across centuries. Unlocks late-game party protection spells and prepares her ending branch.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="css-5">
+          <div class="check-body">
+            <strong>Lv.5 <span class="term" data-jp="世界の勇者" data-en="Hero of the World" data-tip="Shurelia Lv.5">世界の勇者</span>.</strong> Completing Lv.5 unlocks <span class="term" data-jp="シュレリア" data-en="Shurelia" data-tip="Shurelia">シュレリア</span>'s high-tier offensive and support <span class="term" data-jp="詩魔法" data-en="Song Magic" data-tip="Song Magic">詩魔法</span> and makes her ending selectable at the Phase 3 commitment choice regardless of whether you walked Aurica's or Misha's Phase 2 path.
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

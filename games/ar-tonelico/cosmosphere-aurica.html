@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurica Cosmosphere - アルトネリコ Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="elemia-masthead">
+    <div class="masthead-top">
+      <div class="brand-group">
+        <span class="grath-crest" aria-hidden="true"></span>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="アルトネリコ 世界の終わりで詩い続ける少女" data-en="Ar tonelico: Melody of Elemia" data-tip="Ar tonelico: Melody of Elemia">アルトネリコ 世界の終わりで詩い続ける少女</span></a>
+      </div>
+      <div class="masthead-meta">
+        <span class="guide-platform">PlayStation 2</span>
+        <a class="repo-back" href="../../index.html">All Guides</a>
+      </div>
+    </div>
+    <nav class="guide-nav" aria-label="Guide Sections">
+      <a href="index.html">Overview</a>
+      <a href="beginners-tips.html">Tips</a>
+      <a href="roadmap.html">Play Order</a>
+      <a href="missables.html">Missables</a>
+      <a href="main-story.html">Main Story</a>
+      <a href="cosmosphere-aurica.html" class="active">Aurica CS</a>
+      <a href="cosmosphere-misha.html">Misha CS</a>
+      <a href="cosmosphere-shurelia.html">Shurelia CS</a>
+      <a href="builds-party.html">Party Builds</a>
+      <a href="mechanics.html">Mechanics</a>
+      <a href="exploits.html">Exploits</a>
+      <a href="credits.html">Credits</a>
+    </nav>
+  </header>
+
+  <main class="prima-sheet">
+    <div class="page-header">
+      <h1>Aurica Cosmosphere</h1>
+    </div>
+
+    <div class="char-banner">
+      <img class="char-portrait" src="resources/characters/aurica.jpg" alt="Aurica Nestmile portrait">
+      <div class="char-banner-info">
+        <h2><span class="term" data-jp="オリカ・ネストミール" data-en="Aurica Nestmile" data-tip="Aurica Nestmile">オリカ・ネストミール</span></h2>
+        <p>
+          Tower priestess specializing in elemental Red bursts and party sustain magic. Levels 1 through 5 are accessible on every route during Phase 1 and early Phase 2, while Levels 6 through 9 require selecting her path in <span class="term" data-jp="プラティナ" data-en="Platina" data-tip="Platina">プラティナ</span> during <a href="main-story.html#phase-2-common">Phase 2</a>.
+        </p>
+      </div>
+    </div>
+
+    <div class="completion-bar-wrap" data-counter-label="Aurica Levels Cleared">
+      <div class="completion-meta">
+        <span class="completion-text">Aurica Levels Cleared: 0/10 (0%)</span>
+        <div class="completion-track"><div class="completion-fill"></div></div>
+      </div>
+      <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+    </div>
+
+    <div class="step-block">
+      <h3>Cosmosphere Levels Lv.1 &ndash; Lv.E Checklist</h3>
+      <ul class="check-list">
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csa-1">
+          <div class="check-body">
+            <strong>Lv.1 <span class="term" data-jp="いばらの姫" data-en="Princess of Thorns" data-tip="Aurica Lv.1">いばらの姫</span>.</strong> Unlocks automatically in Phase 1 upon gaining dive access. Reward includes fire burst and barrier magic (<span class="term" data-jp="火炎弾" data-en="Fire Bullet" data-tip="Fire Bullet">火炎弾</span>, <span class="term" data-jp="ファイアーガード" data-en="Fire Guard" data-tip="Fire Guard">ファイアーガード</span>, <span class="term" data-jp="フレイメア" data-en="Flamea" data-tip="Flamea">フレイメア</span>) and standard gear. Always treat Aurica warmly rather than mocking her insecurities to keep DP costs low.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csa-2">
+          <div class="check-body">
+            <strong>Lv.2 <span class="term" data-jp="竜の持つ傷" data-en="The Dragon's Wound" data-tip="Aurica Lv.2">竜の持つ傷</span>.</strong> Clear in Phase 1. Teaches <span class="term" data-jp="ウンディーネ" data-en="Undine" data-tip="Undine">ウンディーネ</span> and <span class="term" data-jp="オリカ一号" data-en="Aurica No. 1" data-tip="Aurica No. 1">オリカ一号</span>, plus unlocks costume <span class="term" data-jp="スクワート" data-en="Squad" data-tip="Squad costume">スクワート</span>.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csa-3">
+          <div class="check-body">
+            <strong>Lv.3 <span class="term" data-jp="癒される手" data-en="Healing Hands" data-tip="Aurica Lv.3">癒される手</span>.</strong> Clear before finishing Phase 1. Unlocks <span class="term" data-jp="シルフのダンス" data-en="Sylph's Dance" data-tip="Sylph's Dance">シルフのダンス</span> and priestess costume <span class="term" data-jp="天守聖衣" data-en="Tenshu Raiment" data-tip="Tenshu Raiment costume">天守聖衣</span>. This is the last level guaranteed before the Phase 2 route choice locks deep dives on Misha's path.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csa-4">
+          <div class="check-body">
+            <strong>Lv.4 <span class="term" data-jp="力を失う力" data-en="Power to Lose Power" data-tip="Aurica Lv.4">力を失う力</span>.</strong> Opens after early Phase 2 events. Unlocks <span class="term" data-jp="サンダーガード" data-en="Thunder Guard" data-tip="Thunder Guard">サンダーガード</span> and modern uniform <span class="term" data-jp="スクールデイズ" data-en="School Days" data-tip="School Days costume">スクールデイズ</span>. Speak reassuringly during her self-doubt scenes.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csa-5">
+          <div class="check-body">
+            <strong>Lv.5 <span class="term" data-jp="歪守護者" data-en="Warped Guardian" data-tip="Aurica Lv.5">歪守護者</span>.</strong> Highest level reachable if you chose Misha's path, and the threshold level for <span class="term" data-jp="オリカ" data-en="Aurica" data-tip="Aurica">オリカ</span>'s path. Grants high-tier Red and Blue skills and costume <span class="term" data-jp="どんすけ" data-en="Don Leon" data-tip="Don Leon costume">どんすけ</span>.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csa-6">
+          <div class="check-body">
+            <strong>Lv.6 <span class="term" data-jp="艶やかな心" data-en="Alluring Heart" data-tip="Aurica Lv.6">艶やかな心</span>.</strong> Aurica Route exclusive. Requires Phase 2 Cathedral choice <span class="term" data-jp="教会へ恩返しする" data-en="Repay the Church" data-tip="Aurica Route">教会へ恩返しする</span> and relevant <span class="term" data-jp="トークマター" data-en="Talk Topics" data-tip="Talk Topics">トークマター</span> cleared at the inn. Unlocks costume <span class="term" data-jp="バブルパッション" data-en="Bubble Passion" data-tip="Bubble Passion costume">バブルパッション</span>.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csa-7">
+          <div class="check-body">
+            <strong>Lv.7 <span class="term" data-jp="聖戦" data-en="Holy War" data-tip="Aurica Lv.7">聖戦</span>.</strong> Aurica Route exclusive. Unlocks <span class="term" data-jp="SERAPH" data-en="SERAPH" data-tip="SERAPH costume">SERAPH</span> costume along with endgame burst magic. Clear all dialogue topics tied to her <span class="term" data-jp="ヒュムノス" data-en="Hymmnos" data-tip="Hymmnos">ヒュムノス</span> heritage before descending to Level 8.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csa-8">
+          <div class="check-body">
+            <strong>Lv.8 <span class="term" data-jp="本音の慟哭" data-en="Cries of True Feelings" data-tip="Aurica Lv.8">本音の慟哭</span>.</strong> Aurica Route exclusive. Clear before the Phase 3 boundary point. Completing this stage awards costume <span class="term" data-jp="LILIM" data-en="LILIM" data-tip="LILIM costume">LILIM</span> and unlocks the final emotional confrontation required for her Lv.9 pledge.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csa-9">
+          <div class="check-body">
+            <strong>Lv.9 <span class="term" data-jp="契り" data-en="Vow" data-tip="Aurica Lv.9">契り</span>.</strong> Aurica Route exclusive during Phase 3 once you commit to her. Completing Lv.9 satisfies the dive condition for Aurica's Good Ending and awards bridal costume <span class="term" data-jp="セレモニー" data-en="Ceremony" data-tip="Ceremony costume">セレモニー</span>.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csa-10">
+          <div class="check-body">
+            <strong>Lv.E <span class="term" data-jp="シグザール" data-en="Shigzall" data-tip="Aurica Extra Cosmosphere">シグザール</span>.</strong> Optional post-Lv.5 Extra stage unlocked by finding the corresponding <span class="term" data-jp="トークマター" data-en="Talk Topics" data-tip="Talk Topics">トークマター</span> key in late Phase 2 or Phase 3 shops and treasure chests. Rewards <span class="term" data-jp="マルローネ" data-en="Marlone" data-tip="Marlone costume">マルローネ</span> cameo costume and bonus <span class="term" data-jp="グラスメルク" data-en="Grathmeld" data-tip="Grathmeld">グラスメルク</span> recipes.
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="spec-panel">
+      <div class="spec-panel-head">Ending Matrix &middot; Aurica Route Branches</div>
+      <div class="spec-panel-body">
+        <table class="prima-table">
+          <thead>
+            <tr>
+              <th>Ending Outcome</th>
+              <th>Required Phase 2 Route</th>
+              <th>Required Dive Progress</th>
+              <th>Phase 3 Decision</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Aurica Normal Ending</td>
+              <td><span class="term" data-jp="教会へ恩返しする" data-en="Repay the Church" data-tip="Aurica Route">教会へ恩返しする</span></td>
+              <td>Lv.5 or lower (or refuse final pledge)</td>
+              <td>Choose Aurica over other options before tower climax.</td>
+            </tr>
+            <tr>
+              <td>Aurica Good Ending</td>
+              <td><span class="term" data-jp="教会へ恩返しする" data-en="Repay the Church" data-tip="Aurica Route">教会へ恩返しする</span></td>
+              <td>Complete Lv.9 <span class="term" data-jp="契り" data-en="Vow" data-tip="Aurica Lv.9">契り</span></td>
+              <td>Confirm pledge with Aurica in Phase 3.</td>
+            </tr>
+            <tr>
+              <td>Shurelia Ending (on Aurica Route)</td>
+              <td>Either Phase 2 route</td>
+              <td>Do not complete Lv.9 pledge; clear <a href="cosmosphere-shurelia.html">Shurelia Lv.5</a></td>
+              <td>Commit to <span class="term" data-jp="シュレリア" data-en="Shurelia" data-tip="Shurelia">シュレリア</span> at the late Phase 2/3 split.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

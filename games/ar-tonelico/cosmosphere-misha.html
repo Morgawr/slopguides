@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Misha Cosmosphere - アルトネリコ Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="elemia-masthead">
+    <div class="masthead-top">
+      <div class="brand-group">
+        <span class="grath-crest" aria-hidden="true"></span>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="アルトネリコ 世界の終わりで詩い続ける少女" data-en="Ar tonelico: Melody of Elemia" data-tip="Ar tonelico: Melody of Elemia">アルトネリコ 世界の終わりで詩い続ける少女</span></a>
+      </div>
+      <div class="masthead-meta">
+        <span class="guide-platform">PlayStation 2</span>
+        <a class="repo-back" href="../../index.html">All Guides</a>
+      </div>
+    </div>
+    <nav class="guide-nav" aria-label="Guide Sections">
+      <a href="index.html">Overview</a>
+      <a href="beginners-tips.html">Tips</a>
+      <a href="roadmap.html">Play Order</a>
+      <a href="missables.html">Missables</a>
+      <a href="main-story.html">Main Story</a>
+      <a href="cosmosphere-aurica.html">Aurica CS</a>
+      <a href="cosmosphere-misha.html" class="active">Misha CS</a>
+      <a href="cosmosphere-shurelia.html">Shurelia CS</a>
+      <a href="builds-party.html">Party Builds</a>
+      <a href="mechanics.html">Mechanics</a>
+      <a href="exploits.html">Exploits</a>
+      <a href="credits.html">Credits</a>
+    </nav>
+  </header>
+
+  <main class="prima-sheet">
+    <div class="page-header">
+      <h1>Misha Cosmosphere</h1>
+    </div>
+
+    <div class="char-banner">
+      <img class="char-portrait" src="resources/characters/misha.jpg" alt="Misha Arsellec Lune portrait">
+      <div class="char-banner-info">
+        <h2><span class="term" data-jp="彌紗・アルトセルク・リューン" data-en="Misha Arsellec Lune" data-tip="Misha Arsellec Lune">彌紗・アルトセルク・リューン</span></h2>
+        <p>
+          Star Singer commanding ice field magic and multi-hit lightning and tower bursts. Her <span class="term" data-jp="コスモスフィア" data-en="Cosmosphere" data-tip="Cosmosphere">コスモスフィア</span> tracks both her child form (<span class="term" data-jp="子供ミシャ" data-en="Child Misha" data-tip="Child form">子供ミシャ</span>) and adult form (<span class="term" data-jp="大人ミシャ" data-en="Adult Misha" data-tip="Adult form">大人ミシャ</span>), making early Phase 1/2 dive timing essential for Lv.3 and Lv.4 costumes.
+        </p>
+      </div>
+    </div>
+
+    <div class="spec-panel spec-panel-crimson">
+      <div class="spec-panel-head">Form Timing Rule &middot; Child Form Lockout</div>
+      <div class="spec-panel-body">
+        <p>
+          Clear <span class="term" data-jp="ミシャ" data-en="Misha" data-tip="Misha">ミシャ</span> Lv.3 and Lv.4 while she remains in <span class="term" data-jp="子供ミシャ" data-en="Child Misha" data-tip="Child form">子供ミシャ</span> form during Phase 1 or early Phase 2. Entering Lv.3 after she permanently transitions to her <span class="term" data-jp="大人ミシャ" data-en="Adult Misha" data-tip="Adult form">大人ミシャ</span> appearance skips the <span class="term" data-jp="マジカルシャワー" data-en="Magical Shower" data-tip="Child Misha Lv.3 costume">マジカルシャワー</span> costume reward.
+        </p>
+      </div>
+    </div>
+
+    <div class="completion-bar-wrap" data-counter-label="Misha Levels Cleared" style="margin-top:1rem;">
+      <div class="completion-meta">
+        <span class="completion-text">Misha Levels Cleared: 0/10 (0%)</span>
+        <div class="completion-track"><div class="completion-fill"></div></div>
+      </div>
+      <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+    </div>
+
+    <div class="step-block">
+      <h3>Cosmosphere Levels Lv.1 &ndash; Lv.E Checklist</h3>
+      <ul class="check-list">
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csm-1">
+          <div class="check-body">
+            <strong>Lv.1 <span class="term" data-jp="塗り絵の心" data-en="Painted Heart" data-tip="Misha Lv.1">塗り絵の心</span>.</strong> Available right after rescuing Misha in <span class="term" data-jp="セロの森" data-en="Cello Forest" data-tip="Cello Forest">セロの森</span>. Awards lightning magic (<span class="term" data-jp="雷弾" data-en="Thunder Bullet" data-tip="Thunder Bullet">雷弾</span>, <span class="term" data-jp="雷護" data-en="Thunder Guard" data-tip="Thunder Guard">雷護</span>) and <span class="term" data-jp="スタンダード" data-en="Standard" data-tip="Standard costume">スタンダード</span> outfit.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csm-2">
+          <div class="check-body">
+            <strong>Lv.2 <span class="term" data-jp="闇世界" data-en="Dark World" data-tip="Misha Lv.2">闇世界</span>.</strong> Clear in Phase 1 before ascending back to <span class="term" data-jp="プラティナ" data-en="Platina" data-tip="Platina">プラティナ</span>. Grants Analyzer utility and field ice spell <span class="term" data-jp="樹氷弾" data-en="Frost Bullet" data-tip="Frost Bullet green field magic">樹氷弾</span>.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csm-3">
+          <div class="check-body">
+            <strong>Lv.3 <span class="term" data-jp="使命" data-en="Mission" data-tip="Misha Lv.3">使命</span>.</strong> Dive here as <span class="term" data-jp="子供ミシャ" data-en="Child Misha" data-tip="Child form">子供ミシャ</span> before Phase 2 progression changes her form. Unlocks Ice Guard, Frost Ball, Blossom, and costume <span class="term" data-jp="マジカルシャワー" data-en="Magical Shower" data-tip="Magical Shower costume">マジカルシャワー</span>.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csm-4">
+          <div class="check-body">
+            <strong>Lv.4 <span class="term" data-jp="PP症候群" data-en="PP Syndrome" data-tip="Misha Lv.4">PP症候群</span>.</strong> Addresses the strain of forced Star Singer transformations. Rewards child costume <span class="term" data-jp="シープスイーツ" data-en="Sheep Sweets" data-tip="Sheep Sweets costume">シープスイーツ</span> and strengthens her Blue healing repertoire.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csm-5">
+          <div class="check-body">
+            <strong>Lv.5 <span class="term" data-jp="幼き賢者" data-en="Young Sage" data-tip="Misha Lv.5">幼き賢者</span>.</strong> Maximum depth on Aurica's route, and the pivot point on Misha's own route. Unlocks <span class="term" data-jp="大人ミシャ" data-en="Adult Misha" data-tip="Adult form">大人ミシャ</span> costume <span class="term" data-jp="セーラーガール" data-en="Sailor Girl" data-tip="Sailor Girl costume">セーラーガール</span>.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csm-6">
+          <div class="check-body">
+            <strong>Lv.6 <span class="term" data-jp="朱の女王" data-en="Vermilion Queen" data-tip="Misha Lv.6">朱の女王</span>.</strong> Misha Route exclusive. Choose <span class="term" data-jp="捜索隊に志願する" data-en="Volunteer for Search Party" data-tip="Misha Route choice">捜索隊に志願する</span> at the Cathedral in Phase 2 and exhaust all inn <span class="term" data-jp="トークマター" data-en="Talk Topics" data-tip="Talk Topics">トークマター</span>. Rewards adult costume <span class="term" data-jp="Y" data-en="Y" data-tip="Y costume">Y</span>.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csm-7">
+          <div class="check-body">
+            <strong>Lv.7 <span class="term" data-jp="籠の中の虎" data-en="Tiger in a Cage" data-tip="Misha Lv.7">籠の中の虎</span>.</strong> Misha Route exclusive. Awards ninja costume <span class="term" data-jp="SINOBI" data-en="SINOBI" data-tip="SINOBI costume">SINOBI</span> and unlocks advanced Song Magic tied to her childhood memories with <span class="term" data-jp="ライナー" data-en="Lyner" data-tip="Lyner">ライナー</span>.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csm-8">
+          <div class="check-body">
+            <strong>Lv.8 <span class="term" data-jp="二律背反" data-en="Antinomy" data-tip="Misha Lv.8">二律背反</span>.</strong> Misha Route exclusive. Clear in late Phase 2 prior to locking Phase 3. Rewards kimono-themed adult costume <span class="term" data-jp="KASHA" data-en="KASHA" data-tip="KASHA costume">KASHA</span> and confronts her conflict between duty and personal affection.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csm-9">
+          <div class="check-body">
+            <strong>Lv.9 <span class="term" data-jp="契り" data-en="Vow" data-tip="Misha Lv.9">契り</span>.</strong> Misha Route exclusive during Phase 3 once committed to her. Unlocks signature endgame Song Magic including <span class="term" data-jp="我愛弥" data-en="I Love Misha" data-tip="Misha Lv.9 spell">我愛弥</span> and <span class="term" data-jp="塔結線" data-en="Tower Connection" data-tip="Tower Connection spell">塔結線</span>, plus traditional bridal costume <span class="term" data-jp="白無垢" data-en="Shiromuku" data-tip="Shiromuku costume">白無垢</span>.
+          </div>
+        </li>
+        <li class="check-item">
+          <input type="checkbox" class="check-box" data-check-id="csm-10">
+          <div class="check-body">
+            <strong>Lv.E <span class="term" data-jp="ケントニス" data-en="Kentnis" data-tip="Misha Extra Cosmosphere">ケントニス</span>.</strong> Optional Extra stage unlocked via late-game <span class="term" data-jp="トークマター" data-en="Talk Topics" data-tip="Talk Topics">トークマター</span> triggers. Rewards cameo costume <span class="term" data-jp="エルフィール" data-en="Elfir" data-tip="Elfir cameo costume">エルフィール</span> for <span class="term" data-jp="子供ミシャ" data-en="Child Misha" data-tip="Child form">子供ミシャ</span> and specialty crafting recipes.
+          </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="spec-panel">
+      <div class="spec-panel-head">Ending Matrix &middot; Misha Route Branches</div>
+      <div class="spec-panel-body">
+        <table class="prima-table">
+          <thead>
+            <tr>
+              <th>Ending Outcome</th>
+              <th>Required Phase 2 Route</th>
+              <th>Required Dive Progress</th>
+              <th>Phase 3 Decision</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Misha Normal Ending</td>
+              <td><span class="term" data-jp="捜索隊に志願する" data-en="Volunteer for Search Party" data-tip="Misha Route choice">捜索隊に志願する</span></td>
+              <td>Lv.5 or lower (or refuse final pledge)</td>
+              <td>Stay committed to Misha at tower endgame.</td>
+            </tr>
+            <tr>
+              <td>Misha Good Ending</td>
+              <td><span class="term" data-jp="捜索隊に志願する" data-en="Volunteer for Search Party" data-tip="Misha Route choice">捜索隊に志願する</span></td>
+              <td>Complete Lv.9 <span class="term" data-jp="契り" data-en="Vow" data-tip="Misha Lv.9">契り</span></td>
+              <td>Confirm pledge with Misha in Phase 3.</td>
+            </tr>
+            <tr>
+              <td>Bad / Phase 2 Endings</td>
+              <td>Either route</td>
+              <td>Choose specific dialogue dismissals or fail tower duty checks</td>
+              <td>Keep backup saves before both route splits to record them without replaying Phase 1.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

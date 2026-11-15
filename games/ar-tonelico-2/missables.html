@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missables &amp; Bug Fixes - アルトネリコ2 Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="metafalss-layout">
+    <aside class="pastalia-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="topic-diamond" aria-hidden="true"></span>
+          <span class="rail-title-tag">Hymmnos Atlas</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="アルトネリコ2 世界に響く少女たちの創造詩" data-en="Ar tonelico II: Melody of Metafalica" data-tip="Ar tonelico II: Melody of Metafalica">アルトネリコ2 世界に響く少女たちの創造詩</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">PlayStation 2</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order</a>
+        <a class="rail-nav-link active" href="missables.html">Missables</a>
+        <a class="rail-nav-link" href="main-story.html">Main Story</a>
+        <div class="rail-nav-label">Cosmospheres &amp; I.P.D.</div>
+        <a class="rail-nav-link" href="cosmosphere-luca.html">Luca CS</a>
+        <a class="rail-nav-link" href="cosmosphere-cloche.html">Cloche CS</a>
+        <a class="rail-nav-link" href="cosmosphere-jacqli.html">Jacqli CS</a>
+        <a class="rail-nav-link" href="ipd-tracker.html">I.P.D. 100</a>
+        <div class="rail-nav-label">Systems &amp; Data</div>
+        <a class="rail-nav-link" href="builds-party.html">Party Builds</a>
+        <a class="rail-nav-link" href="mechanics.html">Mechanics</a>
+        <a class="rail-nav-link" href="exploits.html">Exploits</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="metafalss-stage">
+      <div class="page-header">
+        <h1>Missables &amp; Critical Bugs</h1>
+      </div>
+
+      <p class="lead-intro">
+        Zone accessibility changes drastically between Phase 2 and Phase 5 in <span class="term" data-jp="アルトネリコ2" data-en="Ar tonelico II" data-tip="Ar tonelico II">アルトネリコ2</span>, and the North American PS2 disc carries a notorious Phase 5 freeze bug. Track every lock window and bug countermeasure below before clearing dungeons.
+      </p>
+
+      <div class="toc-box">
+        <div class="toc-title">On This Page</div>
+        <div class="toc-list">
+          <a href="#raki-freeze">US Raki Freeze Fix</a>
+          <a href="#zone-cutoffs">Zone Cutoffs &amp; Treasure</a>
+          <a href="#topic-lock">Exclusive Talk Topics</a>
+        </div>
+      </div>
+
+      <div class="completion-bar-wrap" data-counter-label="Missables Secured">
+        <div class="completion-meta">
+          <span class="completion-text">Missables Secured: 0/12 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+      </div>
+
+      <div class="spec-panel spec-panel-rose" id="raki-freeze">
+        <div class="spec-panel-head">US PS2 Hardware Bug &middot; Phase 5 Raki Freeze Bypass</div>
+        <div class="spec-panel-body">
+          <p>
+            In NISA's original English PS2 localization, the battle against <span class="term" data-jp="ラキ" data-en="Raki" data-tip="Phase 5 boss">ラキ</span> crashes on Turn 6 (Defense Phase 3) because the localization left a bad pointer (<code style="font-size:0.85em">0x165</code>) for her scripted attack <span class="term" data-jp="フラクタルチェンジ" data-en="Fractal Change" data-tip="Turn 6 freezing skill">フラクタルチェンジ</span>. Playing with the fan patch <span class="term" data-jp="Project Metafalica" data-en="Project Metafalica" data-tip="Community bugfix &amp; retranslation patch">Project Metafalica</span> eliminates this bug. On unmodified US discs, build <span class="term" data-jp="親衛隊" data-en="Fan Club" data-tip="Cloche Fan Club">親衛隊</span> stacks for <span class="term" data-jp="レプレキア" data-en="Replakia" data-tip="Burst Song Magic multiplier">レプレキア</span> and unleash Level 4 Song Magic to wipe her 40,000+ HP bar inside 5 turns.
+          </p>
+        </div>
+      </div>
+
+      <div class="step-block" id="zone-cutoffs">
+        <h3>Route Splits &amp; Temporary Zones (Phase 1 &ndash; Phase 4)</h3>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-1">
+            <div class="check-body">
+              <strong>Save before Phase 1's <span class="term" data-jp="ルカ" data-en="Luca" data-tip="Luca">ルカ</span> vs. <span class="term" data-jp="クローシェ" data-en="Cloche" data-tip="Cloche">クローシェ</span> choice.</strong> Picking one locks out the other partner's route maps, recipes, and Phase 2 boss encounters for the rest of the playthrough.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-2">
+            <div class="check-body">
+              <strong>Sweep Lower Moon Culvert chests before early Phase 5.</strong> Early zones including <span class="term" data-jp="月下水路" data-en="Lower Moon Culvert" data-tip="Lower Moon Culvert">月下水路</span> and Mint District seal permanently in early Phase 5. Collect all treasure boxes and synthesis recipes early even though roaming <span class="term" data-jp="I.P.D." data-en="I.P.D." data-tip="I.P.D.">I.P.D.</span>s migrate safely to open areas.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-3">
+            <div class="check-body">
+              <strong>Sweep Phase 2 route-exclusive dungeons on your first visit.</strong> Maps exclusive to Luca's or Cloche's Phase 2 mission contain unique chests and boss drops that vanish once both paths converge.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-4">
+            <div class="check-body">
+              <strong>Complete Phase 1&ndash;4 side quests and shop unlocks early.</strong> Shopkeepers, town NPCs, and <span class="term" data-jp="大鐘堂" data-en="Grand Bell" data-tip="Grand Bell">大鐘堂</span> districts shift after story upheavals, locking early quest rewards if ignored.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-5">
+            <div class="check-body">
+              <strong>Buy out <span class="term" data-jp="猫屋敷" data-en="Cat Mansion" data-tip="Cat Mansion">猫屋敷</span> and regional specialty shops before Phase 5.</strong> Pick up limited <span class="term" data-jp="入浴剤" data-en="Bath Agent" data-tip="Bath Agent">入浴剤</span> sets, toys such as <span class="term" data-jp="歩くゲルゴ" data-en="Walking Gergo" data-tip="Bath toy">歩くゲルゴ</span>, and exclusive synthesis recipes during Phase 3 and Phase 4.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-6">
+            <div class="check-body">
+              <strong>Respect early dangerous I.P.D. spikes rather than under-saving.</strong> Lv.3 <span class="term" data-jp="ねねこ" data-en="Neneko" data-tip="Lv.3 I.P.D.">ねねこ</span> at <span class="term" data-jp="雲の波止場" data-en="Clouds Wharf" data-tip="Clouds Wharf">雲の波止場</span> and Lv.4 <span class="term" data-jp="那紗" data-en="Nasa" data-tip="Lv.4 I.P.D.">那紗</span> inside <span class="term" data-jp="ヴェルティカブ" data-en="Verticave" data-tip="Verticave">ヴェルティカブ</span> pack mid-game Lollipop and guard-breaking escorts capable of wiping unbuffered parties.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" id="topic-lock">
+        <h3>Talk Topics, Cosmosphere Branches &amp; Phase 5 Locks</h3>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-7">
+            <div class="check-body">
+              <strong>Navigate the mutually exclusive Luca Lv.2 / Cloche Lv.4 Topic conflict.</strong> Clearing Luca Lv.2 and Cloche Lv.4 affects mutual Topic availability such as <span class="term" data-jp="シンシアのこと" data-en="About Cynthia" data-tip="Mutually exclusive Talk Topic">シンシアのこと</span>; plan which gallery Topics you prioritize on your current route.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-8">
+            <div class="check-body">
+              <strong>Hold all three heroines at Lv.5 before committing a Paradigm Shift.</strong> Crossing Lv.5 into Lv.6 with <span class="term" data-jp="ルカ" data-en="Luca" data-tip="Luca">ルカ</span> or <span class="term" data-jp="クローシェ" data-en="Cloche" data-tip="Cloche">クローシェ</span> permanently locks <span class="term" data-jp="ジャクリ" data-en="Jacqli" data-tip="Jacqli">ジャクリ</span> at Lv.5 and cancels <span class="term" data-jp="ココナ" data-en="Cocona" data-tip="Cocona">ココナ</span>'s ending on that save slot.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-9">
+            <div class="check-body">
+              <strong>Use <span class="term" data-jp="リドゥチャーム" data-en="Redo Charm" data-tip="Allows revisiting alternate choices">リドゥチャーム</span> items inside Cloche Lv.4 and Jacqli Lv.7/Lv.8.</strong> Multiple branching sub-levels (<span class="term" data-jp="クローシェ" data-en="Cloche" data-tip="Cloche">クローシェ</span> Lv.6-R and <span class="term" data-jp="ジャクリ" data-en="Jacqli" data-tip="Jacqli">ジャクリ</span> Lv.7-C / Lv.7-P / Lv.8-2) hide distinct costumes, songs, and Topics behind Redo runs.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-10">
+            <div class="check-body">
+              <strong>Advance <span class="term" data-jp="インフェルスフィア" data-en="Infelsphere" data-tip="Infelsphere">インフェルスフィア</span> Lv.1&ndash;5 steadily per Phase.</strong> Completing Infelsphere levels unlocks essential <span class="term" data-jp="合体詩魔法" data-en="Dual Magic" data-tip="Combined Song Magic">合体詩魔法</span> combos and keeps both heroines synchronized for climax story fights.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-11">
+            <div class="check-body">
+              <strong>Stack Burst Harmonics and <span class="term" data-jp="レプレキア" data-en="Replakia" data-tip="Replakia">レプレキア</span> prior to Phase 5 Raki.</strong> Prepare Lv.4 Songs, high <span class="term" data-jp="親衛隊" data-en="Fan Club" data-tip="Fan Club">親衛隊</span> headcount via rescued I.P.D.s, and offensive crystal setups so Raki falls on or before Turn 5 on retail US discs.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="miss-12">
+            <div class="check-body">
+              <strong>Defeat optional Raki rematches and collect <span class="term" data-jp="ソル・マルタ" data-en="Sol Marta" data-tip="Sol Marta">ソル・マルタ</span> Lv.9 I.P.D.s before final boss.</strong> Defeating Lv.9 I.P.D.s spawns extra dungeon chests containing rare <span class="term" data-jp="デュアリスノ結晶" data-en="Dualithnode Crystals" data-tip="Dualithnode Crystals">デュアリスノ結晶</span>, and repeated sparring bouts with Raki unlock bonus gallery CGs.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

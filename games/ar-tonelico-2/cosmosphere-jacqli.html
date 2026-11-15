@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacqli Cosmosphere - アルトネリコ2 Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="metafalss-layout">
+    <aside class="pastalia-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="topic-diamond" aria-hidden="true"></span>
+          <span class="rail-title-tag">Hymmnos Atlas</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="アルトネリコ2 世界に響く少女たちの創造詩" data-en="Ar tonelico II: Melody of Metafalica" data-tip="Ar tonelico II: Melody of Metafalica">アルトネリコ2 世界に響く少女たちの創造詩</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">PlayStation 2</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <a class="rail-nav-link" href="main-story.html">Main Story</a>
+        <div class="rail-nav-label">Cosmospheres &amp; I.P.D.</div>
+        <a class="rail-nav-link" href="cosmosphere-luca.html">Luca CS</a>
+        <a class="rail-nav-link" href="cosmosphere-cloche.html">Cloche CS</a>
+        <a class="rail-nav-link active" href="cosmosphere-jacqli.html">Jacqli CS</a>
+        <a class="rail-nav-link" href="ipd-tracker.html">I.P.D. 100</a>
+        <div class="rail-nav-label">Systems &amp; Data</div>
+        <a class="rail-nav-link" href="builds-party.html">Party Builds</a>
+        <a class="rail-nav-link" href="mechanics.html">Mechanics</a>
+        <a class="rail-nav-link" href="exploits.html">Exploits</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="metafalss-stage">
+      <div class="page-header">
+        <h1>Jacqli Cosmosphere</h1>
+      </div>
+
+      <div class="grid-main-side">
+        <div>
+          <div class="char-banner">
+            <img class="char-portrait" src="resources/characters/jacqli.jpg" alt="Jacqli portrait">
+            <div class="char-banner-info">
+              <h2><span class="term" data-jp="ジャクリ" data-en="Jacqli" data-tip="Jacqli">ジャクリ</span></h2>
+              <p>
+                Mercenary <span class="term" data-jp="レーヴァテイル" data-en="Reyvateil" data-tip="Reyvateil">レーヴァテイル</span> joining in Phase 3 with devastating high-multiplier Song Magic and <span class="spoiler">direct ties to the first game as <span class="term" data-jp="ミュール" data-en="Mir" data-tip="First tower Reyvateil">ミュール</span></span>. Accessing her Lv.6 through Lv.9 requires leaving both <span class="term" data-jp="ルカ" data-en="Luca" data-tip="Luca">ルカ</span> and <span class="term" data-jp="クローシェ" data-en="Cloche" data-tip="Cloche">クローシェ</span> uncommitted at Lv.5 before Phase 4.
+              </p>
+            </div>
+          </div>
+
+          <div class="spec-panel spec-panel-rose">
+            <div class="spec-panel-head">Ending Gate &middot; Keep Heroines Uncommitted</div>
+            <div class="spec-panel-body">
+              <p>
+                Accepting Paradigm Shift for either <span class="term" data-jp="ルカ" data-en="Luca" data-tip="Luca">ルカ</span> or <span class="term" data-jp="クローシェ" data-en="Cloche" data-tip="Cloche">クローシェ</span> permanently locks <span class="term" data-jp="ジャクリ" data-en="Jacqli" data-tip="Jacqli">ジャクリ</span> at Lv.5. Stop both at Lv.5 entry, trigger Jacqli's Lv.5 Paradigm Shift after Phase 3 recruitment, and pursue her Lv.7-C/7-P and Lv.8-2 routes with <span class="term" data-jp="リドゥチャーム" data-en="Redo Charm" data-tip="Redo Charm">リドゥチャーム</span> items.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <figure class="screen-card">
+          <img src="resources/screens/jacqli_dive.jpg" alt="Jacqli Cosmosphere dialogue scene">
+          <figcaption><span class="term" data-jp="ジャクリ" data-en="Jacqli" data-tip="Jacqli">ジャクリ</span>'s dive blends parody stages with sharp <span class="term" data-jp="ソル・シエール" data-en="Sol Ciel" data-tip="Sol Ciel">ソル・シエール</span> lore connections.</figcaption>
+        </figure>
+      </div>
+
+      <div class="completion-bar-wrap" data-counter-label="Jacqli Levels Cleared">
+        <div class="completion-meta">
+          <span class="completion-text">Jacqli Levels Cleared: 0/9 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+      </div>
+
+      <div class="step-block">
+        <h3>Cosmosphere Levels Lv.1 &ndash; Lv.9 Checklist</h3>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csj-1">
+            <div class="check-body">
+              <strong>Lv.1 <span class="term" data-jp="派遣戦闘員" data-en="Dispatched Combatant" data-tip="Jacqli Lv.1">派遣戦闘員</span>.</strong> Opens immediately upon Phase 3 recruitment. Awards <span class="term" data-jp="長尺" data-en="Long Scale" data-tip="Jacqli Lv.1 costume">長尺</span> costume and signature burst magic.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csj-2">
+            <div class="check-body">
+              <strong>Lv.2 <span class="term" data-jp="人ギョウと人ゲン" data-en="Puppets and People" data-tip="Jacqli Lv.2">人ギョウと人ゲン</span>.</strong> Comedy-action scenario unlocking <span class="term" data-jp="スピリガンナー" data-en="SpiriGunner" data-tip="Jacqli Lv.2 costume">スピリガンナー</span> maid-gunner outfit.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csj-3">
+            <div class="check-body">
+              <strong>Lv.3 <span class="term" data-jp="渡さない襟巻の心理学" data-en="Psychology of the Kept Muffler" data-tip="Jacqli Lv.3">渡さない襟巻の心理学</span>.</strong> Focuses on pride and personal attachment. Unlocks <span class="term" data-jp="イモガール" data-en="Sweet Potato Girl" data-tip="Jacqli Lv.3 costume">イモガール</span> costume.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csj-4">
+            <div class="check-body">
+              <strong>Lv.4 <span class="term" data-jp="離ればなれの逢瀬" data-en="Separated Rendezvous" data-tip="Jacqli Lv.4">離ればなれの逢瀬</span>.</strong> Rewards <span class="term" data-jp="サザンクロス" data-en="Southern Cross" data-tip="Jacqli Lv.4 costume">サザンクロス</span> outfit and prepares her Paradigm Shift threshold.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csj-5">
+            <div class="check-body">
+              <strong>Lv.5 <span class="term" data-jp="刃の見つめる先" data-en="Where the Blade Gazes" data-tip="Jacqli Lv.5">刃の見つめる先</span>.</strong> Confirming Jacqli's <span class="term" data-jp="パラダイムシフト" data-en="Paradigm Shift" data-tip="Paradigm Shift">パラダイムシフト</span> commits you to her Ending once neither main heroine progressed to Lv.6. Unlocks <span class="term" data-jp="OBOT" data-en="OBOT" data-tip="Jacqli Lv.5 costume">OBOT</span>.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csj-6">
+            <div class="check-body">
+              <strong>Lv.6 <span class="term" data-jp="心の破片" data-en="Fragments of the Heart" data-tip="Jacqli Lv.6">心の破片</span>.</strong> Jacqli Route exclusive. Explores deep isolated memories and rewards <span class="term" data-jp="淑羽織" data-en="Graceful Haori" data-tip="Jacqli Lv.6 costume">淑羽織</span>.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csj-7">
+            <div class="check-body">
+              <strong>Lv.7 <span class="term" data-jp="罪〜クライム〜" data-en="Sin: Crime" data-tip="Jacqli Lv.7-C">罪〜クライム〜</span> &amp; <span class="term" data-jp="罰〜パニシュメント〜" data-en="Punishment" data-tip="Jacqli Lv.7-P">罰〜パニシュメント〜</span>.</strong> Two mirrored routes (C and P) addressing <span class="spoiler">past sins in <span class="term" data-jp="ソル・シエール" data-en="Sol Ciel" data-tip="Sol Ciel">ソル・シエール</span></span>. Complete Lv.7-C first to claim <span class="term" data-jp="ミュロス" data-en="Myuros" data-tip="Jacqli Lv.7-C costume">ミュロス</span>, then revisit via <span class="term" data-jp="リドゥチャーム" data-en="Redo Charm" data-tip="Redo Charm">リドゥチャーム</span>.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csj-8">
+            <div class="check-body">
+              <strong>Lv.8 <span class="term" data-jp="脱胎" data-en="Shedding the Vessel" data-tip="Jacqli Lv.8">脱胎</span> (Lv.8-1 &amp; Lv.8-2).</strong> Clear both Lv.8-1 and Lv.8-2 sub-branches to collect <span class="term" data-jp="ピュアリチュアル" data-en="Pure Ritual" data-tip="Jacqli Lv.8-2 costume">ピュアリチュアル</span> and prepare Lv.9 entry.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csj-9">
+            <div class="check-body">
+              <strong>Lv.9 <span class="term" data-jp="愛の刺し方" data-en="How to Pierce Love" data-tip="Jacqli Lv.9">愛の刺し方</span>.</strong> Locks Jacqli's true ending bond, awards <span class="term" data-jp="ダークローズ" data-en="Dark Rose" data-tip="Jacqli Lv.9 costume">ダークローズ</span> dress, and unlocks her ultimate <span class="term" data-jp="合体詩魔法" data-en="Dual Magic" data-tip="Dual Magic">合体詩魔法</span> potential including <span class="term" data-jp="ファンタスマゴリア" data-en="Phantasmagoria" data-tip="Ultimate beam spell">ファンタスマゴリア</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

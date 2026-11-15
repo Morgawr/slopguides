@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloche Cosmosphere - アルトネリコ2 Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="metafalss-layout">
+    <aside class="pastalia-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="topic-diamond" aria-hidden="true"></span>
+          <span class="rail-title-tag">Hymmnos Atlas</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="アルトネリコ2 世界に響く少女たちの創造詩" data-en="Ar tonelico II: Melody of Metafalica" data-tip="Ar tonelico II: Melody of Metafalica">アルトネリコ2 世界に響く少女たちの創造詩</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">PlayStation 2</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <a class="rail-nav-link" href="main-story.html">Main Story</a>
+        <div class="rail-nav-label">Cosmospheres &amp; I.P.D.</div>
+        <a class="rail-nav-link" href="cosmosphere-luca.html">Luca CS</a>
+        <a class="rail-nav-link active" href="cosmosphere-cloche.html">Cloche CS</a>
+        <a class="rail-nav-link" href="cosmosphere-jacqli.html">Jacqli CS</a>
+        <a class="rail-nav-link" href="ipd-tracker.html">I.P.D. 100</a>
+        <div class="rail-nav-label">Systems &amp; Data</div>
+        <a class="rail-nav-link" href="builds-party.html">Party Builds</a>
+        <a class="rail-nav-link" href="mechanics.html">Mechanics</a>
+        <a class="rail-nav-link" href="exploits.html">Exploits</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="metafalss-stage">
+      <div class="page-header">
+        <h1>Cloche Cosmosphere</h1>
+      </div>
+
+      <div class="grid-main-side">
+        <div>
+          <div class="char-banner">
+            <img class="char-portrait" src="resources/characters/cloche.jpg" alt="Cloche Leythal Pastalia portrait">
+            <div class="char-banner-info">
+              <h2><span class="term" data-jp="クローシェ・レーテル・パスタリエ" data-en="Cloche Leythal Pastalia" data-tip="Cloche Leythal Pastalia">クローシェ・レーテル・パスタリエ</span></h2>
+              <p>
+                Holy Maiden of <span class="term" data-jp="大鐘堂" data-en="Grand Bell" data-tip="Grand Bell">大鐘堂</span> whose pride conceals intense isolation. Unlike standard nine-stage dives, Cloche features branching Lv.4 pathways (<span class="term" data-jp="リドゥチャーム" data-en="Redo Charm" data-tip="Revisit node item">リドゥチャーム</span>) and a split Level 6 (Lv.6 plus Lv.6-R) yielding distinct costumes and Topics.
+              </p>
+            </div>
+          </div>
+
+          <div class="spec-panel spec-panel-violet">
+            <div class="spec-panel-head">Revisit Items &middot; Redo Charm &amp; Lv.6-R</div>
+            <div class="spec-panel-body">
+              <p>
+                Keep <span class="term" data-jp="リドゥチャーム" data-en="Redo Charm" data-tip="Allows diving past branch choices">リドゥチャーム</span> charges stocked for Lv.4 and Lv.6. Re-entering Lv.6-R <span class="term" data-jp="共心周波数" data-en="Resonant Heart Frequency" data-tip="Cloche Lv.6-R">共心周波数</span> awards costume <span class="term" data-jp="プリティヴィオール" data-en="Pretty Viol" data-tip="Cloche Lv.6-R costume">プリティヴィオール</span> that is otherwise skipped on single-pass dives.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <figure class="screen-card">
+          <img src="resources/screens/cosmo_grid.jpg" alt="Cosmosphere Grid map showing dive nodes and Redo Charm gates">
+          <figcaption>The <span class="term" data-jp="コスモスフィア" data-en="Cosmosphere" data-tip="Cosmosphere">コスモスフィア</span> gate grid tracks cleared stages, Trauma locks, and <span class="term" data-jp="リドゥチャーム" data-en="Redo Charm" data-tip="Redo Charm">リドゥチャーム</span> branches.</figcaption>
+        </figure>
+      </div>
+
+      <div class="completion-bar-wrap" data-counter-label="Cloche Stages Cleared">
+        <div class="completion-meta">
+          <span class="completion-text">Cloche Stages Cleared: 0/10 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+      </div>
+
+      <div class="step-block">
+        <h3>Cosmosphere Levels Lv.1 &ndash; Lv.9 (incl. Lv.6-R)</h3>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csc-1">
+            <div class="check-body">
+              <strong>Lv.1 <span class="term" data-jp="灯しビトの夜" data-en="Night of the Torchbearer" data-tip="Cloche Lv.1">灯しビトの夜</span>.</strong> Opens early upon meeting Cloche. Introduces her harsh exterior, Red burst baseline magic, and <span class="term" data-jp="スタンダード" data-en="Standard" data-tip="Default outfit">スタンダード</span> dress.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csc-2">
+            <div class="check-body">
+              <strong>Lv.2 <span class="term" data-jp="マネキ青春ノゴトシ" data-en="Like Imitation Youth" data-tip="Cloche Lv.2">マネキ青春ノゴトシ</span>.</strong> School life simulation uncovering her craving for normal peers. Awards costume <span class="term" data-jp="モガスタイル" data-en="Moga Style" data-tip="Cloche Lv.2 costume">モガスタイル</span>.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csc-3">
+            <div class="check-body">
+              <strong>Lv.3 <span class="term" data-jp="ホウラク！？" data-en="Collapse?!" data-tip="Cloche Lv.3">ホウラク！？</span>.</strong> Focuses on collapsing societal expectations and unlocks offensive Song Magic tiers.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csc-4">
+            <div class="check-body">
+              <strong>Lv.4 <span class="term" data-jp="叫ぶ優等生" data-en="Screaming Honor Student" data-tip="Cloche Lv.4">叫ぶ優等生</span>.</strong> Clear both choice branches via <span class="term" data-jp="リドゥチャーム" data-en="Redo Charm" data-tip="Redo Charm">リドゥチャーム</span> to gather full Talk Topics and earn <span class="term" data-jp="メタモル委員長" data-en="Metamol Prez" data-tip="Cloche Lv.4 costume">メタモル委員長</span>.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csc-5">
+            <div class="check-body">
+              <strong>Lv.5 <span class="term" data-jp="はざまの散歩道" data-en="Promenade Between Realms" data-tip="Cloche Lv.5">はざまの散歩道</span>.</strong> Holds Cloche's <span class="term" data-jp="パラダイムシフト" data-en="Paradigm Shift" data-tip="Route lock">パラダイムシフト</span> decision point. Confirming unlocks deep levels and <span class="term" data-jp="愛染吉野" data-en="Aizen Yoshino" data-tip="Cloche Lv.5 costume">愛染吉野</span>.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csc-6">
+            <div class="check-body">
+              <strong>Lv.6 <span class="term" data-jp="恥僻放水" data-en="Release of Secret Shame" data-tip="Cloche Lv.6">恥僻放水</span>.</strong> Main branch following Paradigm Shift. Rewards costume <span class="term" data-jp="ヴィクティムペイン" data-en="Victim Pain" data-tip="Cloche Lv.6 costume">ヴィクティムペイン</span>.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csc-7">
+            <div class="check-body">
+              <strong>Lv.6-R <span class="term" data-jp="共心周波数" data-en="Resonant Heart Frequency" data-tip="Cloche Lv.6-R">共心周波数</span>.</strong> Alternate Lv.6 branch accessed with <span class="term" data-jp="リドゥチャーム" data-en="Redo Charm" data-tip="Redo Charm">リドゥチャーム</span>. Awards <span class="term" data-jp="プリティヴィオール" data-en="Pretty Viol" data-tip="Cloche Lv.6-R costume">プリティヴィオール</span> and bonus character dialogue.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csc-8">
+            <div class="check-body">
+              <strong>Lv.7 <span class="term" data-jp="黒いお花が咲く日" data-en="Day the Black Flowers Bloom" data-tip="Cloche Lv.7">黒いお花が咲く日</span>.</strong> Cloche Route exclusive. Confronts her suppressed darkness and unlocks costume <span class="term" data-jp="ハルマゲドン" data-en="Harmagedon" data-tip="Cloche Lv.7 costume">ハルマゲドン</span>.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csc-9">
+            <div class="check-body">
+              <strong>Lv.8 <span class="term" data-jp="ＲＥＳＥＴ" data-en="RESET" data-tip="Cloche Lv.8">ＲＥＳＥＴ</span>.</strong> Cloche Route exclusive during Phase 4. Clear trauma gates to obtain fluffy costume <span class="term" data-jp="ふわりあ" data-en="Fuwaria" data-tip="Cloche Lv.8 costume">ふわりあ</span>.
+            </div>
+          </li>
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="csc-10">
+            <div class="check-body">
+              <strong>Lv.9 <span class="term" data-jp="全ての愛抱きしめて" data-en="Embracing All Love" data-tip="Cloche Lv.9">全ての愛抱きしめて</span>.</strong> Final vow granting <span class="term" data-jp="ホワイティリス" data-en="White Iris" data-tip="Cloche Lv.9 bridal costume">ホワイティリス</span> bridal attire and endgame Red Hymmnos output. Extra costume <span class="term" data-jp="ペペナ" data-en="Pepena" data-tip="Infelsphere costume">ペペナ</span> unlocks via <span class="term" data-jp="インフェルスフィア" data-en="Infelsphere" data-tip="Infelsphere">インフェルスフィア</span> Lv.2.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>
