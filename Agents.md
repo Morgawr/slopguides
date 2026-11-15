@@ -227,7 +227,16 @@ them in the text as much as possible whenever those skills/items are
 referenced to make it easier to read.
 
 For each game, apply a style/layout/CSS/color scheme that matches the vibes of
-that specific game.
+that specific game. You can do this by looking at screenshots of the game (sites
+like vndb can help for visual novels specifically) and try to match the color
+palette, UI layout (rounded vs square style, floaty vs fixed, etc) of the
+in-game menus, and also the font choices as closely as possible. Do not just
+assume a style based on the game's name, you MUST look at screenshots to make an
+informed choice.
+
+In case of visual novels, you should add a picture of each character/heroine in
+the page related to that character's individual route. You can usually find
+those pictures from the vndb page for that VN.
 
 Do NOT use "callout boxes" (labels with a left-border accent). Ever.
 

@@ -1,0 +1,747 @@
+/* ==========================================================================
+   Nijuuei (二重影) - Edo Woodcut Frame & Crimson Talisman UI
+   Modeled directly on the game's dark bamboo-lattice outer stage,
+   beveled stone/wood viewport with corner brackets, blood-crimson gradient
+   dialogue bar, stark red/black combat panels, and Mincho typography.
+   ========================================================================== */
+
+:root {
+  --void-black: #050404;
+  --stage-obsidian: #110d0d;
+  --panel-charcoal: #181312;
+  --panel-raised: #211a18;
+  --frame-wood: #7d6b58;
+  --frame-wood-dim: #463b30;
+  --talisman-crimson: #871611;
+  --talisman-crimson-bright: #b3221a;
+  --talisman-dark: #2e0806;
+  --combat-red: #b81d15;
+  --bone-ivory: #efe7db;
+  --bone-muted: #b7aa99;
+  --antique-ochre: #c69c5b;
+  --seal-jade: #3c694b;
+  --seal-jade-bg: #122017;
+  --font-mincho: "Noto Serif JP", "Yu Mincho", "Hiragino Mincho ProN", Georgia, "Times New Roman", serif;
+  --font-body: "Noto Serif JP", "Hiragino Mincho ProN", Georgia, serif;
+  --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans JP", sans-serif;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 20px 16px 76px;
+  background-color: var(--void-black);
+  background-image:
+    repeating-linear-gradient(
+      60deg,
+      rgba(95, 22, 18, 0.14) 0px,
+      rgba(95, 22, 18, 0.14) 2px,
+      transparent 2px,
+      transparent 34px
+    ),
+    repeating-linear-gradient(
+      -60deg,
+      rgba(48, 72, 54, 0.12) 0px,
+      rgba(48, 72, 54, 0.12) 2px,
+      transparent 2px,
+      transparent 34px
+    );
+  color: var(--bone-ivory);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+a {
+  color: #e07a68;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f4a48f;
+  text-decoration: underline;
+}
+
+/* Outer Framed Viewport (Matches Nijuuei's Double-Beveled Wood/Stone Frame) */
+.nijuuei-stage {
+  max-width: 1180px;
+  margin: 0 auto;
+  background-color: var(--stage-obsidian);
+  border: 3px solid var(--frame-wood);
+  outline: 1px solid var(--frame-wood-dim);
+  outline-offset: -7px;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.9);
+  position: relative;
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+}
+
+/* Carved Corner Bracket Accents */
+.nijuuei-stage::before,
+.nijuuei-stage::after {
+  content: "";
+  position: fixed;
+  pointer-events: none;
+  display: none;
+}
+
+/* Left Vertical Edo Scroll Rail */
+.scroll-rail {
+  background: linear-gradient(180deg, #16100f 0%, #0d0909 100%);
+  border-right: 2px solid var(--frame-wood-dim);
+  padding: 18px 14px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.rail-seal-head {
+  border: 1px solid var(--frame-wood);
+  background: linear-gradient(180deg, #270908 0%, #120707 100%);
+  padding: 12px 10px;
+  text-align: center;
+  position: relative;
+}
+
+.rail-seal-head::before,
+.rail-seal-head::after {
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  border: 1px solid var(--antique-ochre);
+}
+
+.rail-seal-head::before {
+  top: 3px;
+  left: 3px;
+  border-right: 0;
+  border-bottom: 0;
+}
+
+.rail-seal-head::after {
+  bottom: 3px;
+  right: 3px;
+  border-left: 0;
+  border-top: 0;
+}
+
+.repo-back {
+  display: inline-block;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--bone-muted);
+  border-bottom: 1px solid var(--frame-wood-dim);
+  padding-bottom: 2px;
+  margin-bottom: 8px;
+}
+
+.repo-back:hover {
+  color: var(--antique-ochre);
+  text-decoration: none;
+}
+
+.guide-brand {
+  display: block;
+  font-family: var(--font-mincho);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  color: #f6efe4;
+}
+
+.guide-brand:hover {
+  color: var(--antique-ochre);
+  text-decoration: none;
+}
+
+.guide-platform {
+  display: block;
+  margin-top: 4px;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  color: var(--antique-ochre);
+  letter-spacing: 0.05em;
+}
+
+.rail-nav-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.rail-group-label {
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--bone-muted);
+  padding: 6px 6px 2px;
+  border-bottom: 1px solid #2d241f;
+  margin-bottom: 2px;
+}
+
+.guide-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.guide-nav a {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 9px;
+  font-family: var(--font-mincho);
+  font-size: 0.9rem;
+  color: #d6c9b8;
+  border: 1px solid transparent;
+  transition: background-color 0.12s ease, border-color 0.12s ease, color 0.12s ease;
+}
+
+.guide-nav a::before {
+  content: "\25C6";
+  font-size: 0.62rem;
+  color: var(--frame-wood);
+  flex-shrink: 0;
+}
+
+.guide-nav a:hover {
+  background-color: #1f1413;
+  border-color: var(--frame-wood-dim);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.guide-nav a:hover::before {
+  color: var(--talisman-crimson-bright);
+}
+
+.guide-nav a.active {
+  background: linear-gradient(90deg, #54100d 0%, #1d0908 100%);
+  border-color: var(--frame-wood);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.guide-nav a.active::before {
+  color: var(--antique-ochre);
+}
+
+/* Main Stage Pane */
+.stage-content {
+  padding: 24px 28px 40px;
+  min-width: 0;
+}
+
+/* Page Title Banner (Crimson Talisman Bar) */
+.page-header {
+  background: linear-gradient(90deg, #0d0505 0%, #6d1410 30%, #871611 50%, #4b0c09 80%, #0d0505 100%);
+  border-top: 2px solid var(--frame-wood);
+  border-bottom: 2px solid var(--frame-wood);
+  padding: 12px 18px;
+  margin-bottom: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  position: relative;
+}
+
+.page-header::before,
+.page-header::after {
+  content: "\5370";
+  font-family: var(--font-mincho);
+  font-size: 0.78rem;
+  color: var(--antique-ochre);
+  background-color: #090606;
+  border: 1px solid var(--frame-wood);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.page-header h1 {
+  margin: 0;
+  flex: 1;
+  text-align: center;
+  font-family: var(--font-mincho);
+  font-size: 1.55rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #fdf6ec;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.85);
+}
+
+/* Route Heroine Showcase Card (Framed Portrait + Route Summary) */
+.heroine-stage {
+  display: grid;
+  grid-template-columns: 184px minmax(0, 1fr);
+  gap: 18px;
+  background-color: var(--panel-charcoal);
+  border: 2px solid var(--frame-wood);
+  outline: 1px solid var(--frame-wood-dim);
+  outline-offset: -5px;
+  padding: 14px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.portrait-frame {
+  border: 2px solid var(--frame-wood);
+  background-color: #090707;
+  padding: 4px;
+  position: relative;
+}
+
+.portrait-frame img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.portrait-caption {
+  margin-top: 5px;
+  text-align: center;
+  font-family: var(--font-mincho);
+  font-size: 0.86rem;
+  color: var(--antique-ochre);
+  letter-spacing: 0.06em;
+}
+
+.heroine-brief p {
+  margin: 0 0 10px;
+}
+
+.heroine-brief p:last-child {
+  margin-bottom: 0;
+}
+
+.lead-intro {
+  font-size: 0.98rem;
+  color: var(--bone-ivory);
+  margin: 0 0 16px;
+}
+
+/* Section Banner (Mirrors In-Game Red Gradient Dialogue Window) */
+.section-header {
+  margin: 28px 0 12px;
+  padding: 7px 14px;
+  background: linear-gradient(90deg, #4b0d0a 0%, #240908 65%, transparent 100%);
+  border-top: 1px solid var(--frame-wood);
+  border-bottom: 1px solid var(--frame-wood-dim);
+  font-family: var(--font-mincho);
+  font-size: 1.16rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #f8efe4;
+}
+
+.section-intro {
+  margin: 0 0 14px;
+  color: var(--bone-muted);
+}
+
+/* Table of Contents */
+.toc-box {
+  background-color: var(--panel-charcoal);
+  border: 1px solid var(--frame-wood);
+  padding: 10px 16px;
+  margin-bottom: 20px;
+}
+
+.toc-title {
+  font-family: var(--font-ui);
+  font-weight: 700;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--antique-ochre);
+  margin-bottom: 6px;
+}
+
+.toc-list {
+  margin: 0;
+  padding-left: 18px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 24px;
+  font-size: 0.9rem;
+}
+
+/* Progress Bar */
+.progress-banner {
+  background-color: var(--panel-charcoal);
+  border: 1px solid var(--frame-wood);
+  padding: 10px 14px;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-family: var(--font-ui);
+}
+
+.progress-text {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--bone-ivory);
+}
+
+.progress-track {
+  flex: 1 1 200px;
+  height: 9px;
+  background-color: #090707;
+  border: 1px solid var(--frame-wood-dim);
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, var(--talisman-crimson) 0%, var(--talisman-crimson-bright) 100%);
+  transition: width 0.2s ease;
+}
+
+.progress-reset {
+  background: #100c0b;
+  border: 1px solid var(--frame-wood-dim);
+  color: var(--bone-muted);
+  font-size: 0.76rem;
+  padding: 3px 10px;
+  cursor: pointer;
+}
+
+.progress-reset:hover {
+  border-color: var(--talisman-crimson-bright);
+  color: #ffffff;
+}
+
+/* Woodcut Framed Panels (No Left-Border Callout Boxes) */
+.spec-panel {
+  background-color: var(--panel-charcoal);
+  border: 2px solid var(--frame-wood-dim);
+  margin: 16px 0;
+}
+
+.spec-panel-vermilion {
+  border-color: var(--talisman-crimson);
+  background: linear-gradient(180deg, #1d0c0b 0%, #130b0b 100%);
+}
+
+.spec-panel-head {
+  background: linear-gradient(90deg, var(--talisman-crimson) 0%, #3a0b09 100%);
+  color: #fdf6ec;
+  padding: 7px 14px;
+  font-family: var(--font-mincho);
+  font-weight: 700;
+  font-size: 0.92rem;
+  letter-spacing: 0.04em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  border-bottom: 1px solid var(--frame-wood-dim);
+}
+
+.spec-panel-body {
+  padding: 12px 14px;
+  font-size: 0.94rem;
+}
+
+/* Combat Panel (Stark Red/Black Woodcut Style from Battle Screenshots) */
+.combat-panel {
+  background-color: #090505;
+  border: 2px solid var(--combat-red);
+  padding: 10px 14px;
+  margin-top: 8px;
+}
+
+.combat-panel-title {
+  display: inline-block;
+  background-color: var(--combat-red);
+  color: #ffffff;
+  font-family: var(--font-mincho);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 1px 8px;
+  margin-bottom: 6px;
+}
+
+/* Hub Cards Grid */
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin-bottom: 18px;
+}
+
+.hub-card {
+  background-color: var(--panel-charcoal);
+  border: 1px solid var(--frame-wood-dim);
+  border-top: 2px solid var(--frame-wood);
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.hub-card:hover {
+  border-color: var(--frame-wood);
+  border-top-color: var(--talisman-crimson-bright);
+  background-color: var(--panel-raised);
+}
+
+.hub-card h3 {
+  margin: 0 0 6px;
+  font-size: 1.03rem;
+  font-family: var(--font-mincho);
+  letter-spacing: 0.03em;
+}
+
+.hub-card p {
+  margin: 0;
+  font-size: 0.89rem;
+  color: var(--bone-muted);
+}
+
+.hub-card-meta {
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--antique-ochre);
+  border-top: 1px solid #2e2621;
+  padding-top: 8px;
+}
+
+/* Tables */
+.prima-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 12px 0 18px;
+  background-color: var(--panel-charcoal);
+  font-size: 0.9rem;
+}
+
+.prima-table th,
+.prima-table td {
+  border: 1px solid var(--frame-wood-dim);
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.prima-table th {
+  background: linear-gradient(180deg, #4b100d 0%, #260908 100%);
+  color: #fdf6ec;
+  font-family: var(--font-mincho);
+  font-weight: 700;
+}
+
+.prima-table tr:nth-child(even) td {
+  background-color: #151110;
+}
+
+/* Choice Checklists (Styled with ◆ Diamonds like In-Game Action Choices) */
+.checklist {
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.check-item {
+  background-color: var(--panel-charcoal);
+  border: 1px solid var(--frame-wood-dim);
+  padding: 10px 12px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.check-item:hover {
+  border-color: var(--frame-wood);
+}
+
+.check-item.checked {
+  background-color: var(--seal-jade-bg);
+  border-color: var(--seal-jade);
+}
+
+.check-item input[type="checkbox"] {
+  margin-top: 4px;
+  width: 16px;
+  height: 16px;
+  accent-color: var(--talisman-crimson-bright);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.check-body {
+  flex: 1;
+}
+
+.check-date {
+  font-family: var(--font-mincho);
+  font-weight: 700;
+  color: var(--antique-ochre);
+  margin-right: 8px;
+}
+
+.check-date::before {
+  content: "\25C6\0020";
+  color: var(--talisman-crimson-bright);
+  font-size: 0.8em;
+}
+
+.check-note {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.85rem;
+  color: var(--bone-muted);
+  margin-top: 4px;
+}
+
+/* Save Marker Block */
+.save-marker {
+  background: linear-gradient(90deg, #271a12 0%, #19120e 100%);
+  border: 1px solid var(--antique-ochre);
+  padding: 9px 13px;
+  font-family: var(--font-ui);
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #f6e7ce;
+  margin: 12px 0;
+}
+
+/* Spoiler Mask */
+.spoiler {
+  background-color: #060404;
+  color: transparent;
+  padding: 1px 6px;
+  cursor: pointer;
+  user-select: none;
+  border-bottom: 1px dotted var(--talisman-crimson-bright);
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.spoiler:hover {
+  background-color: #240c0a;
+}
+
+.spoiler.revealed {
+  background-color: #2b211d;
+  color: var(--bone-ivory);
+  user-select: text;
+  cursor: text;
+}
+
+/* Term & Tooltip */
+.term {
+  border-bottom: 1px dotted #c67c6e;
+  cursor: help;
+}
+
+.tooltip-float {
+  position: fixed;
+  z-index: 9999;
+  background-color: #0a0707;
+  color: #fbf4ea;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  padding: 4px 9px;
+  border: 1px solid var(--antique-ochre);
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease;
+  max-width: 280px;
+}
+
+.tooltip-float.visible {
+  opacity: 1;
+}
+
+/* Floating Language Toggle */
+.lang-toggle-float {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 9000;
+  background: linear-gradient(180deg, #3c0c0a 0%, #140808 100%);
+  color: var(--bone-muted);
+  border: 2px solid var(--frame-wood);
+  padding: 7px 12px;
+  font-family: var(--font-ui);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.75);
+}
+
+.lang-toggle-float:hover {
+  border-color: var(--antique-ochre);
+}
+
+.lang-opt.active {
+  color: var(--antique-ochre);
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 860px) {
+  body {
+    padding: 0 0 68px;
+  }
+  .nijuuei-stage {
+    grid-template-columns: 1fr;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+  }
+  .scroll-rail {
+    border-right: 0;
+    border-bottom: 2px solid var(--frame-wood-dim);
+    padding: 12px 14px;
+  }
+  .guide-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+  }
+  .stage-content {
+    padding: 16px 14px 36px;
+  }
+  .heroine-stage {
+    grid-template-columns: 1fr;
+  }
+  .portrait-frame {
+    max-width: 190px;
+    margin: 0 auto;
+  }
+  .page-header h1 {
+    font-size: 1.28rem;
+  }
+}

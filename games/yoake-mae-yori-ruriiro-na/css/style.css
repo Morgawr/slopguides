@@ -1,26 +1,30 @@
 /* ==========================================================================
-   Yoake Mae yori Ruriiro na - Guide Stylesheet
-   Palette: Lapis Lazuli Twilight (#152042), Dawn Gold (#c89b3c), Moonlit Ivory (#faf8f2)
+   Yoake Mae yori Ruriiro na (夜明け前より瑠璃色な) - Lunar Glass & Silver Filigree UI
+   Modeled directly on the game's translucent twilight-indigo dialog panels,
+   double silver filigree hairlines, faceted sapphire jewel dividers,
+   crescent-moon emblem, bevelled silver system buttons, and dawn-rose hover.
    ========================================================================== */
 
 :root {
-  --lapis-deep: #121b38;
-  --lapis-main: #1b2a54;
-  --lapis-mid: #273b73;
-  --lapis-soft: #eef2fa;
-  --dawn-gold: #c89b3c;
-  --dawn-gold-bright: #e2b857;
-  --dawn-gold-pale: #fdf8eb;
-  --moon-ivory: #faf8f2;
-  --paper-white: #ffffff;
-  --ink-main: #1e222e;
-  --ink-muted: #52586a;
-  --rule-light: #d8d4c8;
-  --rule-mid: #b3ae9e;
-  --crimson-warn: #7e252e;
-  --crimson-pale: #fbf2f3;
-  --emerald-ok: #1e5942;
-  --emerald-pale: #eef7f3;
+  --night-void: #0a112b;
+  --twilight-indigo: #17275a;
+  --ruri-azure: #253f85;
+  --dawn-horizon: #3d63ad;
+  --glass-panel: rgba(20, 31, 74, 0.84);
+  --glass-card: rgba(29, 44, 98, 0.66);
+  --glass-row: rgba(34, 52, 112, 0.58);
+  --silver-line: rgba(220, 233, 255, 0.72);
+  --silver-soft: rgba(178, 202, 245, 0.35);
+  --sapphire-jewel: #2f7ae5;
+  --sapphire-glow: #88b8ff;
+  --dawn-rose: #ffabc0;
+  --dawn-gold: #f0cf85;
+  --star-white: #f4f7ff;
+  --mist-silver: #c8d6f0;
+  --emerald-clear: rgba(24, 72, 68, 0.66);
+  --emerald-border: rgba(132, 214, 194, 0.58);
+  --font-ui: "Noto Sans JP", "Hiragino Kaku Gothic ProN", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-serif: Georgia, "Times New Roman", "Noto Serif JP", serif;
 }
 
 *, *::before, *::after {
@@ -33,118 +37,188 @@ html {
 
 body {
   margin: 0;
-  padding: 0;
-  background-color: var(--moon-ivory);
-  color: var(--ink-main);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", "Hiragino Kaku Gothic ProN", sans-serif;
+  padding: 0 16px 76px;
+  min-height: 100vh;
+  background-color: var(--night-void);
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(168, 206, 255, 0.24) 0%, rgba(168, 206, 255, 0.06) 18%, transparent 40%),
+    radial-gradient(circle at 86% 14%, rgba(255, 198, 224, 0.14) 0%, transparent 32%),
+    linear-gradient(170deg, #091029 0%, #16265a 42%, #243f82 78%, #3456a0 100%);
+  background-attachment: fixed;
+  color: var(--star-white);
+  font-family: var(--font-ui);
   font-size: 15px;
   line-height: 1.65;
 }
 
 a {
-  color: var(--lapis-mid);
+  color: #a6cbff;
   text-decoration: none;
 }
 
 a:hover {
-  color: #8f6714;
+  color: var(--dawn-rose);
   text-decoration: underline;
 }
 
-/* Masthead & Navigation */
+/* Top Lunar Command Masthead (Mirrors Yoake Bottom System Bar & Crescent Logo) */
 .dawn-masthead {
-  background-color: var(--lapis-deep);
-  color: #f4f1e8;
-  border-bottom: 3px solid var(--dawn-gold);
+  max-width: 1060px;
+  margin: 18px auto 16px;
+  background: linear-gradient(180deg, rgba(28, 43, 94, 0.86) 0%, rgba(18, 28, 66, 0.9) 100%);
+  border: 1px solid var(--silver-line);
+  outline: 1px solid var(--silver-soft);
+  outline-offset: -5px;
+  padding: 14px 20px 14px;
+  box-shadow: 0 10px 32px rgba(6, 10, 30, 0.55);
+  backdrop-filter: blur(10px);
+  position: relative;
 }
 
-.masthead-inner {
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 14px 20px 0;
+.dawn-masthead::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -6px;
+  width: 11px;
+  height: 11px;
+  transform: translateX(-50%) rotate(45deg);
+  background: radial-gradient(circle at 35% 35%, #b8dbff 0%, var(--sapphire-jewel) 55%, #122d68 100%);
+  border: 1px solid #eef5ff;
 }
 
 .masthead-top {
   display: flex;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 12px;
   padding-bottom: 12px;
-  border-bottom: 1px solid rgba(200, 155, 60, 0.3);
+  border-bottom: 1px solid var(--silver-soft);
 }
 
 .brand-group {
   display: flex;
-  align-items: baseline;
+  align-items: center;
   flex-wrap: wrap;
   gap: 14px;
 }
 
-.repo-back {
-  color: #d4cbb8;
-  font-size: 0.82rem;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  border: 1px solid rgba(212, 203, 184, 0.35);
-  padding: 2px 8px;
+/* Crescent Moon Emblem */
+.crescent-emblem {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  box-shadow: inset 9px -3px 0 0 #d9e8ff;
+  filter: drop-shadow(0 0 6px rgba(154, 198, 255, 0.7));
+  flex-shrink: 0;
 }
 
-.repo-back:hover {
-  color: #ffffff;
-  border-color: var(--dawn-gold-bright);
-  text-decoration: none;
+.brand-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
 }
 
 .guide-brand {
   color: #ffffff;
-  font-family: Georgia, "Times New Roman", "Noto Serif JP", serif;
-  font-size: 1.25rem;
+  font-family: var(--font-serif);
+  font-size: 1.28rem;
   font-weight: 700;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.04em;
+  text-shadow: 0 1px 6px rgba(136, 184, 255, 0.45);
 }
 
 .guide-brand:hover {
-  color: var(--dawn-gold-bright);
+  color: var(--dawn-rose);
   text-decoration: none;
 }
 
-.guide-platform {
-  font-size: 0.82rem;
-  color: var(--dawn-gold-bright);
+.guide-tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 0.78rem;
+  color: var(--mist-silver);
   letter-spacing: 0.03em;
+}
+
+.masthead-meta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.guide-platform {
+  font-size: 0.78rem;
+  color: var(--dawn-gold);
+  letter-spacing: 0.04em;
+}
+
+/* Bevelled Silver-Glass Button Style (Save/Load/System Bar Aesthetic) */
+.repo-back {
+  display: inline-block;
+  background: linear-gradient(180deg, #ffffff 0%, #dce6f9 55%, #b9cae8 100%);
+  color: #24376d;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  padding: 3px 10px;
+  box-shadow: 0 1px 4px rgba(5, 10, 32, 0.45);
+}
+
+.repo-back:hover {
+  background: linear-gradient(180deg, #fff5f8 0%, #f9dce5 55%, #ebb8c8 100%);
+  color: #5c1f35;
+  text-decoration: none;
 }
 
 .guide-nav {
   display: flex;
   flex-wrap: wrap;
-  gap: 2px 14px;
-  padding: 8px 0 10px;
-  font-size: 0.86rem;
+  gap: 6px;
+  padding-top: 11px;
 }
 
 .guide-nav a {
-  color: #d7ddef;
-  padding: 3px 0;
-  border-bottom: 2px solid transparent;
+  background: linear-gradient(180deg, rgba(240, 246, 255, 0.94) 0%, rgba(206, 220, 246, 0.9) 60%, rgba(173, 194, 232, 0.92) 100%);
+  color: #26396e;
+  border: 1px solid rgba(255, 255, 255, 0.9);
+  border-radius: 4px;
+  padding: 3px 10px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  box-shadow: 0 1px 3px rgba(8, 14, 40, 0.4);
+  transition: transform 0.1s ease, background 0.12s ease;
 }
 
 .guide-nav a:hover {
-  color: var(--dawn-gold-bright);
+  background: linear-gradient(180deg, #fff7fa 0%, #fbe1ea 60%, #f0c2d2 100%);
+  color: #631b35;
   text-decoration: none;
 }
 
 .guide-nav a.active {
+  background: linear-gradient(180deg, #3c64c4 0%, #243d85 100%);
   color: #ffffff;
-  font-weight: 600;
-  border-bottom-color: var(--dawn-gold-bright);
+  border-color: var(--dawn-gold);
+  box-shadow: 0 0 10px rgba(136, 184, 255, 0.45);
 }
 
-/* Main Sheet */
+/* Main Frosted Glass Sheet */
 .prima-sheet {
-  max-width: 1080px;
+  max-width: 1060px;
   margin: 0 auto;
-  padding: 24px 20px 72px;
+  background-color: var(--glass-panel);
+  border: 1px solid var(--silver-line);
+  outline: 1px solid var(--silver-soft);
+  outline-offset: -6px;
+  padding: 24px 28px 42px;
+  box-shadow: 0 14px 40px rgba(6, 10, 32, 0.62);
+  backdrop-filter: blur(12px);
+  position: relative;
 }
 
 .page-header {
@@ -155,52 +229,115 @@ a:hover {
   gap: 12px;
   padding-bottom: 10px;
   margin-bottom: 18px;
-  border-bottom: 2px solid var(--lapis-main);
+  border-bottom: 1px solid var(--silver-line);
+  position: relative;
+}
+
+.page-header::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 9px;
+  height: 9px;
+  transform: translateX(-50%) rotate(45deg);
+  background: radial-gradient(circle at 35% 35%, #b8dbff 0%, var(--sapphire-jewel) 60%, #122d68 100%);
+  border: 1px solid #eef5ff;
 }
 
 .page-header h1 {
   margin: 0;
-  font-family: Georgia, "Times New Roman", "Noto Serif JP", serif;
-  font-size: 1.7rem;
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
   font-weight: 700;
-  color: var(--lapis-deep);
+  color: #ffffff;
+  text-shadow: 0 1px 8px rgba(136, 184, 255, 0.4);
+}
+
+/* Heroine Portrait Lunar Frame (Matches Yoake Character Card) */
+.heroine-lunar-card {
+  display: grid;
+  grid-template-columns: 182px minmax(0, 1fr);
+  gap: 20px;
+  background-color: var(--glass-card);
+  border: 1px solid var(--silver-line);
+  outline: 1px solid var(--silver-soft);
+  outline-offset: -5px;
+  padding: 15px;
+  margin-bottom: 20px;
+  align-items: center;
+  position: relative;
+}
+
+.heroine-lunar-card::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -5px;
+  width: 9px;
+  height: 9px;
+  transform: translateX(-50%) rotate(45deg);
+  background: radial-gradient(circle at 35% 35%, #b8dbff 0%, var(--sapphire-jewel) 60%, #122d68 100%);
+  border: 1px solid #eef5ff;
+}
+
+.lunar-portrait-frame {
+  border: 1px solid var(--silver-line);
+  background: rgba(11, 18, 46, 0.72);
+  padding: 5px;
+}
+
+.lunar-portrait-frame img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.lunar-portrait-caption {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--dawn-gold);
 }
 
 .lead-intro {
-  font-size: 0.98rem;
-  color: var(--ink-main);
+  font-size: 0.97rem;
+  color: var(--star-white);
   margin: 0 0 14px;
 }
 
 .section-header {
-  margin: 28px 0 10px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid var(--dawn-gold);
-  font-family: Georgia, "Times New Roman", "Noto Serif JP", serif;
-  font-size: 1.24rem;
-  color: var(--lapis-deep);
+  margin: 28px 0 12px;
+  padding: 6px 12px;
+  background: linear-gradient(90deg, rgba(56, 87, 168, 0.48) 0%, rgba(28, 44, 96, 0.18) 80%, transparent 100%);
+  border-top: 1px solid var(--silver-soft);
+  border-bottom: 1px solid var(--silver-line);
+  font-family: var(--font-serif);
+  font-size: 1.2rem;
+  color: #ffffff;
 }
 
 .section-intro {
   margin: 0 0 14px;
-  color: var(--ink-main);
+  color: var(--mist-silver);
 }
 
 /* Table of Contents */
 .toc-box {
-  background-color: var(--paper-white);
-  border: 1px solid var(--rule-mid);
-  border-top: 3px solid var(--lapis-main);
+  background-color: var(--glass-card);
+  border: 1px solid var(--silver-line);
   padding: 12px 16px;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 
 .toc-title {
   font-weight: 700;
-  font-size: 0.88rem;
+  font-size: 0.82rem;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--lapis-main);
+  letter-spacing: 0.06em;
+  color: var(--dawn-gold);
   margin-bottom: 6px;
 }
 
@@ -215,9 +352,8 @@ a:hover {
 
 /* Progress Bar */
 .progress-banner {
-  background-color: var(--paper-white);
-  border: 1px solid var(--rule-mid);
-  border-top: 3px solid var(--dawn-gold);
+  background-color: var(--glass-card);
+  border: 1px solid var(--silver-line);
   padding: 10px 14px;
   margin-bottom: 18px;
   display: flex;
@@ -229,59 +365,61 @@ a:hover {
 
 .progress-text {
   font-weight: 700;
-  font-size: 0.92rem;
-  color: var(--lapis-deep);
+  font-size: 0.9rem;
+  color: #ffffff;
 }
 
 .progress-track {
   flex: 1 1 200px;
   height: 10px;
-  background-color: #e6e3d8;
-  border: 1px solid var(--rule-mid);
+  background-color: rgba(10, 16, 42, 0.82);
+  border: 1px solid var(--silver-soft);
+  border-radius: 5px;
   overflow: hidden;
 }
 
 .progress-fill {
   height: 100%;
   width: 0%;
-  background-color: var(--lapis-main);
+  background: linear-gradient(90deg, #4b89f0 0%, #9ec8ff 100%);
   transition: width 0.2s ease;
 }
 
 .progress-reset {
-  background: transparent;
-  border: 1px solid var(--rule-mid);
-  color: var(--ink-muted);
+  background: rgba(14, 22, 54, 0.72);
+  border: 1px solid var(--silver-soft);
+  border-radius: 4px;
+  color: var(--mist-silver);
   font-size: 0.78rem;
-  padding: 3px 9px;
+  padding: 3px 10px;
   cursor: pointer;
 }
 
 .progress-reset:hover {
-  border-color: var(--crimson-warn);
-  color: var(--crimson-warn);
+  border-color: var(--dawn-rose);
+  color: var(--dawn-rose);
 }
 
-/* Panels (Top/Bottom Bordered, Never Left-Border Callouts) */
+/* Glass Panels (Double Hairline, Never Left-Border Callouts) */
 .spec-panel {
-  background-color: var(--paper-white);
-  border: 1px solid var(--rule-mid);
-  border-top: 3px solid var(--lapis-main);
+  background-color: var(--glass-card);
+  border: 1px solid var(--silver-line);
+  outline: 1px solid var(--silver-soft);
+  outline-offset: -4px;
   margin: 16px 0;
+  position: relative;
 }
 
 .spec-panel-gold {
-  border-top-color: var(--dawn-gold);
-  background-color: var(--dawn-gold-pale);
+  border-color: rgba(240, 207, 133, 0.78);
 }
 
 .spec-panel-crimson {
-  border-top-color: var(--crimson-warn);
-  background-color: var(--crimson-pale);
+  border-color: rgba(255, 171, 192, 0.78);
 }
 
 .spec-panel-head {
-  background-color: var(--lapis-main);
+  background: linear-gradient(90deg, rgba(52, 82, 160, 0.8) 0%, rgba(28, 44, 96, 0.65) 100%);
   color: #ffffff;
   padding: 7px 14px;
   font-weight: 700;
@@ -291,14 +429,15 @@ a:hover {
   align-items: center;
   flex-wrap: wrap;
   gap: 8px;
+  border-bottom: 1px solid var(--silver-soft);
 }
 
 .spec-panel-gold .spec-panel-head {
-  background-color: #7c5c18;
+  background: linear-gradient(90deg, rgba(132, 102, 42, 0.85) 0%, rgba(74, 58, 28, 0.75) 100%);
 }
 
 .spec-panel-crimson .spec-panel-head {
-  background-color: var(--crimson-warn);
+  background: linear-gradient(90deg, rgba(136, 46, 72, 0.88) 0%, rgba(72, 26, 46, 0.78) 100%);
 }
 
 .spec-panel-body {
@@ -329,9 +468,9 @@ a:hover {
 }
 
 .hub-card {
-  background-color: var(--paper-white);
-  border: 1px solid var(--rule-mid);
-  border-top: 3px solid var(--lapis-main);
+  background-color: var(--glass-card);
+  border: 1px solid var(--silver-soft);
+  border-top: 2px solid var(--silver-line);
   padding: 14px;
   display: flex;
   flex-direction: column;
@@ -340,58 +479,59 @@ a:hover {
 }
 
 .hub-card:hover {
-  border-top-color: var(--dawn-gold);
-  background-color: #fdfcf8;
+  border-color: var(--silver-line);
+  border-top-color: var(--dawn-rose);
+  background-color: rgba(38, 58, 124, 0.76);
 }
 
 .hub-card h3 {
   margin: 0 0 6px;
   font-size: 1.03rem;
-  font-family: Georgia, "Times New Roman", "Noto Serif JP", serif;
+  font-family: var(--font-serif);
 }
 
 .hub-card p {
   margin: 0;
   font-size: 0.89rem;
-  color: var(--ink-muted);
+  color: var(--mist-silver);
 }
 
 .hub-card-meta {
   font-size: 0.82rem;
   font-weight: 700;
-  color: var(--lapis-main);
-  border-top: 1px solid var(--rule-light);
+  color: var(--dawn-gold);
+  border-top: 1px solid var(--silver-soft);
   padding-top: 8px;
 }
 
-/* Tables (Strictly for concise reference/comparison lists) */
+/* Tables */
 .prima-table {
   width: 100%;
   border-collapse: collapse;
   margin: 12px 0 18px;
-  background-color: var(--paper-white);
+  background-color: var(--glass-card);
   font-size: 0.9rem;
 }
 
 .prima-table th,
 .prima-table td {
-  border: 1px solid var(--rule-mid);
+  border: 1px solid var(--silver-soft);
   padding: 8px 10px;
   text-align: left;
   vertical-align: top;
 }
 
 .prima-table th {
-  background-color: var(--lapis-deep);
+  background: linear-gradient(180deg, rgba(48, 76, 152, 0.92) 0%, rgba(28, 44, 96, 0.95) 100%);
   color: #ffffff;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .prima-table tr:nth-child(even) td {
-  background-color: #f7f5ee;
+  background-color: rgba(20, 32, 74, 0.45);
 }
 
-/* Checklist Items */
+/* Choice Checklists (Styled after Yoake's Frosted Choice Box & 【Speaker】 Brackets) */
 .checklist {
   list-style: none;
   margin: 0 0 16px;
@@ -401,24 +541,32 @@ a:hover {
 }
 
 .check-item {
-  background-color: var(--paper-white);
-  border: 1px solid var(--rule-light);
+  background-color: var(--glass-row);
+  border: 1px solid var(--silver-soft);
   padding: 9px 12px;
   display: flex;
   align-items: flex-start;
   gap: 10px;
 }
 
+.check-item:hover {
+  border-color: var(--silver-line);
+}
+
+.check-item:hover .check-body {
+  color: #ffe3ec;
+}
+
 .check-item.checked {
-  background-color: var(--emerald-pale);
-  border-color: #a9d1be;
+  background-color: var(--emerald-clear);
+  border-color: var(--emerald-border);
 }
 
 .check-item input[type="checkbox"] {
-  margin-top: 3px;
+  margin-top: 4px;
   width: 16px;
   height: 16px;
-  accent-color: var(--lapis-main);
+  accent-color: var(--sapphire-jewel);
   cursor: pointer;
   flex-shrink: 0;
 }
@@ -429,33 +577,41 @@ a:hover {
 
 .check-date {
   font-weight: 700;
-  color: var(--lapis-main);
+  color: var(--sapphire-glow);
   margin-right: 6px;
+}
+
+.check-date::before {
+  content: "\3010";
+}
+
+.check-date::after {
+  content: "\3011";
 }
 
 .check-note {
   display: block;
   font-size: 0.85rem;
-  color: var(--ink-muted);
+  color: var(--mist-silver);
   margin-top: 2px;
 }
 
 /* Save Marker Block */
 .save-marker {
-  background-color: var(--lapis-soft);
-  border: 1px solid #b8c4e0;
-  padding: 7px 12px;
+  background: linear-gradient(90deg, rgba(44, 68, 138, 0.72) 0%, rgba(24, 38, 86, 0.72) 100%);
+  border: 1px solid var(--silver-line);
+  padding: 8px 12px;
   font-size: 0.88rem;
   font-weight: 600;
-  color: var(--lapis-deep);
-  margin: 10px 0;
+  color: #ffffff;
+  margin: 12px 0;
 }
 
 /* Spoiler Mask */
 .spoiler {
-  background-color: var(--lapis-deep);
+  background-color: #0b1332;
   color: transparent;
-  padding: 1px 5px;
+  padding: 1px 6px;
   cursor: pointer;
   user-select: none;
   border-bottom: 1px dotted var(--dawn-gold);
@@ -463,30 +619,30 @@ a:hover {
 }
 
 .spoiler:hover {
-  background-color: var(--lapis-mid);
+  background-color: #1f3374;
 }
 
 .spoiler.revealed {
-  background-color: #ebe6d8;
-  color: var(--ink-main);
+  background-color: rgba(45, 68, 136, 0.8);
+  color: #ffffff;
   user-select: text;
   cursor: text;
 }
 
 /* Term & Tooltip */
 .term {
-  border-bottom: 1px dotted var(--lapis-mid);
+  border-bottom: 1px dotted var(--sapphire-glow);
   cursor: help;
 }
 
 .tooltip-float {
   position: fixed;
   z-index: 9999;
-  background-color: var(--lapis-deep);
+  background-color: #0e1840;
   color: #ffffff;
   font-size: 0.8rem;
   padding: 4px 9px;
-  border: 1px solid var(--dawn-gold);
+  border: 1px solid var(--silver-line);
   pointer-events: none;
   opacity: 0;
   transition: opacity 0.12s ease;
@@ -503,10 +659,11 @@ a:hover {
   right: 18px;
   bottom: 18px;
   z-index: 9000;
-  background-color: var(--lapis-deep);
-  color: #d4cbb8;
-  border: 2px solid var(--dawn-gold);
-  padding: 7px 12px;
+  background: linear-gradient(180deg, #ffffff 0%, #dce6f9 55%, #b9cae8 100%);
+  color: #36497a;
+  border: 2px solid #ffffff;
+  border-radius: 18px;
+  padding: 6px 13px;
   font-size: 0.82rem;
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -514,27 +671,43 @@ a:hover {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  box-shadow: 0 3px 10px rgba(18, 27, 56, 0.3);
+  box-shadow: 0 4px 14px rgba(8, 14, 42, 0.55);
 }
 
 .lang-toggle-float:hover {
-  border-color: var(--dawn-gold-bright);
+  border-color: var(--dawn-rose);
 }
 
 .lang-opt.active {
-  color: var(--dawn-gold-bright);
+  color: #152b6e;
   text-decoration: underline;
 }
 
 /* Responsive */
-@media (max-width: 680px) {
-  .masthead-inner {
-    padding: 12px 14px 0;
+@media (max-width: 720px) {
+  body {
+    padding: 0 0 68px;
+  }
+  .dawn-masthead {
+    margin: 0 0 12px;
+    padding: 12px 14px;
+    border-left: 0;
+    border-right: 0;
   }
   .prima-sheet {
-    padding: 18px 14px 68px;
+    padding: 18px 14px 36px;
+    border-left: 0;
+    border-right: 0;
+    outline: none;
+  }
+  .heroine-lunar-card {
+    grid-template-columns: 1fr;
+  }
+  .lunar-portrait-frame {
+    max-width: 180px;
+    margin: 0 auto;
   }
   .page-header h1 {
-    font-size: 1.4rem;
+    font-size: 1.35rem;
   }
 }

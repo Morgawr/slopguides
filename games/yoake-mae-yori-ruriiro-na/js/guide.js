@@ -151,7 +151,9 @@
     var spoilers = document.querySelectorAll('.spoiler');
     for (var i = 0; i < spoilers.length; i++) {
       spoilers[i].setAttribute('title', 'Click to reveal spoiler');
-      spoilers[i].addEventListener('click', function () {
+      spoilers[i].addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
         this.classList.toggle('revealed');
       });
     }
