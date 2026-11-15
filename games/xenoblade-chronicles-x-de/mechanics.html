@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanics - XCX Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="blade-masthead">
+    <div class="masthead-inner">
+      <div class="masthead-top">
+        <div class="brand-group">
+          <a class="repo-back" href="../../index.html">All Guides</a>
+          <a class="guide-brand" href="index.html"><img class="ico" src="resources/icons/div_BLADE.png" alt="">Xenoblade Chronicles <span class="x-mark">X</span>: Definitive Edition</a>
+        </div>
+        <span class="guide-platform">Switch 2 / Switch</span>
+      </div>
+      <nav class="guide-nav" aria-label="Guide Sections">
+        <a href="index.html">Overview</a>
+        <a href="beginners-tips.html">Tips</a>
+        <a href="roadmap.html">Play Order</a>
+        <a href="missables.html">Missables</a>
+        <a href="main-story.html">Main Story</a>
+        <a href="affinity-missions.html">Affinity</a>
+        <a href="side-quests.html">Side Quests</a>
+        <a href="major-chains.html">Quest Chains</a>
+        <a href="build-cross.html">Cross Build</a>
+        <a href="builds-party.html">Party Builds</a>
+        <a href="builds-skells.html">Skell Builds</a>
+        <a href="mechanics.html" class="active">Mechanics</a>
+        <a href="exploits.html">Exploits</a>
+        <a href="collectibles-collectopedia.html">Collectopedia</a>
+        <a href="collectibles-frontiernav.html">FrontierNav</a>
+        <a href="collectibles-lobsters.html">Lobsters</a>
+        <a href="heart-to-hearts.html">Heart-to-Hearts</a>
+        <a href="credits.html">Credits</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="prima-sheet">
+
+    <div class="page-header">
+      <h1>Mechanics</h1>
+    </div>
+
+<p class="lead-intro">
+  Character level plays a surprisingly modest role in combat compared to how your cooldown rings, <span class="ico-term"><img class="ico" src="resources/icons/sv_overdrive.png" alt=""><span class="term" data-jp="O.C.ギア" data-en="Overdrive" data-tip="Overdrive">O.C.ギア</span></span> color chains, appendage multipliers, and defensive buffs interact. Understanding the handful of core systems on this page lets you turn ordinary store-bought equipment into a setup that comfortably handles Tyrants twenty levels higher than your party.
+</p>
+
+<div class="page-toolbar">
+  <div class="jump-links">
+    <a href="#cooldowns">Cooldowns</a>
+    <a href="#overdrive"><span class="term" data-jp="O.C.ギア" data-en="Overdrive" data-tip="Overdrive">O.C.ギア</span></a>
+    <a href="#appendages">Appendages</a>
+    <a href="#stats-defense">Stats &amp; Defense</a>
+    <a href="#skell-insurance"><span class="term" data-jp="ドール保険" data-en="Skell Insurance" data-tip="Skell Insurance">ドール保険</span></a>
+    <a href="#switch2">Switch 2</a>
+  </div>
+</div>
+
+    <h2 class="section-header" id="cooldowns"><span>Cooldowns</span></h2>
+<p class="section-intro">
+  Waiting an extra couple of seconds for an Art's outer green or white ring to fill multiplies its damage or buff potency dramatically, while <span class="term" data-jp="クイックリキャスト" data-en="Quick Cooldown" data-tip="Quick Cooldown">クイックリキャスト</span> lets you fire emergency skills on demand. Use the breakdown below to know when to hold an Art for maximum impact and when to spend green gauge energy.
+</p>
+
+<div class="prose-block">
+  <ul class="step-list">
+    <li><strong><span class="term" data-jp="通常リキャスト" data-en="Primary Cooldown" data-tip="Primary Cooldown">通常リキャスト</span></strong>. Base recharge ring after using an Art.</li>
+    <li><strong><span class="term" data-jp="ダブルリキャスト" data-en="Secondary Cooldown" data-tip="Secondary Cooldown">ダブルリキャスト</span></strong>. Green outer ring that charges ONLY while the character is actively holding the matching weapon type (Melee weapon drawn for Melee-weapon Arts. Ranged weapon drawn for Ranged-weapon Arts). Grants bonus damage, extra hits, or higher buff tiers (e.g., Ghostwalker Decoy IV -&gt; Decoy V).</li>
+    <li><strong><span class="term" data-jp="トリプルリキャスト" data-en="Tertiary Cooldown" data-tip="Tertiary Cooldown">トリプルリキャスト</span></strong>. White third ring available ONLY during ground <span class="ico-term"><img class="ico" src="resources/icons/sv_overdrive.png" alt=""><span class="term" data-jp="オーバークロックギア" data-en="Overdrive" data-tip="Overdrive">オーバークロックギア</span></span>. Charges automatically for ALL 8 Arts on the palette regardless of which weapon is currently drawn, granting massive extra multipliers or immediate recast.</li>
+    <li><strong><span class="term" data-jp="クイックリキャスト" data-en="Quick Cooldown" data-tip="Quick Cooldown">クイックリキャスト</span></strong>. Unlocked during Chapter 3 at <span class="term" data-jp="風波の要塞" data-en="Seaswept Base" data-tip="Seaswept Base">風波の要塞</span>. Press Y on any cooling-down Art to spend auxiliary energy from the segmented light-green gauge and fire the Art immediately. Pressing Y on an already-recharged Art consumes energy to immediately trigger its <span class="term" data-jp="ダブルリキャスト" data-en="Secondary Cooldown" data-tip="Secondary Cooldown">ダブルリキャスト</span>, or <span class="term" data-jp="トリプルリキャスト" data-en="Tertiary Cooldown" data-tip="Tertiary Cooldown">トリプルリキャスト</span> during Overdrive. Measured in auxiliary energy units: 1 unit = 1 second of remaining cooldown (rounded up). Each UI bar segment equals 20 units. Players start with 80 units (4 segments). Each of the 40 collectible <span class="term" data-jp="エネルギーストレージ" data-en="Energy Clips" data-tip="Energy Clips">エネルギーストレージ</span> adds +4 max units, up to a maximum cap of 240 units (12 segments). Cooldown-reduction traits like Secondary Accelerator reduce energy cost proportionally. Auxiliary energy stays fixed during standard combat (except in Time Attack / Point Attack with the toggle enabled), but refills 100% instantly every time combat ends. After completing <span class="term" data-jp="第13章 後編 英雄" data-en="Chapter 13 (Act 3)" data-tip="Chapter 13 (Act 3)">第13章 後編 英雄</span>, Quick Cooldown also unlocks for Skell combat at double energy cost (2 units per second of remaining cooldown), sharing the same gauge.</li>
+  </ul>
+</div>
+
+    <h2 class="section-header" id="overdrive"><span><span class="ico-term"><img class="ico" src="resources/icons/sv_overdrive.png" alt=""><span class="term" data-jp="オーバークロックギア" data-en="Overdrive" data-tip="Overdrive">オーバークロックギア</span></span></span></h2>
+
+<p class="section-intro">
+  Unlocked after Chapter 5, <span class="ico-term"><img class="ico" src="resources/icons/sv_overdrive.png" alt=""><span class="term" data-jp="O.C.ギア" data-en="Overdrive" data-tip="Overdrive">O.C.ギア</span></span> is the centerpiece of mid- and late-game ground combat, accelerating your cooldowns while scaling your damage up to 6x as the hit counter climbs toward 100. Learning which Art colors extend the timer and build TP turns a brief 25-second burst into an infinite loop that lasts the entire boss fight. Unlocked after completing <span class="term" data-jp="第5章　マ・ノンの民" data-en="Chapter 5" data-tip="Chapter 5">第5章　マ・ノンの民</span>. Costs 3,000 TP to activate, base duration is 25 seconds. Pressing the Overdrive button again at 3,000 TP before time runs out resets the base timer while keeping the current counter.
+</p>
+
+<div class="grid-2">
+  <div class="spec-panel">
+    <div class="spec-panel-head">Counter Scaling (0 to 100 Hits)</div>
+    <div class="spec-panel-body">
+      <div class="spec-row">
+        <span class="spec-key">Range</span>
+        <span class="spec-val">0 to 100 (+1 per hit landed by an Orange, Yellow, Purple, or healing Art).</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-key">Damage</span>
+        <span class="spec-val">1 + (0.05 * Counter), reaching 6.0x (+500%) damage at Counter = 100. Active when the counter color is Orange, Yellow, or Purple.</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-key">Recast Speed</span>
+        <span class="spec-val">2.5 + (0.05 * Counter), reaching 7.5x cooldown speed (750%) at Counter = 100.</span>
+      </div>
+      <div class="spec-row">
+        <span class="spec-key">Debuff Cut</span>
+        <span class="spec-val">Reduces enemy debuff resistance by -Counter (up to -100 at max counter).</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="spec-panel spec-panel-sage">
+    <div class="spec-panel-head">Art Color Effects</div>
+    <div class="spec-panel-body">
+      <ul class="step-list" style="margin-bottom: 0;">
+        <li><strong>Green &middot; <span class="term" data-jp="支援" data-en="Support" data-tip="Support">支援</span></strong>. Extends Overdrive timer by +(0.05 * Counter) seconds (+5.0s at Counter 100, applies per party member hit for AoE buffs).</li><li><strong>Blue &middot; <span class="term" data-jp="オーラ" data-en="Aura" data-tip="Aura">オーラ</span></strong>. Extends Overdrive timer by +(0.10 * Counter) seconds (+10.0s at Counter 100).</li><li><strong>Purple &middot; <span class="term" data-jp="弱体" data-en="Debuff" data-tip="Debuff">弱体</span></strong>. Generates +(10 * Counter) TP per hit (+1,000 TP per hit at Counter 100, primary engine for refilling 3,000 TP).</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="grid-2">
+  <div>
+    <h3 class="sub-head">Color Transitions</h3>
+    <div class="table-wrap">
+      <table class="prima-table">
+        <thead>
+          <tr>
+            <th>Transition</th>
+            <th>Bonus</th>
+          </tr>
+        </thead>
+        <tbody>
+      <tr>
+        <td><strong>Green -&gt; Orange / Yellow / Purple</strong></td>
+        <td>Doubles hit count added to the Overdrive counter</td>
+      </tr>
+      <tr>
+        <td><strong>Yellow &lt;-&gt; Orange</strong></td>
+        <td>Counter holds steady</td>
+      </tr>
+      <tr>
+        <td><strong>Purple -&gt; Orange / Yellow</strong></td>
+        <td>Boosts appendage damage by +25%</td>
+      </tr>
+      <tr>
+        <td><strong>Blue -&gt; Green</strong></td>
+        <td>Restores 10% of Max HP</td>
+      </tr>
+      <tr>
+        <td><strong>Blue -&gt; Purple</strong></td>
+        <td>Increases debuff duration/effect by +25%</td>
+      </tr>
+      <tr>
+        <td><strong>Orange -&gt; Orange -&gt; Orange</strong></td>
+        <td>Grants stacking +10% combat EXP bonus</td>
+      </tr>
+      <tr>
+        <td><strong>Yellow -&gt; Yellow -&gt; Yellow</strong></td>
+        <td>Grants stacking +10% Class EXP bonus</td>
+      </tr></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div>
+    <h3 class="sub-head">Party Chain Bonuses</h3>
+    <div class="table-wrap">
+      <table class="prima-table">
+        <thead>
+          <tr>
+            <th>Active Members</th>
+            <th>Party Bonus</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>2</strong></td>
+            <td>+50% Soul Voice trigger rate</td>
+          </tr>
+          <tr>
+            <td><strong>3</strong></td>
+            <td>+50 TP gained per auto-attack hit</td>
+          </tr>
+          <tr>
+            <td><strong>4</strong></td>
+            <td>Party-wide Supercharge + 50% incoming damage reduction (half damage taken)</td>
+          </tr></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+    <h2 class="section-header" id="appendages"><span><span class="term" data-jp="部位硬度" data-en="Appendage Hardness" data-tip="Appendage Hardness">部位硬度</span> & <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span></span></h2>
+<p class="section-intro">
+  Every enemy body part carries a hidden hardness rating that governs how much bonus damage you deal when locking onto it. Pairing <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span> augments with <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span> turns that hidden system into a permanent 6.25x damage boost, as detailed in the multiplier scale below.
+</p>
+
+<div class="grid-main-side">
+  <div>
+    <p>
+      <strong><span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span></strong>. Each Appendage Crusher (or Crush.APPEND XX on Skells) lowers the targeted appendage&#x27;s Hardness by 1 tier, stacking up to 5 times (flooring Hardness at -5). On a 0-Hardness appendage, 5x Appendage Crusher converts 1.00x into an independent 2.50x damage multiplier. Applies exclusively when targeting an enemy appendage.
+    </p>
+    <p>
+      <strong><span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span></strong>. <span class="ico-term"><img class="ico" src="resources/icons/class_Psycorruptor.png" alt=""><span class="term" data-jp="サイシーカー" data-en="Psycorruptor" data-tip="Psycorruptor">サイシーカー</span></span> Rank 10 Skill. Applies exclusively to Ether-attribute ground attacks while targeting an unbroken appendage. Prevents appendages from taking break damage while multiplying primary HP damage by an independent 2.5x (+150% at Lv. 5). Combined with 5x Appendage Crusher on a 0-Hardness appendage: 2.5 * 2.5 = 6.25x independent damage multiplier that never breaks the weak-point appendage.
+    </p>
+  </div>
+
+  <div class="table-wrap" style="margin-bottom: 0;">
+    <table class="prima-table">
+      <thead>
+        <tr>
+          <th>Hardness</th>
+          <th>Multiplier</th>
+          <th>Tier</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><strong>+5</strong></td>
+        <td><strong>0.10x</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>+4</strong></td>
+        <td><strong>0.25x</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>+3</strong></td>
+        <td><strong>0.50x</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>+2</strong></td>
+        <td><strong>0.75x</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>+1</strong></td>
+        <td><strong>0.85x</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>+0</strong></td>
+        <td><strong>1.00x</strong></td>
+        <td>Standard baseline and fixed value of enemy Main Body</td>
+      </tr>
+      <tr>
+        <td><strong>-1</strong></td>
+        <td><strong>1.15x</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>-2</strong></td>
+        <td><strong>1.25x</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>-3</strong></td>
+        <td><strong>1.50x</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>-4</strong></td>
+        <td><strong>2.00x</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><strong>-5</strong></td>
+        <td><strong>2.50x</strong></td>
+        <td>Hardness floor (maximum 2.5x multiplier)</td>
+      </tr></tbody>
+    </table>
+  </div>
+</div>
+
+    <h2 class="section-header" id="stats-defense"><span>Stats & Defensive Layers</span></h2>
+<p class="section-intro">
+  Raw HP and Defense get overwhelmed quickly by late-game attacks, whereas stacking <span class="ico-term"><img class="ico" src="resources/icons/status_decoy.png" alt=""><span class="term" data-jp="フェイクボディ" data-en="Decoy" data-tip="Decoy">フェイクボディ</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/aug_reflect.png" alt=""><span class="term" data-jp="反射" data-en="Reflect" data-tip="Reflect">反射</span></span>, or 100 points of elemental resistance reduces incoming hits to zero. Check the offensive and defensive pairings below when choosing which armor traits to keep.
+</p>
+
+<div class="grid-2">
+  <div class="spec-panel">
+    <div class="spec-panel-head">Offensive Stats</div>
+    <div class="spec-panel-body">
+      <p><strong><span class="ico-term"><img class="ico" src="resources/icons/stat_melee.png" alt=""><span class="term" data-jp="格闘力" data-en="Melee Attack" data-tip="Melee Attack">格闘力</span></span></strong>. All non-TP Melee Arts and Melee auto-attacks.</p>
+      <p><strong><span class="ico-term"><img class="ico" src="resources/icons/stat_ranged.png" alt=""><span class="term" data-jp="射撃力" data-en="Ranged Attack" data-tip="Ranged Attack">射撃力</span></span></strong>. All non-TP Ranged Arts and Ranged auto-attacks.</p>
+      <p style="margin-bottom: 0;"><strong><span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力" data-en="Potential" data-tip="Potential">潜在力</span></span></strong>. ALL TP Arts (marked [TP], costing 1,000 TP) regardless of weapon type (e.g., Blossom Dance, Executioner, Hundred Shells, Galactic Cataclysm, Trident Buster, Ether Blast), plus Soul Voice and Green Art healing. Because TP Arts carry dramatically higher internal scaling multipliers than non-TP Arts, stacking <span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力アップ XX" data-en="Potential Up XX" data-tip="Potential Up XX">潜在力アップ XX</span></span> (+50) and <span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力ブースト XX" data-en="Potential Boost XX" data-tip="Potential Boost XX">潜在力ブースト XX</span></span> (+25%) yields the highest burst damage in ground combat.</p>
+    </div>
+  </div>
+
+  <div class="spec-panel spec-panel-sage">
+    <div class="spec-panel-head">Defensive Layers</div>
+    <div class="spec-panel-body">
+      <p><strong><span class="ico-term"><img class="ico" src="resources/icons/status_decoy.png" alt=""><span class="term" data-jp="フェイクボディ" data-en="Decoy" data-tip="Decoy">フェイクボディ</span></span></strong>. Granted by <span class="term" data-jp="ゴーストウォーカー" data-en="Dual Guns&#x27; Ghostwalker" data-tip="Dual Guns&#x27; Ghostwalker">ゴーストウォーカー</span> (self, up to Decoy V = 6 hits on Secondary CD / Decoy VI = 7 hits on Tertiary CD) and <span class="ico-term"><img class="ico" src="resources/icons/art_Ghost_Factory.png" alt=""><span class="term" data-jp="ゴーストステージ" data-en="Ghost Factory" data-tip="Ghost Factory">ゴーストステージ</span></span> (party, 1,000 TP). Negates 100% of damage and hit-debuffs regardless of enemy accuracy or attribute, consuming 1 charge per incoming hit. Vulnerable only to rapid multi-hit gatling/swarm attacks stripping charges faster than Ghostwalker recasts (note: lower-tier Ghost Factory cannot overwrite an active higher-tier Ghostwalker Decoy).</p>
+      <p><strong><span class="ico-term"><img class="ico" src="resources/icons/aug_reflect.png" alt=""><span class="term" data-jp="反射" data-en="Reflect" data-tip="Reflect">反射</span></span></strong>. Activated by <span class="term" data-jp="ストロングシールド" data-en="Blue Auras Supershield" data-tip="Blue Auras Supershield">ストロングシールド</span> (Physical), <span class="ico-term"><img class="ico" src="resources/icons/art_Raijin.png" alt=""><span class="term" data-jp="ライジン" data-en="Raijin" data-tip="Raijin">ライジン</span></span> (Electric), or <span class="ico-term"><img class="ico" src="resources/icons/art_Astrolibrium.png" alt=""><span class="term" data-jp="ギャラクシークロス" data-en="Astrolibrium" data-tip="Astrolibrium">ギャラクシークロス</span></span> (Beam). While ANY Reflect Aura is active, equipping Reflect: <span class="term" data-jp="反射＋物理" data-en="[Attribute]" data-tip="[Attribute]">反射＋物理</span> augments or innate swimmer/torso Reflect traits expands the Aura to reflect 100% of those additional attributes simultaneously. Countered only by specific superboss Arts coded with natural Reflect-pierce.</p>
+      <p style="margin-bottom: 0;"><strong><span class="term" data-jp="属性耐性" data-en="Attribute Resistance" data-tip="Attribute Resistance">属性耐性</span></strong>. Each point of Physical, Beam, Ether, Thermal, Electric, or Gravity Resistance reduces incoming damage of that attribute by 1%. Reaching 100 Resistance reduces all hits of that attribute to 1 damage (unless debuffed by Res Down). <span class="term" data-jp="スタープロテクション" data-en="Psycho Launchers&#x27; Astral Protection" data-tip="Psycho Launchers&#x27; Astral Protection">スタープロテクション</span> adds +50 to all 6 resistances at Lv. 5, requiring only 50 on armor/augments for near-immunity.</p>
+    </div>
+  </div>
+</div>
+
+    <h2 class="section-header" id="skell-insurance"><span><span class="term" data-jp="ドール保険" data-en="Skell Insurance" data-tip="Skell Insurance">ドール保険</span></span></h2>
+<p class="section-intro">
+  Repairing a wrecked <span class="term" data-jp="ドール" data-en="Skell" data-tip="Skell">ドール</span> out of pocket can drain most of your savings once its insurance counter runs dry. Knowing how ejection prompts and AI pilot rules preserve your insurance tickets keeps hangar salvage completely free.
+</p>
+
+<div class="prose-block">
+  <ul class="step-list">
+    <li><strong>Base Counts</strong>. 3 insurance points on all shop and crafted Lv. 20/30/50/60 Skells, 10 insurance points on Ares 90 and Ares Prime.</li>
+    <li><strong>Ejection QTE</strong>. When a player-piloted Skell hits 0 HP, a Soul Challenge ejection QTE triggers. Hitting Perfect repairs the Skell at the BLADE Barracks Hangar for free with ZERO insurance consumed. Hitting Good or Miss consumes 1 insurance point for a free repair.</li>
+    <li><strong>AI Pilots</strong>. AI-controlled party members automatically score Perfect on every Skell destruction QTE. Therefore, handing a Skell with AT LEAST 1 insurance remaining to an AI companion allows them to pilot and wreck it indefinitely without ever consuming that last insurance point. If a Skell is already at 0 insurance, there is no policy left for the AI&#x27;s Perfect QTE to preserve, if an AI wrecks a 0-insurance Skell, you MUST pay the full credit salvage fee (~70% of Skell + weapon cost) or spend a <span class="term" data-jp="サルベージチケット" data-en="Salvage Ticket" data-tip="Salvage Ticket">サルベージチケット</span>.</li>
+    <li><strong>Free Salvage</strong>. In XCX:DE, Skells destroyed by <span class="term" data-jp="消失現象" data-en="Dematerialization" data-tip="Dematerialization">消失現象</span> and all Skells wrecked during <span class="term" data-jp="第13章 後編 英雄" data-en="Chapter 13 (Act 3)" data-tip="Chapter 13 (Act 3)">第13章 後編 英雄</span> are repaired free of charge without consuming insurance.</li>
+  </ul>
+</div>
+
+    <h2 class="section-header" id="switch2"><span>Switch 2</span></h2>
+<p class="section-intro">
+  Playing on Switch 2 upgrades resolution, frame rate stability in busy NLA plazas, and fast-travel asset streaming while keeping full save compatibility with the standard Switch release.
+</p>
+
+<div class="prose-block">
+  <ul class="step-list" style="margin-bottom: 0;">
+    <li><strong>Release</strong>. Digital release and Switch 2 Upgrade Pack ($4.99 USD): February 19, 2026. Standalone physical retail release: April 16, 2026 (following the original Switch 1 Definitive Edition launch on March 20, 2025).</li>
+    <li><strong>Output</strong>. Targets up to 4K resolution in docked TV mode (1080p in handheld mode) and doubles the framerate target from 30 FPS to 60 FPS across exploration and combat.</li>
+    <li><strong>Streaming</strong>. Substantially faster <span class="term" data-jp="スキップトラベル" data-en="Skip Travel" data-tip="Skip Travel">スキップトラベル</span>, BLADE Barracks transitions, and Return to <span class="term" data-jp="ドールへ戻る" data-en="Skell" data-tip="Skell">ドールへ戻る</span> farming reloads compared to Switch 1 and Wii U.</li>
+  </ul>
+</div>
+
+
+    <footer class="sheet-footer">
+      <a href="credits.html">Credits</a>
+      <a href="../../index.html">All Guides</a>
+    </footer>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

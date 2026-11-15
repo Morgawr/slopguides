@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Guides</title>
+  <style>
+    *, *::before, *::after {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Georgia, "Times New Roman", "Noto Serif JP", serif;
+      background-color: #f6f4ec;
+      color: #22201c;
+      line-height: 1.5;
+    }
+    .catalog-wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 36px 22px 64px;
+    }
+    .catalog-header {
+      background-color: #233127;
+      color: #f8f6f0;
+      padding: 18px 24px;
+      border-top: 3px solid #b08938;
+      border-bottom: 3px solid #b08938;
+      margin-bottom: 20px;
+    }
+    .catalog-header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+    .toolbar {
+      margin-bottom: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    .search-input {
+      width: 100%;
+      max-width: 300px;
+      padding: 7px 11px;
+      font-size: 0.9rem;
+      border: 1px solid #9c9689;
+      background-color: #ffffff;
+      color: #22201c;
+    }
+    .search-input:focus {
+      outline: 2px solid #35523d;
+      border-color: #35523d;
+    }
+    .guide-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      gap: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans JP", sans-serif;
+    }
+    .guide-entry {
+      background-color: #ffffff;
+      border: 1px solid #aba598;
+      border-top: 3px solid #2f4033;
+      padding: 13px 16px;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .guide-entry:hover {
+      background-color: #f9f6ea;
+      border-top-color: #b08938;
+    }
+    .guide-link {
+      color: #23422c;
+      font-size: 1.02rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .guide-link:hover {
+      color: #7c5816;
+      text-decoration: underline;
+    }
+    .guide-meta {
+      font-size: 0.84rem;
+      color: #57534a;
+    }
+  </style>
+</head>
+<body>
+  <div class="catalog-wrap">
+    <header class="catalog-header">
+      <h1>Game Guides</h1>
+    </header>
+
+    <div class="toolbar">
+      <input
+        type="search"
+        id="guide-filter"
+        class="search-input"
+        placeholder="Filter..."
+        aria-label="Filter guides"
+      >
+    </div>
+
+    <ul class="guide-list" id="guides-list">
+      <li class="guide-entry" data-search="xenoblade chronicles x definitive edition switch 2 ゼノブレイドクロス ディフィニティブエディション action rpg">
+        <a class="guide-link" href="games/xenoblade-chronicles-x-de/index.html">
+          Xenoblade Chronicles X: Definitive Edition
+        </a>
+        <span class="guide-meta">Nintendo Switch 2 / Nintendo Switch &middot; Action RPG</span>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    (function () {
+      var input = document.getElementById('guide-filter');
+      var rows = document.querySelectorAll('#guides-list .guide-entry');
+      if (!input) return;
+      input.addEventListener('input', function () {
+        var q = input.value.trim().toLowerCase();
+        for (var i = 0; i < rows.length; i++) {
+          var hay = rows[i].getAttribute('data-search') || rows[i].textContent.toLowerCase();
+          rows[i].style.display = (!q || hay.indexOf(q) !== -1) ? '' : 'none';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

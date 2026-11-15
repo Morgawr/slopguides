@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cross Build - XCX Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="blade-masthead">
+    <div class="masthead-inner">
+      <div class="masthead-top">
+        <div class="brand-group">
+          <a class="repo-back" href="../../index.html">All Guides</a>
+          <a class="guide-brand" href="index.html"><img class="ico" src="resources/icons/div_BLADE.png" alt="">Xenoblade Chronicles <span class="x-mark">X</span>: Definitive Edition</a>
+        </div>
+        <span class="guide-platform">Switch 2 / Switch</span>
+      </div>
+      <nav class="guide-nav" aria-label="Guide Sections">
+        <a href="index.html">Overview</a>
+        <a href="beginners-tips.html">Tips</a>
+        <a href="roadmap.html">Play Order</a>
+        <a href="missables.html">Missables</a>
+        <a href="main-story.html">Main Story</a>
+        <a href="affinity-missions.html">Affinity</a>
+        <a href="side-quests.html">Side Quests</a>
+        <a href="major-chains.html">Quest Chains</a>
+        <a href="build-cross.html" class="active">Cross Build</a>
+        <a href="builds-party.html">Party Builds</a>
+        <a href="builds-skells.html">Skell Builds</a>
+        <a href="mechanics.html">Mechanics</a>
+        <a href="exploits.html">Exploits</a>
+        <a href="collectibles-collectopedia.html">Collectopedia</a>
+        <a href="collectibles-frontiernav.html">FrontierNav</a>
+        <a href="collectibles-lobsters.html">Lobsters</a>
+        <a href="heart-to-hearts.html">Heart-to-Hearts</a>
+        <a href="credits.html">Credits</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="prima-sheet">
+
+    <div class="completion-bar-wrap" data-counter-label="milestones">
+      <div class="completion-stats">
+        <span class="completion-text">0% (0/0 milestones)</span>
+        <div class="completion-track"><div class="completion-fill"></div></div>
+      </div>
+      <div class="completion-controls">
+        <button type="button" class="filter-btn active" data-status-filter="all">All</button>
+        <button type="button" class="filter-btn" data-status-filter="todo">Remaining</button>
+        <button type="button" class="filter-btn" data-status-filter="done">Done</button>
+      </div>
+    </div>
+
+    <div class="page-header">
+      <h1>Cross <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span> Build</h1>
+    </div>
+
+<p class="lead-intro">
+  Your custom protagonist has access to every weapon and skill branch in the game, which makes Cross capable of becoming an untouchable ground fighter who outdamages even endgame <span class="term" data-jp="ドール" data-en="Skells" data-tip="Skells">ドール</span>. Following a structured class path means you always have reliable defense and strong melee damage during the story while steadily assembling the pieces for effortless post-game boss kills.
+</p>
+
+<div class="grid-main-side">
+  <div>
+        <h2 class="section-header"><span>Overview</span></h2>
+    <p>
+      This build pairs <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span> with five <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span> augments, an <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span>, and <span class="ico-term"><img class="ico" src="resources/icons/gear_dual_guns.png" alt=""><span class="term" data-jp="デュアルガン" data-en="Dual Guns" data-tip="Dual Guns">デュアルガン</span></span>. <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span> multiplies all <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> damage by 2.5x and keeps enemy <span class="term" data-jp="部位" data-en="Appendages" data-tip="Appendages">部位</span> intact. Locking onto an intact appendage with five <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span> augments adds a second independent 2.5x multiplier for 6.25x base damage before <span class="ico-term"><img class="ico" src="resources/icons/art_Offensive_Stance.png" alt=""><span class="term" data-jp="アグレッシブモード" data-en="Offensive Stance" data-tip="Offensive Stance">アグレッシブモード</span></span> or <span class="ico-term"><img class="ico" src="resources/icons/sv_overdrive.png" alt=""><span class="term" data-jp="O.C.ギア" data-en="Overdrive" data-tip="Overdrive">O.C.ギア</span></span>.
+    </p>
+    <p>
+      <span class="ico-term"><img class="ico" src="resources/icons/gear_dual_guns.png" alt=""><span class="term" data-jp="デュアルガン" data-en="Dual Guns" data-tip="Dual Guns">デュアルガン</span></span> provide <span class="ico-term"><img class="ico" src="resources/icons/art_Ghostwalker.png" alt=""><span class="term" data-jp="ゴーストウォーカー" data-en="Ghostwalker" data-tip="Ghostwalker">ゴーストウォーカー</span></span>, granting <span class="ico-term"><img class="ico" src="resources/icons/status_decoy.png" alt=""><span class="term" data-jp="フェイクボディ" data-en="Decoy" data-tip="Decoy">フェイクボディ</span></span> to evade enemy hits while <span class="ico-term"><img class="ico" src="resources/icons/art_Offensive_Stance.png" alt=""><span class="term" data-jp="アグレッシブモード" data-en="Offensive Stance" data-tip="Offensive Stance">アグレッシブモード</span></span> triples melee output. Returning to <span class="ico-term"><img class="ico" src="resources/icons/class_Drifter.png" alt=""><span class="term" data-jp="ドリフター" data-en="Drifter" data-tip="Drifter">ドリフター</span></span> after completing the class circuit unlocks 5 Skill Slots.
+    </p>
+
+    <h3 class="sub-head">Rules</h3>
+    <ol class="step-list">
+      <li>
+        <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span> unlocks at <span class="ico-term"><img class="ico" src="resources/icons/class_Psycorruptor.png" alt=""><span class="term" data-jp="サイシーカー" data-en="Psycorruptor" data-tip="Psycorruptor">サイシーカー</span></span> Rank 10.
+      </li>
+      <li>
+        Press <strong>ZL</strong> on the <span class="term" data-jp="アーツセット" data-en="Arts" data-tip="Arts">アーツセット</span> and <span class="term" data-jp="スキルセット" data-en="Skills" data-tip="Skills">スキルセット</span> screens to refund <span class="term" data-jp="バトルポイント" data-en="Battle Points" data-tip="Battle Points">バトルポイント</span> for a small <span class="ico-term"><img class="ico" src="resources/icons/item_credits.png" alt=""><span class="term" data-jp="Credits" data-en="Credits" data-tip="Credits">Credits</span></span> fee. Upgrade active abilities to Lv. 3 first, raise key skills to Lv. 5, and refund retired arts when switching classes.
+      </li>
+      <li>
+        Reaching Rank 10 at the end of a class branch permanently masters its melee and ranged weapons for all classes.
+      </li>
+    </ol>
+  </div>
+
+  <div>
+    <div class="spec-panel">
+      <div class="spec-panel-head">Specification</div>
+      <div class="spec-panel-body">
+        <div class="spec-row">
+          <span class="spec-key">Class</span>
+          <span class="spec-val"><span class="ico-term"><img class="ico" src="resources/icons/class_Drifter.png" alt=""><span class="term" data-jp="ドリフター" data-en="Drifter" data-tip="Drifter">ドリフター</span></span> (5 Slots)</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Melee</span>
+          <span class="spec-val"><span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span></span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Ranged</span>
+          <span class="spec-val"><span class="ico-term"><img class="ico" src="resources/icons/gear_dual_guns.png" alt=""><span class="term" data-jp="デュアルガン" data-en="Dual Guns" data-tip="Dual Guns">デュアルガン</span></span></span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Skill</span>
+          <span class="spec-val"><span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span> 2.5x</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Augments</span>
+          <span class="spec-val">5x <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span> 2.5x</span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Defense</span>
+          <span class="spec-val"><span class="ico-term"><img class="ico" src="resources/icons/art_Ghostwalker.png" alt=""><span class="term" data-jp="ゴーストウォーカー" data-en="Ghostwalker" data-tip="Ghostwalker">ゴーストウォーカー</span></span> / <span class="ico-term"><img class="ico" src="resources/icons/status_decoy.png" alt=""><span class="term" data-jp="フェイクボディ" data-en="Decoy" data-tip="Decoy">フェイクボディ</span></span></span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Finisher</span>
+          <span class="spec-val"><span class="ico-term"><img class="ico" src="resources/icons/art_Blossom_Dance.png" alt=""><span class="term" data-jp="桜花乱舞" data-en="Blossom Dance" data-tip="Blossom Dance">桜花乱舞</span></span> / <span class="ico-term"><img class="ico" src="resources/icons/art_Hercules_Blow.png" alt=""><span class="term" data-jp="ヘラクレスブロウ" data-en="Hercules Blow" data-tip="Hercules Blow">ヘラクレスブロウ</span></span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="spec-panel spec-panel-sage">
+      <div class="spec-panel-head">Menu Terms</div>
+      <div class="spec-panel-body">
+        <div class="spec-row">
+          <span class="spec-key">Stats</span>
+          <span class="spec-val"><span class="ico-term"><img class="ico" src="resources/icons/stat_melee.png" alt=""><span class="term" data-jp="格闘力" data-en="Melee Attack" data-tip="Melee Attack">格闘力</span></span> / <span class="ico-term"><img class="ico" src="resources/icons/stat_ranged.png" alt=""><span class="term" data-jp="射撃力" data-en="Ranged Attack" data-tip="Ranged Attack">射撃力</span></span> / <span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力" data-en="Potential" data-tip="Potential">潜在力</span></span></span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Gear</span>
+          <span class="spec-val"><span class="ico-term"><img class="ico" src="resources/icons/aug_stat_up.png" alt=""><span class="term" data-jp="アフィックス" data-en="Traits" data-tip="Traits">アフィックス</span></span> / <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="デバイス" data-en="Augments" data-tip="Augments">デバイス</span></span></span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Element</span>
+          <span class="spec-val"><span class="ico-term"><img class="ico" src="resources/icons/attr_weapon.png" alt=""><span class="term" data-jp="武器属性ダメージ" data-en="Weapon Attribute" data-tip="Weapon Attribute">武器属性ダメージ</span></span></span>
+        </div>
+        <div class="spec-row">
+          <span class="spec-key">Recast</span>
+          <span class="spec-val"><span class="term" data-jp="クイックリキャスト" data-en="Quick Cooldown" data-tip="Quick Cooldown">クイックリキャスト</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <h2 class="section-header section-header-red" id="todo-checklist"><span>Todo</span><span class="section-count"><span data-group-counter="cross-todo">0/0 (0%)</span></span></h2>
+<p class="section-intro">
+  Keep this master checklist handy as you play through the campaign so you always know which class branch to select next and when Cross's quest-locked Signature Arts unlock. Checking off each step in order smoothly transitions your character from starter gear into full <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> scaling.
+</p>
+
+<div class="grid-2">
+  <div class="spec-panel">
+    <div class="spec-panel-head">Class Circuit</div>
+    <div class="spec-panel-body" style="padding: 4px 8px;">
+      <ul class="todo-list">
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-drifter10" data-check-group="cross-todo" aria-label="Mark completed"> <span>Reach Rank 10 in <span class="ico-term"><img class="ico" src="resources/icons/class_Drifter.png" alt=""><span class="term" data-jp="ドリフター" data-en="Drifter" data-tip="Drifter">ドリフター</span></span>, then switch to <span class="ico-term"><img class="ico" src="resources/icons/class_Striker.png" alt=""><span class="term" data-jp="アサルト" data-en="Striker" data-tip="Striker">アサルト</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-duelist10" data-check-group="cross-todo" aria-label="Mark completed"> <span>Reach Rank 10 in <span class="ico-term"><img class="ico" src="resources/icons/class_Striker.png" alt=""><span class="term" data-jp="アサルト" data-en="Striker" data-tip="Striker">アサルト</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/class_Samurai_Gunner.png" alt=""><span class="term" data-jp="サムライガン" data-en="Samurai Gunner" data-tip="Samurai Gunner">サムライガン</span></span>, and <span class="ico-term"><img class="ico" src="resources/icons/class_Duelist.png" alt=""><span class="term" data-jp="ジェネラルソード" data-en="Duelist" data-tip="Duelist">ジェネラルソード</span></span> to master <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-meredith" data-check-group="cross-todo" aria-label="Mark completed"> <span>Unlock <span class="ico-term"><img class="ico" src="resources/icons/am_meredith.png" alt=""><span class="term" data-jp="メレデス＆コー" data-en="Meredith &amp; Co." data-tip="Meredith &amp; Co.">メレデス＆コー</span></span> after Chapter 4 and invest <span class="ico-term"><img class="ico" src="resources/icons/item_miranium.png" alt=""><span class="term" data-jp="ミラニウム" data-en="Miranium" data-tip="Miranium">ミラニウム</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-fmj10" data-check-group="cross-todo" aria-label="Mark completed"> <span>Reach Rank 10 in <span class="ico-term"><img class="ico" src="resources/icons/class_Commando.png" alt=""><span class="term" data-jp="コマンド" data-en="Commando" data-tip="Commando">コマンド</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/class_Winged_Viper.png" alt=""><span class="term" data-jp="ソードファング" data-en="Winged Viper" data-tip="Winged Viper">ソードファング</span></span>, and <span class="ico-term"><img class="ico" src="resources/icons/class_Full_Metal_Jaguar.png" alt=""><span class="term" data-jp="フルメタルジャガー" data-en="Full Metal Jaguar" data-tip="Full Metal Jaguar">フルメタルジャガー</span></span> to master <span class="ico-term"><img class="ico" src="resources/icons/gear_dual_guns.png" alt=""><span class="term" data-jp="デュアルガン" data-en="Dual Guns" data-tip="Dual Guns">デュアルガン</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/art_Ghostwalker.png" alt=""><span class="term" data-jp="ゴーストウォーカー" data-en="Ghostwalker" data-tip="Ghostwalker">ゴーストウォーカー</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-psy10" data-check-group="cross-todo" aria-label="Mark completed"> <span>Reach Rank 10 in <span class="ico-term"><img class="ico" src="resources/icons/class_Enforcer.png" alt=""><span class="term" data-jp="フォーサー" data-en="Enforcer" data-tip="Enforcer">フォーサー</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/class_Psycorruptor.png" alt=""><span class="term" data-jp="サイシーカー" data-en="Psycorruptor" data-tip="Psycorruptor">サイシーカー</span></span> to unlock <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-ether-swap" data-check-group="cross-todo" aria-label="Mark completed"> <span>Equip an <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span>, raise <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span> to Lv. 5, unequip Thermal arts, and slot 5x <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-mm10" data-check-group="cross-todo" aria-label="Mark completed"> <span>Reach Rank 10 in <span class="ico-term"><img class="ico" src="resources/icons/class_Mastermind.png" alt=""><span class="term" data-jp="エリートプランナー" data-en="Mastermind" data-tip="Mastermind">エリートプランナー</span></span> to unlock <span class="ico-term"><img class="ico" src="resources/icons/skill_Secondary_Accelerator.png" alt=""><span class="term" data-jp="ダブルアクセル" data-en="Secondary Accelerator" data-tip="Secondary Accelerator">ダブルアクセル</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-gk5" data-check-group="cross-todo" aria-label="Mark completed"> <span>Reach <span class="ico-term"><img class="ico" src="resources/icons/class_Blast_Fencer.png" alt=""><span class="term" data-jp="ブラストフェンサー" data-en="Blast Fencer" data-tip="Blast Fencer">ブラストフェンサー</span></span> Rank 7 for <span class="ico-term"><img class="ico" src="resources/icons/skill_Aura_Assault.png" alt=""><span class="term" data-jp="バトルフェンサー" data-en="Aura Assault" data-tip="Aura Assault">バトルフェンサー</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/class_Galactic_Knight.png" alt=""><span class="term" data-jp="ギャラクシーナイト" data-en="Galactic Knight" data-tip="Galactic Knight">ギャラクシーナイト</span></span> Rank 5 for <span class="ico-term"><img class="ico" src="resources/icons/skill_Fast_Forward.png" alt=""><span class="term" data-jp="スピードギミック" data-en="Fast Forward" data-tip="Fast Forward">スピードギミック</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-return-drifter" data-check-group="cross-todo" aria-label="Mark completed"> <span>Switch back to <span class="ico-term"><img class="ico" src="resources/icons/class_Drifter.png" alt=""><span class="term" data-jp="ドリフター" data-en="Drifter" data-tip="Drifter">ドリフター</span></span> permanently for 5 Skill Slots.</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="spec-panel">
+    <div class="spec-panel-head">Signature Arts &amp; Gear</div>
+    <div class="spec-panel-body" style="padding: 4px 8px;">
+      <ul class="todo-list">
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-candid" data-check-group="cross-todo" aria-label="Mark completed"> <span>Unlock <span class="ico-term"><img class="ico" src="resources/icons/am_candid.png" alt=""><span class="term" data-jp="偽りなき真心堂" data-en="Candid &amp; Credible" data-tip="Candid &amp; Credible">偽りなき真心堂</span></span> after Chapter 5 and buy Light armor with <span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力アップ" data-en="Potential Up" data-tip="Potential Up">潜在力アップ</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-ultraslash" data-check-group="cross-todo" aria-label="Mark completed"> <span>Clear <a href="affinity-missions.html#am-nine-lives"><span class="ico-term"><img class="ico" src="resources/icons/mission_affinity_mission.png" alt=""><span class="term" data-jp="ブレイドの仕事" data-en="Nine Lives" data-tip="Nine Lives">ブレイドの仕事</span></span></a> after Chapter 5 for <span class="ico-term"><img class="ico" src="resources/icons/art_Ultraslash.png" alt=""><span class="term" data-jp="ウルトラスラッシュ" data-en="Ultraslash" data-tip="Ultraslash">ウルトラスラッシュ</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-tse" data-check-group="cross-todo" aria-label="Mark completed"> <span>Clear <a href="affinity-missions.html#am-nagis-time"><span class="ico-term"><img class="ico" src="resources/icons/mission_affinity_mission.png" alt=""><span class="term" data-jp="MIA" data-en="Nagi&#x27;s Time" data-tip="Nagi&#x27;s Time">MIA</span></span></a> after Chapter 8 for <span class="ico-term"><img class="ico" src="resources/icons/art_True_Stream_Edge.png" alt=""><span class="term" data-jp="真・旋風刃" data-en="True Stream Edge" data-tip="True Stream Edge">真・旋風刃</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-eyepatch" data-check-group="cross-todo" aria-label="Mark completed"> <span>Clear <a href="side-quests.html#nq-a-dish-served-cold"><span class="ico-term"><img class="ico" src="resources/icons/mission_normal_mission.png" alt=""><span class="term" data-jp="仇討" data-en="A Dish Served Cold" data-tip="A Dish Served Cold">仇討</span></span></a> for <span class="ico-term"><img class="ico" src="resources/icons/arm_warrior_eyepatch.png" alt=""><span class="term" data-jp="戦国眼帯" data-en="Warrior&#x27;s Eyepatch" data-tip="Warrior&#x27;s Eyepatch">戦国眼帯</span></span> or <a href="side-quests.html#nq-two-warriors"><span class="ico-term"><img class="ico" src="resources/icons/mission_normal_mission.png" alt=""><span class="term" data-jp="二人の武人" data-en="Two Warriors" data-tip="Two Warriors">二人の武人</span></span></a> for <span class="ico-term"><img class="ico" src="resources/icons/arm_warrior_eyepatch.png" alt=""><span class="term" data-jp="覇王の眼帯" data-en="Overlord&#x27;s Eyepatch" data-tip="Overlord&#x27;s Eyepatch">覇王の眼帯</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-blossom" data-check-group="cross-todo" aria-label="Mark completed"> <span>Clear <a href="affinity-missions.html#am-reporting-for-duty"><span class="ico-term"><img class="ico" src="resources/icons/mission_affinity_mission.png" alt=""><span class="term" data-jp="使命" data-en="Reporting for Duty" data-tip="Reporting for Duty">使命</span></span></a> after Chapter 10 at Lv. 41+ for <span class="ico-term"><img class="ico" src="resources/icons/art_Blossom_Dance.png" alt=""><span class="term" data-jp="桜花乱舞" data-en="Blossom Dance" data-tip="Blossom Dance">桜花乱舞</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-zerozero" data-check-group="cross-todo" aria-label="Mark completed"> <span>Clear <a href="affinity-missions.html#am-fitting-in"><span class="ico-term"><img class="ico" src="resources/icons/mission_affinity_mission.png" alt=""><span class="term" data-jp="親和" data-en="Fitting In" data-tip="Fitting In">親和</span></span></a> after Chapter 11 at Lv. 46+ for <span class="ico-term"><img class="ico" src="resources/icons/art_Zero_Zero.png" alt=""><span class="term" data-jp="ゼロゼロ" data-en="Zero Zero" data-tip="Zero Zero">ゼロゼロ</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-hercules" data-check-group="cross-todo" aria-label="Mark completed"> <span>Clear <a href="affinity-missions.html#am-one-big-happy-family"><span class="ico-term"><img class="ico" src="resources/icons/mission_affinity_mission.png" alt=""><span class="term" data-jp="家族団欒" data-en="One Big Happy Family" data-tip="One Big Happy Family">家族団欒</span></span></a> in Chapter 13 Act 2 at Lv. 55+ for <span class="ico-term"><img class="ico" src="resources/icons/art_Hercules_Blow.png" alt=""><span class="term" data-jp="ヘラクレスブロウ" data-en="Hercules Blow" data-tip="Hercules Blow">ヘラクレスブロウ</span></span>.</span></li>
+        <li data-check-row><input type="checkbox" class="check-box" data-check-id="cross-todo-lv60gear" data-check-group="cross-todo" aria-label="Mark completed"> <span>Farm Lv. 60 <span class="ico-term"><img class="ico" src="resources/icons/wpn_spatha.png" alt=""><span class="term" data-jp="ダイヤスベルト極" data-en="Ultra Diamond Spatha" data-tip="Ultra Diamond Spatha">ダイヤスベルト極</span></span> or <span class="ico-term"><img class="ico" src="resources/icons/wpn_receding_rust.png" alt=""><span class="term" data-jp="妖刀　葉隠之赤錆" data-en="Bewitched Glaive: Receding Rust" data-tip="Bewitched Glaive: Receding Rust">妖刀　葉隠之赤錆</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/wpn_nebulan.png" alt=""><span class="term" data-jp="ウルトラネビュラ" data-en="Ultra Nebulan Dyads" data-tip="Ultra Nebulan Dyads">ウルトラネビュラ</span></span>.</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+    <h2 class="section-header" id="progression-stages"><span>Stages</span></h2>
+<p class="section-intro">
+  Jumping straight into endgame skills takes dozens of hours, so these five stages give you a complete, self-sufficient loadout for every stretch of the journey. Read only the stage matching your current class branch and advance to the next card as soon as your class hits Rank 10.
+</p>
+
+<div class="spec-panel" id="stage-1">
+  <div class="spec-panel-head">
+    <span>Stage 1 // <span class="ico-term"><img class="ico" src="resources/icons/class_Drifter.png" alt=""><span class="term" data-jp="ドリフター" data-en="Drifter" data-tip="Drifter">ドリフター</span></span></span>
+    <span>Ranks 1 to 10</span>
+  </div>
+  <div class="spec-panel-body">
+    <ul class="step-list" style="margin-bottom: 0;">
+      <li>Equip <span class="ico-term"><img class="ico" src="resources/icons/gear_knife.png" alt=""><span class="term" data-jp="ナイフ" data-en="Knife" data-tip="Knife">ナイフ</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/gear_assault_rifle.png" alt=""><span class="term" data-jp="アサルトライフル" data-en="Assault Rifle" data-tip="Assault Rifle">アサルトライフル</span></span>.</li>
+      <li>Open fights with <span class="ico-term"><img class="ico" src="resources/icons/art_Assault_Hammer.png" alt=""><span class="term" data-jp="アサルトハンマー" data-en="Assault Hammer" data-tip="Assault Hammer">アサルトハンマー</span></span> to inflict <span class="ico-term"><img class="ico" src="resources/icons/status_topple.png" alt=""><span class="term" data-jp="転倒" data-en="Topple" data-tip="Topple">転倒</span></span> and follow with <span class="ico-term"><img class="ico" src="resources/icons/art_Flame_Grenade.png" alt=""><span class="term" data-jp="ファイアグレネード" data-en="Flame Grenade" data-tip="Flame Grenade">ファイアグレネード</span></span>. Add <span class="ico-term"><img class="ico" src="resources/icons/art_Slit_Edge.png" alt=""><span class="term" data-jp="スリットエッジ" data-en="Slit Edge" data-tip="Slit Edge">スリットエッジ</span></span> at Rank 4 and fill remaining slots with <span class="ico-term"><img class="ico" src="resources/icons/art_Chrome_Armor.png" alt=""><span class="term" data-jp="クロムアーマー" data-en="Chrome Armor" data-tip="Chrome Armor">クロムアーマー</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Infuriate.png" alt=""><span class="term" data-jp="バトルクライ" data-en="Infuriate" data-tip="Infuriate">バトルクライ</span></span>, and <span class="ico-term"><img class="ico" src="resources/icons/art_Recuperate.png" alt=""><span class="term" data-jp="リカバリー" data-en="Recuperate" data-tip="Recuperate">リカバリー</span></span>.</li>
+      <li>Upgrade <span class="ico-term"><img class="ico" src="resources/icons/art_Assault_Hammer.png" alt=""><span class="term" data-jp="アサルトハンマー" data-en="Assault Hammer" data-tip="Assault Hammer">アサルトハンマー</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/art_Flame_Grenade.png" alt=""><span class="term" data-jp="ファイアグレネード" data-en="Flame Grenade" data-tip="Flame Grenade">ファイアグレネード</span></span> to Lv. 3.</li>
+      <li>Equip dropped gear with <span class="ico-term"><img class="ico" src="resources/icons/stat_melee.png" alt=""><span class="term" data-jp="格闘力" data-en="Melee Attack" data-tip="Melee Attack">格闘力</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/aug_hp_def.png" alt=""><span class="term" data-jp="HPMAX" data-en="Max HP" data-tip="Max HP">HPMAX</span></span>, then advance to <span class="ico-term"><img class="ico" src="resources/icons/class_Striker.png" alt=""><span class="term" data-jp="アサルト" data-en="Striker" data-tip="Striker">アサルト</span></span> at Rank 10.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="spec-panel" id="stage-2">
+  <div class="spec-panel-head">
+    <span>Stage 2 // <span class="ico-term"><img class="ico" src="resources/icons/class_Striker.png" alt=""><span class="term" data-jp="アサルト" data-en="Striker" data-tip="Striker">アサルト</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/class_Samurai_Gunner.png" alt=""><span class="term" data-jp="サムライガン" data-en="Samurai Gunner" data-tip="Samurai Gunner">サムライガン</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/class_Duelist.png" alt=""><span class="term" data-jp="ジェネラルソード" data-en="Duelist" data-tip="Duelist">ジェネラルソード</span></span></span>
+    <span><span class="ico-term"><img class="ico" src="resources/icons/class_Duelist.png" alt=""><span class="term" data-jp="ジェネラルソード" data-en="Duelist" data-tip="Duelist">ジェネラルソード</span></span> Rank 10</span>
+  </div>
+  <div class="spec-panel-body">
+    <ul class="step-list" style="margin-bottom: 0;">
+      <li>Use a <span class="ico-term"><img class="ico" src="resources/icons/attr_physical.png" alt=""><span class="term" data-jp="物理" data-en="Physical" data-tip="Physical">物理</span></span> or <span class="ico-term"><img class="ico" src="resources/icons/attr_thermal.png" alt=""><span class="term" data-jp="ヒート" data-en="Thermal" data-tip="Thermal">ヒート</span></span> <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span> with <span class="ico-term"><img class="ico" src="resources/icons/gear_assault_rifle.png" alt=""><span class="term" data-jp="アサルトライフル" data-en="Assault Rifle" data-tip="Assault Rifle">アサルトライフル</span></span> until Stage 4.</li>
+      <li>In <span class="ico-term"><img class="ico" src="resources/icons/class_Striker.png" alt=""><span class="term" data-jp="アサルト" data-en="Striker" data-tip="Striker">アサルト</span></span>, equip <span class="ico-term"><img class="ico" src="resources/icons/art_Rising_Blade.png" alt=""><span class="term" data-jp="ライジングブレイド" data-en="Rising Blade" data-tip="Rising Blade">ライジングブレイド</span></span> at Rank 1, <span class="ico-term"><img class="ico" src="resources/icons/art_Defensive_Stance.png" alt=""><span class="term" data-jp="プロテクションモード" data-en="Defensive Stance" data-tip="Defensive Stance">プロテクションモード</span></span> at Rank 2, <span class="ico-term"><img class="ico" src="resources/icons/art_Power_Dive.png" alt=""><span class="term" data-jp="パワードダイブ" data-en="Power Dive" data-tip="Power Dive">パワードダイブ</span></span> at Rank 3, <span class="ico-term"><img class="ico" src="resources/icons/art_Tornado_Blade.png" alt=""><span class="term" data-jp="ブレイドサイクロン" data-en="Tornado Blade" data-tip="Tornado Blade">ブレイドサイクロン</span></span> at Rank 4, and <span class="ico-term"><img class="ico" src="resources/icons/art_Magnum_Edge.png" alt=""><span class="term" data-jp="ソードマグナム" data-en="Magnum Edge" data-tip="Magnum Edge">ソードマグナム</span></span> at Rank 8, all upgraded to Lv. 3.</li>
+      <li>At <span class="ico-term"><img class="ico" src="resources/icons/class_Samurai_Gunner.png" alt=""><span class="term" data-jp="サムライガン" data-en="Samurai Gunner" data-tip="Samurai Gunner">サムライガン</span></span> Rank 1, replace <span class="ico-term"><img class="ico" src="resources/icons/art_Defensive_Stance.png" alt=""><span class="term" data-jp="プロテクションモード" data-en="Defensive Stance" data-tip="Defensive Stance">プロテクションモード</span></span> with <span class="ico-term"><img class="ico" src="resources/icons/art_Offensive_Stance.png" alt=""><span class="term" data-jp="アグレッシブモード" data-en="Offensive Stance" data-tip="Offensive Stance">アグレッシブモード</span></span> and upgrade it to Lv. 5. Add <span class="ico-term"><img class="ico" src="resources/icons/art_Burning_Slash.png" alt=""><span class="term" data-jp="バーニングスラッシュ" data-en="Burning Slash" data-tip="Burning Slash">バーニングスラッシュ</span></span> at Rank 8.</li>
+      <li>At <span class="ico-term"><img class="ico" src="resources/icons/class_Duelist.png" alt=""><span class="term" data-jp="ジェネラルソード" data-en="Duelist" data-tip="Duelist">ジェネラルソード</span></span> Rank 1, equip <span class="ico-term"><img class="ico" src="resources/icons/art_Incendiary_Edge.png" alt=""><span class="term" data-jp="バーニングソード" data-en="Incendiary Edge" data-tip="Incendiary Edge">バーニングソード</span></span> at Lv. 3. Reaching Rank 10 masters <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span>.</li>
+      <li>Run <span class="ico-term"><img class="ico" src="resources/icons/skill_Steel_Flesh.png" alt=""><span class="term" data-jp="スティールボディ" data-en="Steel Flesh" data-tip="Steel Flesh">スティールボディ</span></span> until <span class="ico-term"><img class="ico" src="resources/icons/class_Striker.png" alt=""><span class="term" data-jp="アサルト" data-en="Striker" data-tip="Striker">アサルト</span></span> Rank 7 unlocks <span class="ico-term"><img class="ico" src="resources/icons/skill_Mighty_Muscle.png" alt=""><span class="term" data-jp="マッスルアーム" data-en="Mighty Muscle" data-tip="Mighty Muscle">マッスルアーム</span></span> at Lv. 5. Add <span class="ico-term"><img class="ico" src="resources/icons/skill_Yamato_Spirit.png" alt=""><span class="term" data-jp="ヤマトソウル" data-en="Yamato Spirit" data-tip="Yamato Spirit">ヤマトソウル</span></span> at Lv. 5 at <span class="ico-term"><img class="ico" src="resources/icons/class_Samurai_Gunner.png" alt=""><span class="term" data-jp="サムライガン" data-en="Samurai Gunner" data-tip="Samurai Gunner">サムライガン</span></span> Rank 10 and <span class="ico-term"><img class="ico" src="resources/icons/skill_Healing_Aura.png" alt=""><span class="term" data-jp="オーラヒール" data-en="Healing Aura" data-tip="Healing Aura">オーラヒール</span></span> or <span class="ico-term"><img class="ico" src="resources/icons/skill_Grand_Procession.png" alt=""><span class="term" data-jp="グランドマーチ" data-en="Grand Procession" data-tip="Grand Procession">グランドマーチ</span></span> at Lv. 3.</li>
+      <li>Level <span class="ico-term"><img class="ico" src="resources/icons/am_sakuraba.png" alt=""><span class="term" data-jp="サクラバ重工" data-en="Sakuraba Industries" data-tip="Sakuraba Industries">サクラバ重工</span></span> for <span class="ico-term"><img class="ico" src="resources/icons/arm_combat_vest.png" alt=""><span class="term" data-jp="バトルベスト" data-en="Combat Vest" data-tip="Combat Vest">バトルベスト</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/arm_combat_visor.png" alt=""><span class="term" data-jp="バトルバイザー" data-en="Combat Visor" data-tip="Combat Visor">バトルバイザー</span></span>. Unlock <span class="ico-term"><img class="ico" src="resources/icons/am_meredith.png" alt=""><span class="term" data-jp="メレデス＆コー" data-en="Meredith &amp; Co." data-tip="Meredith &amp; Co.">メレデス＆コー</span></span> after Chapter 4 and invest <span class="ico-term"><img class="ico" src="resources/icons/item_miranium.png" alt=""><span class="term" data-jp="ミラニウム" data-en="Miranium" data-tip="Miranium">ミラニウム</span></span> to prepare an <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> sword.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="spec-panel" id="stage-3">
+  <div class="spec-panel-head">
+    <span>Stage 3 // <span class="ico-term"><img class="ico" src="resources/icons/class_Commando.png" alt=""><span class="term" data-jp="コマンド" data-en="Commando" data-tip="Commando">コマンド</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/class_Winged_Viper.png" alt=""><span class="term" data-jp="ソードファング" data-en="Winged Viper" data-tip="Winged Viper">ソードファング</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/class_Full_Metal_Jaguar.png" alt=""><span class="term" data-jp="フルメタルジャガー" data-en="Full Metal Jaguar" data-tip="Full Metal Jaguar">フルメタルジャガー</span></span></span>
+    <span><span class="ico-term"><img class="ico" src="resources/icons/class_Full_Metal_Jaguar.png" alt=""><span class="term" data-jp="フルメタルジャガー" data-en="Full Metal Jaguar" data-tip="Full Metal Jaguar">フルメタルジャガー</span></span> Rank 10</span>
+  </div>
+  <div class="spec-panel-body">
+    <ul class="step-list" style="margin-bottom: 0;">
+      <li>Open <span class="term" data-jp="装備変更" data-en="Change Equipment" data-tip="Change Equipment">装備変更</span> at <span class="ico-term"><img class="ico" src="resources/icons/class_Commando.png" alt=""><span class="term" data-jp="コマンド" data-en="Commando" data-tip="Commando">コマンド</span></span> Rank 1, equip your mastered <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span> with <span class="ico-term"><img class="ico" src="resources/icons/gear_dual_guns.png" alt=""><span class="term" data-jp="デュアルガン" data-en="Dual Guns" data-tip="Dual Guns">デュアルガン</span></span>, and refund BP from <span class="ico-term"><img class="ico" src="resources/icons/gear_assault_rifle.png" alt=""><span class="term" data-jp="アサルトライフル" data-en="Assault Rifle" data-tip="Assault Rifle">アサルトライフル</span></span> arts.</li>
+      <li>Add <span class="ico-term"><img class="ico" src="resources/icons/art_Sliding_Slinger.png" alt=""><span class="term" data-jp="スライドバースト" data-en="Sliding Slinger" data-tip="Sliding Slinger">スライドバースト</span></span> at <span class="ico-term"><img class="ico" src="resources/icons/class_Commando.png" alt=""><span class="term" data-jp="コマンド" data-en="Commando" data-tip="Commando">コマンド</span></span> Rank 2 and <span class="ico-term"><img class="ico" src="resources/icons/art_Violent_Streak.png" alt=""><span class="term" data-jp="バイオレンスガンズ" data-en="Violent Streak" data-tip="Violent Streak">バイオレンスガンズ</span></span> at <span class="ico-term"><img class="ico" src="resources/icons/class_Winged_Viper.png" alt=""><span class="term" data-jp="ソードファング" data-en="Winged Viper" data-tip="Winged Viper">ソードファング</span></span> Rank 3, both at Lv. 3. Equip <span class="ico-term"><img class="ico" src="resources/icons/art_Primer.png" alt=""><span class="term" data-jp="クロスリロード" data-en="Primer" data-tip="Primer">クロスリロード</span></span> at Lv. 5 at <span class="ico-term"><img class="ico" src="resources/icons/class_Winged_Viper.png" alt=""><span class="term" data-jp="ソードファング" data-en="Winged Viper" data-tip="Winged Viper">ソードファング</span></span> Rank 8 and <span class="ico-term"><img class="ico" src="resources/icons/art_Ghostwalker.png" alt=""><span class="term" data-jp="ゴーストウォーカー" data-en="Ghostwalker" data-tip="Ghostwalker">ゴーストウォーカー</span></span> at Lv. 5 at <span class="ico-term"><img class="ico" src="resources/icons/class_Full_Metal_Jaguar.png" alt=""><span class="term" data-jp="フルメタルジャガー" data-en="Full Metal Jaguar" data-tip="Full Metal Jaguar">フルメタルジャガー</span></span> Rank 2.</li>
+      <li>Keep <span class="ico-term"><img class="ico" src="resources/icons/skill_Yamato_Spirit.png" alt=""><span class="term" data-jp="ヤマトソウル" data-en="Yamato Spirit" data-tip="Yamato Spirit">ヤマトソウル</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/skill_Mighty_Muscle.png" alt=""><span class="term" data-jp="マッスルアーム" data-en="Mighty Muscle" data-tip="Mighty Muscle">マッスルアーム</span></span> active, optionally adding <span class="ico-term"><img class="ico" src="resources/icons/skill_Hellhound.png" alt=""><span class="term" data-jp="ハウンドドッグ" data-en="Hellhound" data-tip="Hellhound">ハウンドドッグ</span></span> at <span class="ico-term"><img class="ico" src="resources/icons/class_Winged_Viper.png" alt=""><span class="term" data-jp="ソードファング" data-en="Winged Viper" data-tip="Winged Viper">ソードファング</span></span> Rank 10 for +10s <span class="ico-term"><img class="ico" src="resources/icons/sv_overdrive.png" alt=""><span class="term" data-jp="O.C.ギア" data-en="Overdrive" data-tip="Overdrive">O.C.ギア</span></span>. Reaching <span class="ico-term"><img class="ico" src="resources/icons/class_Full_Metal_Jaguar.png" alt=""><span class="term" data-jp="フルメタルジャガー" data-en="Full Metal Jaguar" data-tip="Full Metal Jaguar">フルメタルジャガー</span></span> Rank 10 masters <span class="ico-term"><img class="ico" src="resources/icons/gear_dual_guns.png" alt=""><span class="term" data-jp="デュアルガン" data-en="Dual Guns" data-tip="Dual Guns">デュアルガン</span></span>.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="spec-panel spec-panel-red" id="stage-4">
+  <div class="spec-panel-head">
+    <span>Stage 4 // <span class="ico-term"><img class="ico" src="resources/icons/class_Enforcer.png" alt=""><span class="term" data-jp="フォーサー" data-en="Enforcer" data-tip="Enforcer">フォーサー</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/class_Psycorruptor.png" alt=""><span class="term" data-jp="サイシーカー" data-en="Psycorruptor" data-tip="Psycorruptor">サイシーカー</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/class_Mastermind.png" alt=""><span class="term" data-jp="エリートプランナー" data-en="Mastermind" data-tip="Mastermind">エリートプランナー</span></span></span>
+    <span>Ether Transition at <span class="ico-term"><img class="ico" src="resources/icons/class_Psycorruptor.png" alt=""><span class="term" data-jp="サイシーカー" data-en="Psycorruptor" data-tip="Psycorruptor">サイシーカー</span></span> Rank 10</span>
+  </div>
+  <div class="spec-panel-body">
+    <ul class="step-list" style="margin-bottom: 0;">
+      <li>Re-equip <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/gear_dual_guns.png" alt=""><span class="term" data-jp="デュアルガン" data-en="Dual Guns" data-tip="Dual Guns">デュアルガン</span></span> in <span class="ico-term"><img class="ico" src="resources/icons/class_Enforcer.png" alt=""><span class="term" data-jp="フォーサー" data-en="Enforcer" data-tip="Enforcer">フォーサー</span></span>. Unlock <span class="ico-term"><img class="ico" src="resources/icons/skill_Inner_Search.png" alt=""><span class="term" data-jp="マインドシーク" data-en="Inner Search" data-tip="Inner Search">マインドシーク</span></span> at <span class="ico-term"><img class="ico" src="resources/icons/class_Enforcer.png" alt=""><span class="term" data-jp="フォーサー" data-en="Enforcer" data-tip="Enforcer">フォーサー</span></span> Rank 2, <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span> at <span class="ico-term"><img class="ico" src="resources/icons/class_Psycorruptor.png" alt=""><span class="term" data-jp="サイシーカー" data-en="Psycorruptor" data-tip="Psycorruptor">サイシーカー</span></span> Rank 10, and <span class="ico-term"><img class="ico" src="resources/icons/skill_Secondary_Accelerator.png" alt=""><span class="term" data-jp="ダブルアクセル" data-en="Secondary Accelerator" data-tip="Secondary Accelerator">ダブルアクセル</span></span> at Lv. 5 at <span class="ico-term"><img class="ico" src="resources/icons/class_Mastermind.png" alt=""><span class="term" data-jp="エリートプランナー" data-en="Mastermind" data-tip="Mastermind">エリートプランナー</span></span> Rank 10.</li>
+      <li>At <span class="ico-term"><img class="ico" src="resources/icons/class_Psycorruptor.png" alt=""><span class="term" data-jp="サイシーカー" data-en="Psycorruptor" data-tip="Psycorruptor">サイシーカー</span></span> Rank 10, equip <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span> and raise it directly to Lv. 5.</li>
+      <li>Buy the highest-level <span class="ico-term"><img class="ico" src="resources/icons/am_meredith.png" alt=""><span class="term" data-jp="メレデス＆コー" data-en="Meredith &amp; Co." data-tip="Meredith &amp; Co.">メレデス＆コー</span></span> <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span> in the shop, from Lv. 20 <span class="term" data-jp="クロムスベルト" data-en="Chrome Spatha" data-tip="Chrome Spatha">クロムスベルト</span> or Lv. 30 <span class="term" data-jp="コバルトスベルト" data-en="Cobalt Spatha" data-tip="Cobalt Spatha">コバルトスベルト</span> up to Lv. 40 <span class="term" data-jp="クロモリスベルト" data-en="Chromoly Spatha" data-tip="Chromoly Spatha">クロモリスベルト</span> or Lv. 50 <span class="term" data-jp="サーメットスベルト" data-en="Cermet Spatha" data-tip="Cermet Spatha">サーメットスベルト</span>.</li>
+      <li>Refund <span class="ico-term"><img class="ico" src="resources/icons/art_Incendiary_Edge.png" alt=""><span class="term" data-jp="バーニングソード" data-en="Incendiary Edge" data-tip="Incendiary Edge">バーニングソード</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/art_Burning_Slash.png" alt=""><span class="term" data-jp="バーニングスラッシュ" data-en="Burning Slash" data-tip="Burning Slash">バーニングスラッシュ</span></span>, and equip only <span class="ico-term"><img class="ico" src="resources/icons/attr_weapon.png" alt=""><span class="term" data-jp="武器属性ダメージ" data-en="Weapon Attribute" data-tip="Weapon Attribute">武器属性ダメージ</span></span> melee arts: <span class="ico-term"><img class="ico" src="resources/icons/art_Rising_Blade.png" alt=""><span class="term" data-jp="ライジングブレイド" data-en="Rising Blade" data-tip="Rising Blade">ライジングブレイド</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Tornado_Blade.png" alt=""><span class="term" data-jp="ブレイドサイクロン" data-en="Tornado Blade" data-tip="Tornado Blade">ブレイドサイクロン</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Magnum_Edge.png" alt=""><span class="term" data-jp="ソードマグナム" data-en="Magnum Edge" data-tip="Magnum Edge">ソードマグナム</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Ultraslash.png" alt=""><span class="term" data-jp="ウルトラスラッシュ" data-en="Ultraslash" data-tip="Ultraslash">ウルトラスラッシュ</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_True_Stream_Edge.png" alt=""><span class="term" data-jp="真・旋風刃" data-en="True Stream Edge" data-tip="True Stream Edge">真・旋風刃</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Blossom_Dance.png" alt=""><span class="term" data-jp="桜花乱舞" data-en="Blossom Dance" data-tip="Blossom Dance">桜花乱舞</span></span>, and <span class="ico-term"><img class="ico" src="resources/icons/art_Hercules_Blow.png" alt=""><span class="term" data-jp="ヘラクレスブロウ" data-en="Hercules Blow" data-tip="Hercules Blow">ヘラクレスブロウ</span></span>.</li>
+      <li>Under <span class="term" data-jp="デバイス製作" data-en="Engineer Augments" data-tip="Engineer Augments">デバイス製作</span> at the AM Terminal, craft <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span> with <span class="ico-term"><img class="ico" src="resources/icons/item_ticket.png" alt=""><span class="term" data-jp="マテリアルチケット" data-en="Material Tickets" data-tip="Material Tickets">マテリアルチケット</span></span>. Reach 5 total across weapons and headgear. <span class="ico-term"><img class="ico" src="resources/icons/arm_gauze_eyepatch.png" alt=""><span class="term" data-jp="応急ガーゼ眼帯" data-en="Makeshift Gauze Eyepatch" data-tip="Makeshift Gauze Eyepatch">応急ガーゼ眼帯</span></span> from <a href="side-quests.html#nq-myles-to-go"><span class="ico-term"><img class="ico" src="resources/icons/mission_normal_mission.png" alt=""><span class="term" data-jp="不測の事態" data-en="Myles to Go" data-tip="Myles to Go">不測の事態</span></span></a> or <span class="ico-term"><img class="ico" src="resources/icons/arm_warrior_eyepatch.png" alt=""><span class="term" data-jp="戦国眼帯" data-en="Warrior&#x27;s Eyepatch" data-tip="Warrior&#x27;s Eyepatch">戦国眼帯</span></span> from <a href="side-quests.html#nq-a-dish-served-cold"><span class="ico-term"><img class="ico" src="resources/icons/mission_normal_mission.png" alt=""><span class="term" data-jp="仇討" data-en="A Dish Served Cold" data-tip="A Dish Served Cold">仇討</span></span></a> provides 1 built-in stack. Target an enemy <span class="term" data-jp="部位" data-en="Appendage" data-tip="Appendage">部位</span> in battle.</li>
+      <li>After Chapter 5, buy <span class="ico-term"><img class="ico" src="resources/icons/am_candid.png" alt=""><span class="term" data-jp="偽りなき真心堂" data-en="Candid &amp; Credible" data-tip="Candid &amp; Credible">偽りなき真心堂</span></span> Light armor for innate <span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力アップ" data-en="Potential Up" data-tip="Potential Up">潜在力アップ</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/aug_treasure.png" alt=""><span class="term" data-jp="トレジャーセンサー" data-en="Treasure Sensor" data-tip="Treasure Sensor">トレジャーセンサー</span></span>.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="spec-panel" id="stage-5">
+  <div class="spec-panel-head">
+    <span>Stage 5 // <span class="ico-term"><img class="ico" src="resources/icons/class_Blast_Fencer.png" alt=""><span class="term" data-jp="ブラストフェンサー" data-en="Blast Fencer" data-tip="Blast Fencer">ブラストフェンサー</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/class_Galactic_Knight.png" alt=""><span class="term" data-jp="ギャラクシーナイト" data-en="Galactic Knight" data-tip="Galactic Knight">ギャラクシーナイト</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/class_Drifter.png" alt=""><span class="term" data-jp="ドリフター" data-en="Drifter" data-tip="Drifter">ドリフター</span></span></span>
+    <span>Return to <span class="ico-term"><img class="ico" src="resources/icons/class_Drifter.png" alt=""><span class="term" data-jp="ドリフター" data-en="Drifter" data-tip="Drifter">ドリフター</span></span></span>
+  </div>
+  <div class="spec-panel-body">
+    <ul class="step-list" style="margin-bottom: 0;">
+      <li>Branch from <span class="ico-term"><img class="ico" src="resources/icons/class_Enforcer.png" alt=""><span class="term" data-jp="フォーサー" data-en="Enforcer" data-tip="Enforcer">フォーサー</span></span> into <span class="ico-term"><img class="ico" src="resources/icons/class_Blast_Fencer.png" alt=""><span class="term" data-jp="ブラストフェンサー" data-en="Blast Fencer" data-tip="Blast Fencer">ブラストフェンサー</span></span> while keeping <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/gear_dual_guns.png" alt=""><span class="term" data-jp="デュアルガン" data-en="Dual Guns" data-tip="Dual Guns">デュアルガン</span></span>.</li>
+      <li>Unlock <span class="ico-term"><img class="ico" src="resources/icons/skill_Aura_Assault.png" alt=""><span class="term" data-jp="バトルフェンサー" data-en="Aura Assault" data-tip="Aura Assault">バトルフェンサー</span></span> at <span class="ico-term"><img class="ico" src="resources/icons/class_Blast_Fencer.png" alt=""><span class="term" data-jp="ブラストフェンサー" data-en="Blast Fencer" data-tip="Blast Fencer">ブラストフェンサー</span></span> Rank 7 and raise it to Lv. 5 for 1.3x melee damage and accuracy during an <span class="ico-term"><img class="ico" src="resources/icons/status_aura.png" alt=""><span class="term" data-jp="オーラ" data-en="Aura" data-tip="Aura">オーラ</span></span>. Reaching Rank 10 unlocks <span class="ico-term"><img class="ico" src="resources/icons/skill_Supreme_Sword.png" alt=""><span class="term" data-jp="ソードアーツ" data-en="Supreme Sword" data-tip="Supreme Sword">ソードアーツ</span></span>.</li>
+      <li>Unlock <span class="ico-term"><img class="ico" src="resources/icons/skill_Fast_Forward.png" alt=""><span class="term" data-jp="スピードギミック" data-en="Fast Forward" data-tip="Fast Forward">スピードギミック</span></span> at <span class="ico-term"><img class="ico" src="resources/icons/class_Galactic_Knight.png" alt=""><span class="term" data-jp="ギャラクシーナイト" data-en="Galactic Knight" data-tip="Galactic Knight">ギャラクシーナイト</span></span> Rank 5 and raise it to Lv. 5 for 50% melee Art cooldown reduction in melee combos. Optionally continue to Rank 10 for <span class="ico-term"><img class="ico" src="resources/icons/skill_Synchrony.png" alt=""><span class="term" data-jp="心機一体" data-en="Synchrony" data-tip="Synchrony">心機一体</span></span>.</li>
+      <li>Switch back to <span class="ico-term"><img class="ico" src="resources/icons/class_Drifter.png" alt=""><span class="term" data-jp="ドリフター" data-en="Drifter" data-tip="Drifter">ドリフター</span></span> permanently for 5 Skill Slots.</li>
+    </ul>
+  </div>
+</div>
+
+    <h2 class="section-header" id="endgame-setup"><span>Endgame Loadout</span></h2>
+<p class="section-intro">
+  Once all five stages are complete and your Signature Arts are unlocked, Cross can maintain permanent <span class="ico-term"><img class="ico" src="resources/icons/status_decoy.png" alt=""><span class="term" data-jp="フェイクボディ" data-en="Decoy" data-tip="Decoy">フェイクボディ</span></span> evasion inside Infinite <span class="ico-term"><img class="ico" src="resources/icons/sv_overdrive.png" alt=""><span class="term" data-jp="O.C.ギア" data-en="Overdrive" data-tip="Overdrive">O.C.ギア</span></span> while landing multi-million-damage finishers. Use the palette and rotation below to assemble your final ground bar and choose between Potential or Melee Attack scaling.
+</p>
+
+<h3 class="sub-head">Arts Palette (Lv. 5)</h3>
+<div class="arts-palette">
+  <div class="art-slot art-aura">
+    <div class="art-slot-bar">Aura</div>
+    <img class="ico-lg" src="resources/icons/art_Offensive_Stance.png" alt="">
+    <div class="art-slot-name"><span class="term" data-jp="アグレッシブモード" data-en="Offensive Stance" data-tip="Offensive Stance">アグレッシブモード</span></div>
+    <div class="art-slot-note">3x Melee Damage</div>
+  </div>
+  <div class="art-slot art-green">
+    <div class="art-slot-bar">Support</div>
+    <img class="ico-lg" src="resources/icons/art_Ghostwalker.png" alt="">
+    <div class="art-slot-name"><span class="term" data-jp="ゴーストウォーカー" data-en="Ghostwalker" data-tip="Ghostwalker">ゴーストウォーカー</span></div>
+    <div class="art-slot-note"><span class="term" data-jp="フェイクボディ" data-en="Decoy" data-tip="Decoy">フェイクボディ</span> VI</div>
+  </div>
+  <div class="art-slot art-green">
+    <div class="art-slot-bar">Support</div>
+    <img class="ico-lg" src="resources/icons/art_Primer.png" alt="">
+    <div class="art-slot-name"><span class="term" data-jp="クロスリロード" data-en="Primer" data-tip="Primer">クロスリロード</span></div>
+    <div class="art-slot-note">+TP &amp; Crit</div>
+  </div>
+  <div class="art-slot art-yellow">
+    <div class="art-slot-bar">Ranged</div>
+    <img class="ico-lg" src="resources/icons/art_Zero_Zero.png" alt="">
+    <div class="art-slot-name"><span class="term" data-jp="ゼロゼロ" data-en="Zero Zero" data-tip="Zero Zero">ゼロゼロ</span></div>
+    <div class="art-slot-note">10-Hit Counter</div>
+  </div>
+  <div class="art-slot art-orange">
+    <div class="art-slot-bar">Melee</div>
+    <img class="ico-lg" src="resources/icons/art_True_Stream_Edge.png" alt="">
+    <div class="art-slot-name"><span class="term" data-jp="真・旋風刃" data-en="True Stream Edge" data-tip="True Stream Edge">真・旋風刃</span></div>
+    <div class="art-slot-note">Multi-Hit +TP</div>
+  </div>
+  <div class="art-slot art-orange">
+    <div class="art-slot-bar">Melee</div>
+    <img class="ico-lg" src="resources/icons/art_Tornado_Blade.png" alt="">
+    <div class="art-slot-name"><span class="term" data-jp="ブレイドサイクロン" data-en="Tornado Blade" data-tip="Tornado Blade">ブレイドサイクロン</span></div>
+    <div class="art-slot-note">Aura +TP Spin</div>
+  </div>
+  <div class="art-slot art-purple">
+    <div class="art-slot-bar">Debuff / Melee</div>
+    <img class="ico-lg" src="resources/icons/art_Hercules_Blow.png" alt="">
+    <div class="art-slot-name"><span class="term" data-jp="ソードマグナム" data-en="Magnum Edge" data-tip="Magnum Edge">ソードマグナム</span> / <span class="term" data-jp="ヘラクレスブロウ" data-en="Hercules Blow" data-tip="Hercules Blow">ヘラクレスブロウ</span></div>
+    <div class="art-slot-note">Ch. 13 Swap</div>
+  </div>
+  <div class="art-slot art-orange">
+    <div class="art-slot-bar">TP Finisher</div>
+    <img class="ico-lg" src="resources/icons/art_Blossom_Dance.png" alt="">
+    <div class="art-slot-name"><span class="term" data-jp="桜花乱舞" data-en="Blossom Dance" data-tip="Blossom Dance">桜花乱舞</span></div>
+    <div class="art-slot-note">6-Hit Finisher</div>
+  </div>
+</div>
+
+<div class="grid-2">
+  <div class="spec-panel">
+    <div class="spec-panel-head">Combat Rotation</div>
+    <div class="spec-panel-body">
+      <ol class="step-list" style="margin-bottom: 0;">
+        <li>Open with <span class="ico-term"><img class="ico" src="resources/icons/art_Ghostwalker.png" alt=""><span class="term" data-jp="ゴーストウォーカー" data-en="Ghostwalker" data-tip="Ghostwalker">ゴーストウォーカー</span></span> and refresh it whenever <span class="ico-term"><img class="ico" src="resources/icons/status_decoy.png" alt=""><span class="term" data-jp="フェイクボディ" data-en="Decoy" data-tip="Decoy">フェイクボディ</span></span> stacks run low.</li>
+        <li>Cast <span class="ico-term"><img class="ico" src="resources/icons/art_Offensive_Stance.png" alt=""><span class="term" data-jp="アグレッシブモード" data-en="Offensive Stance" data-tip="Offensive Stance">アグレッシブモード</span></span> at 1,000 TP in standard fights, or trigger <span class="ico-term"><img class="ico" src="resources/icons/sv_overdrive.png" alt=""><span class="term" data-jp="O.C.ギア" data-en="Overdrive" data-tip="Overdrive">O.C.ギア</span></span> at 3,000 TP before casting <span class="ico-term"><img class="ico" src="resources/icons/art_Offensive_Stance.png" alt=""><span class="term" data-jp="アグレッシブモード" data-en="Offensive Stance" data-tip="Offensive Stance">アグレッシブモード</span></span> against bosses.</li>
+        <li>Build the <span class="ico-term"><img class="ico" src="resources/icons/sv_overdrive.png" alt=""><span class="term" data-jp="O.C.ギア" data-en="Overdrive" data-tip="Overdrive">O.C.ギア</span></span> hit counter with Green-to-Yellow and Green-to-Orange chains: <span class="ico-term"><img class="ico" src="resources/icons/art_Primer.png" alt=""><span class="term" data-jp="クロスリロード" data-en="Primer" data-tip="Primer">クロスリロード</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/art_Zero_Zero.png" alt=""><span class="term" data-jp="ゼロゼロ" data-en="Zero Zero" data-tip="Zero Zero">ゼロゼロ</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/art_Primer.png" alt=""><span class="term" data-jp="クロスリロード" data-en="Primer" data-tip="Primer">クロスリロード</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/art_True_Stream_Edge.png" alt=""><span class="term" data-jp="真・旋風刃" data-en="True Stream Edge" data-tip="True Stream Edge">真・旋風刃</span></span> -&gt; <span class="ico-term"><img class="ico" src="resources/icons/art_Tornado_Blade.png" alt=""><span class="term" data-jp="ブレイドサイクロン" data-en="Tornado Blade" data-tip="Tornado Blade">ブレイドサイクロン</span></span>.</li>
+        <li>Lock onto an enemy <span class="term" data-jp="部位" data-en="Appendage" data-tip="Appendage">部位</span> and fire <span class="ico-term"><img class="ico" src="resources/icons/art_Blossom_Dance.png" alt=""><span class="term" data-jp="桜花乱舞" data-en="Blossom Dance" data-tip="Blossom Dance">桜花乱舞</span></span> or <span class="ico-term"><img class="ico" src="resources/icons/art_Hercules_Blow.png" alt=""><span class="term" data-jp="ヘラクレスブロウ" data-en="Hercules Blow" data-tip="Hercules Blow">ヘラクレスブロウ</span></span> on Secondary or Ternary Cooldown.</li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="spec-panel">
+    <div class="spec-panel-head">Stat Variants</div>
+    <div class="spec-panel-body">
+      <p>
+        <strong><span class="ico-term"><img class="ico" src="resources/icons/art_Blossom_Dance.png" alt=""><span class="term" data-jp="桜花乱舞" data-en="Blossom Dance" data-tip="Blossom Dance">桜花乱舞</span></span></strong> unlocks after Chapter 10, costs 1,000 TP, and ignores attribute resistances. Slot <span class="ico-term"><img class="ico" src="resources/icons/skill_Inner_Search.png" alt=""><span class="term" data-jp="マインドシーク" data-en="Inner Search" data-tip="Inner Search">マインドシーク</span></span> in Skill Slot 5 and stack <span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力アップ XX" data-en="Potential Up XX" data-tip="Potential Up XX">潜在力アップ XX</span></span> and <span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力ブースト XX" data-en="Potential Boost XX" data-tip="Potential Boost XX">潜在力ブースト XX</span></span> on armor.
+      </p>
+      <p style="margin-bottom: 0;">
+        <strong><span class="ico-term"><img class="ico" src="resources/icons/art_Hercules_Blow.png" alt=""><span class="term" data-jp="ヘラクレスブロウ" data-en="Hercules Blow" data-tip="Hercules Blow">ヘラクレスブロウ</span></span></strong> unlocks in Chapter 13 Act 2, costs 0 TP, and scales off <span class="ico-term"><img class="ico" src="resources/icons/stat_melee.png" alt=""><span class="term" data-jp="格闘力" data-en="Melee Attack" data-tip="Melee Attack">格闘力</span></span> and Weapon Attack. Slot <span class="ico-term"><img class="ico" src="resources/icons/skill_Mighty_Muscle.png" alt=""><span class="term" data-jp="マッスルアーム" data-en="Mighty Muscle" data-tip="Mighty Muscle">マッスルアーム</span></span> in Skill Slot 5 and stack <span class="ico-term"><img class="ico" src="resources/icons/stat_melee.png" alt=""><span class="term" data-jp="格闘力アップ XX" data-en="Melee Attack Up XX" data-tip="Melee Attack Up XX">格闘力アップ XX</span></span> on armor.
+      </p>
+    </div>
+  </div>
+</div>
+
+    <h2 class="section-header" id="quick-reference"><span>Quick Reference</span></h2>
+<p class="section-intro">
+  When equipping Cross at the Barracks or crafting <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="デバイス" data-en="Augments" data-tip="Augments">デバイス</span></span> at the AM Terminal, use these compact lookup cards to verify every final Skill slot, Signature Art unlock mission, and Level 60 equipment piece at a glance.
+</p>
+
+<h3 class="sub-head">Skills (Lv. 5)</h3>
+<div class="table-wrap">
+  <table class="prima-table">
+    <thead>
+      <tr>
+        <th class="check-cell">Done</th>
+        <th>Slot</th>
+        <th>Skill</th>
+        <th>Unlock</th>
+        <th>Effect</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="cross-sk-core-crusher" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>1</td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/class_Psycorruptor.png" alt=""><span class="term" data-jp="サイシーカー" data-en="Psycorruptor" data-tip="Psycorruptor">サイシーカー</span></span> Rk 10</td>
+        <td>2.5x <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> damage, intact parts</td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="cross-sk-aura-assault" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>2</td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/skill_Aura_Assault.png" alt=""><span class="term" data-jp="バトルフェンサー" data-en="Aura Assault" data-tip="Aura Assault">バトルフェンサー</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/class_Blast_Fencer.png" alt=""><span class="term" data-jp="ブラストフェンサー" data-en="Blast Fencer" data-tip="Blast Fencer">ブラストフェンサー</span></span> Rk 7</td>
+        <td>1.3x melee damage &amp; accuracy in <span class="ico-term"><img class="ico" src="resources/icons/status_aura.png" alt=""><span class="term" data-jp="オーラ" data-en="Aura" data-tip="Aura">オーラ</span></span></td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="cross-sk-sec-accel" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>3</td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/skill_Secondary_Accelerator.png" alt=""><span class="term" data-jp="ダブルアクセル" data-en="Secondary Accelerator" data-tip="Secondary Accelerator">ダブルアクセル</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/class_Mastermind.png" alt=""><span class="term" data-jp="エリートプランナー" data-en="Mastermind" data-tip="Mastermind">エリートプランナー</span></span> Rk 10</td>
+        <td>+50% Secondary/Ternary recast speed</td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="cross-sk-fast-forward" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>4</td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/skill_Fast_Forward.png" alt=""><span class="term" data-jp="スピードギミック" data-en="Fast Forward" data-tip="Fast Forward">スピードギミック</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/class_Galactic_Knight.png" alt=""><span class="term" data-jp="ギャラクシーナイト" data-en="Galactic Knight" data-tip="Galactic Knight">ギャラクシーナイト</span></span> Rk 5</td>
+        <td>50% melee cooldown cut in combos</td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="cross-sk-slot5" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>5</td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/skill_Inner_Search.png" alt=""><span class="term" data-jp="マインドシーク" data-en="Inner Search" data-tip="Inner Search">マインドシーク</span></span> / <span class="ico-term"><img class="ico" src="resources/icons/skill_Mighty_Muscle.png" alt=""><span class="term" data-jp="マッスルアーム" data-en="Mighty Muscle" data-tip="Mighty Muscle">マッスルアーム</span></span> / <span class="ico-term"><img class="ico" src="resources/icons/skill_Yamato_Spirit.png" alt=""><span class="term" data-jp="ヤマトソウル" data-en="Yamato Spirit" data-tip="Yamato Spirit">ヤマトソウル</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/class_Enforcer.png" alt=""><span class="term" data-jp="フォーサー" data-en="Enforcer" data-tip="Enforcer">フォーサー</span></span> Rk 2 / <span class="ico-term"><img class="ico" src="resources/icons/class_Striker.png" alt=""><span class="term" data-jp="アサルト" data-en="Striker" data-tip="Striker">アサルト</span></span> Rk 7 / <span class="ico-term"><img class="ico" src="resources/icons/class_Samurai_Gunner.png" alt=""><span class="term" data-jp="サムライガン" data-en="Samurai Gunner" data-tip="Samurai Gunner">サムライガン</span></span> Rk 10</td>
+        <td>+20% <span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力" data-en="Potential" data-tip="Potential">潜在力</span></span>, +30% <span class="ico-term"><img class="ico" src="resources/icons/stat_melee.png" alt=""><span class="term" data-jp="格闘力" data-en="Melee Attack" data-tip="Melee Attack">格闘力</span></span>, or +TP</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="sub-head">Signature Arts</h3>
+<div class="table-wrap">
+  <table class="prima-table">
+    <thead>
+      <tr>
+        <th class="check-cell">Done</th>
+        <th>Timing</th>
+        <th>Affinity Mission</th>
+        <th>Art</th>
+        <th>Replaces</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="am-nine-lives" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>Post-Ch. 5</td>
+        <td><a href="affinity-missions.html#am-nine-lives"><span class="ico-term"><img class="ico" src="resources/icons/mission_affinity_mission.png" alt=""><span class="term" data-jp="ブレイドの仕事" data-en="Nine Lives" data-tip="Nine Lives">ブレイドの仕事</span></span></a> &middot; <span class="ico-term"><img class="ico" src="resources/icons/char_Gwin.png" alt=""><span class="term" data-jp="グイン" data-en="Gwin" data-tip="Gwin">グイン</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/art_Ultraslash.png" alt=""><span class="term" data-jp="ウルトラスラッシュ" data-en="Ultraslash" data-tip="Ultraslash">ウルトラスラッシュ</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/art_Incendiary_Edge.png" alt=""><span class="term" data-jp="バーニングソード" data-en="Incendiary Edge" data-tip="Incendiary Edge">バーニングソード</span></span></td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="am-nagis-time" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>Post-Ch. 8</td>
+        <td><a href="affinity-missions.html#am-nagis-time"><span class="ico-term"><img class="ico" src="resources/icons/mission_affinity_mission.png" alt=""><span class="term" data-jp="MIA" data-en="Nagi&#x27;s Time" data-tip="Nagi&#x27;s Time">MIA</span></span></a> &middot; <span class="ico-term"><img class="ico" src="resources/icons/char_Nagi.png" alt=""><span class="term" data-jp="ナギ" data-en="Nagi" data-tip="Nagi">ナギ</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/art_True_Stream_Edge.png" alt=""><span class="term" data-jp="真・旋風刃" data-en="True Stream Edge" data-tip="True Stream Edge">真・旋風刃</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/art_Rising_Blade.png" alt=""><span class="term" data-jp="ライジングブレイド" data-en="Rising Blade" data-tip="Rising Blade">ライジングブレイド</span></span></td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="am-reporting-for-duty" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>Post-Ch. 10, Lv. 41+</td>
+        <td><a href="affinity-missions.html#am-reporting-for-duty"><span class="ico-term"><img class="ico" src="resources/icons/mission_affinity_mission.png" alt=""><span class="term" data-jp="使命" data-en="Reporting for Duty" data-tip="Reporting for Duty">使命</span></span></a> &middot; <span class="ico-term"><img class="ico" src="resources/icons/char_Nagi.png" alt=""><span class="term" data-jp="ナギ" data-en="Nagi" data-tip="Nagi">ナギ</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/art_Blossom_Dance.png" alt=""><span class="term" data-jp="桜花乱舞" data-en="Blossom Dance" data-tip="Blossom Dance">桜花乱舞</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/art_Ultraslash.png" alt=""><span class="term" data-jp="ウルトラスラッシュ" data-en="Ultraslash" data-tip="Ultraslash">ウルトラスラッシュ</span></span></td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="am-fitting-in" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>Post-Ch. 11, Lv. 46+</td>
+        <td><a href="affinity-missions.html#am-fitting-in"><span class="ico-term"><img class="ico" src="resources/icons/mission_affinity_mission.png" alt=""><span class="term" data-jp="親和" data-en="Fitting In" data-tip="Fitting In">親和</span></span></a> &middot; <span class="ico-term"><img class="ico" src="resources/icons/char_Celica.png" alt=""><span class="term" data-jp="セリカ" data-en="Celica" data-tip="Celica">セリカ</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/art_Zero_Zero.png" alt=""><span class="term" data-jp="ゼロゼロ" data-en="Zero Zero" data-tip="Zero Zero">ゼロゼロ</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/art_Sliding_Slinger.png" alt=""><span class="term" data-jp="スライドバースト" data-en="Sliding Slinger" data-tip="Sliding Slinger">スライドバースト</span></span></td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="am-one-big-happy-family" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>Ch. 13 Act 2, Lv. 55+</td>
+        <td><a href="affinity-missions.html#am-one-big-happy-family"><span class="ico-term"><img class="ico" src="resources/icons/mission_affinity_mission.png" alt=""><span class="term" data-jp="家族団欒" data-en="One Big Happy Family" data-tip="One Big Happy Family">家族団欒</span></span></a></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/art_Hercules_Blow.png" alt=""><span class="term" data-jp="ヘラクレスブロウ" data-en="Hercules Blow" data-tip="Hercules Blow">ヘラクレスブロウ</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/art_Magnum_Edge.png" alt=""><span class="term" data-jp="ソードマグナム" data-en="Magnum Edge" data-tip="Magnum Edge">ソードマグナム</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<h3 class="sub-head">Lv. 60 Gear</h3>
+<div class="table-wrap">
+  <table class="prima-table">
+    <thead>
+      <tr>
+        <th class="check-cell">Done</th>
+        <th>Slot</th>
+        <th>Item</th>
+        <th>Traits &amp; Augments</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="cross-gear-sword" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>Melee</td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/wpn_spatha.png" alt=""><span class="term" data-jp="ダイヤスベルト極" data-en="Ultra Diamond Spatha" data-tip="Ultra Diamond Spatha">ダイヤスベルト極</span></span> / <span class="ico-term"><img class="ico" src="resources/icons/wpn_receding_rust.png" alt=""><span class="term" data-jp="妖刀　葉隠之赤錆" data-en="Bewitched Glaive: Receding Rust" data-tip="Bewitched Glaive: Receding Rust">妖刀　葉隠之赤錆</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/aug_wpn_atk.png" alt=""><span class="term" data-jp="攻撃力アップ" data-en="Weapon Attack Power Up" data-tip="Weapon Attack Power Up">攻撃力アップ</span></span> + 2x-3x <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span></td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="cross-gear-guns" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>Ranged</td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/wpn_nebulan.png" alt=""><span class="term" data-jp="ウルトラネビュラ" data-en="Ultra Nebulan Dyads" data-tip="Ultra Nebulan Dyads">ウルトラネビュラ</span></span> / <span class="ico-term"><img class="ico" src="resources/icons/wpn_nebulan_ii.png" alt=""><span class="term" data-jp="ウルトラネビュラII" data-en="Ultra Nebulan Dyads II" data-tip="Ultra Nebulan Dyads II">ウルトラネビュラII</span></span></td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力アップ" data-en="Potential Up" data-tip="Potential Up">潜在力アップ</span></span> + remaining <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span> + <span class="ico-term"><img class="ico" src="resources/icons/aug_arts_tp.png" alt=""><span class="term" data-jp="アーツ＋TP XX" data-en="Arts: Gain TP XX" data-tip="Arts: Gain TP XX">アーツ＋TP XX</span></span></td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="cross-gear-head" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>Head</td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/arm_warrior_eyepatch.png" alt=""><span class="term" data-jp="戦国眼帯" data-en="Warrior&#x27;s Eyepatch" data-tip="Warrior&#x27;s Eyepatch">戦国眼帯</span></span> / <span class="ico-term"><img class="ico" src="resources/icons/arm_warrior_eyepatch.png" alt=""><span class="term" data-jp="覇王の眼帯" data-en="Overlord&#x27;s Eyepatch" data-tip="Overlord&#x27;s Eyepatch">覇王の眼帯</span></span></td>
+        <td>Innate <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span> + <span class="ico-term"><img class="ico" src="resources/icons/stat_melee.png" alt=""><span class="term" data-jp="格闘力" data-en="Melee Attack" data-tip="Melee Attack">格闘力</span></span></td>
+      </tr>
+      <tr data-check-row>
+        <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="cross-gear-armor" data-check-group="cross-ref" aria-label="Mark completed"></td>
+        <td>Armor</td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/am_candid.png" alt=""><span class="term" data-jp="偽りなき真心堂" data-en="Candid &amp; Credible" data-tip="Candid &amp; Credible">偽りなき真心堂</span></span> Light / Ultra Infinite Light</td>
+        <td><span class="ico-term"><img class="ico" src="resources/icons/stat_potential.png" alt=""><span class="term" data-jp="潜在力アップ XX" data-en="Potential Up XX" data-tip="Potential Up XX">潜在力アップ XX</span></span> or <span class="ico-term"><img class="ico" src="resources/icons/stat_melee.png" alt=""><span class="term" data-jp="格闘力アップ XX" data-en="Melee Attack Up XX" data-tip="Melee Attack Up XX">格闘力アップ XX</span></span></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+    <h2 class="section-header" id="alternative-builds"><span>Alternatives</span></h2>
+<p class="section-intro">
+  Because <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span> multiplies all <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> damage regardless of weapon type, you can swap off <span class="ico-term"><img class="ico" src="resources/icons/gear_longsword.png" alt=""><span class="term" data-jp="ロングソード" data-en="Longsword" data-tip="Longsword">ロングソード</span></span> whenever you want a fresh combat feel while keeping your full 6.25x damage core. Both setups below reuse the same <span class="ico-term"><img class="ico" src="resources/icons/aug_appendage_crusher.png" alt=""><span class="term" data-jp="パーツクラッシャー" data-en="Appendage Crusher" data-tip="Appendage Crusher">パーツクラッシャー</span></span> augments you already crafted.
+</p>
+
+<div class="grid-2">
+  <div class="spec-panel">
+    <div class="spec-panel-head">Ether <span class="ico-term"><img class="ico" src="resources/icons/gear_photon_saber.png" alt=""><span class="term" data-jp="フォトンセイバー" data-en="Photon Saber" data-tip="Photon Saber">フォトンセイバー</span></span> + <span class="ico-term"><img class="ico" src="resources/icons/gear_dual_guns.png" alt=""><span class="term" data-jp="デュアルガン" data-en="Dual Guns" data-tip="Dual Guns">デュアルガン</span></span></div>
+    <div class="spec-panel-body">
+      <p>
+        Uses an <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> <span class="ico-term"><img class="ico" src="resources/icons/gear_photon_saber.png" alt=""><span class="term" data-jp="フォトンセイバー" data-en="Photon Saber" data-tip="Photon Saber">フォトンセイバー</span></span> mastered at <span class="ico-term"><img class="ico" src="resources/icons/class_Galactic_Knight.png" alt=""><span class="term" data-jp="ギャラクシーナイト" data-en="Galactic Knight" data-tip="Galactic Knight">ギャラクシーナイト</span></span> Rank 10 for rapid melee combo chains.
+      </p>
+      <ul class="step-list" style="margin-bottom: 0;">
+        <li><strong>Palette</strong> uses <span class="ico-term"><img class="ico" src="resources/icons/art_Ghostwalker.png" alt=""><span class="term" data-jp="ゴーストウォーカー" data-en="Ghostwalker" data-tip="Ghostwalker">ゴーストウォーカー</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Primer.png" alt=""><span class="term" data-jp="クロスリロード" data-en="Primer" data-tip="Primer">クロスリロード</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Zero_Zero.png" alt=""><span class="term" data-jp="ゼロゼロ" data-en="Zero Zero" data-tip="Zero Zero">ゼロゼロ</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Essence_Exchange.png" alt=""><span class="term" data-jp="スピリットチェンジ" data-en="Essence Exchange" data-tip="Essence Exchange">スピリットチェンジ</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Phenomenon.png" alt=""><span class="term" data-jp="エクシードスラッシュ" data-en="Phenomenon" data-tip="Phenomenon">エクシードスラッシュ</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Starfall_Blade.png" alt=""><span class="term" data-jp="流星剣" data-en="Starfall Blade" data-tip="Starfall Blade">流星剣</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Starfall_Rondo.png" alt=""><span class="term" data-jp="流星輪舞" data-en="Starfall Rondo" data-tip="Starfall Rondo">流星輪舞</span></span>, and <span class="ico-term"><img class="ico" src="resources/icons/art_Starlight_Duster.png" alt=""><span class="term" data-jp="スターライトビート" data-en="Starlight Duster" data-tip="Starlight Duster">スターライトビート</span></span>.</li>
+        <li><strong>Skills</strong> use <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/skill_Aura_Assault.png" alt=""><span class="term" data-jp="バトルフェンサー" data-en="Aura Assault" data-tip="Aura Assault">バトルフェンサー</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/skill_Fast_Forward.png" alt=""><span class="term" data-jp="スピードギミック" data-en="Fast Forward" data-tip="Fast Forward">スピードギミック</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/skill_Secondary_Accelerator.png" alt=""><span class="term" data-jp="ダブルアクセル" data-en="Secondary Accelerator" data-tip="Secondary Accelerator">ダブルアクセル</span></span>, and <span class="ico-term"><img class="ico" src="resources/icons/skill_Supreme_Sword.png" alt=""><span class="term" data-jp="ソードアーツ" data-en="Supreme Sword" data-tip="Supreme Sword">ソードアーツ</span></span>.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="spec-panel">
+    <div class="spec-panel-head">Ether <span class="ico-term"><img class="ico" src="resources/icons/gear_knife.png" alt=""><span class="term" data-jp="ナイフ" data-en="Knife" data-tip="Knife">ナイフ</span></span> + <span class="ico-term"><img class="ico" src="resources/icons/gear_raygun.png" alt=""><span class="term" data-jp="レイガン" data-en="Raygun" data-tip="Raygun">レイガン</span></span></div>
+    <div class="spec-panel-body">
+      <p>
+        Pairs a <span class="ico-term"><img class="ico" src="resources/icons/am_meredith.png" alt=""><span class="term" data-jp="メレデス＆コー" data-en="Meredith &amp; Co." data-tip="Meredith &amp; Co.">メレデス＆コー</span></span> <span class="ico-term"><img class="ico" src="resources/icons/attr_ether.png" alt=""><span class="term" data-jp="エーテル" data-en="Ether" data-tip="Ether">エーテル</span></span> <span class="ico-term"><img class="ico" src="resources/icons/gear_raygun.png" alt=""><span class="term" data-jp="レイガン" data-en="Raygun" data-tip="Raygun">レイガン</span></span> with <span class="ico-term"><img class="ico" src="resources/icons/gear_knife.png" alt=""><span class="term" data-jp="ナイフ" data-en="Knife" data-tip="Knife">ナイフ</span></span> buffs for ranged AoE bursts.
+      </p>
+      <ul class="step-list" style="margin-bottom: 0;">
+        <li><strong>Palette</strong> uses <span class="ico-term"><img class="ico" src="resources/icons/art_Full_Specs.png" alt=""><span class="term" data-jp="フルスペック" data-en="Full Specs" data-tip="Full Specs">フルスペック</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Smooth_Recovery.png" alt=""><span class="term" data-jp="ラウンドリカバリー" data-en="Smooth Recovery" data-tip="Smooth Recovery">ラウンドリカバリー</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Energy_Source.png" alt=""><span class="term" data-jp="エナジーポイント" data-en="Energy Source" data-tip="Energy Source">エナジーポイント</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Black_Butterfly.png" alt=""><span class="term" data-jp="ノワールバタフライ" data-en="Black Butterfly" data-tip="Black Butterfly">ノワールバタフライ</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Subterfuge.png" alt=""><span class="term" data-jp="アナザーブラスト" data-en="Subterfuge" data-tip="Subterfuge">アナザーブラスト</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Ether_Blast.png" alt=""><span class="term" data-jp="イーサーブラスト" data-en="Ether Blast" data-tip="Ether Blast">イーサーブラスト</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/art_Beam_Bomber.png" alt=""><span class="term" data-jp="ビームボンバー" data-en="Beam Bomber" data-tip="Beam Bomber">ビームボンバー</span></span>, and <span class="ico-term"><img class="ico" src="resources/icons/art_Myopic_Screen.png" alt=""><span class="term" data-jp="スプラッシュブラスト" data-en="Myopic Screen" data-tip="Myopic Screen">スプラッシュブラスト</span></span>.</li>
+        <li><strong>Skills</strong> use <span class="ico-term"><img class="ico" src="resources/icons/skill_Core_Crusher.png" alt=""><span class="term" data-jp="インサイドブレイカー" data-en="Core Crusher" data-tip="Core Crusher">インサイドブレイカー</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/skill_Combo_Gunner.png" alt=""><span class="term" data-jp="ガンコンボ" data-en="Combo Gunner" data-tip="Combo Gunner">ガンコンボ</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/skill_Secondary_Accelerator.png" alt=""><span class="term" data-jp="ダブルアクセル" data-en="Secondary Accelerator" data-tip="Secondary Accelerator">ダブルアクセル</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/skill_Inner_Search.png" alt=""><span class="term" data-jp="マインドシーク" data-en="Inner Search" data-tip="Inner Search">マインドシーク</span></span>, and <span class="ico-term"><img class="ico" src="resources/icons/skill_Boosted_Bullets.png" alt=""><span class="term" data-jp="バレットアップ" data-en="Boosted Bullets" data-tip="Boosted Bullets">バレットアップ</span></span>.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <footer class="sheet-footer">
+      <a href="credits.html">Credits</a>
+      <a href="../../index.html">All Guides</a>
+    </footer>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

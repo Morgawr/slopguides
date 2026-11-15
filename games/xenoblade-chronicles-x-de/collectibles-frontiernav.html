@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FrontierNav - XCX Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="blade-masthead">
+    <div class="masthead-inner">
+      <div class="masthead-top">
+        <div class="brand-group">
+          <a class="repo-back" href="../../index.html">All Guides</a>
+          <a class="guide-brand" href="index.html"><img class="ico" src="resources/icons/div_BLADE.png" alt="">Xenoblade Chronicles <span class="x-mark">X</span>: Definitive Edition</a>
+        </div>
+        <span class="guide-platform">Switch 2 / Switch</span>
+      </div>
+      <nav class="guide-nav" aria-label="Guide Sections">
+        <a href="index.html">Overview</a>
+        <a href="beginners-tips.html">Tips</a>
+        <a href="roadmap.html">Play Order</a>
+        <a href="missables.html">Missables</a>
+        <a href="main-story.html">Main Story</a>
+        <a href="affinity-missions.html">Affinity</a>
+        <a href="side-quests.html">Side Quests</a>
+        <a href="major-chains.html">Quest Chains</a>
+        <a href="build-cross.html">Cross Build</a>
+        <a href="builds-party.html">Party Builds</a>
+        <a href="builds-skells.html">Skell Builds</a>
+        <a href="mechanics.html">Mechanics</a>
+        <a href="exploits.html">Exploits</a>
+        <a href="collectibles-collectopedia.html">Collectopedia</a>
+        <a href="collectibles-frontiernav.html" class="active">FrontierNav</a>
+        <a href="collectibles-lobsters.html">Lobsters</a>
+        <a href="heart-to-hearts.html">Heart-to-Hearts</a>
+        <a href="credits.html">Credits</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="prima-sheet">
+
+    <div class="completion-bar-wrap" data-counter-label="FrontierNav &amp; Sightseeing entries">
+      <div class="completion-stats">
+        <span class="completion-text">0% (0/0 FrontierNav &amp; Sightseeing entries)</span>
+        <div class="completion-track"><div class="completion-fill"></div></div>
+      </div>
+      <div class="completion-controls">
+        <button type="button" class="filter-btn active" data-status-filter="all">All</button>
+        <button type="button" class="filter-btn" data-status-filter="todo">Remaining</button>
+        <button type="button" class="filter-btn" data-status-filter="done">Done</button>
+      </div>
+    </div>
+
+    <div class="page-header">
+      <h1><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="フロンティアネット" data-en="FrontierNav" data-tip="FrontierNav">フロンティアネット</span></span></h1>
+    </div>
+
+<p class="lead-intro">
+  Expanding <span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="フロンティアネット" data-en="FrontierNav" data-tip="FrontierNav">フロンティアネット</span></span> is the single best investment you can make while exploring <span class="term" data-jp="惑星ミラ" data-en="Mira" data-tip="Mira">惑星ミラ</span>, unlocking permanent fast-travel beacons while generating passive <span class="ico-term"><img class="ico" src="resources/icons/item_miranium.png" alt=""><span class="term" data-jp="ミラニウム" data-en="Miranium" data-tip="Miranium">ミラニウム</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/item_credits.png" alt=""><span class="term" data-jp="Credits" data-en="Credits" data-tip="Credits">Credits</span></span>, and rare crafting ores every few minutes. Because Mechanical Field Skill checks are gone from probe beams, 98 of the 104 <span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="FNスポット" data-en="FN Sites" data-tip="FN Sites">FNスポット</span></span> can be activated on foot as soon as you reach them, leaving only six cliff-top sites (FN109, FN110, FN213, FN304, FN310, FN320) for the Chapter 9 <span class="term" data-jp="ドールフライトパック" data-en="Skell Flight Module" data-tip="Skell Flight Module">ドールフライトパック</span>.
+</p>
+
+<div class="page-toolbar">
+  <input type="search" class="toolbar-search" data-page-search placeholder="Search FN site, ore, or sightseeing spot..." aria-label="Search FrontierNav">
+  <div class="jump-links">
+    <a href="#probe-layouts">Probe Setups</a> <a href="#primordia"><span class="term" data-jp="原初の荒野" data-en="Primordia" data-tip="Primordia">原初の荒野</span></a> <a href="#noctilum"><span class="term" data-jp="夜光の森" data-en="Noctilum" data-tip="Noctilum">夜光の森</span></a> <a href="#oblivia"><span class="term" data-jp="忘却の渓谷" data-en="Oblivia" data-tip="Oblivia">忘却の渓谷</span></a> <a href="#sylvalum"><span class="term" data-jp="白樹の大陸" data-en="Sylvalum" data-tip="Sylvalum">白樹の大陸</span></a> <a href="#cauldros"><span class="term" data-jp="黒鋼の大陸" data-en="Cauldros" data-tip="Cauldros">黒鋼の大陸</span></a>
+  </div>
+</div>
+
+<section id="probe-layouts">
+      <h2 class="section-header"><span>Optimal Probe Setups</span><span class="section-count"><span data-group-counter="fn-layouts">0/2 (0%)</span></span></h2>
+  <p class="section-intro">
+    Crafting endgame frames like <span class="term" data-jp="アレス90" data-en="Ares 90" data-tip="Ares 90">アレス90</span> requires holding 100,000 <span class="ico-term"><img class="ico" src="resources/icons/item_miranium.png" alt=""><span class="term" data-jp="ミラニウム" data-en="Miranium" data-tip="Miranium">ミラニウム</span></span> at once, while outfitting a full hangar eats through millions of <span class="ico-term"><img class="ico" src="resources/icons/item_credits.png" alt=""><span class="term" data-jp="Credits" data-en="Credits" data-tip="Credits">Credits</span></span>. Copy either proven 14-site chain below whenever you hit mid- or post-game to solve storage and income using a modest handful of probes while leaving Cauldros free to mine <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="バンドジェリウム" data-en="Bonjelium" data-tip="Bonjelium">バンドジェリウム</span></span>.
+  </p>
+  
+    <article class="quest-entry" id="miranium_storage_100k" data-check-row>
+      <div class="quest-head">
+        <div class="quest-title-group">
+          <input type="checkbox" class="check-box" data-check-id="probe-layout-1" data-check-group="fn-layouts" aria-label="Mark completed">
+          <span><img class="ico" src="resources/icons/fn_data_probe.png" alt=""> 100,000+ Miranium Storage Setup</span>
+        </div>
+      </div>
+      <p>Verified output reaches <strong>103,500 <span class="ico-term"><img class="ico" src="resources/icons/item_miranium.png" alt=""><span class="term" data-jp="ミラニウム" data-en="Miranium" data-tip="Miranium">ミラニウム</span></span> Storage</strong>, 15,269 Production, and 51,065 <span class="ico-term"><img class="ico" src="resources/icons/item_credits.png" alt=""><span class="term" data-jp="Credits" data-en="Credits" data-tip="Credits">Credits</span></span> per tick. Required probes include 2x <span class="ico-term"><img class="ico" src="resources/icons/probe_booster.png" alt=""><span class="term" data-jp="強化プローブG1" data-en="Booster Probe G1" data-tip="Booster Probe G1">強化プローブG1</span></span>, 1x <span class="ico-term"><img class="ico" src="resources/icons/probe_booster.png" alt=""><span class="term" data-jp="強化プローブG2" data-en="Booster Probe G2" data-tip="Booster Probe G2">強化プローブG2</span></span>, 3x <span class="ico-term"><img class="ico" src="resources/icons/probe_duplicator.png" alt=""><span class="term" data-jp="コピープローブ" data-en="Duplicator Probe" data-tip="Duplicator Probe">コピープローブ</span></span>, 9x <span class="ico-term"><img class="ico" src="resources/icons/probe_storage.png" alt=""><span class="term" data-jp="貯蔵プローブ" data-en="Storage Probe" data-tip="Storage Probe">貯蔵プローブ</span></span>.</p>
+      <p>Uses FN408 (a 4-way hub in Sylvalum) with a Duplicator Probe flanked by Booster Probe G2 (FN405) and Booster Probe G1 (FN402), compounding a 3.0x multiplier onto FN408&#x27;s copied Storage Probes (FN406, FN413) and propagating FN408&#x27;s copied 3.0x boost back onto FN406 and FN413 Only needs 9 Storage Probes, 3 Duplicators, 1 Booster G2, and 2 Booster G1, working in both Wii U and mid-game Switch while leaving all 6 Cauldros Bonjelium sites (FN502, FN504, FN506, FN507, FN510, FN511) completely free for Mining Probes</p>
+      <ul class="step-list" style="margin-bottom: 0; columns: 2; column-gap: 20px;">
+        <li><strong>FN113</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_storage.png" alt=""><span class="term" data-jp="貯蔵プローブ" data-en="Storage Probe" data-tip="Storage Probe">貯蔵プローブ</span></span>.</li><li><strong>FN401</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_storage.png" alt=""><span class="term" data-jp="貯蔵プローブ" data-en="Storage Probe" data-tip="Storage Probe">貯蔵プローブ</span></span>.</li><li><strong>FN402</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_booster.png" alt=""><span class="term" data-jp="強化プローブG1" data-en="Booster Probe G1" data-tip="Booster Probe G1">強化プローブG1</span></span>.</li><li><strong>FN403</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_storage.png" alt=""><span class="term" data-jp="貯蔵プローブ" data-en="Storage Probe" data-tip="Storage Probe">貯蔵プローブ</span></span>.</li><li><strong>FN405</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_booster.png" alt=""><span class="term" data-jp="強化プローブG2" data-en="Booster Probe G2" data-tip="Booster Probe G2">強化プローブG2</span></span>.</li><li><strong>FN406</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_storage.png" alt=""><span class="term" data-jp="貯蔵プローブ" data-en="Storage Probe" data-tip="Storage Probe">貯蔵プローブ</span></span>.</li><li><strong>FN408</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_duplicator.png" alt=""><span class="term" data-jp="コピープローブ" data-en="Duplicator Probe" data-tip="Duplicator Probe">コピープローブ</span></span>.</li><li><strong>FN409</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_duplicator.png" alt=""><span class="term" data-jp="コピープローブ" data-en="Duplicator Probe" data-tip="Duplicator Probe">コピープローブ</span></span>.</li><li><strong>FN411</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_storage.png" alt=""><span class="term" data-jp="貯蔵プローブ" data-en="Storage Probe" data-tip="Storage Probe">貯蔵プローブ</span></span>.</li><li><strong>FN413</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_storage.png" alt=""><span class="term" data-jp="貯蔵プローブ" data-en="Storage Probe" data-tip="Storage Probe">貯蔵プローブ</span></span>.</li><li><strong>FN416</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_duplicator.png" alt=""><span class="term" data-jp="コピープローブ" data-en="Duplicator Probe" data-tip="Duplicator Probe">コピープローブ</span></span>.</li><li><strong>FN417</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_storage.png" alt=""><span class="term" data-jp="貯蔵プローブ" data-en="Storage Probe" data-tip="Storage Probe">貯蔵プローブ</span></span>.</li><li><strong>FN418</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_storage.png" alt=""><span class="term" data-jp="貯蔵プローブ" data-en="Storage Probe" data-tip="Storage Probe">貯蔵プローブ</span></span>.</li><li><strong>FN419</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_booster.png" alt=""><span class="term" data-jp="強化プローブG1" data-en="Booster Probe G1" data-tip="Booster Probe G1">強化プローブG1</span></span>.</li><li><strong>FN420</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_storage.png" alt=""><span class="term" data-jp="貯蔵プローブ" data-en="Storage Probe" data-tip="Storage Probe">貯蔵プローブ</span></span>.</li>
+      </ul>
+    </article>
+    <article class="quest-entry" id="credits_revenue_130k" data-check-row>
+      <div class="quest-head">
+        <div class="quest-title-group">
+          <input type="checkbox" class="check-box" data-check-id="probe-layout-2" data-check-group="fn-layouts" aria-label="Mark completed">
+          <span><img class="ico" src="resources/icons/fn_data_probe.png" alt=""> 130,000+ Credits Revenue Setup</span>
+        </div>
+      </div>
+      <p>Verified full-network output reaches <strong>197,915 <span class="ico-term"><img class="ico" src="resources/icons/item_credits.png" alt=""><span class="term" data-jp="Credits" data-en="Credits" data-tip="Credits">Credits</span></span> Revenue</strong> per tick alongside 17,149 <span class="ico-term"><img class="ico" src="resources/icons/item_miranium.png" alt=""><span class="term" data-jp="ミラニウム" data-en="Miranium" data-tip="Miranium">ミラニウム</span></span> Production. Required probes include 1x <span class="ico-term"><img class="ico" src="resources/icons/probe_booster.png" alt=""><span class="term" data-jp="強化プローブG1" data-en="Booster Probe G1" data-tip="Booster Probe G1">強化プローブG1</span></span>, 1x <span class="ico-term"><img class="ico" src="resources/icons/probe_booster.png" alt=""><span class="term" data-jp="強化プローブG2" data-en="Booster Probe G2" data-tip="Booster Probe G2">強化プローブG2</span></span>, 3x <span class="ico-term"><img class="ico" src="resources/icons/probe_duplicator.png" alt=""><span class="term" data-jp="コピープローブ" data-en="Duplicator Probe" data-tip="Duplicator Probe">コピープローブ</span></span>, 3x <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG1" data-en="Research Probe G1" data-tip="Research Probe G1">リサーチプローブG1</span></span>, 2x <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG2" data-en="Research Probe G2" data-tip="Research Probe G2">リサーチプローブG2</span></span>, 3x <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG4" data-en="Research Probe G4" data-tip="Research Probe G4">リサーチプローブG4</span></span>, 1x <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG6" data-en="Research Probe G6" data-tip="Research Probe G6">リサーチプローブG6</span></span>.</p>
+      <p>Places Research Probe G6 on Oblivia&#x27;s FN318 (2 Sightseeing Spots) flanked by Duplicator Probes on FN315 (2 Sightseeing Spots) and FN317 (1 Sightseeing Spot), plus Booster Probe G2 on Cauldros&#x27;s FN509 boosting FN505 &amp; FN513 (2 Sightseeing Spots each) and Booster Probe G1 on Noctilum&#x27;s FN215 boosting FN214 &amp; FN221. Generates 149,865 Credits from these 14 sites alone (and 197,915 Credits with Basic Probes on the rest of Mira), clearing 130,000G by nearly 20,000G on the 14 sites alone and by 67,915G across the full network</p>
+      <ul class="step-list" style="margin-bottom: 0; columns: 2; column-gap: 20px;">
+        <li><strong>FN214</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG4" data-en="Research Probe G4" data-tip="Research Probe G4">リサーチプローブG4</span></span> (2 Sightseeing discovered).</li><li><strong>FN215</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_booster.png" alt=""><span class="term" data-jp="強化プローブG1" data-en="Booster Probe G1" data-tip="Booster Probe G1">強化プローブG1</span></span>.</li><li><strong>FN221</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG4" data-en="Research Probe G4" data-tip="Research Probe G4">リサーチプローブG4</span></span> (2 Sightseeing discovered).</li><li><strong>FN222</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_duplicator.png" alt=""><span class="term" data-jp="コピープローブ" data-en="Duplicator Probe" data-tip="Duplicator Probe">コピープローブ</span></span> (1 Sightseeing discovered).</li><li><strong>FN313</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG1" data-en="Research Probe G1" data-tip="Research Probe G1">リサーチプローブG1</span></span> (2 Sightseeing discovered).</li><li><strong>FN315</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_duplicator.png" alt=""><span class="term" data-jp="コピープローブ" data-en="Duplicator Probe" data-tip="Duplicator Probe">コピープローブ</span></span> (2 Sightseeing discovered).</li><li><strong>FN317</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_duplicator.png" alt=""><span class="term" data-jp="コピープローブ" data-en="Duplicator Probe" data-tip="Duplicator Probe">コピープローブ</span></span> (1 Sightseeing discovered).</li><li><strong>FN318</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG6" data-en="Research Probe G6" data-tip="Research Probe G6">リサーチプローブG6</span></span> (2 Sightseeing discovered).</li><li><strong>FN319</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG1" data-en="Research Probe G1" data-tip="Research Probe G1">リサーチプローブG1</span></span> (1 Sightseeing discovered).</li><li><strong>FN414</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG2" data-en="Research Probe G2" data-tip="Research Probe G2">リサーチプローブG2</span></span> (2 Sightseeing discovered).</li><li><strong>FN505</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG2" data-en="Research Probe G2" data-tip="Research Probe G2">リサーチプローブG2</span></span> (2 Sightseeing discovered).</li><li><strong>FN508</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG1" data-en="Research Probe G1" data-tip="Research Probe G1">リサーチプローブG1</span></span> (1 Sightseeing discovered).</li><li><strong>FN509</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_booster.png" alt=""><span class="term" data-jp="強化プローブG2" data-en="Booster Probe G2" data-tip="Booster Probe G2">強化プローブG2</span></span>.</li><li><strong>FN513</strong> &rarr; <span class="ico-term"><img class="ico" src="resources/icons/probe_research.png" alt=""><span class="term" data-jp="リサーチプローブG4" data-en="Research Probe G4" data-tip="Research Probe G4">リサーチプローブG4</span></span> (2 Sightseeing discovered).</li>
+      </ul>
+    </article>
+</section>
+
+
+<section id="primordia">
+      <h2 class="section-header"><span><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="原初の荒野" data-en="Primordia" data-tip="Primordia">原初の荒野</span></span></span><span class="section-count"><span data-group-counter="fn-primordia">0/21 Sites</span></span></h2>
+  <div class="grid-main-side" style="margin-bottom: 12px;">
+    <div>
+      <p class="section-intro" style="margin-bottom: 0;">Primordia&#x27;s 21 probe sites form your starter fast-travel web around New LA, supplying early Arc Sand Ore veins and hosting FN113 for the 100,000 Miranium Storage chain alongside two high-altitude cliffs saved for Chapter 9 Flight.</p>
+    </div>
+    <figure class="map-card" style="margin-bottom: 0;">
+      <img src="resources/maps/primordia_frontiernav.png" alt="Primordia FrontierNav map">
+      <figcaption><span class="term" data-jp="原初の荒野" data-en="Primordia" data-tip="Primordia">原初の荒野</span> <span class="term" data-jp="フロンティアネット" data-en="FrontierNav" data-tip="FrontierNav">フロンティアネット</span> Network</figcaption>
+    </figure>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="check-cell">Done</th>
+          <th>FN Site</th>
+          <th>Prod / Rev / Comb</th>
+          <th>Mineable Ores</th>
+          <th>Access &amp; Coords</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr id="fn101" data-check-row data-search="FN101 FN Site 101 第101区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-101" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第101区FNスポット" data-en="FN Site 101" data-tip="FN Site 101">第101区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / S</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-28.02, 33.36)</td>
+          </tr>
+          <tr id="fn102" data-check-row data-search="FN102 FN Site 102 第102区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-102" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第102区FNスポット" data-en="FN Site 102" data-tip="FN Site 102">第102区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / F / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-28.4, 5.11)</td>
+          </tr>
+          <tr id="fn103" data-check-row data-search="FN103 FN Site 103 第103区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-103" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第103区FNスポット" data-en="FN Site 103" data-tip="FN Site 103">第103区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / A</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-30.62, 24.66)</td>
+          </tr>
+          <tr id="fn104" data-check-row data-search="FN104 FN Site 104 第104区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-104" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第104区FNスポット" data-en="FN Site 104" data-tip="FN Site 104">第104区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-26.37, 9.7)</td>
+          </tr>
+          <tr id="fn105" data-check-row data-search="FN105 FN Site 105 第105区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-105" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第105区FNスポット" data-en="FN Site 105" data-tip="FN Site 105">第105区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / F / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-22.18, 33.95)</td>
+          </tr>
+          <tr id="fn106" data-check-row data-search="FN106 FN Site 106 第106区FNスポット Arc Sand Ore アーク砂鉱 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-106" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第106区FNスポット" data-en="FN Site 106" data-tip="FN Site 106">第106区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / E / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span></td>
+            <td class="num-cell">Ground (-23.13, 18.79)</td>
+          </tr>
+          <tr id="fn107" data-check-row data-search="FN107 FN Site 107 第107区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-107" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第107区FNスポット" data-en="FN Site 107" data-tip="FN Site 107">第107区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / F / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-17.89, 7.79)</td>
+          </tr>
+          <tr id="fn108" data-check-row data-search="FN108 FN Site 108 第108区FNスポット Aurorite オーロラ石 Arc Sand Ore アーク砂鉱 Foucaultium フーコイト鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-108" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第108区FNスポット" data-en="FN Site 108" data-tip="FN Site 108">第108区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / F / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="フーコイト鉱石" data-en="Foucaultium" data-tip="Foucaultium">フーコイト鉱石</span></span></td>
+            <td class="num-cell">Ground (-14.21, 24.62)</td>
+          </tr>
+          <tr id="fn109" data-check-row data-search="FN109 FN Site 109 第109区FNスポット Lionbone Bort 獅子骨石 Foucaultium フーコイト鉱石 Dawnstone ドーンナイト &lt;span class=&quot;term&quot; data-jp=&quot;フライトパック&quot; data-en=&quot;Flight Required&quot; data-tip=&quot;Flight Required&quot;&gt;フライトパック&lt;/span&gt;">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-109" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第109区FNスポット" data-en="FN Site 109" data-tip="FN Site 109">第109区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / D / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="獅子骨石" data-en="Lionbone Bort" data-tip="Lionbone Bort">獅子骨石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="フーコイト鉱石" data-en="Foucaultium" data-tip="Foucaultium">フーコイト鉱石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ドーンナイト" data-en="Dawnstone" data-tip="Dawnstone">ドーンナイト</span></span></td>
+            <td class="num-cell"><span class="term" data-jp="フライトパック" data-en="Flight Required" data-tip="Flight Required">フライトパック</span> (-10.65, 30.45)</td>
+          </tr>
+          <tr id="fn110" data-check-row data-search="FN110 FN Site 110 第110区FNスポット Aurorite オーロラ石 Arc Sand Ore アーク砂鉱 White Cometite 白彗星鉱石 Dawnstone ドーンナイト &lt;span class=&quot;term&quot; data-jp=&quot;フライトパック&quot; data-en=&quot;Flight Required&quot; data-tip=&quot;Flight Required&quot;&gt;フライトパック&lt;/span&gt;">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-110" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第110区FNスポット" data-en="FN Site 110" data-tip="FN Site 110">第110区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="白彗星鉱石" data-en="White Cometite" data-tip="White Cometite">白彗星鉱石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ドーンナイト" data-en="Dawnstone" data-tip="Dawnstone">ドーンナイト</span></span></td>
+            <td class="num-cell"><span class="term" data-jp="フライトパック" data-en="Flight Required" data-tip="Flight Required">フライトパック</span> (-9.53, 18.27)</td>
+          </tr>
+          <tr id="fn111" data-check-row data-search="FN111 FN Site 111 第111区FNスポット Foucaultium フーコイト鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-111" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第111区FNスポット" data-en="FN Site 111" data-tip="FN Site 111">第111区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / F / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="フーコイト鉱石" data-en="Foucaultium" data-tip="Foucaultium">フーコイト鉱石</span></span></td>
+            <td class="num-cell">Ground (-5.68, 27.91)</td>
+          </tr>
+          <tr id="fn112" data-check-row data-search="FN112 FN Site 112 第112区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-112" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第112区FNスポット" data-en="FN Site 112" data-tip="FN Site 112">第112区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / F / A</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-2.61, 15.51)</td>
+          </tr>
+          <tr id="fn113" data-check-row data-search="FN113 FN Site 113 第113区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-113" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第113区FNスポット" data-en="FN Site 113" data-tip="FN Site 113">第113区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / C / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (2.82, 40.11)</td>
+          </tr>
+          <tr id="fn114" data-check-row data-search="FN114 FN Site 114 第114区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-114" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第114区FNスポット" data-en="FN Site 114" data-tip="FN Site 114">第114区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (3.51, 8.79)</td>
+          </tr>
+          <tr id="fn115" data-check-row data-search="FN115 FN Site 115 第115区FNスポット Arc Sand Ore アーク砂鉱 White Cometite 白彗星鉱石 Lionbone Bort 獅子骨石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-115" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第115区FNスポット" data-en="FN Site 115" data-tip="FN Site 115">第115区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / D / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="白彗星鉱石" data-en="White Cometite" data-tip="White Cometite">白彗星鉱石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="獅子骨石" data-en="Lionbone Bort" data-tip="Lionbone Bort">獅子骨石</span></span></td>
+            <td class="num-cell">Ground (6.79, 21.39)</td>
+          </tr>
+          <tr id="fn116" data-check-row data-search="FN116 FN Site 116 第116区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-116" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第116区FNスポット" data-en="FN Site 116" data-tip="FN Site 116">第116区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / D / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (8.39, 3.75)</td>
+          </tr>
+          <tr id="fn117" data-check-row data-search="FN117 FN Site 117 第117区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-117" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第117区FNスポット" data-en="FN Site 117" data-tip="FN Site 117">第117区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / D / A</td>
+            <td>-</td>
+            <td class="num-cell">Ground (14.55, 10.23)</td>
+          </tr>
+          <tr id="fn118" data-check-row data-search="FN118 FN Site 118 第118区FNスポット Aurorite オーロラ石 White Cometite 白彗星鉱石 Dawnstone ドーンナイト Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-118" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第118区FNスポット" data-en="FN Site 118" data-tip="FN Site 118">第118区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="白彗星鉱石" data-en="White Cometite" data-tip="White Cometite">白彗星鉱石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ドーンナイト" data-en="Dawnstone" data-tip="Dawnstone">ドーンナイト</span></span></td>
+            <td class="num-cell">Ground (20.55, 15.37)</td>
+          </tr>
+          <tr id="fn119" data-check-row data-search="FN119 FN Site 119 第119区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-119" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第119区FNスポット" data-en="FN Site 119" data-tip="FN Site 119">第119区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (21.43, 1.03)</td>
+          </tr>
+          <tr id="fn120" data-check-row data-search="FN120 FN Site 120 第120区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-120" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第120区FNスポット" data-en="FN Site 120" data-tip="FN Site 120">第120区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / B / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (26.29, 8.24)</td>
+          </tr>
+          <tr id="fn121" data-check-row data-search="FN121 FN Site 121 第121区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-121" data-check-group="fn-primordia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第121区FNスポット" data-en="FN Site 121" data-tip="FN Site 121">第121区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / E / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (29.46, 16.98)</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="spec-panel">
+    <div class="spec-panel-head">
+      <span><span class="term" data-jp="原初の荒野" data-en="Primordia" data-tip="Primordia">原初の荒野</span> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territories" data-tip="Unexplored Territories">秘境</span> &amp; <span class="term" data-jp="絶景" data-en="Scenic Viewpoints" data-tip="Scenic Viewpoints">絶景</span></span>
+      <span data-group-counter="ss-primordia">0/6 (0%)</span>
+    </div>
+    <div class="spec-panel-body" style="padding: 4px 8px;">
+      <ul class="todo-list">
+        <li id="ss-19" data-check-row data-search="Rock Cavern 岩洞窟 Unexplored Territory FN117"><input type="checkbox" class="check-box" data-check-id="ss-19" data-check-group="ss-primordia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="岩洞窟" data-en="Rock Cavern" data-tip="Rock Cavern">岩洞窟</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN117 (8.28, 18.03). This cavern&#x27;s entrance is found to the north of Silent Mire. Its discovery is necessary to complete The Probe-fessional.</span></li><li id="ss-22" data-check-row data-search="Stonelattice Cavern 岩格子の洞窟 Unexplored Territory FN101"><input type="checkbox" class="check-box" data-check-id="ss-22" data-check-group="ss-primordia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="岩格子の洞窟" data-en="Stonelattice Cavern" data-tip="Stonelattice Cavern">岩格子の洞窟</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN101 (-34.04, 34.83) &middot; Requires <span class="term" data-jp="ドールフライトパック" data-en="Skell Flight Module" data-tip="Skell Flight Module">ドールフライトパック</span>. It is on the northwest section, near where the continent meets Noctilum. Smoke rises from its entrance. This cave is typically only accessible with a Skell.</span></li><li id="ss-23" data-check-row data-search="Turtle Nest タートルネスト Unexplored Territory FN106"><input type="checkbox" class="check-box" data-check-id="ss-23" data-check-group="ss-primordia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="タートルネスト" data-en="Turtle Nest" data-tip="Turtle Nest">タートルネスト</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN106 (-21.38, 24.52). It is located in the southwest end of the pool north of Biahno Hills and the Plundered Ruin landmark. Discovering this place is required to complete Off the Record (archaeological) in the Switch.</span></li><li id="ss-25" data-check-row data-search="Wonderment Bluff 瞠目の崖 Unexplored Territory FN103"><input type="checkbox" class="check-box" data-check-id="ss-25" data-check-group="ss-primordia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="瞠目の崖" data-en="Wonderment Bluff" data-tip="Wonderment Bluff">瞠目の崖</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN103 (-34.44, 28.14). Scale the cliff ledges left of Bedrock Hold in northwest sector A3 using Skell jumps.</span></li><li id="ss-33" data-check-row data-search="Headwater Cliff 水源岩の崖 Scenic Viewpoint FN104"><input type="checkbox" class="check-box" data-check-id="ss-33" data-check-group="ss-primordia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="水源岩の崖" data-en="Headwater Cliff" data-tip="Headwater Cliff">水源岩の崖</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN104 (-28.43, 10.85). This view of Biahno Lake can be found just south of the Headwater Summit, past the small waterfall.</span></li><li id="ss-39" data-check-row data-search="Talon Rock Prominence 鉤爪岩先端 Scenic Viewpoint FN110"><input type="checkbox" class="check-box" data-check-id="ss-39" data-check-group="ss-primordia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="鉤爪岩先端" data-en="Talon Rock Prominence" data-tip="Talon Rock Prominence">鉤爪岩先端</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN110 (-8.9, 11.63). It can be found at the end of Talon Rock Summit, providing a convenient overlook of NLA.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="noctilum">
+      <h2 class="section-header"><span><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="夜光の森" data-en="Noctilum" data-tip="Noctilum">夜光の森</span></span></span><span class="section-count"><span data-group-counter="fn-noctilum">0/25 Sites</span></span></h2>
+  <div class="grid-main-side" style="margin-bottom: 12px;">
+    <div>
+      <p class="section-intro" style="margin-bottom: 0;">Snaking from South Coast up to Divine Roost, Noctilum&#x27;s 25 sites feature multiple multi-spot sightseeing hubs like FN214, FN221, and FN225 that anchor the northern half of the 130,000 Credits Revenue layout.</p>
+    </div>
+    <figure class="map-card" style="margin-bottom: 0;">
+      <img src="resources/maps/noctilum_frontiernav.png" alt="Noctilum FrontierNav map">
+      <figcaption><span class="term" data-jp="夜光の森" data-en="Noctilum" data-tip="Noctilum">夜光の森</span> <span class="term" data-jp="フロンティアネット" data-en="FrontierNav" data-tip="FrontierNav">フロンティアネット</span> Network</figcaption>
+    </figure>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="check-cell">Done</th>
+          <th>FN Site</th>
+          <th>Prod / Rev / Comb</th>
+          <th>Mineable Ores</th>
+          <th>Access &amp; Coords</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr id="fn201" data-check-row data-search="FN201 FN Site 201 第201区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-201" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第201区FNスポット" data-en="FN Site 201" data-tip="FN Site 201">第201区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / S</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-65.79, 104.72)</td>
+          </tr>
+          <tr id="fn202" data-check-row data-search="FN202 FN Site 202 第202区FNスポット Cimmerian Cinnabar 暗黒辰砂 Everfreeze Ore 千年氷鉱 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-202" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第202区FNスポット" data-en="FN Site 202" data-tip="FN Site 202">第202区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / C / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="暗黒辰砂" data-en="Cimmerian Cinnabar" data-tip="Cimmerian Cinnabar">暗黒辰砂</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="千年氷鉱" data-en="Everfreeze Ore" data-tip="Everfreeze Ore">千年氷鉱</span></span></td>
+            <td class="num-cell">Ground (-64.51, 90.06)</td>
+          </tr>
+          <tr id="fn203" data-check-row data-search="FN203 FN Site 203 第203区FNスポット Cimmerian Cinnabar 暗黒辰砂 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-203" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第203区FNスポット" data-en="FN Site 203" data-tip="FN Site 203">第203区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="暗黒辰砂" data-en="Cimmerian Cinnabar" data-tip="Cimmerian Cinnabar">暗黒辰砂</span></span></td>
+            <td class="num-cell">Ground (-63.69, 79.4)</td>
+          </tr>
+          <tr id="fn204" data-check-row data-search="FN204 FN Site 204 第204区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-204" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第204区FNスポット" data-en="FN Site 204" data-tip="FN Site 204">第204区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / C / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-62.88, 72.18)</td>
+          </tr>
+          <tr id="fn205" data-check-row data-search="FN205 FN Site 205 第205区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-205" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第205区FNスポット" data-en="FN Site 205" data-tip="FN Site 205">第205区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / F / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-60.7, 63.49)</td>
+          </tr>
+          <tr id="fn206" data-check-row data-search="FN206 FN Site 206 第206区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-206" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第206区FNスポット" data-en="FN Site 206" data-tip="FN Site 206">第206区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / A / S</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-58.84, 108.94)</td>
+          </tr>
+          <tr id="fn207" data-check-row data-search="FN207 FN Site 207 第207区FNスポット Infernium ヘルファイアゲート White Cometite 白彗星鉱石 Cimmerian Cinnabar 暗黒辰砂 Foucaultium フーコイト鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-207" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第207区FNスポット" data-en="FN Site 207" data-tip="FN Site 207">第207区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / C / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ヘルファイアゲート" data-en="Infernium" data-tip="Infernium">ヘルファイアゲート</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="白彗星鉱石" data-en="White Cometite" data-tip="White Cometite">白彗星鉱石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="暗黒辰砂" data-en="Cimmerian Cinnabar" data-tip="Cimmerian Cinnabar">暗黒辰砂</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="フーコイト鉱石" data-en="Foucaultium" data-tip="Foucaultium">フーコイト鉱石</span></span></td>
+            <td class="num-cell">Ground (-59.11, 96.03)</td>
+          </tr>
+          <tr id="fn208" data-check-row data-search="FN208 FN Site 208 第208区FNスポット Foucaultium フーコイト鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-208" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第208区FNスポット" data-en="FN Site 208" data-tip="FN Site 208">第208区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / D / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="フーコイト鉱石" data-en="Foucaultium" data-tip="Foucaultium">フーコイト鉱石</span></span></td>
+            <td class="num-cell">Ground (-56.75, 84.35)</td>
+          </tr>
+          <tr id="fn209" data-check-row data-search="FN209 FN Site 209 第209区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-209" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第209区FNスポット" data-en="FN Site 209" data-tip="FN Site 209">第209区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / F / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-57.6, 53.46)</td>
+          </tr>
+          <tr id="fn210" data-check-row data-search="FN210 FN Site 210 第210区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-210" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第210区FNスポット" data-en="FN Site 210" data-tip="FN Site 210">第210区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / D / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-54.61, 86.16)</td>
+          </tr>
+          <tr id="fn211" data-check-row data-search="FN211 FN Site 211 第211区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-211" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第211区FNスポット" data-en="FN Site 211" data-tip="FN Site 211">第211区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / D / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-54.28, 78.06)</td>
+          </tr>
+          <tr id="fn212" data-check-row data-search="FN212 FN Site 212 第212区FNスポット Aurorite オーロラ石 Enduron Lead エンデュロ鉛 White Cometite 白彗星鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-212" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第212区FNスポット" data-en="FN Site 212" data-tip="FN Site 212">第212区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / E / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="エンデュロ鉛" data-en="Enduron Lead" data-tip="Enduron Lead">エンデュロ鉛</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="白彗星鉱石" data-en="White Cometite" data-tip="White Cometite">白彗星鉱石</span></span></td>
+            <td class="num-cell">Ground (-53.94, 64.87)</td>
+          </tr>
+          <tr id="fn213" data-check-row data-search="FN213 FN Site 213 第213区FNスポット  &lt;span class=&quot;term&quot; data-jp=&quot;フライトパック&quot; data-en=&quot;Flight Required&quot; data-tip=&quot;Flight Required&quot;&gt;フライトパック&lt;/span&gt;">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-213" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第213区FNスポット" data-en="FN Site 213" data-tip="FN Site 213">第213区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell"><span class="term" data-jp="フライトパック" data-en="Flight Required" data-tip="Flight Required">フライトパック</span> (-50.37, 105.04)</td>
+          </tr>
+          <tr id="fn214" data-check-row data-search="FN214 FN Site 214 第214区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-214" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第214区FNスポット" data-en="FN Site 214" data-tip="FN Site 214">第214区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / D / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-51.76, 86.01)</td>
+          </tr>
+          <tr id="fn215" data-check-row data-search="FN215 FN Site 215 第215区FNスポット Aurorite オーロラ石 Enduron Lead エンデュロ鉛 Everfreeze Ore 千年氷鉱 Foucaultium フーコイト鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-215" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第215区FNスポット" data-en="FN Site 215" data-tip="FN Site 215">第215区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / D / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="エンデュロ鉛" data-en="Enduron Lead" data-tip="Enduron Lead">エンデュロ鉛</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="千年氷鉱" data-en="Everfreeze Ore" data-tip="Everfreeze Ore">千年氷鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="フーコイト鉱石" data-en="Foucaultium" data-tip="Foucaultium">フーコイト鉱石</span></span></td>
+            <td class="num-cell">Ground (-51.53, 72.92)</td>
+          </tr>
+          <tr id="fn216" data-check-row data-search="FN216 FN Site 216 第216区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-216" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第216区FNスポット" data-en="FN Site 216" data-tip="FN Site 216">第216区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / A</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-50.45, 59.63)</td>
+          </tr>
+          <tr id="fn217" data-check-row data-search="FN217 FN Site 217 第217区FNスポット Aurorite オーロラ石 Infernium ヘルファイアゲート Cimmerian Cinnabar 暗黒辰砂 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-217" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第217区FNスポット" data-en="FN Site 217" data-tip="FN Site 217">第217区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / C / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ヘルファイアゲート" data-en="Infernium" data-tip="Infernium">ヘルファイアゲート</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="暗黒辰砂" data-en="Cimmerian Cinnabar" data-tip="Cimmerian Cinnabar">暗黒辰砂</span></span></td>
+            <td class="num-cell">Ground (-48.56, 33.71)</td>
+          </tr>
+          <tr id="fn218" data-check-row data-search="FN218 FN Site 218 第218区FNスポット Aurorite オーロラ石 Enduron Lead エンデュロ鉛 White Cometite 白彗星鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-218" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第218区FNスポット" data-en="FN Site 218" data-tip="FN Site 218">第218区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="エンデュロ鉛" data-en="Enduron Lead" data-tip="Enduron Lead">エンデュロ鉛</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="白彗星鉱石" data-en="White Cometite" data-tip="White Cometite">白彗星鉱石</span></span></td>
+            <td class="num-cell">Ground (-44.42, 66.45)</td>
+          </tr>
+          <tr id="fn219" data-check-row data-search="FN219 FN Site 219 第219区FNスポット Enduron Lead エンデュロ鉛 White Cometite 白彗星鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-219" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第219区FNスポット" data-en="FN Site 219" data-tip="FN Site 219">第219区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="エンデュロ鉛" data-en="Enduron Lead" data-tip="Enduron Lead">エンデュロ鉛</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="白彗星鉱石" data-en="White Cometite" data-tip="White Cometite">白彗星鉱石</span></span></td>
+            <td class="num-cell">Ground (-46.67, 40.48)</td>
+          </tr>
+          <tr id="fn220" data-check-row data-search="FN220 FN Site 220 第220区FNスポット Infernium ヘルファイアゲート Everfreeze Ore 千年氷鉱 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-220" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第220区FNスポット" data-en="FN Site 220" data-tip="FN Site 220">第220区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / C / A</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ヘルファイアゲート" data-en="Infernium" data-tip="Infernium">ヘルファイアゲート</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="千年氷鉱" data-en="Everfreeze Ore" data-tip="Everfreeze Ore">千年氷鉱</span></span></td>
+            <td class="num-cell">Ground (-42.81, 47.04)</td>
+          </tr>
+          <tr id="fn221" data-check-row data-search="FN221 FN Site 221 第221区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-221" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第221区FNスポット" data-en="FN Site 221" data-tip="FN Site 221">第221区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-40.46, 37.15)</td>
+          </tr>
+          <tr id="fn222" data-check-row data-search="FN222 FN Site 222 第222区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-222" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第222区FNスポット" data-en="FN Site 222" data-tip="FN Site 222">第222区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / D / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-41.99, 25.95)</td>
+          </tr>
+          <tr id="fn223" data-check-row data-search="FN223 FN Site 223 第223区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-223" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第223区FNスポット" data-en="FN Site 223" data-tip="FN Site 223">第223区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / F / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-37.25, 76.36)</td>
+          </tr>
+          <tr id="fn224" data-check-row data-search="FN224 FN Site 224 第224区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-224" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第224区FNスポット" data-en="FN Site 224" data-tip="FN Site 224">第224区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-39.43, 70.01)</td>
+          </tr>
+          <tr id="fn225" data-check-row data-search="FN225 FN Site 225 第225区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-225" data-check-group="fn-noctilum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第225区FNスポット" data-en="FN Site 225" data-tip="FN Site 225">第225区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (-40.1, 56.31)</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="spec-panel">
+    <div class="spec-panel-head">
+      <span><span class="term" data-jp="夜光の森" data-en="Noctilum" data-tip="Noctilum">夜光の森</span> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territories" data-tip="Unexplored Territories">秘境</span> &amp; <span class="term" data-jp="絶景" data-en="Scenic Viewpoints" data-tip="Scenic Viewpoints">絶景</span></span>
+      <span data-group-counter="ss-noctilum">0/10 (0%)</span>
+    </div>
+    <div class="spec-panel-body" style="padding: 4px 8px;">
+      <ul class="todo-list">
+        <li id="ss-7" data-check-row data-search="Ensanguined Font 秘紅泉 Unexplored Territory FN221"><input type="checkbox" class="check-box" data-check-id="ss-7" data-check-group="ss-noctilum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="秘紅泉" data-en="Ensanguined Font" data-tip="Ensanguined Font">秘紅泉</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN221 (-38.5, 36.01). Enter the cave passage immediately southeast of FN221.</span></li><li id="ss-10" data-check-row data-search="Idyll Beach 真秀ら浜 Unexplored Territory FN223"><input type="checkbox" class="check-box" data-check-id="ss-10" data-check-group="ss-noctilum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="真秀ら浜" data-en="Idyll Beach" data-tip="Idyll Beach">真秀ら浜</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN223 (-37.31, 76.47). This site is located on the northern section of Noctilum and is only reachable by sea. It contains no enemies, but it does contain FN Site 223, as well as an umbrella covering two beach chairs.</span></li><li id="ss-14" data-check-row data-search="Millstone Ridge 石臼岩盤 Unexplored Territory FN214"><input type="checkbox" class="check-box" data-check-id="ss-14" data-check-group="ss-noctilum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="石臼岩盤" data-en="Millstone Ridge" data-tip="Millstone Ridge">石臼岩盤</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN214 (-46.76, 87.1). It is located at the end of Dead Man&#x27;s Gulch. When the Ganglion arrived on Mira, the Vita crashlanded here.</span></li><li id="ss-16" data-check-row data-search="Orochi&#x27;s Belly 大蛇の小袋 Unexplored Territory FN220"><input type="checkbox" class="check-box" data-check-id="ss-16" data-check-group="ss-noctilum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="大蛇の小袋" data-en="Orochi&#x27;s Belly" data-tip="Orochi&#x27;s Belly">大蛇の小袋</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN220 (-41.81, 49.0). This area is located directly under the northern part of Elephant&#x27;s Trunk.</span></li><li id="ss-21" data-check-row data-search="Sentinel&#x27;s Nest 剣兵の巣 Unexplored Territory FN213"><input type="checkbox" class="check-box" data-check-id="ss-21" data-check-group="ss-noctilum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="剣兵の巣" data-en="Sentinel&#x27;s Nest" data-tip="Sentinel&#x27;s Nest">剣兵の巣</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN213 (-55.39, 108.15). This location is in the northeast area of the Divine Roost.</span></li><li id="ss-24" data-check-row data-search="Whale&#x27;s Weeper 鯨の涙腺 Unexplored Territory FN222"><input type="checkbox" class="check-box" data-check-id="ss-24" data-check-group="ss-noctilum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="鯨の涙腺" data-en="Whale&#x27;s Weeper" data-tip="Whale&#x27;s Weeper">鯨の涙腺</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN222 (-41.04, 27.91). It is reached through Whale&#x27;s Gullet from below, or from above via Redsnake Pass.</span></li><li id="ss-30" data-check-row data-search="Cascade Isle 滝見小島 Scenic Viewpoint FN216"><input type="checkbox" class="check-box" data-check-id="ss-30" data-check-group="ss-noctilum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="滝見小島" data-en="Cascade Isle" data-tip="Cascade Isle">滝見小島</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN216 (-52.31, 57.31). Cross onto the small island immediately southwest of FN216 in sector E8.</span></li><li id="ss-31" data-check-row data-search="Decapotamon Vista 仙境一望 Scenic Viewpoint FN225"><input type="checkbox" class="check-box" data-check-id="ss-31" data-check-group="ss-noctilum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="仙境一望" data-en="Decapotamon Vista" data-tip="Decapotamon Vista">仙境一望</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN225 (-42.59, 62.27). Follow the eastern wall north onto the promontory east of Decapotamon in sector G3.</span></li><li id="ss-38" data-check-row data-search="Skygazer&#x27;s Atrium 星見窓 Scenic Viewpoint FN214"><input type="checkbox" class="check-box" data-check-id="ss-38" data-check-group="ss-noctilum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="星見窓" data-en="Skygazer&#x27;s Atrium" data-tip="Skygazer&#x27;s Atrium">星見窓</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN214 (-47.63, 80.19). Skygazer&#x27;s Atrium is a Scenic Viewpoint in the game located in Noctilum looking out over the Weeping Whitewood. It can be found by heading east from the Ensconced Citadel towards the Weeping Whitewood, then taking the grassy route to the right of the main path. This viewpoint contains a container with Extend Aura .</span></li><li id="ss-42" data-check-row data-search="Yagami&#x27;s Vista 八神一望 Scenic Viewpoint FN221"><input type="checkbox" class="check-box" data-check-id="ss-42" data-check-group="ss-noctilum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="八神一望" data-en="Yagami&#x27;s Vista" data-tip="Yagami&#x27;s Vista">八神一望</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN221 (-44.18, 35.56). Walk to the cliff edge northeast of FN217 in sector F10.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="oblivia">
+      <h2 class="section-header"><span><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="忘却の渓谷" data-en="Oblivia" data-tip="Oblivia">忘却の渓谷</span></span></span><span class="section-count"><span data-group-counter="fn-oblivia">0/22 Sites</span></span></h2>
+  <div class="grid-main-side" style="margin-bottom: 12px;">
+    <div>
+      <p class="section-intro" style="margin-bottom: 0;">Oblivia&#x27;s 22 desert beams pack the highest concentration of Scenic Viewpoints and Unexplored Territories on Mira, making sites like FN315, FN318, and FN321 powerhouse earners once Research Probes are slotted in.</p>
+    </div>
+    <figure class="map-card" style="margin-bottom: 0;">
+      <img src="resources/maps/oblivia_frontiernav.png" alt="Oblivia FrontierNav map">
+      <figcaption><span class="term" data-jp="忘却の渓谷" data-en="Oblivia" data-tip="Oblivia">忘却の渓谷</span> <span class="term" data-jp="フロンティアネット" data-en="FrontierNav" data-tip="FrontierNav">フロンティアネット</span> Network</figcaption>
+    </figure>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="check-cell">Done</th>
+          <th>FN Site</th>
+          <th>Prod / Rev / Comb</th>
+          <th>Mineable Ores</th>
+          <th>Access &amp; Coords</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr id="fn301" data-check-row data-search="FN301 FN Site 301 第301区FNスポット Infernium ヘルファイアゲート Arc Sand Ore アーク砂鉱 Lionbone Bort 獅子骨石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-301" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第301区FNスポット" data-en="FN Site 301" data-tip="FN Site 301">第301区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / D / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ヘルファイアゲート" data-en="Infernium" data-tip="Infernium">ヘルファイアゲート</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="獅子骨石" data-en="Lionbone Bort" data-tip="Lionbone Bort">獅子骨石</span></span></td>
+            <td class="num-cell">Ground (35.47, 14.65)</td>
+          </tr>
+          <tr id="fn302" data-check-row data-search="FN302 FN Site 302 第302区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-302" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第302区FNスポット" data-en="FN Site 302" data-tip="FN Site 302">第302区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (42.32, 17.41)</td>
+          </tr>
+          <tr id="fn303" data-check-row data-search="FN303 FN Site 303 第303区FNスポット Aurorite オーロラ石 White Cometite 白彗星鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-303" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第303区FNスポット" data-en="FN Site 303" data-tip="FN Site 303">第303区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="白彗星鉱石" data-en="White Cometite" data-tip="White Cometite">白彗星鉱石</span></span></td>
+            <td class="num-cell">Ground (43.68, 3.3)</td>
+          </tr>
+          <tr id="fn304" data-check-row data-search="FN304 FN Site 304 第304区FNスポット  &lt;span class=&quot;term&quot; data-jp=&quot;フライトパック&quot; data-en=&quot;Flight Required&quot; data-tip=&quot;Flight Required&quot;&gt;フライトパック&lt;/span&gt;">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-304" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第304区FNスポット" data-en="FN Site 304" data-tip="FN Site 304">第304区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / A / S</td>
+            <td>-</td>
+            <td class="num-cell"><span class="term" data-jp="フライトパック" data-en="Flight Required" data-tip="Flight Required">フライトパック</span> (45.6, 9.34)</td>
+          </tr>
+          <tr id="fn305" data-check-row data-search="FN305 FN Site 305 第305区FNスポット Aurorite オーロラ石 Arc Sand Ore アーク砂鉱 Enduron Lead エンデュロ鉛 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-305" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第305区FNスポット" data-en="FN Site 305" data-tip="FN Site 305">第305区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="エンデュロ鉛" data-en="Enduron Lead" data-tip="Enduron Lead">エンデュロ鉛</span></span></td>
+            <td class="num-cell">Ground (49.29, 25.2)</td>
+          </tr>
+          <tr id="fn306" data-check-row data-search="FN306 FN Site 306 第306区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-306" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第306区FNスポット" data-en="FN Site 306" data-tip="FN Site 306">第306区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / D / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (54.28, 7.32)</td>
+          </tr>
+          <tr id="fn307" data-check-row data-search="FN307 FN Site 307 第307区FNスポット Infernium ヘルファイアゲート Arc Sand Ore アーク砂鉱 Enduron Lead エンデュロ鉛 White Cometite 白彗星鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-307" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第307区FNスポット" data-en="FN Site 307" data-tip="FN Site 307">第307区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ヘルファイアゲート" data-en="Infernium" data-tip="Infernium">ヘルファイアゲート</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="エンデュロ鉛" data-en="Enduron Lead" data-tip="Enduron Lead">エンデュロ鉛</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="白彗星鉱石" data-en="White Cometite" data-tip="White Cometite">白彗星鉱石</span></span></td>
+            <td class="num-cell">Ground (55.44, -5.56)</td>
+          </tr>
+          <tr id="fn308" data-check-row data-search="FN308 FN Site 308 第308区FNスポット Ouroboros Crystal ウロボロス結晶 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-308" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第308区FNスポット" data-en="FN Site 308" data-tip="FN Site 308">第308区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / C / A</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ウロボロス結晶" data-en="Ouroboros Crystal" data-tip="Ouroboros Crystal">ウロボロス結晶</span></span></td>
+            <td class="num-cell">Ground (56.5, 32.81)</td>
+          </tr>
+          <tr id="fn309" data-check-row data-search="FN309 FN Site 309 第309区FNスポット Enduron Lead エンデュロ鉛 Ouroboros Crystal ウロボロス結晶 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-309" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第309区FNスポット" data-en="FN Site 309" data-tip="FN Site 309">第309区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / C / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="エンデュロ鉛" data-en="Enduron Lead" data-tip="Enduron Lead">エンデュロ鉛</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ウロボロス結晶" data-en="Ouroboros Crystal" data-tip="Ouroboros Crystal">ウロボロス結晶</span></span></td>
+            <td class="num-cell">Ground (59.05, 18.8)</td>
+          </tr>
+          <tr id="fn310" data-check-row data-search="FN310 FN Site 310 第310区FNスポット  &lt;span class=&quot;term&quot; data-jp=&quot;フライトパック&quot; data-en=&quot;Flight Required&quot; data-tip=&quot;Flight Required&quot;&gt;フライトパック&lt;/span&gt;">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-310" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第310区FNスポット" data-en="FN Site 310" data-tip="FN Site 310">第310区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell"><span class="term" data-jp="フライトパック" data-en="Flight Required" data-tip="Flight Required">フライトパック</span> (66.61, 32.69)</td>
+          </tr>
+          <tr id="fn311" data-check-row data-search="FN311 FN Site 311 第311区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-311" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第311区FNスポット" data-en="FN Site 311" data-tip="FN Site 311">第311区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (65.58, 24.49)</td>
+          </tr>
+          <tr id="fn312" data-check-row data-search="FN312 FN Site 312 第312区FNスポット Infernium ヘルファイアゲート Boiled-Egg Ore ボイルドエッグ鉱石 Lionbone Bort 獅子骨石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-312" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第312区FNスポット" data-en="FN Site 312" data-tip="FN Site 312">第312区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / D / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ヘルファイアゲート" data-en="Infernium" data-tip="Infernium">ヘルファイアゲート</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ボイルドエッグ鉱石" data-en="Boiled-Egg Ore" data-tip="Boiled-Egg Ore">ボイルドエッグ鉱石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="獅子骨石" data-en="Lionbone Bort" data-tip="Lionbone Bort">獅子骨石</span></span></td>
+            <td class="num-cell">Ground (66.52, 6.84)</td>
+          </tr>
+          <tr id="fn313" data-check-row data-search="FN313 FN Site 313 第313区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-313" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第313区FNスポット" data-en="FN Site 313" data-tip="FN Site 313">第313区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / E / A</td>
+            <td>-</td>
+            <td class="num-cell">Ground (63.29, -2.39)</td>
+          </tr>
+          <tr id="fn314" data-check-row data-search="FN314 FN Site 314 第314区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-314" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第314区FNスポット" data-en="FN Site 314" data-tip="FN Site 314">第314区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / S</td>
+            <td>-</td>
+            <td class="num-cell">Ground (64.88, -12.65)</td>
+          </tr>
+          <tr id="fn315" data-check-row data-search="FN315 FN Site 315 第315区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-315" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第315区FNスポット" data-en="FN Site 315" data-tip="FN Site 315">第315区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (69.96, 22.26)</td>
+          </tr>
+          <tr id="fn316" data-check-row data-search="FN316 FN Site 316 第316区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-316" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第316区FNスポット" data-en="FN Site 316" data-tip="FN Site 316">第316区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / D / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (72.55, 36.07)</td>
+          </tr>
+          <tr id="fn317" data-check-row data-search="FN317 FN Site 317 第317区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-317" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第317区FNスポット" data-en="FN Site 317" data-tip="FN Site 317">第317区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (74.31, -0.58)</td>
+          </tr>
+          <tr id="fn318" data-check-row data-search="FN318 FN Site 318 第318区FNスポット Boiled-Egg Ore ボイルドエッグ鉱石 White Cometite 白彗星鉱石 Lionbone Bort 獅子骨石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-318" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第318区FNスポット" data-en="FN Site 318" data-tip="FN Site 318">第318区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ボイルドエッグ鉱石" data-en="Boiled-Egg Ore" data-tip="Boiled-Egg Ore">ボイルドエッグ鉱石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="白彗星鉱石" data-en="White Cometite" data-tip="White Cometite">白彗星鉱石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="獅子骨石" data-en="Lionbone Bort" data-tip="Lionbone Bort">獅子骨石</span></span></td>
+            <td class="num-cell">Ground (78.06, 11.17)</td>
+          </tr>
+          <tr id="fn319" data-check-row data-search="FN319 FN Site 319 第319区FNスポット Infernium ヘルファイアゲート Boiled-Egg Ore ボイルドエッグ鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-319" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第319区FNスポット" data-en="FN Site 319" data-tip="FN Site 319">第319区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / D / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ヘルファイアゲート" data-en="Infernium" data-tip="Infernium">ヘルファイアゲート</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ボイルドエッグ鉱石" data-en="Boiled-Egg Ore" data-tip="Boiled-Egg Ore">ボイルドエッグ鉱石</span></span></td>
+            <td class="num-cell">Ground (76.47, -4.59)</td>
+          </tr>
+          <tr id="fn320" data-check-row data-search="FN320 FN Site 320 第320区FNスポット Aurorite オーロラ石 Ouroboros Crystal ウロボロス結晶 &lt;span class=&quot;term&quot; data-jp=&quot;フライトパック&quot; data-en=&quot;Flight Required&quot; data-tip=&quot;Flight Required&quot;&gt;フライトパック&lt;/span&gt;">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-320" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第320区FNスポット" data-en="FN Site 320" data-tip="FN Site 320">第320区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ウロボロス結晶" data-en="Ouroboros Crystal" data-tip="Ouroboros Crystal">ウロボロス結晶</span></span></td>
+            <td class="num-cell"><span class="term" data-jp="フライトパック" data-en="Flight Required" data-tip="Flight Required">フライトパック</span> (79.96, 34.49)</td>
+          </tr>
+          <tr id="fn321" data-check-row data-search="FN321 FN Site 321 第321区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-321" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第321区FNスポット" data-en="FN Site 321" data-tip="FN Site 321">第321区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / D / A</td>
+            <td>-</td>
+            <td class="num-cell">Ground (81.26, 25.42)</td>
+          </tr>
+          <tr id="fn322" data-check-row data-search="FN322 FN Site 322 第322区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-322" data-check-group="fn-oblivia" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第322区FNスポット" data-en="FN Site 322" data-tip="FN Site 322">第322区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (87.44, 13.24)</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="spec-panel">
+    <div class="spec-panel-head">
+      <span><span class="term" data-jp="忘却の渓谷" data-en="Oblivia" data-tip="Oblivia">忘却の渓谷</span> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territories" data-tip="Unexplored Territories">秘境</span> &amp; <span class="term" data-jp="絶景" data-en="Scenic Viewpoints" data-tip="Scenic Viewpoints">絶景</span></span>
+      <span data-group-counter="ss-oblivia">0/9 (0%)</span>
+    </div>
+    <div class="spec-panel-body" style="padding: 4px 8px;">
+      <ul class="todo-list">
+        <li id="ss-3" data-check-row data-search="Beachside Trove 海辺の小穴 Unexplored Territory FN317"><input type="checkbox" class="check-box" data-check-id="ss-3" data-check-group="ss-oblivia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="海辺の小穴" data-en="Beachside Trove" data-tip="Beachside Trove">海辺の小穴</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN317 (73.32, 0.36). It is a cave located underneath FN Site 317, on the east side of the South Coast. It initially seems empty, but by turning around one can notice a pool of water which leads to a large luxuriant area rich in collectibles and a Treasure Box containing a schematic for SRM-USP1060GG Drone-Storm, a Skell superweapon.</span></li><li id="ss-5" data-check-row data-search="Crater Oasis クレーターオアシス Unexplored Territory FN313"><input type="checkbox" class="check-box" data-check-id="ss-5" data-check-group="ss-oblivia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="クレーターオアシス" data-en="Crater Oasis" data-tip="Crater Oasis">クレーターオアシス</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN313 (64.4, 1.19). Drop into the sinkhole oasis southwest of the desert landmark in sector I7.</span></li><li id="ss-6" data-check-row data-search="Cryptic Sign アンノウンサイン Unexplored Territory FN306"><input type="checkbox" class="check-box" data-check-id="ss-6" data-check-group="ss-oblivia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="アンノウンサイン" data-en="Cryptic Sign" data-tip="Cryptic Sign">アンノウンサイン</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN306 (58.63, 9.16). Climb onto the central cliff plateau in sector G6.</span></li><li id="ss-9" data-check-row data-search="Great Washington Isle グレートワシントン島 Unexplored Territory FN319"><input type="checkbox" class="check-box" data-check-id="ss-9" data-check-group="ss-oblivia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="グレートワシントン島" data-en="Great Washington Isle" data-tip="Great Washington Isle">グレートワシントン島</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN319 (81.13, -7.05). It is a solitary island located southeast of FN Site 319 in the waters off the South Coast. This island consists of a plateau with a glade of trees on top that can be reached using a Skell.</span></li><li id="ss-17" data-check-row data-search="Primeval Meadow 原生花園 Unexplored Territory FN318"><input type="checkbox" class="check-box" data-check-id="ss-17" data-check-group="ss-oblivia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="原生花園" data-en="Primeval Meadow" data-tip="Primeval Meadow">原生花園</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN318 (79.93, 13.8) &middot; Requires <span class="term" data-jp="ドールフライトパック" data-en="Skell Flight Module" data-tip="Skell Flight Module">ドールフライトパック</span>. This is a grassy plain shaped like the track of a massive bird. It is located directly above the East Ibra Ravine.</span></li><li id="ss-27" data-check-row data-search="Atop the Giant Ring 壊れ巨大リング頂上 Scenic Viewpoint FN318"><input type="checkbox" class="check-box" data-check-id="ss-27" data-check-group="ss-oblivia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="壊れ巨大リング頂上" data-en="Atop the Giant Ring" data-tip="Atop the Giant Ring">壊れ巨大リング頂上</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN318 (71.68, 7.95) &middot; Requires <span class="term" data-jp="ドールフライトパック" data-en="Skell Flight Module" data-tip="Skell Flight Module">ドールフライトパック</span>. Fly onto the highest crest of the Giant Ring in sector K7.</span></li><li id="ss-28" data-check-row data-search="Azure Lagoon ブルーホール Scenic Viewpoint FN313"><input type="checkbox" class="check-box" data-check-id="ss-28" data-check-group="ss-oblivia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="ブルーホール" data-en="Azure Lagoon" data-tip="Azure Lagoon">ブルーホール</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN313 (64.51, -1.98). Drop into the waterfall basin directly beneath FN313 in sector I8.</span></li><li id="ss-34" data-check-row data-search="Kintrees 親子の木 Scenic Viewpoint FN315"><input type="checkbox" class="check-box" data-check-id="ss-34" data-check-group="ss-oblivia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="親子の木" data-en="Kintrees" data-tip="Kintrees">親子の木</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN315 (68.5, 17.31) &middot; Requires <span class="term" data-jp="ドールフライトパック" data-en="Skell Flight Module" data-tip="Skell Flight Module">ドールフライトパック</span>. They can be reached by flying up above the Alexander Ridge in Oblivia.</span></li><li id="ss-36" data-check-row data-search="Mount Edge Peak マウントエッジ頂上 Scenic Viewpoint FN315"><input type="checkbox" class="check-box" data-check-id="ss-36" data-check-group="ss-oblivia" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="マウントエッジ頂上" data-en="Mount Edge Peak" data-tip="Mount Edge Peak">マウントエッジ頂上</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN315 (74.4, 22.12) &middot; Requires <span class="term" data-jp="ドールフライトパック" data-en="Skell Flight Module" data-tip="Skell Flight Module">ドールフライトパック</span>. Fly to the mountain summit in southeast sector K4.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="sylvalum">
+      <h2 class="section-header"><span><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="白樹の大陸" data-en="Sylvalum" data-tip="Sylvalum">白樹の大陸</span></span></span><span class="section-count"><span data-group-counter="fn-sylvalum">0/20 Sites</span></span></h2>
+  <div class="grid-main-side" style="margin-bottom: 12px;">
+    <div>
+      <p class="section-intro" style="margin-bottom: 0;">Centered around the four-way junction at FN408, Sylvalum&#x27;s 20 ground-accessible sites are the ideal home for chaining Storage, Duplicator, and Booster probes to push Miranium capacity past 100,000.</p>
+    </div>
+    <figure class="map-card" style="margin-bottom: 0;">
+      <img src="resources/maps/sylvalum_frontiernav.png" alt="Sylvalum FrontierNav map">
+      <figcaption><span class="term" data-jp="白樹の大陸" data-en="Sylvalum" data-tip="Sylvalum">白樹の大陸</span> <span class="term" data-jp="フロンティアネット" data-en="FrontierNav" data-tip="FrontierNav">フロンティアネット</span> Network</figcaption>
+    </figure>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="check-cell">Done</th>
+          <th>FN Site</th>
+          <th>Prod / Rev / Comb</th>
+          <th>Mineable Ores</th>
+          <th>Access &amp; Coords</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr id="fn401" data-check-row data-search="FN401 FN Site 401 第401区FNスポット Parhelion Platinum 幻日白金 Marine Rutile アクアルチル Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-401" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第401区FNスポット" data-en="FN Site 401" data-tip="FN Site 401">第401区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="幻日白金" data-en="Parhelion Platinum" data-tip="Parhelion Platinum">幻日白金</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アクアルチル" data-en="Marine Rutile" data-tip="Marine Rutile">アクアルチル</span></span></td>
+            <td class="num-cell">Ground (13.68, 92.58)</td>
+          </tr>
+          <tr id="fn402" data-check-row data-search="FN402 FN Site 402 第402区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-402" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第402区FNスポット" data-en="FN Site 402" data-tip="FN Site 402">第402区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / B / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (17.22, 84.62)</td>
+          </tr>
+          <tr id="fn403" data-check-row data-search="FN403 FN Site 403 第403区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-403" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第403区FNスポット" data-en="FN Site 403" data-tip="FN Site 403">第403区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / C / S</td>
+            <td>-</td>
+            <td class="num-cell">Ground (15.0, 70.1)</td>
+          </tr>
+          <tr id="fn404" data-check-row data-search="FN404 FN Site 404 第404区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-404" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第404区FNスポット" data-en="FN Site 404" data-tip="FN Site 404">第404区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / A / S</td>
+            <td>-</td>
+            <td class="num-cell">Ground (20.64, 102.81)</td>
+          </tr>
+          <tr id="fn405" data-check-row data-search="FN405 FN Site 405 第405区FNスポット Arc Sand Ore アーク砂鉱 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-405" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第405区FNスポット" data-en="FN Site 405" data-tip="FN Site 405">第405区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / E / A</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span></td>
+            <td class="num-cell">Ground (20.53, 77.89)</td>
+          </tr>
+          <tr id="fn406" data-check-row data-search="FN406 FN Site 406 第406区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-406" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第406区FNスポット" data-en="FN Site 406" data-tip="FN Site 406">第406区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (24.29, 96.8)</td>
+          </tr>
+          <tr id="fn407" data-check-row data-search="FN407 FN Site 407 第407区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-407" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第407区FNスポット" data-en="FN Site 407" data-tip="FN Site 407">第407区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / B / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (27.11, 109.53)</td>
+          </tr>
+          <tr id="fn408" data-check-row data-search="FN408 FN Site 408 第408区FNスポット Aurorite オーロラ石 Arc Sand Ore アーク砂鉱 Everfreeze Ore 千年氷鉱 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-408" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第408区FNスポット" data-en="FN Site 408" data-tip="FN Site 408">第408区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / D / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="オーロラ石" data-en="Aurorite" data-tip="Aurorite">オーロラ石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="千年氷鉱" data-en="Everfreeze Ore" data-tip="Everfreeze Ore">千年氷鉱</span></span></td>
+            <td class="num-cell">Ground (29.01, 88.05)</td>
+          </tr>
+          <tr id="fn409" data-check-row data-search="FN409 FN Site 409 第409区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-409" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第409区FNスポット" data-en="FN Site 409" data-tip="FN Site 409">第409区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (27.93, 68.57)</td>
+          </tr>
+          <tr id="fn410" data-check-row data-search="FN410 FN Site 410 第410区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-410" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第410区FNスポット" data-en="FN Site 410" data-tip="FN Site 410">第410区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (32.1, 114.71)</td>
+          </tr>
+          <tr id="fn411" data-check-row data-search="FN411 FN Site 411 第411区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-411" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第411区FNスポット" data-en="FN Site 411" data-tip="FN Site 411">第411区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / A / S</td>
+            <td>-</td>
+            <td class="num-cell">Ground (32.2, 80.6)</td>
+          </tr>
+          <tr id="fn412" data-check-row data-search="FN412 FN Site 412 第412区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-412" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第412区FNスポット" data-en="FN Site 412" data-tip="FN Site 412">第412区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / B / A</td>
+            <td>-</td>
+            <td class="num-cell">Ground (36.58, 103.05)</td>
+          </tr>
+          <tr id="fn413" data-check-row data-search="FN413 FN Site 413 第413区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-413" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第413区FNスポット" data-en="FN Site 413" data-tip="FN Site 413">第413区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (35.0, 92.51)</td>
+          </tr>
+          <tr id="fn414" data-check-row data-search="FN414 FN Site 414 第414区FNスポット Parhelion Platinum 幻日白金 Marine Rutile アクアルチル Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-414" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第414区FNスポット" data-en="FN Site 414" data-tip="FN Site 414">第414区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="幻日白金" data-en="Parhelion Platinum" data-tip="Parhelion Platinum">幻日白金</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アクアルチル" data-en="Marine Rutile" data-tip="Marine Rutile">アクアルチル</span></span></td>
+            <td class="num-cell">Ground (39.57, 77.04)</td>
+          </tr>
+          <tr id="fn415" data-check-row data-search="FN415 FN Site 415 第415区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-415" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第415区FNスポット" data-en="FN Site 415" data-tip="FN Site 415">第415区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (43.11, 114.71)</td>
+          </tr>
+          <tr id="fn416" data-check-row data-search="FN416 FN Site 416 第416区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-416" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第416区FNスポット" data-en="FN Site 416" data-tip="FN Site 416">第416区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (42.77, 99.82)</td>
+          </tr>
+          <tr id="fn417" data-check-row data-search="FN417 FN Site 417 第417区FNスポット Everfreeze Ore 千年氷鉱 Boiled-Egg Ore ボイルドエッグ鉱石 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-417" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第417区FNスポット" data-en="FN Site 417" data-tip="FN Site 417">第417区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / D / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="千年氷鉱" data-en="Everfreeze Ore" data-tip="Everfreeze Ore">千年氷鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ボイルドエッグ鉱石" data-en="Boiled-Egg Ore" data-tip="Boiled-Egg Ore">ボイルドエッグ鉱石</span></span></td>
+            <td class="num-cell">Ground (44.56, 83.48)</td>
+          </tr>
+          <tr id="fn418" data-check-row data-search="FN418 FN Site 418 第418区FNスポット Parhelion Platinum 幻日白金 Arc Sand Ore アーク砂鉱 Everfreeze Ore 千年氷鉱 Boiled-Egg Ore ボイルドエッグ鉱石 Marine Rutile アクアルチル Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-418" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第418区FNスポット" data-en="FN Site 418" data-tip="FN Site 418">第418区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / C / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="幻日白金" data-en="Parhelion Platinum" data-tip="Parhelion Platinum">幻日白金</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="千年氷鉱" data-en="Everfreeze Ore" data-tip="Everfreeze Ore">千年氷鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="ボイルドエッグ鉱石" data-en="Boiled-Egg Ore" data-tip="Boiled-Egg Ore">ボイルドエッグ鉱石</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アクアルチル" data-en="Marine Rutile" data-tip="Marine Rutile">アクアルチル</span></span></td>
+            <td class="num-cell">Ground (46.87, 107.97)</td>
+          </tr>
+          <tr id="fn419" data-check-row data-search="FN419 FN Site 419 第419区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-419" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第419区FNスポット" data-en="FN Site 419" data-tip="FN Site 419">第419区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / S</td>
+            <td>-</td>
+            <td class="num-cell">Ground (46.97, 90.85)</td>
+          </tr>
+          <tr id="fn420" data-check-row data-search="FN420 FN Site 420 第420区FNスポット Everfreeze Ore 千年氷鉱 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-420" data-check-group="fn-sylvalum" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第420区FNスポット" data-en="FN Site 420" data-tip="FN Site 420">第420区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / C / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="千年氷鉱" data-en="Everfreeze Ore" data-tip="Everfreeze Ore">千年氷鉱</span></span></td>
+            <td class="num-cell">Ground (54.44, 93.97)</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="spec-panel">
+    <div class="spec-panel-head">
+      <span><span class="term" data-jp="白樹の大陸" data-en="Sylvalum" data-tip="Sylvalum">白樹の大陸</span> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territories" data-tip="Unexplored Territories">秘境</span> &amp; <span class="term" data-jp="絶景" data-en="Scenic Viewpoints" data-tip="Scenic Viewpoints">絶景</span></span>
+      <span data-group-counter="ss-sylvalum">0/7 (0%)</span>
+    </div>
+    <div class="spec-panel-body" style="padding: 4px 8px;">
+      <ul class="todo-list">
+        <li id="ss-1" data-check-row data-search="Abyss Reservoir 深淵の洞底湖 Unexplored Territory FN404"><input type="checkbox" class="check-box" data-check-id="ss-1" data-check-group="ss-sylvalum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="深淵の洞底湖" data-en="Abyss Reservoir" data-tip="Abyss Reservoir">深淵の洞底湖</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN404 (16.65, 100.87). It is located at the very bottom of the Cavernous Abyss. In this area, the song z12e201v2e091n4t (part 2) plays instead of the normal theme.</span></li><li id="ss-4" data-check-row data-search="Behemoth&#x27;s Shadows 巨影の洞窟 Unexplored Territory FN419"><input type="checkbox" class="check-box" data-check-id="ss-4" data-check-group="ss-sylvalum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="巨影の洞窟" data-en="Behemoth&#x27;s Shadows" data-tip="Behemoth&#x27;s Shadows">巨影の洞窟</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN419 (48.57, 91.05). It is a cave located on the same outcropping as FN Site 420. It can be reached by dropping down from Delusians South Summit, or by climbing up a slope starting just south of North Hardheart Canyon.</span></li><li id="ss-15" data-check-row data-search="Noctilucent Sphere Interior 夜光球内 Unexplored Territory FN414"><input type="checkbox" class="check-box" data-check-id="ss-15" data-check-group="ss-sylvalum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="夜光球内" data-en="Noctilucent Sphere Interior" data-tip="Noctilucent Sphere Interior">夜光球内</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN414 (39.1, 78.43) &middot; Requires <span class="term" data-jp="ドールフライトパック" data-en="Skell Flight Module" data-tip="Skell Flight Module">ドールフライトパック</span>. This location can be found inside the Noctilucent Sphere by entering it from the west.</span></li><li id="ss-18" data-check-row data-search="Quay Hollows クエイ洞窟 Unexplored Territory FN414"><input type="checkbox" class="check-box" data-check-id="ss-18" data-check-group="ss-sylvalum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="クエイ洞窟" data-en="Quay Hollows" data-tip="Quay Hollows">クエイ洞窟</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN414 (38.69, 72.24) &middot; Requires <span class="term" data-jp="ドールフライトパック" data-en="Skell Flight Module" data-tip="Skell Flight Module">ドールフライトパック</span>. The entrance to this cave is only accessible via Skell flight, and is found south of the Noctilucent Sphere facing the sea. A pair of inactive Qmoevas and a Galdr are docked at the entrance. They cannot be fought.</span></li><li id="ss-20" data-check-row data-search="Sandsprint Cavity 砂走りの横穴 Unexplored Territory FN408"><input type="checkbox" class="check-box" data-check-id="ss-20" data-check-group="ss-sylvalum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="砂走りの横穴" data-en="Sandsprint Cavity" data-tip="Sandsprint Cavity">砂走りの横穴</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN408 (27.88, 92.87). It is a cave located in Sylvalum, south-southeast of FN Site 406 in the passageway between Lake Ciel and Badr Basin, and can be reached in a Skell by flying to a ledge in the passageway opening in the rock wall.</span></li><li id="ss-26" data-check-row data-search="Arc Rock アークロック Scenic Viewpoint FN410"><input type="checkbox" class="check-box" data-check-id="ss-26" data-check-group="ss-sylvalum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="アークロック" data-en="Arc Rock" data-tip="Arc Rock">アークロック</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN410 (27.5, 117.75) &middot; Requires <span class="term" data-jp="ドールフライトパック" data-en="Skell Flight Module" data-tip="Skell Flight Module">ドールフライトパック</span>. It is located far above Banshee Cave, and requires flight to get to. The viewpoint area is only reached on the northwest part of the rock, facing the Sylvalum Waters.</span></li><li id="ss-41" data-check-row data-search="Xanadu Overlook まほろばの頂 Scenic Viewpoint FN413"><input type="checkbox" class="check-box" data-check-id="ss-41" data-check-group="ss-sylvalum" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="まほろばの頂" data-en="Xanadu Overlook" data-tip="Xanadu Overlook">まほろばの頂</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN413 (34.22, 90.82). This viewpoint shows a breathtaking view of Lake Ciel from above. It can be reached from South Cinderdunes or North Ciel Sandsea near FN Site 413.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="cauldros">
+      <h2 class="section-header"><span><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="黒鋼の大陸" data-en="Cauldros" data-tip="Cauldros">黒鋼の大陸</span></span></span><span class="section-count"><span data-group-counter="fn-cauldros">0/16 Sites</span></span></h2>
+  <div class="grid-main-side" style="margin-bottom: 12px;">
+    <div>
+      <p class="section-intro" style="margin-bottom: 0;">Every single one of Cauldros&#x27;s 16 probe sites can be activated on foot before Flight, and six of them hold Mira&#x27;s exclusive veins of Bonjelium needed for crafting endgame XX augments.</p>
+    </div>
+    <figure class="map-card" style="margin-bottom: 0;">
+      <img src="resources/maps/cauldros_frontiernav.png" alt="Cauldros FrontierNav map">
+      <figcaption><span class="term" data-jp="黒鋼の大陸" data-en="Cauldros" data-tip="Cauldros">黒鋼の大陸</span> <span class="term" data-jp="フロンティアネット" data-en="FrontierNav" data-tip="FrontierNav">フロンティアネット</span> Network</figcaption>
+    </figure>
+  </div>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th class="check-cell">Done</th>
+          <th>FN Site</th>
+          <th>Prod / Rev / Comb</th>
+          <th>Mineable Ores</th>
+          <th>Access &amp; Coords</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+          <tr id="fn501" data-check-row data-search="FN501 FN Site 501 第501区FNスポット Arc Sand Ore アーク砂鉱 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-501" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第501区FNスポット" data-en="FN Site 501" data-tip="FN Site 501">第501区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / F / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span></td>
+            <td class="num-cell">Ground (38.73, 141.92)</td>
+          </tr>
+          <tr id="fn502" data-check-row data-search="FN502 FN Site 502 第502区FNスポット Bonjelium バンドジェリウム Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-502" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第502区FNスポット" data-en="FN Site 502" data-tip="FN Site 502">第502区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / C / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="バンドジェリウム" data-en="Bonjelium" data-tip="Bonjelium">バンドジェリウム</span></span></td>
+            <td class="num-cell">Ground (40.69, 128.55)</td>
+          </tr>
+          <tr id="fn503" data-check-row data-search="FN503 FN Site 503 第503区FNスポット Enduron Lead エンデュロ鉛 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-503" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第503区FNスポット" data-en="FN Site 503" data-tip="FN Site 503">第503区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / D / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="エンデュロ鉛" data-en="Enduron Lead" data-tip="Enduron Lead">エンデュロ鉛</span></span></td>
+            <td class="num-cell">Ground (47.08, 138.37)</td>
+          </tr>
+          <tr id="fn504" data-check-row data-search="FN504 FN Site 504 第504区FNスポット Bonjelium バンドジェリウム Arc Sand Ore アーク砂鉱 Enduron Lead エンデュロ鉛 Marine Rutile アクアルチル Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-504" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第504区FNスポット" data-en="FN Site 504" data-tip="FN Site 504">第504区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / C / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="バンドジェリウム" data-en="Bonjelium" data-tip="Bonjelium">バンドジェリウム</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="エンデュロ鉛" data-en="Enduron Lead" data-tip="Enduron Lead">エンデュロ鉛</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アクアルチル" data-en="Marine Rutile" data-tip="Marine Rutile">アクアルチル</span></span></td>
+            <td class="num-cell">Ground (52.36, 126.12)</td>
+          </tr>
+          <tr id="fn505" data-check-row data-search="FN505 FN Site 505 第505区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-505" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第505区FNスポット" data-en="FN Site 505" data-tip="FN Site 505">第505区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (55.05, 141.07)</td>
+          </tr>
+          <tr id="fn506" data-check-row data-search="FN506 FN Site 506 第506区FNスポット Bonjelium バンドジェリウム Arc Sand Ore アーク砂鉱 Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-506" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第506区FNスポット" data-en="FN Site 506" data-tip="FN Site 506">第506区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="バンドジェリウム" data-en="Bonjelium" data-tip="Bonjelium">バンドジェリウム</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アーク砂鉱" data-en="Arc Sand Ore" data-tip="Arc Sand Ore">アーク砂鉱</span></span></td>
+            <td class="num-cell">Ground (53.66, 134.1)</td>
+          </tr>
+          <tr id="fn507" data-check-row data-search="FN507 FN Site 507 第507区FNスポット Bonjelium バンドジェリウム Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-507" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第507区FNスポット" data-en="FN Site 507" data-tip="FN Site 507">第507区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="バンドジェリウム" data-en="Bonjelium" data-tip="Bonjelium">バンドジェリウム</span></span></td>
+            <td class="num-cell">Ground (60.98, 112.85)</td>
+          </tr>
+          <tr id="fn508" data-check-row data-search="FN508 FN Site 508 第508区FNスポット Enduron Lead エンデュロ鉛 Marine Rutile アクアルチル Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-508" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第508区FNスポット" data-en="FN Site 508" data-tip="FN Site 508">第508区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / B / S</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="エンデュロ鉛" data-en="Enduron Lead" data-tip="Enduron Lead">エンデュロ鉛</span></span>, <span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="アクアルチル" data-en="Marine Rutile" data-tip="Marine Rutile">アクアルチル</span></span></td>
+            <td class="num-cell">Ground (62.49, 126.87)</td>
+          </tr>
+          <tr id="fn509" data-check-row data-search="FN509 FN Site 509 第509区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-509" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第509区FNスポット" data-en="FN Site 509" data-tip="FN Site 509">第509区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / A / A</td>
+            <td>-</td>
+            <td class="num-cell">Ground (67.65, 142.17)</td>
+          </tr>
+          <tr id="fn510" data-check-row data-search="FN510 FN Site 510 第510区FNスポット Bonjelium バンドジェリウム Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-510" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第510区FNスポット" data-en="FN Site 510" data-tip="FN Site 510">第510区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / B</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="バンドジェリウム" data-en="Bonjelium" data-tip="Bonjelium">バンドジェリウム</span></span></td>
+            <td class="num-cell">Ground (71.65, 154.02)</td>
+          </tr>
+          <tr id="fn511" data-check-row data-search="FN511 FN Site 511 第511区FNスポット Bonjelium バンドジェリウム Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-511" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第511区FNスポット" data-en="FN Site 511" data-tip="FN Site 511">第511区FNスポット</span></span></strong></td>
+            <td class="num-cell">A / C / A</td>
+            <td><span class="ico-term"><img class="ico" src="resources/icons/inv_precious_resource.png" alt=""><span class="term" data-jp="バンドジェリウム" data-en="Bonjelium" data-tip="Bonjelium">バンドジェリウム</span></span></td>
+            <td class="num-cell">Ground (71.3, 126.66)</td>
+          </tr>
+          <tr id="fn512" data-check-row data-search="FN512 FN Site 512 第512区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-512" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第512区FNスポット" data-en="FN Site 512" data-tip="FN Site 512">第512区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / S</td>
+            <td>-</td>
+            <td class="num-cell">Ground (70.72, 117.96)</td>
+          </tr>
+          <tr id="fn513" data-check-row data-search="FN513 FN Site 513 第513区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-513" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第513区FNスポット" data-en="FN Site 513" data-tip="FN Site 513">第513区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (75.37, 140.21)</td>
+          </tr>
+          <tr id="fn514" data-check-row data-search="FN514 FN Site 514 第514区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-514" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第514区FNスポット" data-en="FN Site 514" data-tip="FN Site 514">第514区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / A / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (78.29, 124.36)</td>
+          </tr>
+          <tr id="fn515" data-check-row data-search="FN515 FN Site 515 第515区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-515" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第515区FNスポット" data-en="FN Site 515" data-tip="FN Site 515">第515区FNスポット</span></span></strong></td>
+            <td class="num-cell">C / B / S</td>
+            <td>-</td>
+            <td class="num-cell">Ground (81.35, 129.86)</td>
+          </tr>
+          <tr id="fn516" data-check-row data-search="FN516 FN Site 516 第516区FNスポット  Ground">
+            <td class="check-cell"><input type="checkbox" class="check-box" data-check-id="fn-516" data-check-group="fn-cauldros" aria-label="Mark completed"></td>
+            <td><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_data_probe.png" alt=""><span class="term" data-jp="第516区FNスポット" data-en="FN Site 516" data-tip="FN Site 516">第516区FNスポット</span></span></strong></td>
+            <td class="num-cell">B / E / B</td>
+            <td>-</td>
+            <td class="num-cell">Ground (87.14, 143.26)</td>
+          </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="spec-panel">
+    <div class="spec-panel-head">
+      <span><span class="term" data-jp="黒鋼の大陸" data-en="Cauldros" data-tip="Cauldros">黒鋼の大陸</span> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territories" data-tip="Unexplored Territories">秘境</span> &amp; <span class="term" data-jp="絶景" data-en="Scenic Viewpoints" data-tip="Scenic Viewpoints">絶景</span></span>
+      <span data-group-counter="ss-cauldros">0/10 (0%)</span>
+    </div>
+    <div class="spec-panel-body" style="padding: 4px 8px;">
+      <ul class="todo-list">
+        <li id="ss-2" data-check-row data-search="Bandits&#x27; Refuge 盗賊のねぐら Unexplored Territory FN507"><input type="checkbox" class="check-box" data-check-id="ss-2" data-check-group="ss-cauldros" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="盗賊のねぐら" data-en="Bandits&#x27; Refuge" data-tip="Bandits&#x27; Refuge">盗賊のねぐら</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN507 (57.28, 119.17). Follow the narrow cliffside path along the northwest edge of sector G6.</span></li><li id="ss-8" data-check-row data-search="Ganglion Antropolis グロウス洞窟基地 Unexplored Territory FN505"><input type="checkbox" class="check-box" data-check-id="ss-8" data-check-group="ss-cauldros" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="グロウス洞窟基地" data-en="Ganglion Antropolis" data-tip="Ganglion Antropolis">グロウス洞窟基地</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN505 (56.67, 145.83). It is underneath the G&#x27;nahan Villa structure. Getting in requires crossing the lava northeast of FN Site 505. Usually, the entrance inside is blocked by a rock face with an entrance that Skells cannot enter, followed by two sets of large force fields that prevent access. The force field is unlocked over the course of the mission Definian Downfall, regardless of route taken. Unlike most caves, this cave plays the theme known as z12e201v2e091n4t (part 1), as it is a Ganglion base.</span></li><li id="ss-11" data-check-row data-search="Infernal Ledges 岩礁の深淵 Unexplored Territory FN502"><input type="checkbox" class="check-box" data-check-id="ss-11" data-check-group="ss-cauldros" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="岩礁の深淵" data-en="Infernal Ledges" data-tip="Infernal Ledges">岩礁の深淵</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN502 (42.06, 134.52). This cave can be found just north of the Drongo Caravan. This cave is full of lava and requires platforming to get across. Terrain Damage Reducer will help mitigate damage taken inside.</span></li><li id="ss-12" data-check-row data-search="Kw&#x27;arah Cloister ク・アラ修道区 Unexplored Territory FN514"><input type="checkbox" class="check-box" data-check-id="ss-12" data-check-group="ss-cauldros" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="ク・アラ修道区" data-en="Kw&#x27;arah Cloister" data-tip="Kw&#x27;arah Cloister">ク・アラ修道区</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN514 (78.01, 126.3). It is located in Cauldros on the cliffs west of FN Site 515, below the Kw&#x27;arah Villa, and can be reached by taking the southeast path from M&#x27;gando Gorge BC. FN Site 514 is here.</span></li><li id="ss-13" data-check-row data-search="M&#x27;gando Mineral Spring ミ・ガンド鉱泉 Unexplored Territory FN513"><input type="checkbox" class="check-box" data-check-id="ss-13" data-check-group="ss-cauldros" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="ミ・ガンド鉱泉" data-en="M&#x27;gando Mineral Spring" data-tip="M&#x27;gando Mineral Spring">ミ・ガンド鉱泉</span></span></strong> &middot; <span class="term" data-jp="秘境" data-en="Unexplored Territory" data-tip="Unexplored Territory">秘境</span> &middot; Boosts FN513 (75.55, 139.75). This hot spring is located in the south end of the M&#x27;gando Volcanic Crater and is accessible by heading clockwise from the FN Site 513 fast travel point.</span></li><li id="ss-29" data-check-row data-search="Beneath O&#x27;rrh Sim Keep オ・ラ・シーム天守下 Scenic Viewpoint FN505"><input type="checkbox" class="check-box" data-check-id="ss-29" data-check-group="ss-cauldros" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="オ・ラ・シーム天守下" data-en="Beneath O&#x27;rrh Sim Keep" data-tip="Beneath O&#x27;rrh Sim Keep">オ・ラ・シーム天守下</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN505 (57.33, 136.86). Drop to the lower cliff base beneath the southeast keep structure in sector F3.</span></li><li id="ss-32" data-check-row data-search="Forgotten Mining Frigates 古代採掘船群 Scenic Viewpoint FN506"><input type="checkbox" class="check-box" data-check-id="ss-32" data-check-group="ss-cauldros" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="古代採掘船群" data-en="Forgotten Mining Frigates" data-tip="Forgotten Mining Frigates">古代採掘船群</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN506 (47.51, 124.99) &middot; Requires <span class="term" data-jp="ドールフライトパック" data-en="Skell Flight Module" data-tip="Skell Flight Module">ドールフライトパック</span>. These frigates and ships fly above most of Cauldros, and can be accessed from a few places. * The northern set of three frigates can be accessed via the Abandoned Bivouac. It grants access to the roof of the G&#x27;nahan Villa and FN Site 510. * The southern set of three frigates connects the O&#x27;rrh Sim Castle Ruins, the Dragonbone Promontory, and the Wildcat Fortress. When electromagnetic storms are present, a group of Scintimures will appear. * Other frigates are only available via flight: ** The northwestern frigate is between the Far Isle of Tzu&#x27;o and the G&#x27;nahan Villa. There are no enemies, but there is an indigen nest Treasure Box necessary for segment recon on it. ** There is a frigate above the Emerian Battlegrounds. There doesn&#x27;t seem to be anything in it. ** There is a frigate above Adder Byroad that has a few enemies and treasures. ** There is a frigate between the Kw&#x27;arah Villa and Kitsune Stronghold that houses Gi-zho, the Iron Deity. * One ship is only accessible from a teleporter located under Trueno, the Cataclysm in the White Phosphor Lake. It leads to a Definian Clone and a treasure box containing Extend Overdrive and Reflect: Ether.</span></li><li id="ss-35" data-check-row data-search="M&#x27;gando Volcanic Crater ミ・ガンド山火口 Scenic Viewpoint FN513"><input type="checkbox" class="check-box" data-check-id="ss-35" data-check-group="ss-cauldros" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="ミ・ガンド山火口" data-en="M&#x27;gando Volcanic Crater" data-tip="M&#x27;gando Volcanic Crater">ミ・ガンド山火口</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN513 (75.48, 141.4). It is located at the top of Mount M&#x27;gando. FN Site 513 can be found in a cave inside the volcano, and the M&#x27;gando Mineral Spring is located in a cave along its outside.</span></li><li id="ss-37" data-check-row data-search="O&#x27;rrh Sim Castle Ruins オ・ラ・シーム城址 Scenic Viewpoint FN508"><input type="checkbox" class="check-box" data-check-id="ss-37" data-check-group="ss-cauldros" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="オ・ラ・シーム城址" data-en="O&#x27;rrh Sim Castle Ruins" data-tip="O&#x27;rrh Sim Castle Ruins">オ・ラ・シーム城址</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN508 (67.8, 131.23). Follow the outer perimeter extending southeast from sector G3 into sector G4.</span></li><li id="ss-40" data-check-row data-search="White Phosphor Lake 白燐湖 Scenic Viewpoint FN503"><input type="checkbox" class="check-box" data-check-id="ss-40" data-check-group="ss-cauldros" aria-label="Mark completed"> <span><strong><span class="ico-term"><img class="ico" src="resources/icons/fn_landmark.png" alt=""><span class="term" data-jp="白燐湖" data-en="White Phosphor Lake" data-tip="White Phosphor Lake">白燐湖</span></span></strong> &middot; <span class="term" data-jp="絶景" data-en="Scenic Viewpoint" data-tip="Scenic Viewpoint">絶景</span> &middot; Boosts FN503 (47.15, 138.48). The area in northern Cauldros north of the Emerian Battlegrounds is covered in large, bright purple lakes that will cause heavy damage if entered. However, Terrain Damage Reducer can help to negate damage. FN Site 503 is located within the lake. The lake is also filled with massive Filiavents that will anger when touched or hit by collateral damage. One of them, Trueno, the Cataclysm, holds a teleporter underneath its body that will lead to a floating ship containing a level 5 Archaeological Treasure Box containing the rare Reflect: Ether and Extend Overdrive Augments. In this area, the song z12e201v2e091n4t (part 2) plays instead of the normal theme.</span></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+
+    <footer class="sheet-footer">
+      <a href="credits.html">Credits</a>
+      <a href="../../index.html">All Guides</a>
+    </footer>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>
