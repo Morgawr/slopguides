@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Missables, Cutoffs &amp; Quests to Watch - Guild Wars Reforged Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="gwr-masthead">
+    <div class="masthead-inner">
+      <div class="masthead-top">
+        <div class="brand-group">
+          <a class="repo-back" href="../../index.html">All Guides</a>
+          <a class="guide-brand" href="index.html">
+            <img class="ico" src="resources/icons/mode_reforged.png" alt="">Guild Wars Reforged
+          </a>
+        </div>
+        <span class="guide-platform">PC / Steam Deck / Gamepad</span>
+      </div>
+      <nav class="guide-nav" aria-label="Guide Sections">
+        <a href="index.html">Overview</a>
+        <a href="roadmap.html">Walkthrough</a>
+        <a href="beginners-tips.html">Tips</a>
+        <a href="mechanics.html">Mechanics</a>
+        <a href="builds-player.html">Player Builds</a>
+        <a href="builds-heroes.html">Hero Teams</a>
+        <a href="main-story.html">Campaigns</a>
+        <a href="missables.html" class="active">Missables</a>
+        <a href="exploits.html">Farming &amp; Tricks</a>
+        <a href="credits.html">Credits</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="prima-sheet">
+    <div class="completion-bar-wrap" data-counter-label="missable checks cleared">
+      <div class="completion-stats">
+        <span class="completion-text">0/0 missable checks cleared (0%)</span>
+        <div class="completion-track"><div class="completion-fill"></div></div>
+      </div>
+      <div class="completion-controls">
+        <button type="button" class="filter-btn active" data-status-filter="all">All</button>
+        <button type="button" class="filter-btn" data-status-filter="todo">Remaining</button>
+        <button type="button" class="filter-btn" data-status-filter="done">Done</button>
+        <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="page-header">
+      <h1>Missables, One-Way Cutoffs &amp; Bug Workarounds</h1>
+    </div>
+
+    <p class="lead-intro">
+      Most of Guild Wars lets you replay missions, adjust attributes, and revisit every region freely at Level 20. However, Pre-Searing Ascalon enforces a permanent one-way exit, several Reforged Mode quests contain sequence bugs to sidestep, and Nightfall features mutually exclusive Hero forks until the campaign finale.
+    </p>
+
+    <div class="page-toolbar">
+      <input type="search" class="toolbar-search" data-page-search placeholder="Filter cutoffs, bugs, or Heroes..." aria-label="Filter missables">
+      <div class="jump-links">
+        <a href="#pre-searing-cutoff">Pre-Searing Lockouts</a>
+        <a href="#reforged-mode-bugs">Reforged Quests &amp; Badges</a>
+        <a href="#campaign-forks">Campaign Forks &amp; Beyond</a>
+      </div>
+    </div>
+
+    <section id="pre-searing-cutoff">
+      <h2 class="section-header section-header-crimson">
+        <span>Pre-Searing Point of No Return &amp; Tutorial Lockouts</span>
+        <span class="section-count" data-group-counter="miss">0/0 (0%)</span>
+      </h2>
+      <ul class="todo-list">
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-01" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Pre-Searing Point of No Return (Sir Tydus &rarr; Ascalon Academy):</strong> Speaking to Sir Tydus inside Ascalon City courtyard and choosing <em>"Yes, I am ready"</em> to start <strong>Ascalon Academy</strong> permanently destroys Pre-Searing Ascalon for that character. Before stepping through the gate, finish <em>A Bastion In the North</em>, unlock <strong>Devona</strong> in Forsaken Tunnels, claim your secondary profession freebies, and pick up Gwen's <strong>Tapestry Shred</strong>. (Missed skills from Pre-Searing can still be bought post-Searing from Halbrik in Ascalon City, and Devona can be claimed in Lion's Arch, but you can never revisit the idyllic green zone.)
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-02" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Getting Started in Guild Wars (Town Crier Lockout Bug):</strong> In Reforged Mode, accept <strong>Getting Started in Guild Wars</strong> from the Town Crier inside Ascalon City <em>immediately after War Preparations</em>. If you delay talking to the Town Crier until after finalizing your Secondary Profession (<em>A Second Profession</em>), the quest can become permanently unobtainable on that character, forfeiting its easy 500 XP and 100g.
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-03" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Across the Wall &amp; Ben Wolfson Spawn Rule:</strong> After escorting <strong>Ben Wolfson</strong> south across the Great Northern Wall back into Lakeside County during <em>Across the Wall</em>, return straight to Ascalon City and turn the quest in to <strong>Nente / Captain Arne</strong> before stepping back into the Northlands. Re-entering The Northlands without finishing the turn-in leaves <strong>Devona, Vell, and Bock</strong> despawned at the gate so <strong>A Bastion In the North</strong> cannot start properly.
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-04" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Long Thought Forgotten Floor 1 Lock Trigger:</strong> Inside Pre-Searing <strong>Forsaken Tunnels</strong> (Floor 1) during <em>Long Thought Forgotten</em>, walk close to the glowing <strong>Dungeon Lock</strong> in the southwestern cavern so Objective 3 (<em>Push further into the tunnels</em>) updates immediately before sweeping the rest of the floor. Leaving the floor early or bypassing the lock trigger can stall quest progression until re-entering.
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-05" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Gwen's Tapestry Shred &amp; Small Girl's Cape (EotN Tied):</strong> In Pre-Searing Ashford, buy <strong>Gwen's Flute</strong> from Collector Verata / Merchant, give <strong>Red Iris Flowers</strong> to young Gwen twice, heal her with <span class="ico-term"><img class="ico" src="resources/icons/skill_orison_of_healing.jpg" alt="">Orison of Healing</span> when she asks, and hold onto her returned <strong>Small Girl's Cape</strong> (which transforms into <strong>Tapestry Shred</strong> post-Searing). Do not delete or merch the shred: bringing it to adult Gwen inside the Eye of the North Hall of Monuments rewards extra dialogue and unique armor/unlock lore in <em>Then and Now, Here and There</em>.
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-06" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Legendary Defender of Ascalon (LDoA) Pre-Searing Title:</strong> Reaching <strong>Level 20</strong> without ever leaving Pre-Searing earns the coveted LDoA account title. While unnecessary and slow on a very first playthrough (our main walkthrough leaves Pre-Searing cleanly around Level 8), alt characters achieve LDoA comfortably via <strong>Lieutenant Langmar's</strong> daily Vanguard quests starting at Level 10 and repeatable clears of <strong>Forsaken Tunnels</strong>.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="reforged-mode-bugs">
+      <h2 class="section-header">
+        <span>Reforged Mode Badges, Permanence Rules &amp; Attribute Points</span>
+      </h2>
+      <ul class="todo-list">
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-07" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Permanent Mode Locks (Reforged, Dhuum's Covenant, Melandru's Accord):</strong> <strong>Reforged Mode</strong> (<img class="ico" src="resources/icons/mode_reforged.png" alt="">) can only be disabled permanently via an outpost mode-remover NPC and cannot be turned back on after starting. <strong>Dhuum's Covenant</strong> loses its badge forever upon a single character death. <strong>Melandru's Accord</strong> permanently locks out Xunlai bank access, player-to-player trading, and crafters until revoked irreversibly.
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-08" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Native +30 Attribute Point Quests (200 Cap):</strong> Leveling to 20 provides only 170 points; the final +30 come strictly from the two native Attribute Quests of your character's <em>starting campaign</em> (listed on <a href="main-story.html">Campaigns</a>). Foreign travelers from Prophecies do not receive Factions or Nightfall +15 quests, so make sure a Prophecies starter finishes both <strong>Forgotten Wisdom</strong> and <strong>The Hero's Challenge</strong>.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="campaign-forks">
+      <h2 class="section-header">
+        <span>Nightfall Hero Forks, Optional Heroes &amp; Beyond State Toggles</span>
+      </h2>
+      <ul class="todo-list">
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-09" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Nightfall Fork 1 &ndash; Master of Whispers vs Margrid the Sly (Yohlon Haven):</strong> Taking <em>Secrets in the Shadow</em> unlocks Necromancer Hero <strong>Master of Whispers</strong> while locking out <strong>Margrid the Sly</strong> until after finishing Nightfall's finale (<em>Abaddon's Gate</em>). Always take <strong>Master of Whispers</strong> first so your Offensive Mesmerway team has two Necromancer Heroes right away.
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-10" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Nightfall Fork 2 &ndash; Norgu vs Goren (Mihanu Township):</strong> Choosing <em>Brainwashing</em> / Norgu's recruitment unlocks Mesmer Hero <strong>Norgu</strong> while delaying Warrior Goren until after <em>Abaddon's Gate</em>. Always choose <strong>Norgu</strong> first to complete your three-Mesmer core (Gwen, Ghost of Althea, Norgu).
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-11" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Post-Campaign &amp; DLC Optional Heroes (Razah, Xandra, M.O.X., Zei Ri):</strong> After beating Nightfall, pick up Omni-Profession Hero <strong>Razah</strong> in Heart of Abaddon via <em>Finding a Purpose</em>. Grab Ritualist Hero <strong>Xandra</strong> anytime at the Norn Fighting Tournament in Gunnar's Hold (Eye of the North). <strong>Zei Ri</strong> (Ritualist) is the long-tail reward for finishing Cantha's post-story <em>Winds of Change</em> Hard Mode chain.
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="miss-12" data-check-group="miss" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Guild Wars Beyond World-State Spawns (War in Kryta &amp; Winds of Change):</strong> Starting <em>War in Kryta</em> (Lion's Arch after beating Prophecies/EotN) or <em>Winds of Change</em> (Kaineng after beating Factions) replaces normal explorable foes in Kryta or Cantha with high-difficulty Peacekeepers and Ministry of Purity patrols. You can pause or restore normal spawns by speaking to the <strong>Herald</strong> NPCs in Lion's Arch or Kaineng Center once enabled, or hold off starting Beyond quests until done capturing standard bosses.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <footer class="sheet-footer">
+      <a href="main-story.html">Back to Campaigns</a>
+      <a href="exploits.html">Next: Farming &amp; Tricks</a>
+      <a href="credits.html">Credits &amp; Sources</a>
+    </footer>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

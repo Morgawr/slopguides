@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Core Systems &amp; Reforged Mechanics - Guild Wars Reforged Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="gwr-masthead">
+    <div class="masthead-inner">
+      <div class="masthead-top">
+        <div class="brand-group">
+          <a class="repo-back" href="../../index.html">All Guides</a>
+          <a class="guide-brand" href="index.html">
+            <img class="ico" src="resources/icons/mode_reforged.png" alt="">Guild Wars Reforged
+          </a>
+        </div>
+        <span class="guide-platform">PC / Steam Deck / Gamepad</span>
+      </div>
+      <nav class="guide-nav" aria-label="Guide Sections">
+        <a href="index.html">Overview</a>
+        <a href="roadmap.html">Walkthrough</a>
+        <a href="beginners-tips.html">Tips</a>
+        <a href="mechanics.html" class="active">Mechanics</a>
+        <a href="builds-player.html">Player Builds</a>
+        <a href="builds-heroes.html">Hero Teams</a>
+        <a href="main-story.html">Campaigns</a>
+        <a href="missables.html">Missables</a>
+        <a href="exploits.html">Farming &amp; Tricks</a>
+        <a href="credits.html">Credits</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="prima-sheet">
+    <div class="page-header">
+      <h1>Core Systems &amp; Reforged Mechanics</h1>
+    </div>
+
+    <p class="lead-intro">
+      Guild Wars pairs an uncluttered Level 20 ceiling with tactical combat math that rewards understanding attributes, armor breakpoints, and instanced party design. This reference covers every core rule alongside the global quality-of-life upgrades and character modes introduced in Guild Wars Reforged.
+    </p>
+
+    <div class="page-toolbar">
+      <div class="jump-links">
+        <a href="#reforged-modes">Reforged vs Classic</a>
+        <a href="#instances-caps">Instances &amp; Party Size</a>
+        <a href="#attributes-math">Attributes &amp; Runes</a>
+        <a href="#armor-crafters">Armor &amp; Max Crafters</a>
+        <a href="#weapons-caster">Weapons &amp; 40/40 Sets</a>
+        <a href="#combat-capture">Combat &amp; Capture</a>
+      </div>
+    </div>
+
+    <section id="reforged-modes">
+      <h2 class="section-header">
+        <span>Reforged Client Updates vs Character Creation Modes</span>
+      </h2>
+      <p class="section-intro">
+        Every Guild Wars account receives global engine, UI, and Steam Deck upgrades automatically. During character creation, you also choose optional gameplay toggles whose rules stay attached to that character.
+      </p>
+
+      <div class="grid-main-side">
+        <div>
+          <div class="table-wrap">
+            <table class="prima-table">
+              <thead>
+                <tr>
+                  <th>System / Feature</th>
+                  <th>Standard Character (Global Client)</th>
+                  <th>Reforged Mode</th>
+                  <th>Dhuum's Covenant / Melandru's Accord</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>UI, Controller &amp; Graphics</strong></td>
+                  <td>Full XInput/Steam Deck UI, HD skill icons, Task Tracker, expanded Compass rings, bloom/MSAA/SSAO</td>
+                  <td>Identical global client and UI</td>
+                  <td>Identical global client and UI</td>
+                </tr>
+                <tr>
+                  <td><strong>Base Campaign Unlock</strong></td>
+                  <td>Reforged Edition bundles <em>Prophecies</em>, <em>Factions</em>, and <em>Nightfall</em> cleanly</td>
+                  <td>Identical account access; Hero unlock questline active in Prophecies</td>
+                  <td>Identical account access</td>
+                </tr>
+                <tr>
+                  <td><strong>XP &amp; Gold Boost</strong></td>
+                  <td>Standard mission and drop payouts</td>
+                  <td>+5% XP &amp; gold in Prophecies Normal Mode zones; boosted mission/bonus gold</td>
+                  <td>Can be stacked alongside Reforged Mode on veteran alts</td>
+                </tr>
+                <tr>
+                  <td><strong>Skill Trainer Costs</strong></td>
+                  <td>Normal scaling curve up to 1,000g</td>
+                  <td>50% cheaper Prophecies skill trainers (smooth cap at 500g)</td>
+                  <td>Follows underlying Standard or Reforged setting</td>
+                </tr>
+                <tr>
+                  <td><strong>Early Ascalon Heroes</strong></td>
+                  <td>Wait until Lion's Arch (MOX), Istan, or Boreal Station</td>
+                  <td>Unlocks <strong>Devona</strong> (Pre-Searing) and <strong>Ghost of Althea</strong> (Post-Searing) permanently</td>
+                  <td>Available if Reforged Mode is also active</td>
+                </tr>
+                <tr>
+                  <td><strong>Death &amp; Storage Restrictions</strong></td>
+                  <td>Normal respawns, full trading, Xunlai Chest storage, and Material Crafters</td>
+                  <td>None; full trading and Xunlai storage enabled (recommended for first run)</td>
+                  <td><strong>Dhuum:</strong> Hardcore badge lost permanently on first death. <strong>Melandru:</strong> Permanent solo ironman lock blocking player trades, bank, and crafters</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <figure class="screen-card">
+            <img src="resources/screens/interface_options.jpg" alt="Guild Wars Reforged Graphics and Interface options menu">
+            <figcaption>Press F11 at any time to scale UI size, toggle Task Tracker, or unlock HUD layout panels.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="instances-caps">
+      <h2 class="section-header">
+        <span>Outposts, Explorable Instances &amp; Party Size Scaling</span>
+      </h2>
+      <div class="grid-main-side">
+        <div class="clean-prose">
+          <p>
+            Guild Wars splits the world strictly into two zone types. <strong>Towns and Outposts</strong> are shared public lobbies containing merchants, armorers, skill trainers, storage chests, and Mission Start panels, and allow free attribute resets whenever you step inside. Leaving an outpost through its glowing portal spawns a private <strong>Explorable Area</strong> or <strong>Cooperative Mission</strong> scaled exclusively for your current party.
+          </p>
+          <p>
+            Party limits expand step-by-step alongside your campaign progress so early tutorial zones keep micro-management gentle before opening full 8-member tactical squads. Clearing any campaign's final mission unlocks <strong>Hard Mode</strong> account-wide on Level 20 characters for that entire campaign (boosting foes to Level 24 to 30, improving rare drops, and unlocking Vanquishing and Master-rank Mission books).
+          </p>
+          <div class="table-wrap">
+            <table class="prima-table">
+              <thead>
+                <tr>
+                  <th>Region / Progression Stage</th>
+                  <th>Max Party Size</th>
+                  <th>Hero Cap (Default)</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Pre-Searing Ascalon</td>
+                  <td>2</td>
+                  <td>1 Hero (Devona in Reforged Mode)</td>
+                  <td>Soloable with starter Elementalist; Devona tanks Charr in The Northlands</td>
+                </tr>
+                <tr>
+                  <td>Post-Searing Ascalon &amp; Starting Islands</td>
+                  <td>4</td>
+                  <td>Up to 3</td>
+                  <td>Prophecies Ascalon (up to Gates of Kryta / Yak's Bend border), Shing Jea Island, Istan</td>
+                </tr>
+                <tr>
+                  <td>Northern Shiverpeaks &amp; Early Kryta</td>
+                  <td>6</td>
+                  <td>Up to 5</td>
+                  <td>Yak's Bend, Borlis Pass, Frost Gate, Lion's Arch, D'Alessio Seaboard, Divinity Coast</td>
+                </tr>
+                <tr>
+                  <td>Midgame &amp; Endgame Zones (Worldwide)</td>
+                  <td>8</td>
+                  <td>Up to 7 Heroes</td>
+                  <td>Sanctum Cay onward, Kaineng Center onward, Consulate Docks onward, all of Eye of the North</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <figure class="screen-card">
+            <img src="resources/screens/quest_log_layout.jpg" alt="Guild Wars Reforged expanded Quest Log and Task Tracker layout">
+            <figcaption>Press L to track quests, set compass beacons, and keep primary objectives pinned cleanly on screen.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="attributes-math">
+      <h2 class="section-header">
+        <span>Levels, Attribute Point Cap (200) &amp; Rune Stacking</span>
+      </h2>
+      <p class="section-intro">
+        You reach the maximum character level of <strong>Level 20</strong> early in the adventure (providing <strong>170 Attribute Points</strong> from leveling). Completing both native campaign <strong>+15 Attribute Point quests</strong> grants your final <strong>200 Attribute Point</strong> total, while Headpiece bonuses (+1) and Armor Runes (+1/+2/+3) push core lines to Rank 14 to 16.
+      </p>
+
+      <div class="grid-main-side">
+        <div class="table-wrap">
+          <table class="prima-table">
+            <thead>
+              <tr>
+                <th>Attribute Rank</th>
+                <th>Point Cost for Next Rank</th>
+                <th>Cumulative Points Spent</th>
+                <th>Tactical Sweet Spot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Rank 1</td><td>1</td><td>1</td><td>Splash utility</td></tr>
+              <tr><td>Rank 2</td><td>2</td><td>3</td><td>Hard Res (Flesh of My Flesh / Res Chant)</td></tr>
+              <tr><td>Rank 3</td><td>3</td><td>6</td><td>Early secondary healing / buffs</td></tr>
+              <tr><td>Rank 4</td><td>4</td><td>10</td><td>Splash Command / Shout duration</td></tr>
+              <tr><td>Rank 5</td><td>5</td><td>15</td><td>Pre-Searing early core</td></tr>
+              <tr><td>Rank 6</td><td>6</td><td>21</td><td>Secondary utility baseline</td></tr>
+              <tr><td>Rank 7</td><td>7</td><td>28</td><td>Cheap breakpoint (costs escalate above 8)</td></tr>
+              <tr><td>Rank 8</td><td>9</td><td>37</td><td>Strong secondary / third attribute cap</td></tr>
+              <tr><td>Rank 9</td><td>11</td><td>48</td><td>Weapon Requirement threshold (Req 9)</td></tr>
+              <tr><td>Rank 10</td><td>13</td><td>61</td><td>Standard off-attribute invest (+ runes)</td></tr>
+              <tr><td>Rank 11</td><td>16</td><td>77</td><td>Budget split when running two 11-point lines</td></tr>
+              <tr><td>Rank 12</td><td>20</td><td>97</td><td>Maximum base spend (hits 16 with +1 Headpiece &amp; Superior Rune)</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="spec-panel">
+          <div class="spec-panel-head">Rune &amp; Insignia Stacking Rules</div>
+          <div class="spec-panel-body">
+            <div class="spec-row">
+              <span class="spec-key">Single Rune Cap</span>
+              <span class="spec-val">Two runes of the same type never stack; only the highest applies</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Minor / Major / Superior</span>
+              <span class="spec-val">+1 (0 HP), +2 (-35 HP), +3 (-75 HP); use Minor on fragile characters and Superior on 12-rank primary lines</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Vigor &amp; Vitae</span>
+              <span class="spec-val">Major Vigor (+41 HP) or Superior Vigor (+50 HP) + two Attunement/Vitae runes (+10 HP each) offset Superior penalties</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Insignia Value</span>
+              <span class="spec-val">Insignias apply per armor piece (Chest + Hands + Legs + Feet + Head = 5 stacked bonuses)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Primary Attributes</span>
+              <span class="spec-val">Your Primary Profession's core stat (such as Energy Storage or Fast Casting) is strictly locked to primary class</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="armor-crafters">
+      <h2 class="section-header">
+        <span>Armor Rating (AL), Damage Types &amp; Earliest Max Crafters</span>
+      </h2>
+      <div class="clean-prose">
+        <p>
+          Every <strong>40 points of Armor Rating (AL)</strong> cuts incoming Physical and Elemental damage roughly in half relative to the baseline Level 20 expectation of 60 AL. Enemies target specific hit locations: <strong>Chest (37.5%)</strong>, <strong>Leggings (25%)</strong>, and <strong>Head / Gloves / Boots (12.5% each)</strong>, so upgrading Chest and Leggings first matters most if gold is tight.
+        </p>
+        <p>
+          <strong>Armor-Ignoring Damage</strong> (almost all Mesmer Domination damage like <span class="ico-term"><img class="ico" src="resources/icons/skill_energy_surge.jpg" alt="">Energy Surge</span>, Necromancer health degen/sacrifice, and Ritualist spirits/weapon spells) bypasses Armor Rating completely, which is why Mesmerway and Spirit Spammers melt high-level Hard Mode foes with extreme armor.
+        </p>
+      </div>
+
+      <div class="table-wrap">
+        <table class="prima-table">
+          <thead>
+            <tr>
+              <th>Max Armor Crafter</th>
+              <th>Outpost &amp; Campaign</th>
+              <th>Warrior / Paragon AL</th>
+              <th>Ranger / Sin / Dervish AL</th>
+              <th>Caster AL (E/Mo/N/Me/Rt)</th>
+              <th>Base Cost &amp; Key Advantage</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Wajjun Bazaar Crafter</strong></td>
+              <td>Wajjun Bazaar (Factions)</td>
+              <td>80</td>
+              <td>70</td>
+              <td>60</td>
+              <td>600g / piece + low mats; cheap emergency AL cap (missing Insignia slot; skip for Kaineng if you have ~5p)</td>
+            </tr>
+            <tr>
+              <td><strong>Maoh / Tiamun / Kaineng Armorers</strong></td>
+              <td>Kaineng Center (Factions)</td>
+              <td>80</td>
+              <td>70</td>
+              <td>60</td>
+              <td>1,000g / piece + mats; full Rune and Insignia slots, reachable at Level 10 via Lion's Arch</td>
+            </tr>
+            <tr>
+              <td><strong>Sunspear Crafters</strong></td>
+              <td>Consulate Docks (Nightfall)</td>
+              <td>80</td>
+              <td>70</td>
+              <td>60</td>
+              <td>1,000g / piece + mats; unlocked right after Blacktide Den during Hero recruitment loop</td>
+            </tr>
+            <tr>
+              <td><strong>Boreal Station Armorer</strong></td>
+              <td>Boreal Station (Eye of the North)</td>
+              <td>80</td>
+              <td>70</td>
+              <td>60</td>
+              <td>1,000g / piece + mats; available inside first EotN outpost without missions</td>
+            </tr>
+            <tr>
+              <td><strong>Droknar's Forge Armorer</strong></td>
+              <td>Droknar's Forge (Prophecies)</td>
+              <td>80</td>
+              <td>70</td>
+              <td>60</td>
+              <td>1,000g / piece + mats; classic Prophecies cap after crossing Crystal Desert (much later than Kaineng)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="weapons-caster">
+      <h2 class="section-header">
+        <span>Weapon Customization &amp; 40/40 Caster Sets</span>
+      </h2>
+      <div class="grid-2">
+        <div class="spec-panel">
+          <div class="spec-panel-head">Customizing &amp; Weapon Requirements</div>
+          <div class="spec-panel-body">
+            <div class="spec-row">
+              <span class="spec-key">Requirement 9 (Req 9)</span>
+              <span class="spec-val">Maximum-damage weapons require Rank 9 (max base damage for staves/wands is 11&ndash;22, swords 15&ndash;22)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Weaponsmith Customization</span>
+              <span class="spec-val">Always customize main weapons at a Weaponsmith for +20% damage (binds item to that character)</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Caster Energy Bonus</span>
+              <span class="spec-val">Staves grant +10 Energy passively; Wand + Focus sets grant +12 Energy plus double cooldown mods</span>
+            </div>
+          </div>
+        </div>
+        <div class="spec-panel spec-panel-crimson">
+          <div class="spec-panel-head">What a "40/40 Set" Means</div>
+          <div class="spec-panel-body">
+            <div class="spec-row">
+              <span class="spec-key">Concept</span>
+              <span class="spec-val">Wand + Focus matching your primary attribute, both rolling 20% Halves Casting Time and 20% Halves Skill Recharge</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Stacked Odds</span>
+              <span class="spec-val">Rolling 20% twice compounds to roughly 36% faster casting and cooldown resets on spells</span>
+            </div>
+            <div class="spec-row">
+              <span class="spec-key">Easiest Crafters</span>
+              <span class="spec-val"><strong>Gertrud</strong> (Vasburg Armory, Kurzick) and <strong>Telamon</strong> (Leviathan Pits, Luxon) craft cheap green-equivalent 40/40 sets for 5k + common mats</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="combat-capture">
+      <h2 class="section-header">
+        <span>Combat Statuses, Corner-Blocking &amp; Signet of Capture</span>
+      </h2>
+      <div class="grid-main-side">
+        <div class="clean-prose">
+          <p>
+            Guild Wars tracks three distinct combat debuff/buff families, each cleared by different skills: <strong>Conditions</strong> (Bleeding, Burning, Poison, Deep Wound, Weakness, Blind, Crippled, Dazed) drop from Condition removal; <strong>Hexes</strong> (purple negative spell icons) require Hex removal like <span class="ico-term"><img class="ico" src="resources/icons/skill_shatter_hex.jpg" alt="">Shatter Hex</span> or <span class="ico-term"><img class="ico" src="resources/icons/skill_cure_hex.jpg" alt="">Cure Hex</span>; and <strong>Enchantments</strong> (up-arrow buffs on foes) are stripped or punished by <span class="ico-term"><img class="ico" src="resources/icons/skill_drain_enchantment.jpg" alt="">Drain Enchantment</span>.
+          </p>
+          <p>
+            Standing behind narrow rock corners or archways after pulling causes chasing enemies to bunch onto a single spot ("balling up"), letting AoE skills like <span class="ico-term"><img class="ico" src="resources/icons/skill_fire_storm.jpg" alt="">Fire Storm</span>, <span class="ico-term"><img class="ico" src="resources/icons/skill_energy_surge.jpg" alt="">Energy Surge</span>, and <span class="ico-term"><img class="ico" src="resources/icons/skill_splinter_weapon.jpg" alt="">Splinter Weapon</span> strike every enemy simultaneously.
+          </p>
+          <p>
+            <strong>Elite Skills</strong> (gold-bordered skills limited to 1 per bar) unlock via <span class="ico-term"><img class="ico" src="resources/icons/skill_signet_of_capture.jpg" alt="">Signet of Capture</span>. Buy Signet of Capture (250g + 1 Skill Point) in Lion's Arch, Kaineng Center, or Kamadan, keep it equipped while killing a matching-profession Boss, stand near the boss's corpse before it fades, and activate the Signet to learn any unlocked skill from that boss's bar permanently on your account (unlocking it for Heroes too).
+          </p>
+        </div>
+        <div>
+          <figure class="screen-card">
+            <img src="resources/screens/hero_panel_titles.png" alt="Hero Panel Titles tab showing account titles and progression tracks">
+            <figcaption>Press H to inspect Hero Equipment, Attributes, and PvE Title Ranks (Asura, Norn, Sunspear, Lightbringer) that buff PvE-only skills.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <footer class="sheet-footer">
+      <a href="beginners-tips.html">Back to Beginner Tips</a>
+      <a href="builds-player.html">Next: Player Builds</a>
+      <a href="credits.html">Credits &amp; Sources</a>
+    </footer>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

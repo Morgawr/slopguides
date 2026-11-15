@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Player Builds Progression (All 10 Professions) - Guild Wars Reforged Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="gwr-masthead">
+    <div class="masthead-inner">
+      <div class="masthead-top">
+        <div class="brand-group">
+          <a class="repo-back" href="../../index.html">All Guides</a>
+          <a class="guide-brand" href="index.html">
+            <img class="ico" src="resources/icons/mode_reforged.png" alt="">Guild Wars Reforged
+          </a>
+        </div>
+        <span class="guide-platform">PC / Steam Deck / Gamepad</span>
+      </div>
+      <nav class="guide-nav" aria-label="Guide Sections">
+        <a href="index.html">Overview</a>
+        <a href="roadmap.html">Walkthrough</a>
+        <a href="beginners-tips.html">Tips</a>
+        <a href="mechanics.html">Mechanics</a>
+        <a href="builds-player.html" class="active">Player Builds</a>
+        <a href="builds-heroes.html">Hero Teams</a>
+        <a href="main-story.html">Campaigns</a>
+        <a href="missables.html">Missables</a>
+        <a href="exploits.html">Farming &amp; Tricks</a>
+        <a href="credits.html">Credits</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="prima-sheet">
+    <div class="completion-bar-wrap" data-counter-label="player build milestones">
+      <div class="completion-stats">
+        <span class="completion-text">0/0 player build milestones (0%)</span>
+        <div class="completion-track"><div class="completion-fill"></div></div>
+      </div>
+      <div class="completion-controls">
+        <button type="button" class="filter-btn active" data-status-filter="all">All</button>
+        <button type="button" class="filter-btn" data-status-filter="todo">Remaining</button>
+        <button type="button" class="filter-btn" data-status-filter="done">Done</button>
+        <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="page-header">
+      <h1>Player Builds Progression (All 10 Professions)</h1>
+    </div>
+
+    <p class="lead-intro">
+      Your own 8-skill bar matters differently as your account matures. Through Level 10, your damage carries early henchmen cleanly; once you assemble a 7-Hero squad, your job shifts to calling targets, supplying burst damage or party buffs, and dropping key PvE-only skills. Below is the complete staged progression for our recommended Elementalist starter followed by proven meta PvE templates for all other nine professions.
+    </p>
+
+    <div class="page-toolbar">
+      <input type="search" class="toolbar-search" data-page-search placeholder="Filter builds, elites, or professions..." aria-label="Filter player builds">
+      <div class="jump-links">
+        <a href="#build-checklist">Prep Checklist</a>
+        <a href="#build-elementalist">Elementalist (Recommended)</a>
+        <a href="#other-professions">All Other 9 Professions</a>
+        <a href="#summary-table">Quick-Reference Table</a>
+      </div>
+    </div>
+
+    <section id="build-checklist">
+      <h2 class="section-header">
+        <span>Player Build &amp; Unlock Checklist</span>
+        <span class="section-count" data-group-counter="pbld">0/0 (0%)</span>
+      </h2>
+      <ul class="todo-list">
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="pbld-01" data-check-group="pbld" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Ascend / Unlock Secondary Profession Switching:</strong> Reach <strong>Closer to the Stars / Nahpui Quarter</strong> (Factions, fastest at Level 10 to 12), <strong>Hunted! / Consulate Docks</strong> (Nightfall), or <strong>Augury Rock</strong> (Prophecies) so you can swap your secondary profession freely in any outpost.
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="pbld-02" data-check-group="pbld" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Buy Signet of Capture Early:</strong> Grab <span class="ico-term"><img class="ico" src="resources/icons/skill_signet_of_capture.jpg" alt="">Signet of Capture</span> (250g + 1 Skill Point) from <strong>Firstwatch Sergio</strong> in Lion's Arch, <strong>Michiko</strong> in Kaineng Center, or <strong>Pikin</strong> in Kamadan.
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="pbld-03" data-check-group="pbld" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Craft Max AL Armor (AL 60/70/80) in Kaineng Center:</strong> Visit Maoh or Tiamun in Kaineng Center for full-slot Max Armor plus a <strong>+1 Primary Attribute Headpiece</strong>, then socket Minor/Major runes and a Vigor rune.
+          </div>
+        </li>
+        <li data-check-row>
+          <input type="checkbox" class="check-box" data-check-id="pbld-04" data-check-group="pbld" aria-label="Mark completed">
+          <div class="check-body">
+            <strong>Unlock Core Eye of the North PvE Skills:</strong> Pick up <span class="ico-term"><img class="ico" src="resources/icons/skill_ebon_vanguard_assassin_support.jpg" alt="">Ebon Vanguard Assassin Support</span> (Doomlore Shrine, Ebon Vanguard track), <span class="ico-term"><img class="ico" src="resources/icons/skill_asuran_scan.jpg" alt="">Asuran Scan</span> (Rata Sum, Asura track), and <span class="ico-term"><img class="ico" src="resources/icons/skill_i_am_unstoppable.jpg" alt="">"I Am Unstoppable!"</span> (Gunnar's Hold / Sifhalla, Norn track).
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section id="build-elementalist">
+      <h2 class="section-header">
+        <span><img class="ico" src="resources/icons/prof_elementalist.png" alt="">Elementalist Progression (Walkthrough Starter)</span>
+      </h2>
+      <p class="section-intro">
+        <strong>Why Elementalist for Beginners:</strong> Energy Storage grants a deep energy pool before expensive runes or weapon sets exist, letting you sustain back-to-back AoE fireballs cleanly through Prophecies. Later, swapping between <strong>Elemental Attunement</strong> Fire Spam and Armor-Respecting/Armor-Bypassing <strong>Invoke Lightning</strong> keeps Elementalist strong even in late Hard Mode.
+      </p>
+
+      <h3 class="sub-head">Stage 1 (Levels 1 to 10 &ndash; Pre-Searing &amp; Early Ascalon): E/Mo Fire Spammer</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Fire Magic 9 (+1 Headpiece), Energy Storage 6, Healing Prayers 3. Drop <span class="ico-term"><img class="ico" src="resources/icons/skill_fire_storm.jpg" alt="">Fire Storm</span> onto Charr packs pulled behind Devona, save energy with <span class="ico-term"><img class="ico" src="resources/icons/skill_glyph_of_lesser_energy.jpg" alt="">Glyph of Lesser Energy</span>, and weave <span class="ico-term"><img class="ico" src="resources/icons/skill_aura_of_restoration.jpg" alt="">Aura of Restoration</span> for passive self-heals.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_flare.jpg" alt=""><span>Flare</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_fire_storm.jpg" alt=""><span>Fire Storm</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_glyph_of_lesser_energy.jpg" alt=""><span>Glyph of Lesser Energy</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_aura_of_restoration.jpg" alt=""><span>Aura of Restoration</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_fireball.jpg" alt=""><span>Fireball</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_lava_font.jpg" alt=""><span>Lava Font</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_orison_of_healing.jpg" alt=""><span>Orison of Healing</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_resurrection_signet.jpg" alt=""><span>Resurrection Signet</span></div>
+      </div>
+
+      <h3 class="sub-head">Stage 2 (Levels 10 to 20 &ndash; Normal Mode Clear): Elemental Attunement Fire Magic</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Fire Magic 12+1+3 (16), Energy Storage 12+1 (13). Capture <span class="ico-term"><img class="ico" src="resources/icons/skill_elemental_attunement.jpg" alt="">Elemental Attunement</span> early from <strong>Chung, the Attuned</strong> in The Undercity (Factions), <strong>Koren Wildstaff</strong> in Mineral Springs (Prophecies), or <strong>Bosun Mohrti</strong> in Marga Coast (Nightfall). Before unlocking Asuran PvE skill <em>Intensity</em>, substitute <span class="ico-term"><img class="ico" src="resources/icons/skill_meteor_shower.jpg" alt="">Meteor Shower</span> or <span class="ico-term"><img class="ico" src="resources/icons/skill_glyph_of_lesser_energy.jpg" alt="">Glyph of Lesser Energy</span> cleanly.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_flare.jpg" alt=""><span>Flare</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_rodgorts_invocation.jpg" alt=""><span>Rodgort's Invocation</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_incendiary_bonds.jpg" alt=""><span>Incendiary Bonds</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_liquid_flame.jpg" alt=""><span>Liquid Flame</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_fireball.jpg" alt=""><span>Fireball</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_intensity.jpg" alt=""><span>Intensity</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_elemental_attunement.jpg" alt=""><span>Elemental Attunement</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_fire_attunement.jpg" alt=""><span>Fire Attunement</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OgBSoYGTCD9CzCNNAA4gkC4CA</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+
+      <h3 class="sub-head">Stage 3 (Endgame Hard Mode &amp; Reforged 2026 Upgrade): Invoke Lightning / Soul Ignition</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Air Magic 12+1+3 (16), Energy Storage 12+1 (13). Air Magic spells pack built-in 25% armor penetration plus Cracked Armor, letting you cleave Hard Mode foes efficiently. Capture <span class="ico-term"><img class="ico" src="resources/icons/skill_invoke_lightning.jpg" alt="">Invoke Lightning</span> from <strong>General Tirraj</strong> in Dzagonur Bastion or <strong>Lushivahr the Invoker</strong> in Yatendi Canyons. For the Reforged Q3 2026 PvE upgrade, buy <span class="ico-term"><img class="ico" src="resources/icons/skill_soul_ignition.jpg" alt="">Soul Ignition</span> from <strong>Dakk</strong> (Ember Light Camp), <strong>Zendeht</strong> (Gate of Torment), or <strong>Zenaida</strong> (Harvest Temple) to add steady AoE hex pressure alongside Hero <span class="ico-term"><img class="ico" src="resources/icons/skill_unnatural_signet.jpg" alt="">Unnatural Signet</span> and <span class="ico-term"><img class="ico" src="resources/icons/skill_mistrust.jpg" alt="">Mistrust</span> triggers.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_intensity.jpg" alt=""><span>Intensity</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_invoke_lightning.jpg" alt=""><span>Invoke Lightning</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_shell_shock.jpg" alt=""><span>Shell Shock</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_arc_lightning.jpg" alt=""><span>Arc Lightning</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_lightning_javelin.jpg" alt=""><span>Lightning Javelin</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_ebon_vanguard_assassin_support.jpg" alt=""><span>Ebon Vanguard Assassin</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_air_attunement.jpg" alt=""><span>Air Attunement</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_elemental_lord.jpg" alt=""><span>Elemental Lord</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OgBSgYGT4gAaLgKNAAAAhDugA</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+    </section>
+
+    <section id="other-professions">
+      <h2 class="section-header">
+        <span>Meta Endgame PvE Builds for All Other 9 Professions</span>
+      </h2>
+      <p class="section-intro">
+        If you start or replay another class, use these current PvX meta templates designed to anchor a 7-Hero squad cleanly.
+      </p>
+
+      <h3 class="sub-head"><img class="ico" src="resources/icons/prof_warrior.png" alt="">Warrior: Seven Weapons Stance (W/any) &amp; Hundred Blades</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Strength 12+1+3 (16), Hammer Mastery 3+1 (4) (or Swordsmanship 12+1+3 on Hundred Blades). Popping <span class="ico-term"><img class="ico" src="resources/icons/skill_seven_weapons_stance.jpg" alt="">Seven Weapons Stance</span> jumps all weapon attributes to Rank 20 for crushing hammer knockdowns. Capture it at Raisu Palace explorable from <strong>Blade Ancient Syu-Shai</strong> while carrying a Proof of Triumph; without a Proof, run <span class="ico-term"><img class="ico" src="resources/icons/skill_hundred_blades.jpg" alt="">Hundred Blades</span> + <span class="ico-term"><img class="ico" src="resources/icons/skill_save_yourselves.jpg" alt="">"Save Yourselves!"</span> with Whirlwind Attack.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_for_great_justice.jpg" alt=""><span>"For Great Justice!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_crude_swing.jpg" alt=""><span>Crude Swing</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_auspicious_blow.jpg" alt=""><span>Auspicious Blow</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_power_attack.jpg" alt=""><span>Power Attack</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_protectors_strike.jpg" alt=""><span>Protector's Strike</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_seven_weapons_stance.jpg" alt=""><span>Seven Weapons Stance</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_asuran_scan.jpg" alt=""><span>Asuran Scan</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_i_am_unstoppable.jpg" alt=""><span>"I Am Unstoppable!"</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OQASE55QAAhFJOCFGFi1vl0kA</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+
+      <h3 class="sub-head"><img class="ico" src="resources/icons/prof_ranger.png" alt="">Ranger: Together as One Dagger Spammer (R/A)</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Expertise 11+1+3 (15), Dagger Mastery 12, Beast Mastery 6+1 (7). <span class="ico-term"><img class="ico" src="resources/icons/skill_together_as_one.jpg" alt="">"Together as One!"</span> transforms your Ranger into a melee DPS and Hero buff aura (+15 attack damage and strong regen for every nearby minion, spirit, pet, and party member).</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_jagged_strike.jpg" alt=""><span>Jagged Strike</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_fox_fangs.jpg" alt=""><span>Fox Fangs</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_death_blossom.jpg" alt=""><span>Death Blossom</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_asuran_scan.jpg" alt=""><span>Asuran Scan</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_i_am_unstoppable.jpg" alt=""><span>"I Am Unstoppable!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_never_rampage_alone.jpg" alt=""><span>Never Rampage Alone</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_together_as_one.jpg" alt=""><span>"Together as One!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_comfort_animal.jpg" alt=""><span>Comfort Animal</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OgcTYt72Zyhhh5gBAAAgHcsm2A</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+
+      <h3 class="sub-head"><img class="ico" src="resources/icons/prof_monk.png" alt="">Monk: Unyielding Aura Backline Healer (Mo/any)</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Divine Favor 12+1+1 (14), Healing Prayers 12+1 (13). While solo leveling in Prophecies, run Smiting Prayers with <span class="ico-term"><img class="ico" src="resources/icons/skill_symbol_of_wrath.jpg" alt="">Symbol of Wrath</span> and <span class="ico-term"><img class="ico" src="resources/icons/skill_ray_of_judgment.jpg" alt="">Ray of Judgment</span>; in 8-man Hero groups or player teams, <span class="ico-term"><img class="ico" src="resources/icons/skill_unyielding_aura.jpg" alt="">Unyielding Aura</span> provides +66% healing power alongside instant death-saving teleports.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_unyielding_aura.jpg" alt=""><span>Unyielding Aura</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_dwaynas_kiss.jpg" alt=""><span>Dwayna's Kiss</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_patient_spirit.jpg" alt=""><span>Patient Spirit</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_seed_of_life.jpg" alt=""><span>Seed of Life</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_deny_hexes.jpg" alt=""><span>Deny Hexes</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_divine_healing.jpg" alt=""><span>Divine Healing</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_heavens_delight.jpg" alt=""><span>Heaven's Delight</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_cure_hex.jpg" alt=""><span>Cure Hex</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OwAS0YITMEbENg5gfPXEdRAAA</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+
+      <h3 class="sub-head"><img class="ico" src="resources/icons/prof_necromancer.png" alt="">Necromancer: Assassin's Promise Death Caller (N/A)</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Death Magic 12+1+3 (16), Soul Reaping 8+1 (9), Deadly Arts 10. Tag weakened targets with <span class="ico-term"><img class="ico" src="resources/icons/skill_assassins_promise.jpg" alt="">Assassin's Promise</span> before calling focus fire: every kill completely refreshes your cooldowns and feeds energy to loop PvE bombs non-stop.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_putrid_bile.jpg" alt=""><span>Putrid Bile</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_ebon_vanguard_assassin_support.jpg" alt=""><span>Ebon Vanguard Assassin</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_assassins_promise.jpg" alt=""><span>Assassin's Promise</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_finish_him.jpg" alt=""><span>"Finish Him!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_animate_bone_fiend.jpg" alt=""><span>Animate Bone Fiend</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_putrid_explosion.jpg" alt=""><span>Putrid Explosion</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_signet_of_lost_souls.jpg" alt=""><span>Signet of Lost Souls</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_masochism.jpg" alt=""><span>Masochism</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OAdTUYD6VSBcXcBKmkKAAAAYLE</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+
+      <h3 class="sub-head"><img class="ico" src="resources/icons/prof_mesmer.png" alt="">Mesmer: PvE Energy Surge Domination (Me/any)</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Domination Magic 12+1+3 (16), Fast Casting 12+1 (13), Inspiration Magic 3. Copy <span class="ico-term"><img class="ico" src="resources/icons/skill_energy_surge.jpg" alt="">Energy Surge</span> with <span class="ico-term"><img class="ico" src="resources/icons/skill_arcane_echo.jpg" alt="">Arcane Echo</span> to open fights with back-to-back armor-ignoring AoE spikes while <span class="ico-term"><img class="ico" src="resources/icons/skill_mistrust.jpg" alt="">Mistrust</span> shuts down clustered enemy casters.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_auspicious_incantation.jpg" alt=""><span>Auspicious Incantation</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_arcane_echo.jpg" alt=""><span>Arcane Echo</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_energy_surge.jpg" alt=""><span>Energy Surge</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_mistrust.jpg" alt=""><span>Mistrust</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_unnatural_signet.jpg" alt=""><span>Unnatural Signet</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_cry_of_frustration.jpg" alt=""><span>Cry of Frustration</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_spiritual_pain.jpg" alt=""><span>Spiritual Pain</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_air_of_superiority.jpg" alt=""><span>Air of Superiority</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OQBTAYBPGS0ZJ4EY6x0BAAAAuE</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+
+      <h3 class="sub-head"><img class="ico" src="resources/icons/prof_assassin.png" alt="">Assassin: Way of the Assassin Dagger Spammer (A/W)</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Dagger Mastery 12+1+3 (16), Critical Strikes 12+2 (14). The cleanest general-purpose melee powerhouse in Guild Wars: chain <span class="ico-term"><img class="ico" src="resources/icons/skill_jagged_strike.jpg" alt="">Jagged Strike</span>, <span class="ico-term"><img class="ico" src="resources/icons/skill_fox_fangs.jpg" alt="">Fox Fangs</span>, and <span class="ico-term"><img class="ico" src="resources/icons/skill_death_blossom.jpg" alt="">Death Blossom</span> endlessly while feeding adrenaline into <span class="ico-term"><img class="ico" src="resources/icons/skill_save_yourselves.jpg" alt="">"Save Yourselves!"</span> for +100 team armor.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_jagged_strike.jpg" alt=""><span>Jagged Strike</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_fox_fangs.jpg" alt=""><span>Fox Fangs</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_death_blossom.jpg" alt=""><span>Death Blossom</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_asuran_scan.jpg" alt=""><span>Asuran Scan</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_i_am_unstoppable.jpg" alt=""><span>"I Am Unstoppable!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_save_yourselves.jpg" alt=""><span>"Save Yourselves!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_way_of_the_assassin.jpg" alt=""><span>Way of the Assassin</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_critical_eye.jpg" alt=""><span>Critical Eye</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OwFi0xjM5wwwcw8WCAAAEnp/A</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+
+      <h3 class="sub-head"><img class="ico" src="resources/icons/prof_ritualist.png" alt="">Ritualist: Signet of Spirits Spammer (Rt/any)</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Channeling Magic 12+1+3 (16), Spawning Power 12+1 (13). <span class="ico-term"><img class="ico" src="resources/icons/skill_signet_of_spirits.jpg" alt="">Signet of Spirits</span> spawns three attacking spirits in one cast, <span class="ico-term"><img class="ico" src="resources/icons/skill_summon_spirits.jpg" alt="">Summon Spirits</span> pulls and heals your entire wall into every pull, and <span class="ico-term"><img class="ico" src="resources/icons/skill_painful_bond.jpg" alt="">Painful Bond</span> adds armor-ignoring burst to every spirit bolt.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_signet_of_spirits.jpg" alt=""><span>Signet of Spirits</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_bloodsong.jpg" alt=""><span>Bloodsong</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_vampirism.jpg" alt=""><span>Vampirism</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_painful_bond.jpg" alt=""><span>Painful Bond</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_summon_spirits.jpg" alt=""><span>Summon Spirits</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_spirit_siphon.jpg" alt=""><span>Spirit Siphon</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_splinter_weapon.jpg" alt=""><span>Splinter Weapon</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_armor_of_unfeeling.jpg" alt=""><span>Armor of Unfeeling</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OACiIykMdNVO5DWNRDyMBAAAA</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+
+      <h3 class="sub-head"><img class="ico" src="resources/icons/prof_paragon.png" alt="">Paragon: Heroic Refrain Shout Leader (P/any)</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Leadership 12+1+3 (16), Command 10+1 (11), Spear Mastery 8+1 (9). Casting <span class="ico-term"><img class="ico" src="resources/icons/skill_heroic_refrain.jpg" alt="">Heroic Refrain</span> (captured in Nightfall at The Ruptured Heart with a Proof of Triumph) pushes yourself and every Hero to Rank 20 Attributes, unlocking massive party damage and near-invincibility through echoed shouts.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_i_am_the_strongest.jpg" alt=""><span>"I Am the Strongest!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_find_their_weakness.jpg" alt=""><span>"Find Their Weakness!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_fall_back.jpg" alt=""><span>"Fall Back!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_stand_your_ground.jpg" alt=""><span>"Stand Your Ground!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_aggressive_refrain.jpg" alt=""><span>Aggressive Refrain</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_theres_nothing_to_fear.jpg" alt=""><span>"There's Nothing to Fear!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_cant_touch_this.jpg" alt=""><span>"Can't Touch This!"</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_heroic_refrain.jpg" alt=""><span>Heroic Refrain</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OQCjUimKKTzk1b7Y1YubAh0bn1A</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+
+      <h3 class="sub-head"><img class="ico" src="resources/icons/prof_dervish.png" alt="">Dervish: Pious Renewal Teardown Scythe (D/any)</h3>
+      <div class="clean-prose">
+        <p><strong>Attributes:</strong> Scythe Mastery 12+1+3 (16), Mysticism 11+3 (14), Earth Prayers 6+1 (7). Maintain Dervish flash enchantments (<span class="ico-term"><img class="ico" src="resources/icons/skill_pious_fury.jpg" alt="">Pious Fury</span>, <span class="ico-term"><img class="ico" src="resources/icons/skill_mirage_cloak.jpg" alt="">Mirage Cloak</span>, <span class="ico-term"><img class="ico" src="resources/icons/skill_heart_of_holy_flame.jpg" alt="">Heart of Holy Flame</span>) and strip them instantly via <span class="ico-term"><img class="ico" src="resources/icons/skill_pious_renewal.jpg" alt="">Pious Renewal</span> for looping AoE scythe cleave, healing, and endless energy.</p>
+      </div>
+      <div class="skill-bar-strip">
+        <div class="skill-slot"><img src="resources/icons/skill_pious_renewal.jpg" alt=""><span>Pious Renewal</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_pious_assault.jpg" alt=""><span>Pious Assault</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_irresistible_sweep.jpg" alt=""><span>Irresistible Sweep</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_twin_moon_sweep.jpg" alt=""><span>Twin Moon Sweep</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_eremites_attack.jpg" alt=""><span>Eremite's Attack</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_pious_fury.jpg" alt=""><span>Pious Fury</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_mirage_cloak.jpg" alt=""><span>Mirage Cloak</span></div>
+        <div class="skill-slot"><img src="resources/icons/skill_heart_of_holy_flame.jpg" alt=""><span>Heart of Holy Flame</span></div>
+      </div>
+      <div class="tpl-row">
+        <span class="tpl-code">OgCjkyrG7SbXSXRXPXAAihcXygA</span>
+        <button type="button" class="tpl-copy-btn">Copy Code</button>
+      </div>
+    </section>
+
+    <section id="summary-table">
+      <h2 class="section-header">
+        <span>Quick-Reference Player Build Matrix</span>
+      </h2>
+      <div class="table-wrap">
+        <table class="prima-table">
+          <thead>
+            <tr>
+              <th>Profession</th>
+              <th>Flagship Build</th>
+              <th>Primary Role</th>
+              <th>Elite Capture / Acquisition</th>
+              <th>Template Code</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-check-row>
+              <td><input type="checkbox" class="check-box" data-check-id="pbld-05" data-check-group="pbld" aria-label="Mark completed"> <img class="ico" src="resources/icons/prof_elementalist.png" alt="">Elementalist</td>
+              <td>EA Fire / Invoke Lightning</td>
+              <td>AoE Caster DPS</td>
+              <td>Chung, the Attuned / General Tirraj</td>
+              <td><code>OgBSoYGTCD9CzCNNAA4gkC4CA</code></td>
+            </tr>
+            <tr data-check-row>
+              <td><input type="checkbox" class="check-box" data-check-id="pbld-06" data-check-group="pbld" aria-label="Mark completed"> <img class="ico" src="resources/icons/prof_warrior.png" alt="">Warrior</td>
+              <td>Seven Weapons Stance</td>
+              <td>Frontline Cleave &amp; KD</td>
+              <td>Blade Ancient Syu-Shai (Proof of Triumph)</td>
+              <td><code>OQASE55QAAhFJOCFGFi1vl0kA</code></td>
+            </tr>
+            <tr data-check-row>
+              <td><input type="checkbox" class="check-box" data-check-id="pbld-07" data-check-group="pbld" aria-label="Mark completed"> <img class="ico" src="resources/icons/prof_ranger.png" alt="">Ranger</td>
+              <td>Together as One Daggers</td>
+              <td>Melee DPS + Party Buff</td>
+              <td>Wickediko the Whispering (Proof of Triumph)</td>
+              <td><code>OgcTYt72Zyhhh5gBAAAgHcsm2A</code></td>
+            </tr>
+            <tr data-check-row>
+              <td><input type="checkbox" class="check-box" data-check-id="pbld-08" data-check-group="pbld" aria-label="Mark completed"> <img class="ico" src="resources/icons/prof_monk.png" alt="">Monk</td>
+              <td>Unyielding Aura Healer</td>
+              <td>Pure Party Healer</td>
+              <td>Tarnok, Chosen of the Gods (Abaddon's Mouth)</td>
+              <td><code>OwAS0YITMEbENg5gfPXEdRAAA</code></td>
+            </tr>
+            <tr data-check-row>
+              <td><input type="checkbox" class="check-box" data-check-id="pbld-09" data-check-group="pbld" aria-label="Mark completed"> <img class="ico" src="resources/icons/prof_necromancer.png" alt="">Necromancer</td>
+              <td>Assassin's Promise</td>
+              <td>Resetting PvE Bomber</td>
+              <td>Achor the Unseen / Whisper of Doom</td>
+              <td><code>OAdTUYD6VSBcXcBKmkKAAAAYLE</code></td>
+            </tr>
+            <tr data-check-row>
+              <td><input type="checkbox" class="check-box" data-check-id="pbld-10" data-check-group="pbld" aria-label="Mark completed"> <img class="ico" src="resources/icons/prof_mesmer.png" alt="">Mesmer</td>
+              <td>Energy Surge Domination</td>
+              <td>Armor-Ignoring Spike</td>
+              <td>Varny the Zealot / Mursaat Mesmer</td>
+              <td><code>OQBTAYBPGS0ZJ4EY6x0BAAAAuE</code></td>
+            </tr>
+            <tr data-check-row>
+              <td><input type="checkbox" class="check-box" data-check-id="pbld-11" data-check-group="pbld" aria-label="Mark completed"> <img class="ico" src="resources/icons/prof_assassin.png" alt="">Assassin</td>
+              <td>Way of the Assassin Daggers</td>
+              <td>Single &amp; AoE Melee Carry</td>
+              <td>Kenshi Steelhand (Raisu Palace)</td>
+              <td><code>OwFi0xjM5wwwcw8WCAAAEnp/A</code></td>
+            </tr>
+            <tr data-check-row>
+              <td><input type="checkbox" class="check-box" data-check-id="pbld-12" data-check-group="pbld" aria-label="Mark completed"> <img class="ico" src="resources/icons/prof_ritualist.png" alt="">Ritualist</td>
+              <td>Signet of Spirits Spammer</td>
+              <td>Solo &amp; Team Spirit DPS</td>
+              <td>Wagg Spiritspeak (Ferndale)</td>
+              <td><code>OACiIykMdNVO5DWNRDyMBAAAA</code></td>
+            </tr>
+            <tr data-check-row>
+              <td><input type="checkbox" class="check-box" data-check-id="pbld-13" data-check-group="pbld" aria-label="Mark completed"> <img class="ico" src="resources/icons/prof_paragon.png" alt="">Paragon</td>
+              <td>Heroic Refrain Spear</td>
+              <td>+4 All Attributes Team Anchor</td>
+              <td>Yoannh the Rebuilder (Proof of Triumph)</td>
+              <td><code>OQCjUimKKTzk1b7Y1YubAh0bn1A</code></td>
+            </tr>
+            <tr data-check-row>
+              <td><input type="checkbox" class="check-box" data-check-id="pbld-14" data-check-group="pbld" aria-label="Mark completed"> <img class="ico" src="resources/icons/prof_dervish.png" alt="">Dervish</td>
+              <td>Pious Renewal Scythe</td>
+              <td>Cleave Melee + Sustain</td>
+              <td>Jishol Darksong (Bahdok Caverns)</td>
+              <td><code>OgCjkyrG7SbXSXRXPXAAihcXygA</code></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <footer class="sheet-footer">
+      <a href="mechanics.html">Back to Mechanics</a>
+      <a href="builds-heroes.html">Next: Hero Teams</a>
+      <a href="credits.html">Credits &amp; Sources</a>
+    </footer>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>
