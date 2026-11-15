@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mia Clementis Route - 夜明け前より瑠璃色な Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="dawn-masthead">
+    <div class="masthead-inner">
+      <div class="masthead-top">
+        <div class="brand-group">
+          <a class="repo-back" href="../../index.html">All Guides</a>
+          <a class="guide-brand" href="index.html"><span class="term" data-jp="夜明け前より瑠璃色な" data-en="Brighter than the Dawning Blue" data-tip="Brighter than the Dawning Blue">夜明け前より瑠璃色な</span></a>
+        </div>
+        <span class="guide-platform">PC / PS2 / PSP</span>
+      </div>
+      <nav class="guide-nav" aria-label="Guide Sections">
+        <a href="index.html">Overview</a>
+        <a href="beginners-tips.html">Tips</a>
+        <a href="roadmap.html">Play Order</a>
+        <a href="mechanics.html">Mechanics</a>
+        <a href="missables.html">Missables &amp; CG</a>
+        <a href="route-feena.html">Feena</a>
+        <a href="route-mai.html">Mai</a>
+        <a href="route-natsuki.html">Natsuki</a>
+        <a href="route-sayaka.html">Sayaka</a>
+        <a href="route-mia.html" class="active">Mia</a>
+        <a href="route-midori.html">Midori</a>
+        <a href="route-estel.html">Estel</a>
+        <a href="route-wreathlit.html">Wreathlit</a>
+        <a href="credits.html">Credits</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="prima-sheet">
+    <div class="page-header">
+      <h1><span class="term" data-jp="ミア・クレメンティス" data-en="Mia Clementis" data-tip="Mia Clementis">ミア・クレメンティス</span> Route</h1>
+    </div>
+
+    <div class="progress-banner">
+      <span class="progress-text" id="page-progress-text" data-label="Mia Progress">Mia Progress: 0/13 (0%)</span>
+      <div class="progress-track"><div class="progress-fill" id="page-progress-fill"></div></div>
+      <button type="button" class="progress-reset" id="page-progress-reset">Reset Page</button>
+    </div>
+
+    <p class="lead-intro">
+      Unlocks on Playthrough 2 after clearing <a href="route-feena.html"><span class="term" data-jp="フィーナ" data-en="Feena" data-tip="Feena">フィーナ</span></a>. Take the home-early branch on <span class="term" data-jp="5月24日" data-en="May 24" data-tip="May 24">5月24日</span> and assist <span class="term" data-jp="ミア" data-en="Mia" data-tip="Mia">ミア</span> directly to enter her route.
+    </p>
+
+    <h2 class="section-header">Route Choices</h2>
+    <ul class="checklist">
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-1" id="mia-1">
+        <label class="check-body" for="mia-1">
+          <span class="check-date">5月5日</span> <span class="term" data-jp="もう少し麻衣と話す" data-en="Talk with Mai a little longer" data-tip="Talk with Mai a little longer">もう少し麻衣と話す</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-2" id="mia-2">
+        <label class="check-body" for="mia-2">
+          <span class="check-date">5月6日</span> <span class="term" data-jp="姉さんの寝癖について指摘する" data-en="Point out Sayaka's bedhead" data-tip="Point out Sayaka's bedhead">姉さんの寝癖について指摘する</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-3" id="mia-3">
+        <label class="check-body" for="mia-3">
+          <span class="check-date">5月9日</span> <span class="term" data-jp="チョキ" data-en="Scissors" data-tip="Scissors">チョキ</span>
+          <span class="check-note"><span class="term" data-jp="グー" data-en="Rock" data-tip="Rock">グー</span> also works if starting from a shared May 24 save.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-4" id="mia-4">
+        <label class="check-body" for="mia-4">
+          <span class="check-date">5月24日</span> <span class="term" data-jp="少し早いけど家に帰る" data-en="Head home a bit early" data-tip="Head home a bit early">少し早いけど家に帰る</span> &rarr; <span class="term" data-jp="ミアに助け舟を出す" data-en="Help Mia out" data-tip="Help Mia out">ミアに助け舟を出す</span> &rarr; <span class="term" data-jp="分かった、協力するよ" data-en="Got it, I'll cooperate" data-tip="Got it, I'll cooperate">分かった、協力するよ</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-5" id="mia-5">
+        <label class="check-body" for="mia-5">
+          <span class="check-date">5月25日</span> <span class="term" data-jp="家での出来事" data-en="Events at home" data-tip="Events at home">家での出来事</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-6" id="mia-6">
+        <label class="check-body" for="mia-6">
+          <span class="check-date">5月27日</span> <span class="term" data-jp="麻衣の出方を待つ" data-en="Wait to see what Mai does" data-tip="Wait to see what Mai does">麻衣の出方を待つ</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-7" id="mia-7">
+        <label class="check-body" for="mia-7">
+          <span class="check-date">6月1日</span> <span class="term" data-jp="フィーナかミアだったのかな" data-en="Was it Feena or Mia?" data-tip="Was it Feena or Mia?">フィーナかミアだったのかな</span> &rarr; <span class="term" data-jp="もう少し、頑張ってるフィーナを見る" data-en="Watch Feena working hard a little longer" data-tip="Watch Feena working hard a little longer">もう少し、頑張ってるフィーナを見る</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-8" id="mia-8">
+        <label class="check-body" for="mia-8">
+          <span class="check-date">6月3日</span> <span class="term" data-jp="フィーナやミアは地球の生活に慣れたかな" data-en="Have Feena and Mia gotten used to life on Earth?" data-tip="Have Feena and Mia gotten used to life on Earth?">フィーナやミアは地球の生活に慣れたかな</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-9" id="mia-9">
+        <label class="check-body" for="mia-9">
+          <span class="check-date">6月5日</span> <span class="term" data-jp="大事を取って家で休むことにする" data-en="Play it safe and rest at home" data-tip="Play it safe and rest at home">大事を取って家で休むことにする</span> &rarr; <span class="term" data-jp="自分でできるからいい" data-en="I can do it myself, so it's fine" data-tip="I can do it myself, so it's fine">自分でできるからいい</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-10" id="mia-10">
+        <label class="check-body" for="mia-10">
+          <span class="check-date">6月8日</span> <span class="term" data-jp="あれ、フィーナはまだかな？" data-en="Huh, is Feena not here yet?" data-tip="Huh, is Feena not here yet?">あれ、フィーナはまだかな？</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-11" id="mia-11">
+        <label class="check-body" for="mia-11">
+          <span class="check-date">6月12日 - 6月28日</span> <span class="term" data-jp="朝霧家の母親役をやってもらってる姉さん" data-en="Sayaka, who acts as the mother of the Asagiri household" data-tip="Sayaka, who acts as the mother of the Asagiri household">朝霧家の母親役をやってもらってる姉さん</span> &rarr; <span class="term" data-jp="ミアは、いつも朝御飯の準備で早起きだよな・・・" data-en="Mia always wakes up early to prepare breakfast..." data-tip="Mia always wakes up early to prepare breakfast...">ミアは、いつも朝御飯の準備で早起きだよな・・・</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-12" id="mia-12">
+        <label class="check-body" for="mia-12">
+          <span class="check-date">7月9日</span> <span class="term" data-jp="海に着くまで、じっくり楽しむ" data-en="Take time enjoying the trip to the beach" data-tip="Take time enjoying the trip to the beach">海に着くまで、じっくり楽しむ</span>
+          <span class="check-note">Quick-save here and also view <span class="term" data-jp="さっさと海に到着する" data-en="Head straight to the beach" data-tip="Head straight to the beach">さっさと海に到着する</span> for all beach differentials.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mia-13" id="mia-13">
+        <label class="check-body" for="mia-13">
+          <strong>Complete <span class="term" data-jp="ミア・クレメンティス" data-en="Mia Clementis" data-tip="Mia Clementis">ミア・クレメンティス</span> Ending</strong>
+          <span class="check-note">Next recommended route: <a href="route-midori.html"><span class="term" data-jp="遠山翠" data-en="Midori Tooyama" data-tip="Midori Tooyama">遠山翠</span></a> (Brighter than dawning blue) or <a href="route-wreathlit.html"><span class="term" data-jp="リースリット" data-en="Wreathlit" data-tip="Wreathlit">リースリット</span></a> (PC 2005).</span>
+        </label>
+      </li>
+    </ul>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

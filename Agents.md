@@ -279,6 +279,12 @@ names, etc).
 - Do not use emoji
 - Do not use em-dashes
 
+Never write prose explaining how the website's own UI works. Do not tell the
+reader that checkboxes save to localStorage, that a floating button swaps
+between Japanese and English, that terms have hover tooltips, that spoiler
+blocks reveal on click, or that checkboxes sync across pages. Keep all
+introductory and section text focused strictly on the game itself.
+
 Avoid:
 - Negation-first reveal ("It is not a wrong answer. It is a non-answer")
 - Significance designation (It is the leg that answers the actual question.")

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mai Asagiri Route - 夜明け前より瑠璃色な Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="dawn-masthead">
+    <div class="masthead-inner">
+      <div class="masthead-top">
+        <div class="brand-group">
+          <a class="repo-back" href="../../index.html">All Guides</a>
+          <a class="guide-brand" href="index.html"><span class="term" data-jp="夜明け前より瑠璃色な" data-en="Brighter than the Dawning Blue" data-tip="Brighter than the Dawning Blue">夜明け前より瑠璃色な</span></a>
+        </div>
+        <span class="guide-platform">PC / PS2 / PSP</span>
+      </div>
+      <nav class="guide-nav" aria-label="Guide Sections">
+        <a href="index.html">Overview</a>
+        <a href="beginners-tips.html">Tips</a>
+        <a href="roadmap.html">Play Order</a>
+        <a href="mechanics.html">Mechanics</a>
+        <a href="missables.html">Missables &amp; CG</a>
+        <a href="route-feena.html">Feena</a>
+        <a href="route-mai.html" class="active">Mai</a>
+        <a href="route-natsuki.html">Natsuki</a>
+        <a href="route-sayaka.html">Sayaka</a>
+        <a href="route-mia.html">Mia</a>
+        <a href="route-midori.html">Midori</a>
+        <a href="route-estel.html">Estel</a>
+        <a href="route-wreathlit.html">Wreathlit</a>
+        <a href="credits.html">Credits</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="prima-sheet">
+    <div class="page-header">
+      <h1><span class="term" data-jp="朝霧麻衣" data-en="Mai Asagiri" data-tip="Mai Asagiri">朝霧麻衣</span> Route</h1>
+    </div>
+
+    <div class="progress-banner">
+      <span class="progress-text" id="page-progress-text" data-label="Mai Progress">Mai Progress: 0/16 (0%)</span>
+      <div class="progress-track"><div class="progress-fill" id="page-progress-fill"></div></div>
+      <button type="button" class="progress-reset" id="page-progress-reset">Reset Page</button>
+    </div>
+
+    <p class="lead-intro">
+      Unlocks on Playthrough 2 after clearing <a href="route-feena.html"><span class="term" data-jp="フィーナ" data-en="Feena" data-tip="Feena">フィーナ</span></a>. This route focuses on <span class="term" data-jp="朝霧達哉" data-en="Tatsuya Asagiri" data-tip="Tatsuya Asagiri">朝霧達哉</span>'s younger sister and her flute club activities at <span class="term" data-jp="カトリーナ学園" data-en="Katrina Academy" data-tip="Katrina Academy">カトリーナ学園</span>.
+    </p>
+
+    <div class="save-marker">
+      Master Save Anchor: Create a permanent save right before the <span class="term" data-jp="5月24日" data-en="May 24" data-tip="May 24">5月24日</span> choice so you can branch directly into every remaining heroine later.
+    </div>
+
+    <h2 class="section-header">Route Choices</h2>
+    <ul class="checklist">
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-1" id="mai-1">
+        <label class="check-body" for="mai-1">
+          <span class="check-date">5月5日</span> <span class="term" data-jp="もう少し麻衣と話す" data-en="Talk with Mai a little longer" data-tip="Talk with Mai a little longer">もう少し麻衣と話す</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-2" id="mai-2">
+        <label class="check-body" for="mai-2">
+          <span class="check-date">5月6日</span> <span class="term" data-jp="姉さんの寝癖について指摘する" data-en="Point out Sayaka's bedhead" data-tip="Point out Sayaka's bedhead">姉さんの寝癖について指摘する</span>
+          <span class="check-note">Either option works here; <span class="term" data-jp="寝癖も姉さんの個性だ" data-en="Bedhead is part of Sayaka's charm too" data-tip="Bedhead is part of Sayaka's charm too">寝癖も姉さんの個性だ</span> also advances cleanly.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-3" id="mai-3">
+        <label class="check-body" for="mai-3">
+          <span class="check-date">5月9日</span> <span class="term" data-jp="グー" data-en="Rock" data-tip="Rock">グー</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-4" id="mai-4">
+        <label class="check-body" for="mai-4">
+          <span class="check-date">5月24日</span> <span class="term" data-jp="学院に少し残ってみる" data-en="Stay at the academy for a bit" data-tip="Stay at the academy for a bit">学院に少し残ってみる</span> &rarr; <span class="term" data-jp="麻衣の様子を見に行くことにした" data-en="Decided to go check on Mai" data-tip="Decided to go check on Mai">麻衣の様子を見に行くことにした</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-5" id="mai-5">
+        <label class="check-body" for="mai-5">
+          <span class="check-date">5月25日</span> <span class="term" data-jp="家での出来事" data-en="Events at home" data-tip="Events at home">家での出来事</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-6" id="mai-6">
+        <label class="check-body" for="mai-6">
+          <span class="check-date">5月27日</span> <span class="term" data-jp="先陣を切って特攻する" data-en="Lead the charge headfirst" data-tip="Lead the charge headfirst">先陣を切って特攻する</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-7" id="mai-7">
+        <label class="check-body" for="mai-7">
+          <span class="check-date">6月1日</span> <span class="term" data-jp="菜月か麻衣だろう" data-en="Probably Natsuki or Mai" data-tip="Probably Natsuki or Mai">菜月か麻衣だろう</span> &rarr; <span class="term" data-jp="二人に茶でも出してみよう" data-en="Try serving them some tea" data-tip="Try serving them some tea">二人に茶でも出してみよう</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-8" id="mai-8">
+        <label class="check-body" for="mai-8">
+          <span class="check-date">6月3日</span> <span class="term" data-jp="バイトや家のこと、いつも通りに過ごす" data-en="Spend time as usual with work and housework" data-tip="Spend time as usual with work and housework">バイトや家のこと、いつも通りに過ごす</span> &rarr; <span class="term" data-jp="麻衣かな" data-en="Mai, maybe?" data-tip="Mai, maybe?">麻衣かな</span> &rarr; <span class="term" data-jp="洗濯物入れのカゴの中を詳しく調べる" data-en="Inspect the inside of the laundry basket closely" data-tip="Inspect the inside of the laundry basket closely">洗濯物入れのカゴの中を詳しく調べる</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-9" id="mai-9">
+        <label class="check-body" for="mai-9">
+          <span class="check-date">6月5日</span> <span class="term" data-jp="大丈夫だろうと普通に登校する" data-en="Go to school as usual thinking it will be fine" data-tip="Go to school as usual thinking it will be fine">大丈夫だろうと普通に登校する</span> &rarr; <span class="term" data-jp="ぶらぶらと歩き回ってみる" data-en="Try wandering around aimlessly" data-tip="Try wandering around aimlessly">ぶらぶらと歩き回ってみる</span> &rarr; <span class="term" data-jp="じゃあ、達哉さんとでも呼んでみるか？" data-en="Then how about calling me Tatsuya-san?" data-tip="Then how about calling me Tatsuya-san?">じゃあ、達哉さんとでも呼んでみるか？</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-10" id="mai-10">
+        <label class="check-body" for="mai-10">
+          <span class="check-date">6月8日</span> <span class="term" data-jp="姉さんにお茶を淹れる" data-en="Brew tea for Sayaka" data-tip="Brew tea for Sayaka">姉さんにお茶を淹れる</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-11" id="mai-11">
+        <label class="check-body" for="mai-11">
+          <span class="check-date">6月11日</span> <span class="term" data-jp="麻衣とフルート練習に行く" data-en="Go to flute practice with Mai" data-tip="Go to flute practice with Mai">麻衣とフルート練習に行く</span> &rarr; <span class="term" data-jp="恋愛運を頼む" data-en="Pray for romance luck" data-tip="Pray for romance luck">恋愛運を頼む</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-12" id="mai-12">
+        <label class="check-body" for="mai-12">
+          <span class="check-date">6月12日</span> <span class="term" data-jp="朝霧家の母親役をやってもらってる姉さん" data-en="Sayaka, who acts as the mother of the Asagiri household" data-tip="Sayaka, who acts as the mother of the Asagiri household">朝霧家の母親役をやってもらってる姉さん</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-13" id="mai-13">
+        <label class="check-body" for="mai-13">
+          <span class="check-date">6月18日</span> <span class="term" data-jp="姉さんは、日曜日も仕事してることが多いなあ" data-en="Sayaka often works on Sundays too" data-tip="Sayaka often works on Sundays too">姉さんは、日曜日も仕事してることが多いなあ</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-14" id="mai-14">
+        <label class="check-body" for="mai-14">
+          <span class="check-date">6月21日</span> <span class="term" data-jp="部活で頑張っている麻衣のために、アイスを買っておく" data-en="Buy ice cream for Mai, who is working hard at club" data-tip="Buy ice cream for Mai, who is working hard at club">部活で頑張っている麻衣のために、アイスを買っておく</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-15" id="mai-15">
+        <label class="check-body" for="mai-15">
+          <span class="check-date">6月26日 - 6月28日</span> <span class="term" data-jp="誰か来ないか、少し待つ" data-en="Wait a little to see if anyone comes" data-tip="Wait a little to see if anyone comes">誰か来ないか、少し待つ</span> &rarr; <span class="term" data-jp="いつも通りに家に帰ろう" data-en="Head home as usual" data-tip="Head home as usual">いつも通りに家に帰ろう</span> &rarr; <span class="term" data-jp="そう言えば、麻衣もあまり寝坊ってしないな・・・" data-en="Come to think of it, Mai rarely oversleeps either..." data-tip="Come to think of it, Mai rarely oversleeps either...">そう言えば、麻衣もあまり寝坊ってしないな・・・</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" data-check-id="mai-16" id="mai-16">
+        <label class="check-body" for="mai-16">
+          <strong>Complete <span class="term" data-jp="朝霧麻衣" data-en="Mai Asagiri" data-tip="Mai Asagiri">朝霧麻衣</span> Ending</strong>
+          <span class="check-note">Next recommended route: <a href="route-natsuki.html"><span class="term" data-jp="鷹見沢菜月" data-en="Natsuki Takamizawa" data-tip="Natsuki Takamizawa">鷹見沢菜月</span></a>.</span>
+        </label>
+      </li>
+    </ul>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>
