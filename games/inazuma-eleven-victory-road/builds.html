@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team &amp; Player Builds - Inazuma Eleven: Victory Road Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="ie-masthead">
+    <div class="masthead-inner">
+      <div class="masthead-top">
+        <div class="brand-group">
+          <a class="repo-back" href="../../index.html">All Guides</a>
+          <a class="guide-brand" href="index.html"><span class="term" data-jp="イナズマイレブン 英雄たちのヴィクトリーロード" data-en="Inazuma Eleven: Victory Road">イナズマイレブン 英雄たちのヴィクトリーロード</span></a>
+        </div>
+        <span class="guide-platform">Switch 2 / Switch / PS5 / PS4 / Xbox Series X|S / PC</span>
+      </div>
+      <nav class="guide-nav" aria-label="Guide Sections">
+        <a href="index.html">Overview</a>
+        <a href="beginners-tips.html">Tips</a>
+        <a href="roadmap.html">Play Order</a>
+        <a href="missables.html">Missables</a>
+        <a href="main-story.html">Main Story</a>
+        <a href="side-quests.html">Side Quests</a>
+        <a href="mechanics.html">Mechanics</a>
+        <a href="builds.html" class="active">Builds</a>
+        <a href="chronicle-mode.html">Chronicle Mode</a>
+        <a href="exploits.html">Farming</a>
+        <a href="collectibles.html">Collectibles</a>
+        <a href="credits.html">Credits</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="prima-sheet">
+    <div class="page-header">
+      <h1>Team &amp; Player Builds</h1>
+      <div class="progress-bar-wrap">
+        <div class="progress-track"><div class="progress-fill" id="page-progress-fill"></div></div>
+        <span class="progress-text" id="page-progress-count">0 / 18 (0%)</span>
+      </div>
+    </div>
+
+    <p class="lead-intro">
+      Squads gain a <span class="term" data-jp="チームスタイル" data-en="Team Style">チームスタイル</span> determined by the passive skills shared across your players, manager, and coach. Below are the strongest competitive team archetypes alongside step-by-step build checklists for core <span class="term" data-jp="南雲原中学校" data-en="South Cirrus Junior High">南雲原中学校</span> starters.
+    </p>
+
+    <div class="toc-box">
+      <div class="toc-title">Builds</div>
+      <ul class="toc-list">
+        <li><a href="#archetypes">Team Archetypes</a></li>
+        <li><a href="#bld-briar">Briar Bloomhurst (FW)</a></li>
+        <li><a href="#bld-cedric">Cedric Freud (MF)</a></li>
+        <li><a href="#bld-alix">Alix La Fontaine (GK)</a></li>
+        <li><a href="#bld-raika">Raika Shinohara (FW)</a></li>
+      </ul>
+    </div>
+
+    <h2 class="section-header" id="archetypes">Team Archetypes</h2>
+    <p class="section-intro">
+      Stacking passives from a single archetype activates its dedicated bonus structure. For reliable progression across both <span class="term" data-jp="クロニクルモード" data-en="Chronicle Mode">クロニクルモード</span> and ranked matches, <span class="term" data-jp="カウンター" data-en="Counter">カウンター</span> and <span class="term" data-jp="キズナ" data-en="Bond">キズナ</span> offer the most consistent ceiling, while <span class="term" data-jp="正義" data-en="Justice">正義</span> excels in clean PvE farming.
+    </p>
+
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Archetype</th>
+          <th>Core Trigger</th>
+          <th>Best Application</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="term" data-jp="カウンター" data-en="Counter">カウンター</span></td>
+          <td>Stacks Focus AT/DF, Shot AT, and Keeper Power after defending opponent actions</td>
+          <td>Ranked PvP and high-level Hero Battles</td>
+        </tr>
+        <tr>
+          <td><span class="term" data-jp="キズナ" data-en="Bond">キズナ</span></td>
+          <td>Builds Bond Power through passes and scrambles to scale team AT/DF</td>
+          <td>Possession play and chain-shot offenses</td>
+        </tr>
+        <tr>
+          <td><span class="term" data-jp="正義" data-en="Justice">正義</span></td>
+          <td>Grants large AT/DF buffs while avoiding fouls</td>
+          <td>Auto-grinding and disciplined PvE clears</td>
+        </tr>
+        <tr>
+          <td><span class="term" data-jp="テンション" data-en="Tension">テンション</span></td>
+          <td>Accelerates Tension gain and rewards high gauge reserves</td>
+          <td>Special Move-heavy lineups and hybrid builds</td>
+        </tr>
+        <tr>
+          <td><span class="term" data-jp="ラフプレー" data-en="Rough Play">ラフプレー</span></td>
+          <td>Boosts AT/DF through dash knockbacks and aggressive tackles</td>
+          <td>Disrupting possession-based opponents</td>
+        </tr>
+        <tr>
+          <td><span class="term" data-jp="ブリーチ" data-en="Breach">ブリーチ</span></td>
+          <td>Increases RNG breakthrough chance past blocks and saves</td>
+          <td>High-variance upset setups</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <ul class="checklist">
+      <li class="check-item">
+        <input type="checkbox" id="bld-1" data-check-id="bld-1">
+        <label class="check-label" for="bld-1">
+          <span class="check-title">Assign a matching Manager and Coach passive set</span>
+          <span class="check-desc">Equip manager and coach passives that match your primary team archetype before entering high-tier routes.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-2" data-check-id="bld-2">
+        <label class="check-label" for="bld-2">
+          <span class="check-title">Fill all 11 starter slots with Legendary or HERO bases</span>
+          <span class="check-desc">Use <span class="term" data-jp="レジェンド" data-en="Legendary">レジェンド</span> players for customizable archetype passives and <span class="term" data-jp="ヒーロー" data-en="HERO">ヒーロー</span> players for anchor positions.</span>
+        </label>
+      </li>
+    </ul>
+
+    <h2 class="section-header" id="bld-briar"><span class="term" data-jp="桜咲丈二" data-en="Briar Bloomhurst">桜咲丈二</span> (Primary Striker)</h2>
+    <p>
+      <span class="term" data-jp="桜咲丈二" data-en="Briar Bloomhurst">桜咲丈二</span> serves as your main forward from Chapter 3 through postgame. Focusing his <span class="term" data-jp="アビラーボード" data-en="Abilearn Board">アビラーボード</span> on Shot AT and Kick power turns him into a reliable finisher inside the <span class="term" data-jp="ゾーン" data-en="Zone">ゾーン</span>.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Stage</th>
+          <th>Target</th>
+          <th>Priority Focus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chapters 3 to 5</td>
+          <td>Unlock primary Shot node</td>
+          <td>Equip Kick-boosting boots and matching-element shoot move</td>
+        </tr>
+        <tr>
+          <td>Chapters 6 to 9</td>
+          <td>Abilearn Shot AT branch</td>
+          <td>Feed Attack and Kick <span class="term" data-jp="特訓ビーンズ" data-en="Training Beans">特訓ビーンズ</span></td>
+        </tr>
+        <tr>
+          <td>Postgame</td>
+          <td>Legendary / Counter or Bond passives</td>
+          <td>Stack Shot AT and Tension-efficiency passives</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul class="checklist">
+      <li class="check-item">
+        <input type="checkbox" id="bld-3" data-check-id="bld-3">
+        <label class="check-label" for="bld-3">
+          <span class="check-title">Unlock Briar's primary Shoot Hissatsu in Chapters 3 to 5</span>
+          <span class="check-desc">Follow the offensive branch on his <span class="term" data-jp="アビラーボード" data-en="Abilearn Board">アビラーボード</span> first.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-4" data-check-id="bld-4">
+        <label class="check-label" for="bld-4">
+          <span class="check-title">Equip Kick-focused boots and pendant</span>
+          <span class="check-desc">Upgrade gear from Chapter 6 side quests before the tournament finals.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-5" data-check-id="bld-5">
+        <label class="check-label" for="bld-5">
+          <span class="check-title">Invest Kick Beans into Shot AT nodes</span>
+          <span class="check-desc">Max out Kick and Control nodes prior to Chapter 9.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-6" data-check-id="bld-6">
+        <label class="check-label" for="bld-6">
+          <span class="check-title">Finalize postgame Shot AT passives</span>
+          <span class="check-desc">Slot archetype-matching Shot AT passives on a <span class="term" data-jp="レジェンド" data-en="Legendary">レジェンド</span> base.</span>
+        </label>
+      </li>
+    </ul>
+
+    <h2 class="section-header" id="bld-cedric"><span class="term" data-jp="木曽路兵太" data-en="Cedric Freud">木曽路兵太</span> (Midfield Engine)</h2>
+    <p>
+      <span class="term" data-jp="木曽路兵太" data-en="Cedric Freud">木曽路兵太</span> anchors midfield <span class="term" data-jp="フォーカス" data-en="Focus">フォーカス</span> duels to generate <span class="term" data-jp="テンション" data-en="Tension">テンション</span> for your forwards. Building him for Technique and Agility keeps possession flowing cleanly.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Stage</th>
+          <th>Target</th>
+          <th>Priority Focus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chapters 3 to 5</td>
+          <td>Dribble / Block balance</td>
+          <td>Win midfield Focus duels without overspending Tension</td>
+        </tr>
+        <tr>
+          <td>Chapters 6 to 9</td>
+          <td>Technique &amp; Agility nodes</td>
+          <td>Equip Speed and Technique gear</td>
+        </tr>
+        <tr>
+          <td>Postgame</td>
+          <td>Tension or Bond generator passives</td>
+          <td>Stack Focus AT/DF and Tension-gain passives</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul class="checklist">
+      <li class="check-item">
+        <input type="checkbox" id="bld-7" data-check-id="bld-7">
+        <label class="check-label" for="bld-7">
+          <span class="check-title">Unlock Cedric's Dribble and Block Hissatsu</span>
+          <span class="check-desc">Cover both offense and defense in midfield <span class="term" data-jp="フォーカス" data-en="Focus">フォーカス</span> clashes.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-8" data-check-id="bld-8">
+        <label class="check-label" for="bld-8">
+          <span class="check-title">Equip Agility and Technique accessories</span>
+          <span class="check-desc">Raise duel consistency against Chapter 7 and 8 midfielders.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-9" data-check-id="bld-9">
+        <label class="check-label" for="bld-9">
+          <span class="check-title">Invest Beans into Technique and Agility</span>
+          <span class="check-desc">Prioritize midfield control stats on his <span class="term" data-jp="アビラーボード" data-en="Abilearn Board">アビラーボード</span>.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-10" data-check-id="bld-10">
+        <label class="check-label" for="bld-10">
+          <span class="check-title">Slot Tension-generation passives in postgame</span>
+          <span class="check-desc">Pair with your team's primary <span class="term" data-jp="チームスタイル" data-en="Team Style">チームスタイル</span>.</span>
+        </label>
+      </li>
+    </ul>
+
+    <h2 class="section-header" id="bld-alix"><span class="term" data-jp="四川堂我流" data-en="Alix La Fontaine">四川堂我流</span> (Goalkeeper Anchor)</h2>
+    <p>
+      <span class="term" data-jp="四川堂我流" data-en="Alix La Fontaine">四川堂我流</span> guards the goal throughout the campaign. Investing into Keeper Power (KP) and pairing him with strong <span class="term" data-jp="キャッスルウォール" data-en="Castle Wall">キャッスルウォール</span> defenders prevents late-chapter shutout losses.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Stage</th>
+          <th>Target</th>
+          <th>Priority Focus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chapters 3 to 5</td>
+          <td>Core Catch Hissatsu</td>
+          <td>Save Tension for opposing Zone shots</td>
+        </tr>
+        <tr>
+          <td>Chapters 6 to 9</td>
+          <td>Keeper Power &amp; Physical nodes</td>
+          <td>Equip Catch-boosting gloves and bracelets</td>
+        </tr>
+        <tr>
+          <td>Postgame</td>
+          <td>Counter KP or Justice KP passives</td>
+          <td>Maximize KP scaling under pressure</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul class="checklist">
+      <li class="check-item">
+        <input type="checkbox" id="bld-11" data-check-id="bld-11">
+        <label class="check-label" for="bld-11">
+          <span class="check-title">Unlock Alix's Catch Hissatsu nodes</span>
+          <span class="check-desc">Complete his defensive <span class="term" data-jp="アビラーボード" data-en="Abilearn Board">アビラーボード</span> path before Chapter 5.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-12" data-check-id="bld-12">
+        <label class="check-label" for="bld-12">
+          <span class="check-title">Equip Catch-boosting gloves</span>
+          <span class="check-desc">Prioritize Keeper Power gear from Chapters 6 through 8.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-13" data-check-id="bld-13">
+        <label class="check-label" for="bld-13">
+          <span class="check-title">Invest Beans into Catch and Physical</span>
+          <span class="check-desc">Keep KP high enough to stop Chapter 9 <span class="term" data-jp="雷門中学校" data-en="Raimon Junior High">雷門中学校</span> shots.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-14" data-check-id="bld-14">
+        <label class="check-label" for="bld-14">
+          <span class="check-title">Add Counter KP passives for endgame</span>
+          <span class="check-desc">Stack Keeper Power boosts triggered by opposing shot attempts.</span>
+        </label>
+      </li>
+    </ul>
+
+    <h2 class="section-header" id="bld-raika"><span class="term" data-jp="忍原来夏" data-en="Raika Shinohara">忍原来夏</span> (Wing / Chain Striker)</h2>
+    <p>
+      <span class="term" data-jp="忍原来夏" data-en="Raika Shinohara">忍原来夏</span> pairs with <span class="term" data-jp="桜咲丈二" data-en="Briar Bloomhurst">桜咲丈二</span> on the front line, providing speed on the wing and chain-shot support to overwhelm goalkeepers whose element counters Briar.
+    </p>
+    <table class="data-table">
+      <thead>
+        <tr>
+          <th>Stage</th>
+          <th>Target</th>
+          <th>Priority Focus</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Chapters 2 to 5</td>
+          <td>Speed &amp; Dribble unlock</td>
+          <td>Bypass flank defenders into Zone range</td>
+        </tr>
+        <tr>
+          <td>Chapters 6 to 9</td>
+          <td>Chain-capable Shoot Hissatsu</td>
+          <td>Equip Speed and Kick boots</td>
+        </tr>
+        <tr>
+          <td>Postgame</td>
+          <td>Bond or Counter Wing passives</td>
+          <td>Maximize flank breakthrough and chain power</td>
+        </tr>
+      </tbody>
+    </table>
+    <ul class="checklist">
+      <li class="check-item">
+        <input type="checkbox" id="bld-15" data-check-id="bld-15">
+        <label class="check-label" for="bld-15">
+          <span class="check-title">Unlock Raika's Dribble and Shoot nodes</span>
+          <span class="check-desc">Enable flank breakthroughs into <span class="term" data-jp="ゾーン" data-en="Zone">ゾーン</span> setups.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-16" data-check-id="bld-16">
+        <label class="check-label" for="bld-16">
+          <span class="check-title">Equip Speed and Kick boots</span>
+          <span class="check-desc">Maintain pace advantage on the wing through Chapter 8.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-17" data-check-id="bld-17">
+        <label class="check-label" for="bld-17">
+          <span class="check-title">Invest Beans into Speed and Kick</span>
+          <span class="check-desc">Support chain-shot damage alongside your main striker.</span>
+        </label>
+      </li>
+      <li class="check-item">
+        <input type="checkbox" id="bld-18" data-check-id="bld-18">
+        <label class="check-label" for="bld-18">
+          <span class="check-title">Assign Bond or Counter wing passives</span>
+          <span class="check-desc">Integrate her into your postgame <span class="term" data-jp="クロニクルモード" data-en="Chronicle Mode">クロニクルモード</span> starting 11.</span>
+        </label>
+      </li>
+    </ul>
+  </main>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>
