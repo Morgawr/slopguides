@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Mechanics - サクラ大戦2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="taisho-layout">
+    <aside class="imperial-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="sakura-crest" aria-hidden="true"></span>
+          <span class="rail-title-tag">Taisho Imperial Archive</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="サクラ大戦2 〜君、死にたもうことなかれ〜" data-en="Sakura Wars 2: Thou Shalt Not Die" data-tip="Sakura Wars 2: Thou Shalt Not Die">サクラ大戦2 〜君、死にたもうことなかれ〜</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">Sega Dreamcast</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Beginner Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order &amp; Endings</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <div class="rail-nav-label">Campaign &amp; Cast</div>
+        <a class="rail-nav-link" href="main-story.html">Episodes 1 to 12</a>
+        <a class="rail-nav-link" href="heroines.html">Heroines &amp; Ogami</a>
+        <div class="rail-nav-label">Systems &amp; Extras</div>
+        <a class="rail-nav-link active" href="mechanics.html">Game Mechanics</a>
+        <a class="rail-nav-link" href="collectibles.html">Bromides &amp; Extras</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="taisho-stage">
+      <div class="page-header">
+        <h1>Game Mechanics</h1>
+      </div>
+
+      <p class="lead-intro">
+        Success in <span class="term" data-jp="大帝国劇場" data-en="Grand Imperial Theater" data-tip="Imperial Theater headquarters">大帝国劇場</span> conversations directly powers your <span class="term" data-jp="光武・改" data-en="Koubu-Kai" data-tip="Upgraded spirit armor">光武・改</span> units on the grid. Understanding the <span class="term" data-jp="大神性格ゲージ" data-en="Ogami Personality Gauge" data-tip="Blue Stoic vs Pink Flirtatious meter">大神性格ゲージ</span>, <span class="term" data-jp="キネマトロン" data-en="Kinematron" data-tip="Portable videophone">キネマトロン</span> fortune colors, captain stances, and Dreamcast <span class="term" data-jp="ビジュアルメモリ" data-en="Visual Memory" data-tip="Dreamcast VMU screen">ビジュアルメモリ</span> indicators turns difficult stages into fast clears.
+      </p>
+
+      <div class="toc-box">
+        <div class="toc-title">On This Page</div>
+        <div class="toc-list">
+          <a href="#lips-system">LIPS &amp; Personality Gauge</a>
+          <a href="#trust-table">Trust Stat Scaling &amp; Hidden Chimes</a>
+          <a href="#kinematron">Kinematron &amp; Lucky Colors</a>
+          <a href="#combat-stances">Tactics, Protect &amp; Combined Attacks</a>
+          <a href="#mecha-upgrades">Koubu Upgrades &amp; War Record</a>
+        </div>
+      </div>
+
+      <div class="completion-bar-wrap" data-counter-label="Mechanics Checklist">
+        <div class="completion-meta">
+          <span class="completion-text">Mechanics Checklist 0/8 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" id="page-progress-reset" class="page-reset-btn">Reset Page</button>
+      </div>
+
+      <div class="section-header" id="lips-system">
+        <h2>LIPS &amp; Personality Gauge</h2>
+      </div>
+
+      <div class="grid-main-side">
+        <div class="step-block">
+          <h3>LIPS Variants &amp; Gauge Leanings</h3>
+          <p>
+            Timed <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Live Interactive Picture System">LIPS</span> prompts appear across dialogue, cursor inspection scenes, and combat adjacency events. Beyond standard three-option prompts, several events hide a bonus choice until the timer reaches its second half or remove an early option if you hesitate. Letting the clock run out triggers <span class="term" data-jp="タイムオーバー" data-en="Time Over" data-tip="Deliberate silence response">タイムオーバー</span>, which serves as a distinct valid answer.
+          </p>
+          <p>
+            The <span class="term" data-jp="大神性格ゲージ" data-en="Ogami Personality Gauge" data-tip="Blue vs pink meter in the dialogue frame">大神性格ゲージ</span> at the bottom right measures blue <span class="term" data-jp="硬派" data-en="Stoic" data-tip="Disciplined military leaning">硬派</span> versus pink <span class="term" data-jp="軟派" data-en="Flirtatious" data-tip="Playful leaning">軟派</span> tendencies. Certain <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Interactive choice">LIPS</span> options only appear when the gauge leans toward their side, and trust gains scale faster when matching a heroine's preferred tone.
+          </p>
+          <ul class="bullet-steps">
+            <li><strong><span class="term" data-jp="硬派" data-en="Stoic" data-tip="Blue gauge">硬派</span> Affinity Boosts</strong> Strongest bonus for <span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="High stoic bonus">マリア・タチバナ</span> and <span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Moderate stoic bonus">真宮寺さくら</span>, with smaller bonuses for <span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Slight stoic bonus">桐島カンナ</span> and <span class="term" data-jp="レニ・ミルヒシュトラーセ" data-en="Reni Milchstrasse" data-tip="Slight stoic bonus">レニ・ミルヒシュトラーセ</span>.</li>
+            <li><strong><span class="term" data-jp="軟派" data-en="Flirtatious" data-tip="Pink gauge">軟派</span> Affinity Boosts</strong> Strongest bonus for <span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="High flirtatious bonus">李紅蘭</span> and <span class="term" data-jp="ソレッタ・織姫" data-en="Soletta Orihime" data-tip="Moderate flirtatious bonus">ソレッタ・織姫</span>, with smaller bonuses for <span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Slight flirtatious bonus">神崎すみれ</span> and <span class="term" data-jp="アイリス" data-en="Iris Chateaubriand" data-tip="Slight flirtatious bonus">アイリス</span>.</li>
+          </ul>
+        </div>
+
+        <figure class="screen-card">
+          <img src="resources/screens/screen_adv_lips.jpg" alt="Dialogue frame and Personality Gauge">
+          <figcaption>Dialogue frame showing the blue <span class="term" data-jp="硬派" data-en="Stoic" data-tip="Blue left meter">硬派</span> and pink <span class="term" data-jp="軟派" data-en="Flirtatious" data-tip="Pink right meter">軟派</span> personality gauge.</figcaption>
+        </figure>
+      </div>
+
+      <div class="section-header" id="trust-table">
+        <h2>Trust Stat Scaling &amp; Hidden Chimes</h2>
+      </div>
+
+      <div class="step-block">
+        <h3>Per-Episode Trust Modifiers</h3>
+        <p>
+          Each episode sums <span class="term" data-jp="信頼度" data-en="Trust" data-tip="Per-episode trust tier">信頼度</span> points earned in adventure scenes and battle events, converting them into Attack, Defense, and Move bonuses until the episode clears. Note that <span class="term" data-jp="ソレッタ・織姫" data-en="Soletta Orihime" data-tip="Chimes silent until Episode 7 boss">ソレッタ・織姫</span> keeps her trust chimes silent until the Episode 7 boss battle, and <span class="term" data-jp="レニ・ミルヒシュトラーセ" data-en="Reni Milchstrasse" data-tip="Chimes silent until secret reveal">レニ・ミルヒシュトラーセ</span> keeps hers silent until her secret is discovered in Episode 3, 4, or 5. Internal points still accumulate normally during those chapters.
+        </p>
+        <table class="prima-table">
+          <thead>
+            <tr>
+              <th>Trust Level</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Attack</th>
+              <td>+1</td><td>+1</td><td>+2</td><td>+3</td><td>+3</td><td>+4</td><td>+5</td><td>+5</td><td>+6</td><td>+6</td><td>+7</td><td>+8</td><td>+8</td><td>+8</td><td>+9</td><td>+10</td>
+            </tr>
+            <tr>
+              <th>Defense</th>
+              <td>+1</td><td>+1</td><td>+1</td><td>+2</td><td>+2</td><td>+2</td><td>+3</td><td>+3</td><td>+4</td><td>+4</td><td>+4</td><td>+5</td><td>+5</td><td>+5</td><td>+6</td><td>+6</td>
+            </tr>
+            <tr>
+              <th>Move</th>
+              <td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>+2</td><td>+2</td><td>+2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-header" id="kinematron">
+        <h2>Kinematron &amp; Lucky Colors</h2>
+      </div>
+
+      <div class="step-block">
+        <h3>Directory &amp; Fortune Broadcasts</h3>
+        <p>
+          Acquired before Episode 1 Free Event B, the <span class="term" data-jp="キネマトロン" data-en="Kinematron" data-tip="Videophone inside the Captain's Room">キネマトロン</span> lets you dial members from the Captain's Room. Calling a squadmate advances the theater clock by 5 minutes, whereas dialing <span class="term" data-jp="帝都日報" data-en="Teito Daily News" data-tip="Newspaper broadcast 13560">帝都日報</span> or <span class="term" data-jp="運勢指南" data-en="Fortune Guide" data-tip="Lucky color broadcast 14480">運勢指南</span> advances zero minutes. Matching a battle ally with the current <span class="term" data-jp="ラッキーカラー" data-en="Lucky Color" data-tip="Boosts Cooperative Attack rate">ラッキーカラー</span> increases her <span class="term" data-jp="協力攻撃" data-en="Cooperative Attack" data-tip="Follow-up team strike">協力攻撃</span> rate.
+        </p>
+        <div class="grid-2">
+          <table class="prima-table">
+            <thead>
+              <tr>
+                <th>Recipient</th>
+                <th>Number</th>
+                <th>Availability</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Away during Episodes 1 to 3">神崎すみれ</span></td><td>13800</td><td>Episodes 1 to 3 (5 min)</td></tr>
+              <tr><td><span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="In New York until Episode 4">マリア・タチバナ</span></td><td>13900</td><td>Episodes 1 to 4 (5 min)</td></tr>
+              <tr><td><span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="At Hanayashiki branch">李紅蘭</span></td><td>13700</td><td>Episodes 1 to 3 (5 min)</td></tr>
+              <tr><td><span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Training in Okinawa">桐島カンナ</span></td><td>14000</td><td>Episodes 1 to 3 (5 min)</td></tr>
+              <tr><td><span class="term" data-jp="高村椿" data-en="Tsubaki Takamura" data-tip="Souvenir shop clerk">高村椿</span></td><td>13600</td><td>Episodes 6 and 7 (5 min)</td></tr>
+              <tr><td><span class="term" data-jp="少年レッド" data-en="Shonen Red" data-tip="Radio broadcast">少年レッド</span></td><td>13510</td><td>Any Free Event (5 min)</td></tr>
+              <tr><td><span class="term" data-jp="帝都日報" data-en="Teito Daily News" data-tip="Zero time cost">帝都日報</span></td><td>13560</td><td>Any Free Event (0 min)</td></tr>
+              <tr><td><span class="term" data-jp="運勢指南" data-en="Fortune Guide" data-tip="Sets battle Lucky Color">運勢指南</span></td><td>14480</td><td>Any Free Event (0 min)</td></tr>
+            </tbody>
+          </table>
+
+          <table class="prima-table">
+            <thead>
+              <tr>
+                <th>Lucky Color</th>
+                <th>Boosted Pilot</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>White</td><td><span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain">大神一郎</span></td></tr>
+              <tr><td>Peach</td><td><span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Flower Division">真宮寺さくら</span></td></tr>
+              <tr><td>Purple</td><td><span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Flower Division">神崎すみれ</span></td></tr>
+              <tr><td>Black</td><td><span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Flower Division">マリア・タチバナ</span></td></tr>
+              <tr><td>Yellow</td><td><span class="term" data-jp="アイリス" data-en="Iris Chateaubriand" data-tip="Flower Division">アイリス</span></td></tr>
+              <tr><td>Green</td><td><span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Flower Division">李紅蘭</span></td></tr>
+              <tr><td>Red</td><td><span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Flower Division">桐島カンナ</span></td></tr>
+              <tr><td>Pink</td><td><span class="term" data-jp="ソレッタ・織姫" data-en="Soletta Orihime" data-tip="Flower Division">ソレッタ・織姫</span></td></tr>
+              <tr><td>Blue</td><td><span class="term" data-jp="レニ・ミルヒシュトラーセ" data-en="Reni Milchstrasse" data-tip="Flower Division">レニ・ミルヒシュトラーセ</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="section-header" id="combat-stances">
+        <h2>Tactics, Protect &amp; Combined Attacks</h2>
+      </div>
+
+      <div class="grid-main-side">
+        <div class="step-block">
+          <h3><span class="term" data-jp="風林火山" data-en="Wind, Forest, Fire, Mountain" data-tip="Captain Tactical Stances">風林火山</span> Captain Commands</h3>
+          <p>
+            On Ogami's turn, switching <span class="term" data-jp="隊長コマンド" data-en="Captain Command" data-tip="Tactical stance switcher">隊長コマンド</span> applies squad-wide modifiers immediately. Ogami can switch to <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2, Def -2">風</span> to cross the map, then change to <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3, Def -2">火</span> before attacking on the same turn.
+          </p>
+          <table class="prima-table">
+            <thead>
+              <tr>
+                <th>Stance</th>
+                <th>Stat Effect</th>
+                <th>Best Role</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="term" data-jp="風" data-en="Wind" data-tip="High mobility stance">風</span></td>
+                <td>Move +2, Defense -2</td>
+                <td>Closing gaps, defense maps, and reaching switches quickly</td>
+              </tr>
+              <tr>
+                <td><span class="term" data-jp="林" data-en="Forest" data-tip="Balanced stance">林</span></td>
+                <td>Standard stats</td>
+                <td>Default exploration and balanced turns</td>
+              </tr>
+              <tr>
+                <td><span class="term" data-jp="火" data-en="Fire" data-tip="Aggressive stance">火</span></td>
+                <td>Attack +3, Defense -2</td>
+                <td>Boss burst turns and Special Attack rushes</td>
+              </tr>
+              <tr>
+                <td><span class="term" data-jp="山" data-en="Mountain" data-tip="Fortress stance">山</span></td>
+                <td>Defense +3, Move -1</td>
+                <td>Absorbing boss Special Attacks and holding chokepoints</td>
+              </tr>
+            </tbody>
+          </table>
+          <ul class="bullet-steps">
+            <li><strong><span class="term" data-jp="かばう" data-en="Protect" data-tip="Three-charge zero-damage guard">かばう</span> Command</strong> Shields one chosen heroine from up to three attacks per battle with zero damage to either pilot. When Ogami's HP drops critically low, high-trust episode heroines can also protect Ogami once automatically.</li>
+            <li><strong><span class="term" data-jp="合体攻撃" data-en="Combined Attack" data-tip="5-tile elevation-ignoring finisher">合体攻撃</span></strong> Available when Ogami and a high-trust heroine both reach full <span class="term" data-jp="気力" data-en="Spirit" data-tip="Special gauge">気力</span> and stand adjacent. Hits every enemy within five tiles while ignoring elevation differences and avoiding counterattacks.</li>
+            <li><strong><span class="term" data-jp="ため" data-en="Charge" data-tip="Manual Spirit recovery command">ため</span> Spirit Recovery</strong> High-morale heroines recover 35 Spirit per charge (40 for the episode's lead heroine), filling the bar in three turns versus four turns at 25 Spirit for Ogami or neutral morale.</li>
+          </ul>
+        </div>
+
+        <figure class="screen-card">
+          <img src="resources/screens/screen_battle_01.jpg" alt="Koubu-Kai Combat Command Wheel">
+          <figcaption>Combat menu showing <span class="term" data-jp="林" data-en="Forest" data-tip="Default tactical stance">林</span> stance and spirit bars for <span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Sakura">真宮寺さくら</span>.</figcaption>
+        </figure>
+      </div>
+
+      <div class="section-header" id="mecha-upgrades">
+        <h2>Koubu Upgrades &amp; War Record</h2>
+      </div>
+
+      <div class="step-block">
+        <h3>Chassis Progression &amp; Epilogue Score</h3>
+        <p>
+          Across the campaign the squad upgrades from <span class="term" data-jp="光武・改" data-en="Koubu-Kai" data-tip="Episodes 1 to 8 chassis">光武・改</span> (with <span class="term" data-jp="アイゼンクライト" data-en="Eisenkleid" data-tip="Orihime and Reni chassis">アイゼンクライト</span> for the European recruits) to high-armor <span class="term" data-jp="天武" data-en="Tenbu" data-tip="Mid-late air-capable unit">天武</span> and finally the tuned <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="Final battle unit">光武・改2</span> in Episode 11. Each stage clear grades your total retreats as <span class="term" data-jp="優" data-en="Superior" data-tip="Zero retreats, 2 points">優</span> (0 retreats, 2 points), <span class="term" data-jp="良" data-en="Good" data-tip="1 retreat, 1 point">良</span> (1 retreat, 1 point), or <span class="term" data-jp="可" data-en="Passable" data-tip="2+ retreats, 0 points">可</span> (2 or more retreats, 0 points). Reaching 15 or more cumulative points by the end of Episode 12 unlocks <span class="term" data-jp="第十三話「君がために汽笛は鳴る」" data-en="Episode 13: The Train Whistle Blows for Thee" data-tip="Secret epilogue chapter">第十三話「君がために汽笛は鳴る」</span>. Clearing the campaign once also unlocks Hard difficulty, which disables trust stat bonuses and Combined Attacks.
+        </p>
+
+        <h3>Mastery Checklist</h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-01"><div class="check-body">Trigger a second-half <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Wait for mid-timer reveal">LIPS</span> choice and an intentional <span class="term" data-jp="タイムオーバー" data-en="Time Over" data-tip="Silent timeout">タイムオーバー</span> reward.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-02"><div class="check-body">Align <span class="term" data-jp="大神性格ゲージ" data-en="Ogami Personality Gauge" data-tip="Stoic or Flirtatious meter">大神性格ゲージ</span> to unlock a gauge-exclusive prompt.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-03"><div class="check-body">Dial <span class="term" data-jp="運勢指南" data-en="Fortune Guide" data-tip="14480">運勢指南</span> at 14480 before exiting a Free Event for zero time cost.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-04"><div class="check-body">Use <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> movement followed by <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> attack on the same Ogami turn.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-05"><div class="check-body">Block three enemy hits with <span class="term" data-jp="かばう" data-en="Protect" data-tip="Protect command">かばう</span> and trigger <span class="term" data-jp="山" data-en="Mountain" data-tip="Def +3">山</span> before a boss Special Attack.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-06"><div class="check-body">Clear clustered enemies using an elevation-ignoring <span class="term" data-jp="合体攻撃" data-en="Combined Attack" data-tip="Combined Attack">合体攻撃</span>.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-07"><div class="check-body">Verify <span class="term" data-jp="確実" data-en="Guaranteed" data-tip="One-hit defeat">確実</span> versus <span class="term" data-jp="可能" data-en="Possible" data-tip="Borderline defeat">可能</span> on the Dreamcast <span class="term" data-jp="ビジュアルメモリ" data-en="Visual Memory" data-tip="VMU LCD">ビジュアルメモリ</span> readout.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-08"><div class="check-body">Maintain <span class="term" data-jp="優" data-en="Superior" data-tip="Zero-retreat grade">優</span> ranks across eight or more chapters to hit 15+ War Record points.</div></li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <script src="js/guide.js"></script>
+</body>
+</html>

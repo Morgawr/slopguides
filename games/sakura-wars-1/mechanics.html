@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Mechanics - サクラ大戦 (Dreamcast)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="teigeki-layout">
+    <aside class="teigeki-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="sakura-crest" aria-hidden="true"></span>
+          <span class="rail-title-tag">Taisho XII Archive</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="サクラ大戦" data-en="Sakura Wars" data-tip="Sakura Taisen (Sega Dreamcast)">サクラ大戦</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">Dreamcast</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Beginner Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order &amp; Endings</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <a class="rail-nav-link" href="main-story.html">Episodes 1 to 10</a>
+        <div class="rail-nav-label">Cast &amp; Systems</div>
+        <a class="rail-nav-link" href="heroines.html">Heroines &amp; Combat Roles</a>
+        <a class="rail-nav-link active" href="mechanics.html">Game Mechanics</a>
+        <a class="rail-nav-link" href="collectibles.html">Bromides &amp; Extras</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="teigeki-stage">
+      <div class="page-header">
+        <h1>Game Mechanics</h1>
+      </div>
+
+      <p class="lead-intro">
+        Every episode alternates between theatrical <span class="term" data-jp="アドベンチャーパート" data-en="Adventure Mode" data-tip="Exploration and dialogue phase">アドベンチャーパート</span> segments and grid-based <span class="term" data-jp="戦闘パート" data-en="Battle Mode" data-tip="Tactical strategy phase">戦闘パート</span> missions. Understanding how timed dialogue feeds directly into mech stats keeps both story routes and combat effortless.
+      </p>
+
+      <div class="toc-box">
+        <div class="toc-title">Systems Covered</div>
+        <div class="toc-list">
+          <a href="#lips-system">LIPS &amp; Free-Roam</a>
+          <a href="#trust-morale">Trust vs. Morale</a>
+          <a href="#tactical-combat">Grid Tactical Combat</a>
+          <a href="#protect-combo">Protect &amp; Combination Attacks</a>
+          <a href="#minigames-system">Mini-Games &amp; System File</a>
+        </div>
+      </div>
+
+      <div class="section-header" id="lips-system">
+        <h2>LIPS Dialogue &amp; Free-Roam Exploration</h2>
+      </div>
+
+      <div class="step-block">
+        <p>
+          During conversations, <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Live and Interactive Picture System">LIPS</span> presents three spoken replies beneath a shrinking countdown bar. Allowing the bar to empty completely acts as a fourth option representing silence, restraint, or holding your ground. Later series entries added Timing LIPS in <span class="term" data-jp="サクラ大戦2" data-en="Sakura Wars 2" data-tip="1998 sequel">サクラ大戦2</span> and Analog LIPS in <span class="term" data-jp="サクラ大戦3" data-en="Sakura Wars 3" data-tip="2001 Dreamcast entry">サクラ大戦3</span> and the PlayStation 2 remake, whereas Dreamcast <span class="term" data-jp="サクラ大戦" data-en="Sakura Wars" data-tip="Original 1996 mechanics">サクラ大戦</span> uses standard timed LIPS prompts exclusively.
+        </p>
+        <ul class="bullet-steps">
+          <li><strong>Free-Roam Room Limits.</strong> Several exploration windows end automatically once you enter a specific destination room or exceed a hidden move counter across rooms in <span class="term" data-jp="大帝国劇場" data-en="Grand Imperial Theater" data-tip="Daiteikoku Gekijou">大帝国劇場</span>. Visit side targets and the <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="Tsubaki's bromide counter">売店</span> before entering the plot destination.</li>
+          <li><strong>Cursor Inspection Events.</strong> Certain scenes switch to a free-moving pointer over a room or character. Clicking too many times on sensitive details, such as staring at <span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Episode 1 encounter">マリア・タチバナ</span> in Episode 1 or clicking away from <span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Episode 6 storm scene">真宮寺さくら</span> during her Episode 6 conversation, triggers scoldings or lowers trust.</li>
+          <li><strong>Episode Eyecatch Saves.</strong> Saving is restricted to <span class="term" data-jp="アイキャッチ" data-en="Eyecatch" data-tip="Mid-episode save prompt">アイキャッチ</span> transitions, pre-battle deployments, and post-battle screens. Loading works from any non-combat menu.</li>
+        </ul>
+      </div>
+
+      <div class="section-header" id="trust-morale">
+        <h2>Trust Chime Cues vs. Battle Morale</h2>
+      </div>
+
+      <div class="step-block">
+        <p>
+          Two separate mechanics govern how your troupe responds to <span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain">大神一郎</span> across the game. <span class="term" data-jp="信頼度" data-en="Trust" data-tip="Hidden cumulative affection score">信頼度</span> is a hidden cumulative score tracked across all ten episodes, while <span class="term" data-jp="やる気" data-en="Morale" data-tip="Battle motivation state">やる気</span> reflects how strongly a pilot fights during a given stage.
+        </p>
+        <table class="prima-table">
+          <thead>
+            <tr>
+              <th>Indicator</th>
+              <th>When It Appears</th>
+              <th>Meaning &amp; Effect</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Rising Chime Tone</td>
+              <td>Immediately after a <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Dialogue prompt">LIPS</span> choice</td>
+              <td>Increases <span class="term" data-jp="信頼度" data-en="Trust" data-tip="Affection rating">信頼度</span> with one or more heroines.</td>
+            </tr>
+            <tr>
+              <td>Low Dull Tone</td>
+              <td>Immediately after a <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Dialogue prompt">LIPS</span> choice</td>
+              <td>Decreases <span class="term" data-jp="信頼度" data-en="Trust" data-tip="Affection rating">信頼度</span> due to rude, careless, or indecisive replies.</td>
+            </tr>
+            <tr>
+              <td>Pre-Battle <span class="term" data-jp="やる気" data-en="Morale" data-tip="Combat motivation">やる気</span></td>
+              <td>Start of <span class="term" data-jp="戦闘パート" data-en="Battle Mode" data-tip="Combat phase">戦闘パート</span></td>
+              <td>Scales a <span class="term" data-jp="光武" data-en="Koubu" data-tip="Spirit armor">光武</span> unit's attack power, defense, and movement range upward when Trust is high. <span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="High trust sensitivity">神崎すみれ</span> and <span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="High trust sensitivity">李紅蘭</span> show the widest swing between low and high Trust.</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="気力" data-en="Spirit" data-tip="0-100% special gauge">気力</span> Gauge</td>
+              <td>0% to 100% inside combat</td>
+              <td>Builds when attacking, taking hits, or using Charge. Reaching 100% enables <span class="term" data-jp="必殺攻撃" data-en="Special Attack" data-tip="Signature ability">必殺攻撃</span> and <span class="term" data-jp="合体攻撃" data-en="Combination Attack" data-tip="Co-op finisher">合体攻撃</span>.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-header" id="tactical-combat">
+        <h2>Grid Tactical Combat &amp; Unit Upgrade</h2>
+      </div>
+
+      <div class="step-block">
+        <p>
+          Battles unfold on a square-tile grid in turn order displayed along the HUD. Unlike the PlayStation 2 remake's real-time <span class="term" data-jp="ARMS" data-en="ARMS" data-tip="PS2 remake combat engine">ARMS</span> engine, the Dreamcast release uses pure turn-based grid tactics, enhanced over the 1996 Saturn original with M2's responsive movement cancellation so you can preview attack ranges before committing.
+        </p>
+        <ul class="bullet-steps">
+          <li><strong>Standard Turn Actions.</strong> Each unit moves once and performs one action per turn from <span class="term" data-jp="攻撃" data-en="Attack" data-tip="Standard weapon strike">攻撃</span>, <span class="term" data-jp="防御" data-en="Defend" data-tip="Halves incoming damage until next turn">防御</span>, <span class="term" data-jp="ため" data-en="Charge" data-tip="Raises Spirit gauge">ため</span>, <span class="term" data-jp="回復" data-en="Repair" data-tip="Restores own HP">回復</span>, <span class="term" data-jp="待機" data-en="Wait" data-tip="Ends turn early">待機</span>, or <span class="term" data-jp="必殺" data-en="Special" data-tip="Uses 100% Spirit">必殺</span>.</li>
+          <li><strong><span class="term" data-jp="蒸気スタンド" data-en="Steam Supply Stand" data-tip="Map healing station">蒸気スタンド</span>.</strong> Standing adjacent to or atop a field steam stand restores <span class="term" data-jp="光武" data-en="Koubu" data-tip="Mech unit">光武</span> HP without spending a personal repair turn.</li>
+          <li><strong>Episode 8 <span class="term" data-jp="神武" data-en="Shinbu" data-tip="Upgraded late-game spirit armor">神武</span> Upgrade.</strong> During the second battle of Episode 8, every <span class="term" data-jp="花組" data-en="Flower Division" data-tip="Hanagumi">花組</span> pilot transitions from <span class="term" data-jp="光武" data-en="Koubu" data-tip="Original armor">光武</span> to <span class="term" data-jp="神武" data-en="Shinbu" data-tip="Upgraded armor">神武</span>, expanding special attack zones dramatically for <span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="3-column sweep">真宮寺さくら</span>, <span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="5-tile radius">神崎すみれ</span>, and <span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="2-tile splash">マリア・タチバナ</span>.</li>
+          <li><strong>Zero-KO Priority.</strong> Completing stages quickly earns praise from <span class="term" data-jp="藤枝あやめ" data-en="Ayame Fujieda" data-tip="Vice Commander">藤枝あやめ</span> in the following episode, while keeping every heroine above critical HP prevents trust penalties from retreat. If <span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain unit">大神一郎</span> falls, the mission ends immediately.</li>
+        </ul>
+      </div>
+
+      <div class="section-header" id="protect-combo">
+        <h2>Protect &amp; Combination Attacks</h2>
+      </div>
+
+      <div class="step-block">
+        <p>
+          Team-wide <span class="term" data-jp="風林火山" data-en="Wind, Forest, Fire, Mountain" data-tip="Added in Sakura Wars 2">風林火山</span> Captain Tactics stances belong to <span class="term" data-jp="サクラ大戦2" data-en="Sakura Wars 2" data-tip="1998 sequel">サクラ大戦2</span> and later installments. In Dreamcast <span class="term" data-jp="サクラ大戦" data-en="Sakura Wars" data-tip="First entry">サクラ大戦</span>, <span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain">大神一郎</span> commands two signature leadership tools instead.
+        </p>
+        <ul class="bullet-steps">
+          <li><strong><span class="term" data-jp="かばう" data-en="Protect" data-tip="8 charges per stage in SW1">かばう</span> (8 Uses Per Battle).</strong> Target any allied heroine on Ogami's turn to shield her until she is hit or you reassign the guard. Whenever an enemy attacks a protected heroine, both she and Ogami take zero damage and her <span class="term" data-jp="信頼度" data-en="Trust" data-tip="Affection gain">信頼度</span> increases. Use this to bait bosses safely with fragile units such as <span class="term" data-jp="アイリス" data-en="Iris" data-tip="Healer">アイリス</span> or <span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Sniper">マリア・タチバナ</span>.</li>
+          <li><strong><span class="term" data-jp="合体攻撃" data-en="Combination Attack" data-tip="Unlocks from Episode 8">合体攻撃</span>.</strong> Available from Episode 8 onward when Ogami stands adjacent to your highest-trust heroine and both units hold 100% <span class="term" data-jp="気力" data-en="Spirit" data-tip="Full energy">気力</span>. The strike hits every enemy within five tiles of the heroine using Ogami's high base attack power. Pairing Ogami with <span class="term" data-jp="アイリス" data-en="Iris" data-tip="Healer lacks offensive special">アイリス</span> turns an otherwise non-offensive healer into a heavy boss-clearing partner.</li>
+        </ul>
+      </div>
+
+      <div class="section-header" id="minigames-system">
+        <h2>Mini-Games &amp; System File Persistence</h2>
+      </div>
+
+      <div class="step-block">
+        <p>
+          Mini-games appear exclusively during even-numbered episodes (Episodes 2, 4, 6, and 8). Any mini-game you trigger in the story permanently registers into your VMU System File, unlocking both a replayable challenge version and a secret reward illustration inside <span class="term" data-jp="帝劇の長い一日" data-en="A Long Day at the Imperial Theater" data-tip="Post-game bonus mode">帝劇の長い一日</span> after clearing the game once.
+        </p>
+      </div>
+    </main>
+  </div>
+  <script src="js/guide.js"></script>
+</body>
+</html>

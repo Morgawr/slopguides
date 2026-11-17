@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Story Walkthrough - サクラ大戦4 〜恋せよ乙女〜 Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="teigeki-layout">
+    <aside class="hanagumi-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="sakura-crest" aria-hidden="true"></span>
+          <span class="rail-title-tag">Taisho Finale Archive</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="サクラ大戦4 〜恋せよ乙女〜" data-en="Sakura Wars 4: Fall in Love, Maidens" data-tip="Sakura Wars 4: Fall in Love, Maidens">サクラ大戦4 〜恋せよ乙女〜</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">Sega Dreamcast</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Beginner Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <a class="rail-nav-link active" href="main-story.html">Main Story</a>
+        <div class="rail-nav-label">Cast &amp; Systems</div>
+        <a class="rail-nav-link" href="heroines.html">Heroines &amp; Koubu</a>
+        <a class="rail-nav-link" href="mechanics.html">Game Mechanics</a>
+        <a class="rail-nav-link" href="collectibles.html">Bromides &amp; Omake</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="teigeki-stage">
+      <div class="page-header">
+        <h1>Main Story Walkthrough</h1>
+      </div>
+
+      <p class="lead-intro">
+        Complete spoiler-safe progression across <span class="term" data-jp="第一幕" data-en="Act 1" data-tip="Opening chapter">第一幕</span>, <span class="term" data-jp="第二幕" data-en="Act 2" data-tip="Paris reinforcement act">第二幕</span>, <span class="term" data-jp="第三幕" data-en="Act 3" data-tip="Final battle act">第三幕</span>, and <span class="term" data-jp="最終幕" data-en="Final Curtain" data-tip="Epilogue and ending lock">最終幕</span>. Follow the five-minute theater schedules, exact <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Live and Interactive Picture System">LIPS</span> gains, and <span class="term" data-jp="ARMS" data-en="ARMS" data-tip="Battle system">ARMS</span> boss strategies without missing bromides or Top-5 locks.
+      </p>
+
+      <div class="toc-box">
+        <div class="toc-title">On This Page</div>
+        <div class="toc-list">
+          <a href="#act-1">Act 1 &middot; Return to Tokyo</a>
+          <a href="#act-2">Act 2 &middot; Paris Arrives</a>
+          <a href="#act-3">Act 3 &middot; Final Preparations &amp; Assault</a>
+          <a href="#final-act">Final Curtain &middot; Epilogue</a>
+        </div>
+      </div>
+
+      <div class="completion-bar-wrap" data-counter-label="Story Beats Cleared">
+        <div class="completion-meta">
+          <span class="completion-text">Story Beats Cleared: 0/16 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+      </div>
+
+      <div class="section-header" id="act-1">
+        <h2><span class="term" data-jp="第一幕" data-en="Act 1" data-tip="Opening act">第一幕</span> &middot; Return to the Imperial Capital</h2>
+      </div>
+
+      <div class="step-block">
+        <h3>Act 1 Opening &amp; Heroine Triangle Selection</h3>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-1">
+            <div class="check-body">
+              <strong>Hangar &amp; Manager's Office Opening.</strong> Clear the opening steam-train rescue, then handle Sumire and Kanna's quarrel inside <span class="term" data-jp="格納庫" data-en="Hangar" data-tip="Basement hangar">格納庫</span>. Select <code>二人とも、いいかげんにしろ。</code> (Sakura, Maria, Glycine, Hanabi +1, Sumire -1) or <code>本当は仲良しだから大丈夫だよ。</code> (Sumire, Kanna, Erica, Coquelicot +1). Next choose <code>調査してもいいですか？</code> (+2 Lobelia) and pick your Paris and Tokyo leads inside <span class="term" data-jp="支配人室" data-en="Manager's Office" data-tip="1F manager office">支配人室</span>.
+              <ul class="bullet-steps">
+                <li><strong>Paris Lead Prompt.</strong> Answer <code>はい、いました</code> to choose among Erica, Glycine, Coquelicot, Lobelia (on screen 2), or Hanabi (on screen 2), declining defaults to <span class="term" data-jp="エリカ・フォンティーヌ" data-en="Erica Fontaine" data-tip="Paris">エリカ・フォンティーヌ</span>.</li>
+                <li><strong>Tokyo Photo Selection.</strong> Answer <code>もしかして……</code> to pick any of the 8 Tokyo heroines (+2 initial <span class="term" data-jp="恋愛度" data-en="Love Rating" data-tip="Affection boost">恋愛度</span>), declining defaults to <span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Tokyo">真宮寺さくら</span>.</li>
+                <li><strong>Immediate Tokyo Reunion LIPS.</strong> Sakura: <code>うれしかったよ。</code> (+1) &middot; Sumire: <code>心配してくれて、ありがとう。</code> (+2) &middot; Maria: <code>俺も会いたかったよ。</code> (+2) &middot; Iris: <code>ああ……</code> (+2) &middot; Kohran <span class="term" data-jp="タイミングLIPS" data-en="Timing LIPS" data-tip="Wait past half">タイミングLIPS</span>: wait for change, then <code>……なんとか?</code> (+2) &middot; Kanna: <code>普通だと……</code> or <code>俺は……どうだい?</code> (+1) &middot; Orihime: <code>すごく痛感……</code> (+2) &middot; Reni: <code>ああ、もちろん……</code> (+2).</li>
+                <li><strong>Salon, Library &amp; Kaede's Room.</strong> At <span class="term" data-jp="サロン" data-en="Salon" data-tip="2F salon">サロン</span> pick <code>たしかにカンナかも……</code> (+1 Kanna, +2 Coquelicot) or <code>俺も知らないんだ。</code> (+2 Glycine). At <span class="term" data-jp="図書室" data-en="Library" data-tip="2F library">図書室</span> pick <code>今も昔も変わりはない。</code> (+1 Kohran, +1 Orihime, +2 Glycine) or <code>帝都にも苦しんでいる人がいる。</code> (+1 Sakura, Sumire, Maria, Erica, Hanabi), then <code>最高の舞台にするぞ!</code> (+1 Kohran, Orihime, +2 Erica) or <code>粉骨砕身の覚悟でがんばります。</code> (+1 Sakura, Maria, Glycine, Hanabi). Save at the first prompt.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-2">
+            <div class="check-body">
+              <strong>Act 1 Timed Free Roam (00:00 to 00:55).</strong> Each room entered advances the clock by 5 minutes. Prioritize <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F shop">売店</span> at exactly 00:35 to buy your Act 1 bromide from <span class="term" data-jp="高村椿" data-en="Tsubaki Takamura" data-tip="Shopkeeper">高村椿</span>.
+              <table class="prima-table">
+                <thead>
+                  <tr><th>Time</th><th>Key Locations &amp; Optimal Actions</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>00:00</td><td><span class="term" data-jp="さくらの部屋" data-en="Sakura's Room" data-tip="2F">さくらの部屋</span>, <span class="term" data-jp="カンナの部屋" data-en="Kanna's Room" data-tip="2F">カンナの部屋</span>, <span class="term" data-jp="遊戯室" data-en="Rec Room" data-tip="2F">遊戯室</span> (Maria 00:00–00:25: <code>俺からならもらってくれるかい?</code> when Maria is lead, else time out for +2), <span class="term" data-jp="サロン" data-en="Salon" data-tip="2F">サロン</span> (Sumire 00:00–00:25: <code>眠たくなってきたんだけど……</code> +1).</td></tr>
+                  <tr><td>00:05</td><td><span class="term" data-jp="マリアの部屋" data-en="Maria's Room" data-tip="2F">マリアの部屋</span>, <span class="term" data-jp="アイリスの部屋" data-en="Iris's Room" data-tip="2F">アイリスの部屋</span>, <span class="term" data-jp="音楽室" data-en="Music Room" data-tip="1F">音楽室</span> (Orihime: wait for change, then <code>織姫くん、頼んだぞ!</code> +2), <span class="term" data-jp="薔薇組の部屋" data-en="Rose Room" data-tip="B1">薔薇組の部屋</span> (00:05–00:55).</td></tr>
+                  <tr><td>00:10</td><td><span class="term" data-jp="レニの部屋" data-en="Reni's Room" data-tip="2F">レニの部屋</span> (inspect poster x2: <code>みんなとの絆なんだよ。</code> +2, inspect bed x2: <code>好きな服でいいんじゃないかな?</code> +1, off-screen for <span class="term" data-jp="結婚観" data-en="Marriage Views" data-tip="Ask about marriage">結婚観</span> +2), <span class="term" data-jp="ソレッタの部屋" data-en="Orihime's Room" data-tip="2F">ソレッタの部屋</span>.</td></tr>
+                  <tr><td>00:15</td><td><span class="term" data-jp="紅蘭の部屋" data-en="Kohran's Room" data-tip="2F">紅蘭の部屋</span>, <span class="term" data-jp="食堂" data-en="Dining Hall" data-tip="1F">食堂</span> (Kohran: <code>ネバーギブアップだ、紅蘭!</code> +1).</td></tr>
+                  <tr><td>00:20–00:30</td><td>00:20 <span class="term" data-jp="すみれの部屋" data-en="Sumire's Room" data-tip="2F">すみれの部屋</span>. 00:30 <span class="term" data-jp="テラス" data-en="Terrace" data-tip="2F">テラス</span> (Sakura 00:30–00:35: inspect mouth <code>俺たちは絶対に出会っていたよ。</code> +2, chest x2 <code>ほめる。</code> +1, eyes x2, hair x2, off-screen <span class="term" data-jp="結婚観" data-en="Marriage Views" data-tip="Ask about marriage">結婚観</span>), <span class="term" data-jp="楽屋" data-en="Dressing Room" data-tip="1F">楽屋</span> (Kanna 00:30–00:55: <code>舞台の準備かい?</code> +1).</td></tr>
+                  <tr><td>00:35</td><td><strong><span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> (Tsubaki): Buy 1 Bromide.</strong> <span class="term" data-jp="衣裳部屋" data-en="Wardrobe" data-tip="1F">衣裳部屋</span> (Sumire 00:35–00:50: <code>たかが、衣装じゃないか……</code> +1 Orihime/Sumire).</td></tr>
+                  <tr><td>00:40–00:55</td><td>00:40 <span class="term" data-jp="中庭" data-en="Courtyard" data-tip="1F">中庭</span> (Reni/Iris: wish <code>世界が平和になりますように</code> or <code>みんなが仲良くなりますように</code> x3), <span class="term" data-jp="舞台" data-en="Stage" data-tip="1F">舞台</span> (Maria/Iris 00:40–00:45: <code>俺がけいこの相手をするよ。</code>, then <code>やっと会えたね</code>, wait for change <code>この時をどれだけ待ったか</code>, wait for change <code>愛しているよ</code>). 00:50 <span class="term" data-jp="作戦指令室" data-en="Command Room" data-tip="B1">作戦指令室</span> (Reni: <code>今は待つしかない</code> or <code>加山に調査を頼もう</code> +1). 00:55 <span class="term" data-jp="格納庫" data-en="Hangar" data-tip="B1">格納庫</span> (Kohran <span class="term" data-jp="アナログLIPS" data-en="Analog LIPS" data-tip="Intensity 1">アナログLIPS</span>: lowest 1 +2).</td></tr>
+                </tbody>
+              </table>
+              <p>After free roam ends, ask <span class="term" data-jp="加山雄一" data-en="Yuichi Kayama" data-tip="Intelligence officer">加山雄一</span> about Tokyo accidents, assign ticket duty (<code>モギリは俺がする</code> for general +1 or <code>薔薇組にでも……</code> +2 Lobelia), tell Kohran <code>紅蘭、俺と一緒に行こう</code> (+1), and launch with <code>帝国華撃団、出撃せよ!</code>.</p>
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-3">
+            <div class="check-body">
+              <strong>Act 1 ARMS Battle vs. <span class="term" data-jp="シカミ" data-en="Shikami" data-tip="Act 1 enemy boss">シカミ</span>.</strong> Move <span class="term" data-jp="アイリス" data-en="Iris" data-tip="Tokyo">アイリス</span> to the iron shutter lever to open the gate (<code>頼りになる隊員になったね</code> +1 Iris). Keep Ogami adjacent to <span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Tokyo">真宮寺さくら</span> (pick <code>キミがいるところなら……</code> +1), <span class="term" data-jp="アイリス" data-en="Iris" data-tip="Tokyo">アイリス</span> near <span class="term" data-jp="レニ" data-en="Reni" data-tip="Tokyo">レニ</span> (<code>黒髪の貴公子とは、俺のことさ</code> +1 both), <span class="term" data-jp="ソレッタ・織姫" data-en="Orihime Soletta" data-tip="Tokyo">ソレッタ・織姫</span> (auto), and move <span class="term" data-jp="アイリス" data-en="Iris" data-tip="Tokyo">アイリス</span> next to Ogami by the Ferris wheel (<code>よし、乗ろうか!</code> +1 Iris). Stop Kohran's runaway mech (<code>紅蘭を止める!</code> +1). Focus fire directly on <span class="term" data-jp="シカミ" data-en="Shikami" data-tip="Boss">シカミ</span> because mooks respawn, and swap to <span class="term" data-jp="山" data-en="Mountain" data-tip="Defense/Heal">山</span> whenever its special drains AP.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-header" id="act-2">
+        <h2><span class="term" data-jp="第二幕" data-en="Act 2" data-tip="Paris reinforcement act">第二幕</span> &middot; Crossed Feelings</h2>
+      </div>
+
+      <div class="step-block">
+        <h3>Noh Stage, Dining Hall &amp; Arrival of Paris</h3>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-4">
+            <div class="check-body">
+              <strong>Stage &amp; Noh Theater Outing.</strong> At <span class="term" data-jp="舞台袖" data-en="Stage Wings" data-tip="1F backstage">舞台袖</span> pick <code>物を与えると思うよ。</code> (+1 Sumire/Lobelia). At <span class="term" data-jp="能楽堂" data-en="Noh Theater" data-tip="Tokyo outing">能楽堂</span> choose <code>結婚に興味があってね。</code> (+2 Tokyo lead), <code>オバケなんて出ないよ。</code> (+2 Kohran, +1 Erica/Hanabi), and <code>敵の落とした能面について話す</code> (+1 Glycine/Hanabi).
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-5">
+            <div class="check-body">
+              <strong>Dining Hall Paris Heroine Prompts.</strong> Answer positively to your selected Paris lead inside <span class="term" data-jp="食堂" data-en="Dining Hall" data-tip="1F mess hall">食堂</span>, then avoid bragging on the second prompt so your Tokyo lead stays unharmed:
+              <ul class="bullet-steps">
+                <li><strong>Erica.</strong> <code>もちろん、忘れてないさ。</code> (+2 Erica), then <code>一度だけ、俺の部屋に……</code> (+1 Erica).</li>
+                <li><strong>Glycine.</strong> <code>もちろん、考えているよ。</code> (+2 Glycine), then <code>二人とも、がんばれよ!</code> (+1 Glycine, -1 Maria).</li>
+                <li><strong>Coquelicot.</strong> <code>連れて行く</code> (+2 Coquelicot), then <code>そういうこと……</code> (+1 Coquelicot).</li>
+                <li><strong>Lobelia.</strong> <code>返すわけにはいかないな。</code> (+2 Lobelia), then <code>巴里には行かないよ。</code> (+1 Tokyo lead) or time out (+1 Lobelia).</li>
+                <li><strong>Hanabi.</strong> <code>俺の未来は……</code> (+2 Hanabi), then <code>花火くんの……</code> (+2 Hanabi, -2 Tokyo lead).</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-6">
+            <div class="check-body">
+              <strong>Act 2 Free Roam (00:30 to 00:55).</strong> All Tokyo bedrooms plus <span class="term" data-jp="サロン" data-en="Salon" data-tip="Paris lead">サロン</span> and <span class="term" data-jp="テラス" data-en="Terrace" data-tip="Tokyo lead">テラス</span> are open continuously from 00:30 to 00:55. Prioritize <span class="term" data-jp="織姫の部屋" data-en="Orihime's Room" data-tip="2F">織姫の部屋</span> (<span class="term" data-jp="タイミングLIPS" data-en="Timing LIPS" data-tip="Wait for change">タイミングLIPS</span>: let timer expire for +2 Orihime, or pick <code>うれしいんだから</code> when Erica is lead), <span class="term" data-jp="サロン" data-en="Salon" data-tip="2F">サロン</span> for your Paris lead, <span class="term" data-jp="アイリスの部屋" data-en="Iris's Room" data-tip="2F">アイリスの部屋</span> (<code>みんなで巴里に</code> +2 Iris), <span class="term" data-jp="さくらの部屋" data-en="Sakura's Room" data-tip="2F">さくらの部屋</span> (<code>さくらなら、ここにあるだろう?</code> +2), <span class="term" data-jp="すみれの部屋" data-en="Sumire's Room" data-tip="2F">すみれの部屋</span> (<code>俺も参加していいかい?</code> +2), <span class="term" data-jp="マリアの部屋" data-en="Maria's Room" data-tip="2F">マリアの部屋</span> (<code>マリアは気にならないのかい?</code> +2), and <span class="term" data-jp="紅蘭の部屋" data-en="Kohran's Room" data-tip="2F">紅蘭の部屋</span> (<code>俺なんか……どうだい?</code> +2).
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-7">
+            <div class="check-body">
+              <strong>Ogami's Room Closet Jealousy Event.</strong> Hide the sound behind <code>ネコだよ!!</code> (or Analog 3 for Glycine). To trigger the full jealousy confrontation with your Tokyo lead in the closet, pick <code>ああ、二人で一緒に探そう</code> (Erica), <code>わかった、一緒に歩もう</code> (Glycine), any option other than refusal (Coquelicot), any option other than refusal (Lobelia), or <code>ああ、いつも心配していたよ</code> (Hanabi). When the Tokyo heroine exits the closet, pick <code>俺は〇〇の方が大切だよ</code> to side with Tokyo, or affirm Paris to boost Paris.
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-8">
+            <div class="check-body">
+              <strong>Act 2 ARMS Battle vs. <span class="term" data-jp="ハクシキ" data-en="Hakushiki" data-tip="Act 2 boss">ハクシキ</span> &amp; Welcome Party.</strong> Choose <code>結界を壊せばいいんだな!</code> (+1 Maria, Kanna). Break at least two of the four <span class="term" data-jp="金結界" data-en="Gold Barriers" data-tip="Four corner barriers">金結界</span> (staying out of linear <span class="term" data-jp="呪弓" data-en="Cursed Bow" data-tip="Line-attack enemies">呪弓</span> fire lanes), drop <span class="term" data-jp="ハクシキ" data-en="Hakushiki" data-tip="Boss">ハクシキ</span> below 20% HP, then answer <code>俺たちも司令が大切なんです</code> and push Analog LIPS to Maximum (5) on <code>巴里華撃団、出撃せよ!</code>. Approach Erica, Glycine, Lobelia, and Kanna during Phase 2 for bonus trust. Afterward at the welcome party, tell Lobelia <code>じゃ、二人で酒でも飲んでるか?</code> (+1 Lobelia) and feed Erica wasabi at Medium (3) on <span class="term" data-jp="アナログLIPS" data-en="Analog LIPS" data-tip="Middle tier 3">アナログLIPS</span> (+1 Erica).
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-header" id="act-3">
+        <h2><span class="term" data-jp="第三幕" data-en="Act 3" data-tip="Final battle act">第三幕</span> &middot; Outing, Mikasa Assault &amp; Finale</h2>
+      </div>
+
+      <div class="step-block">
+        <h3>Free Roam 1, Outing, Bathhouse &amp; Top-5 Control</h3>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-9">
+            <div class="check-body">
+              <strong>Act 3 Outing Selection inside <span class="term" data-jp="食堂" data-en="Dining Hall" data-tip="1F">食堂</span>.</strong> Pick <code>エリカたちと下町へ行く。</code> (+1 Erica), <code>グリシーヌたちと華道をする。</code> (+1 Glycine), or <code>ロベリアたちと浅草寺に行く。</code> (+1 Lobelia). Each locks your destination after Free Roam 1.
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-10">
+            <div class="check-body">
+              <strong>Act 3 Free Roam 1 (00:00 to 00:55).</strong> Start at <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> (00:00) to buy your Act 3 Bromide from Tsubaki, then sweep timed rooms:
+              <ul class="bullet-steps">
+                <li><strong>00:00 <span class="term" data-jp="食堂" data-en="Dining Hall" data-tip="1F">食堂</span>.</strong> <code>人助けご苦労さま。</code> (+1 Erica, Maria).</li>
+                <li><strong>00:00 <span class="term" data-jp="中庭" data-en="Courtyard" data-tip="1F">中庭</span>.</strong> Analog 3 to catch Erica (+1), then <code>じゃあ、みんなで植えようか。</code> (+1 Sakura, Erica).</li>
+                <li><strong>00:00–00:15 <span class="term" data-jp="舞台" data-en="Stage" data-tip="1F">舞台</span>.</strong> Pick <code>レビューがいいんじゃないのか?</code> (+1 Glycine, Hanabi), <code>今から劇の特訓だ!</code> (+1 Erica, Coquelicot), or <code>ミュージカルはどうだい?</code> (+1 Lobelia, Erica).</li>
+                <li><strong>00:05 <span class="term" data-jp="図書室" data-en="Library" data-tip="2F">図書室</span> (Hanabi).</strong> Click hair x2 (+1), eyes x2 (+1), mouth x1 <code>今の花火くんの方がいいよ。</code> (+1), plus off-screen <span class="term" data-jp="結婚観" data-en="Marriage Views" data-tip="Bonus love prompt">結婚観</span>.</li>
+                <li><strong>00:15 <span class="term" data-jp="サロン" data-en="Salon" data-tip="2F">サロン</span> (Erica).</strong> Join game (+1 Erica) and clear match.</li>
+                <li><strong>00:20 <span class="term" data-jp="隊長室" data-en="Captain's Office" data-tip="2F">隊長室</span> (Sakura &amp; Lobelia).</strong> Wait for text change, then <code>部屋に突入する!</code>.</li>
+                <li><strong>00:35 <span class="term" data-jp="テラス" data-en="Terrace" data-tip="2F">テラス</span> (Glycine).</strong> Click eyes x2 (+1), mouth x1 <code>大丈夫、きっと大歓迎だよ。</code> (+1), plus off-screen <span class="term" data-jp="結婚観" data-en="Marriage Views" data-tip="Bonus love prompt">結婚観</span>.</li>
+                <li><strong>00:45 <span class="term" data-jp="衣裳部屋" data-en="Wardrobe" data-tip="1F">衣裳部屋</span> (Sumire &amp; Kanna).</strong> Stitch near center gauge twice (+1 Sumire, Kanna, Hanabi), then <code>へぇ、うまくなってきたね。</code> (+1 Sumire) and <code>ああ、調子がでてきたよ。</code> (+1 Kanna).</li>
+                <li><strong>00:50 <span class="term" data-jp="厨房" data-en="Kitchen" data-tip="1F">厨房</span> (Coquelicot).</strong> Click eyes x2 (+1), stroke hair x1–2 (+1), mouth x1 <code>みんな一緒だと楽しそうだね。</code> (+1), plus off-screen <span class="term" data-jp="結婚観" data-en="Marriage Views" data-tip="Bonus love prompt">結婚観</span>.</li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-11">
+            <div class="check-body">
+              <strong>Outing Scene &amp; Bathhouse.</strong> In <span class="term" data-jp="下町" data-en="Shitamachi" data-tip="Downtown">下町</span> pick <code>コクリコのアメをなめる。</code> (+1 Coquelicot) and flip forward (+1 Coquelicot, Iris). In <span class="term" data-jp="華道" data-en="Flower Arrangement" data-tip="Ikebana">華道</span> choose Analog 4 (+1 Glycine) or 3 (+1 Sakura, Hanabi, Sumire) and avoid moving during leg numbness (+1 Sumire, Glycine). In <span class="term" data-jp="浅草寺" data-en="Senso-ji" data-tip="Temple">浅草寺</span> pick <code>みんなで重なれってことだよ。</code> and buy hairpins for all (+1 Orihime). At the <span class="term" data-jp="風呂場" data-en="Bathhouse" data-tip="Steamy commotion">風呂場</span> say <code>すまない……みんな。</code> to avoid trust loss, tell Yoneda <span class="term" data-jp="大久保長安" data-en="Okubo Nagayasu" data-tip="Mastermind">大久保長安</span> is behind it, and confirm <code>はい……思う人がいて</code> (or <code>平和のことしか考えられない</code> for Solo Ending).
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-12">
+            <div class="check-body">
+              <strong>Act 3 Free Roam 2 (00:00 to 00:55), Top-5 Adjustment Anchor.</strong> Save before moving. Every heroine waits in a fixed room with an event CG and a massive swing (+3 vs -3) so you can finalize who enters the Top 5.
+              <table class="prima-table">
+                <thead>
+                  <tr><th>Heroine</th><th>Room (Time)</th><th>Boost Choice (+3)</th><th>Drop Choice (-3)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td><span class="term" data-jp="真宮寺さくら" data-en="Sakura" data-tip="Tokyo">真宮寺さくら</span></td><td><span class="term" data-jp="さくらの部屋" data-en="Sakura's Room" data-tip="2F">さくらの部屋</span> (00:00)</td><td><code>お父さんに見せてあげたいよ。</code></td><td>Time out</td></tr>
+                  <tr><td><span class="term" data-jp="神崎すみれ" data-en="Sumire" data-tip="Tokyo">神崎すみれ</span></td><td><span class="term" data-jp="舞台" data-en="Stage" data-tip="1F">舞台</span> (00:00)</td><td><code>すみれくん……ふるえているよ。</code></td><td><code>今は戦いのことだけを考えろ。</code></td></tr>
+                  <tr><td><span class="term" data-jp="マリア・タチバナ" data-en="Maria" data-tip="Tokyo">マリア・タチバナ</span></td><td><span class="term" data-jp="作戦指令室" data-en="Command Room" data-tip="B1">作戦指令室</span> (00:00)</td><td><code>俺がみんなを守ると約束する。</code></td><td><code>弱い心に負けるな!</code></td></tr>
+                  <tr><td><span class="term" data-jp="アイリス" data-en="Iris" data-tip="Tokyo">アイリス</span></td><td><span class="term" data-jp="アイリスの部屋" data-en="Iris's Room" data-tip="2F">アイリスの部屋</span> (00:15)</td><td><code>アイリスをはげます。</code> (CG: <code>ぬいぐるみを受け取る。</code>)</td><td><code>ジャンポールの方がいいな。</code></td></tr>
+                  <tr><td><span class="term" data-jp="桐島カンナ" data-en="Kanna" data-tip="Tokyo">桐島カンナ</span></td><td><span class="term" data-jp="カンナの部屋" data-en="Kanna's Room" data-tip="2F">カンナの部屋</span> (00:00)</td><td>Analog Punch Max (5)</td><td>Analog Punch Min (1)</td></tr>
+                  <tr><td><span class="term" data-jp="李紅蘭" data-en="Kohran" data-tip="Tokyo">李紅蘭</span></td><td><span class="term" data-jp="格納庫" data-en="Hangar" data-tip="B1">格納庫</span> (00:00)</td><td><code>今度は壊したりしないよ。</code> / <code>……約束はできないよ。</code></td><td>Time out</td></tr>
+                  <tr><td><span class="term" data-jp="ソレッタ・織姫" data-en="Orihime" data-tip="Tokyo">ソレッタ・織姫</span></td><td><span class="term" data-jp="音楽室" data-en="Music Room" data-tip="1F">音楽室</span> (00:00)</td><td><code>もういいから、がんばるな。</code></td><td><code>わかった……それじゃ。</code></td></tr>
+                  <tr><td><span class="term" data-jp="レニ・ミルヒシュトラーセ" data-en="Reni" data-tip="Tokyo">レニ・ミルヒシュトラーセ</span></td><td><span class="term" data-jp="レニの部屋" data-en="Reni's Room" data-tip="2F">レニの部屋</span> (00:20)</td><td><code>……勝たなくてもいいんだよ。</code></td><td><code>弱気になったら負けるぞ。</code></td></tr>
+                  <tr><td><span class="term" data-jp="エリカ・フォンティーヌ" data-en="Erica" data-tip="Paris">エリカ・フォンティーヌ</span></td><td><span class="term" data-jp="サロン" data-en="Salon" data-tip="2F">サロン</span> (00:00)</td><td><code>代わりに俺がお茶をいれようか?</code></td><td><code>お茶がもったいないよ。</code></td></tr>
+                  <tr><td><span class="term" data-jp="グリシーヌ・ブルーメール" data-en="Glycine" data-tip="Paris">グリシーヌ・ブルーメール</span></td><td><span class="term" data-jp="遊戯室" data-en="Rec Room" data-tip="2F">遊戯室</span> (00:00)</td><td><code>……頼んだぞ。</code></td><td><code>戦いはチェスとはちがうぞ。</code></td></tr>
+                  <tr><td><span class="term" data-jp="コクリコ" data-en="Coquelicot" data-tip="Paris">コクリコ</span></td><td><span class="term" data-jp="食堂" data-en="Dining Hall" data-tip="1F">食堂</span> (00:00)</td><td><code>ゴハン……食べてもいいかな?</code></td><td><code>すまない……食欲がないんだ。</code></td></tr>
+                  <tr><td><span class="term" data-jp="ロベリア・カルリーニ" data-en="Lobelia" data-tip="Paris">ロベリア・カルリーニ</span></td><td><span class="term" data-jp="テラス" data-en="Terrace" data-tip="2F">テラス</span> (00:50)</td><td><code>ロベリアの方が凶悪に見えるよ。</code> or Time out</td><td><code>ミカサを甘く見るなよ。</code></td></tr>
+                  <tr><td><span class="term" data-jp="北大路花火" data-en="Hanabi" data-tip="Paris">北大路花火</span></td><td><span class="term" data-jp="図書室" data-en="Library" data-tip="2F">図書室</span> (00:30)</td><td><code>俺も一緒にお願いしていいかな?</code></td><td><code>代わりに俺が折ろうか?</code></td></tr>
+                </tbody>
+              </table>
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-13">
+            <div class="check-body">
+              <strong>Grand Heroine, Squad Formation &amp; Assault Launch.</strong> Inside <span class="term" data-jp="作戦指令室" data-en="Command Room" data-tip="B1">作戦指令室</span>, pick your <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-pilot Koubu">双武</span> co-pilot from the Top 5, push <code>最後まで、あきらめるな!</code> Analog LIPS to Max (5) to boost the entire cast, choose 4 squadmates (target <span class="term" data-jp="紅組" data-en="Crimson Squad" data-tip="ATK+3 DEF+2 AP+1 AGI+3">紅組</span>, <span class="term" data-jp="蒼組" data-en="Azure Squad" data-tip="ATK+2 DEF+3 AP+1 AGI+3">蒼組</span>, or <span class="term" data-jp="絶対正義組" data-en="Absolute Justice Squad" data-tip="ATK+9 DEF+9 AGI+2">絶対正義組</span>), name a Ground Force Captain, and launch with <code>大神華撃団、出撃せよ!</code>.
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-14">
+            <div class="check-body">
+              <strong>Final Battle Phase 1, Approach &amp; <span class="term" data-jp="長安" data-en="Chouan" data-tip="Final battle stage 1 boss">長安</span>.</strong> Split or sweep one flank to destroy the side control devices beside the giant cannons inside <span class="spoiler"><span class="term" data-jp="ミカサ" data-en="Mikasa" data-tip="Hijacked flying battleship">ミカサ</span></span> so your units reach the center plaza. Defeat <span class="term" data-jp="長安" data-en="Chouan" data-tip="Boss">長安</span> while keeping frail casters outside frontal line blasts or covered with <span class="term" data-jp="かばう" data-en="Protect" data-tip="Cover">かばう</span>.
+            </div>
+          </li>
+
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-15">
+            <div class="check-body">
+              <strong>Final Battle Phase 2, <span class="spoiler"><span class="term" data-jp="大久保長安" data-en="Okubo Nagayasu" data-tip="Main antagonist">大久保長安</span> &amp; <span class="term" data-jp="神体" data-en="Divine Body" data-tip="Final boss form">神体</span></span>.</strong> The <span class="spoiler"><span class="term" data-jp="神体" data-en="Divine Body" data-tip="Final form">神体</span></span> alternates between a wide radial blast around its nearest target and a forward stun beam that freezes struck units for one turn. Flank from the left and right edges, charge <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-pilot unit">双武</span> under <span class="term" data-jp="火" data-en="Fire" data-tip="Attack stance">火</span>, swap to <span class="term" data-jp="山" data-en="Mountain" data-tip="Defense/Heal">山</span> to heal and guard, and unleash your co-pilot's unique <span class="term" data-jp="必殺攻撃" data-en="Special Attack" data-tip="Soubu finisher">必殺攻撃</span>. After victory, input Analog LIPS 3–5 during <code>双武……起動!</code> and accept your partner's aid.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="section-header" id="final-act">
+        <h2><span class="term" data-jp="最終幕" data-en="Final Curtain" data-tip="Epilogue">最終幕</span>: Farewell Stroll &amp; Ending Lock</h2>
+      </div>
+
+      <div class="step-block">
+        <h3>Post-Battle Theater Walk &amp; Clear Save</h3>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="story-16">
+            <div class="check-body">
+              <strong><span class="term" data-jp="最終幕" data-en="Final Curtain" data-tip="Epilogue">最終幕</span> Farewell &amp; Ending Selection.</strong> None of the rooms in this epilogue alter <span class="term" data-jp="恋愛度" data-en="Love Rating" data-tip="Affection meter">恋愛度</span>, so visit any teammates you like around the theater (<span class="term" data-jp="テラス" data-en="Terrace" data-tip="Sakura">テラス</span>, <span class="term" data-jp="舞台袖" data-en="Stage Wings" data-tip="Sumire">舞台袖</span>, <span class="term" data-jp="衣裳部屋" data-en="Wardrobe" data-tip="Maria">衣裳部屋</span>, <span class="term" data-jp="アイリスの部屋" data-en="Iris's Room" data-tip="Iris">アイリスの部屋</span>, <span class="term" data-jp="カンナの部屋" data-en="Kanna's Room" data-tip="Kanna">カンナの部屋</span>, <span class="term" data-jp="大道具部屋" data-en="Prop Room" data-tip="Kohran">大道具部屋</span>, <span class="term" data-jp="楽屋" data-en="Dressing Room" data-tip="Orihime">楽屋</span>, <span class="term" data-jp="中庭" data-en="Courtyard" data-tip="Reni">中庭</span>, <span class="term" data-jp="食堂" data-en="Dining Hall" data-tip="Erica">食堂</span>, <span class="term" data-jp="音楽室" data-en="Music Room" data-tip="Glycine">音楽室</span>, <span class="term" data-jp="厨房" data-en="Kitchen" data-tip="Coquelicot">厨房</span>, <span class="term" data-jp="遊戯室" data-en="Rec Room" data-tip="Lobelia">遊戯室</span>, <span class="term" data-jp="図書室" data-en="Library" data-tip="Hanabi">図書室</span>) before heading to <span class="term" data-jp="作戦指令室" data-en="Command Room" data-tip="Partner">作戦指令室</span>. Save clear data to <code>SAKURA_4.SYS</code> after the credits roll.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

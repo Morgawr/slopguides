@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroines &amp; Koubu - サクラ大戦4 〜恋せよ乙女〜 Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="teigeki-layout">
+    <aside class="hanagumi-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="sakura-crest" aria-hidden="true"></span>
+          <span class="rail-title-tag">Taisho Finale Archive</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="サクラ大戦4 〜恋せよ乙女〜" data-en="Sakura Wars 4: Fall in Love, Maidens" data-tip="Sakura Wars 4: Fall in Love, Maidens">サクラ大戦4 〜恋せよ乙女〜</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">Sega Dreamcast</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Beginner Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <a class="rail-nav-link" href="main-story.html">Main Story</a>
+        <div class="rail-nav-label">Cast &amp; Systems</div>
+        <a class="rail-nav-link active" href="heroines.html">Heroines &amp; Koubu</a>
+        <a class="rail-nav-link" href="mechanics.html">Game Mechanics</a>
+        <a class="rail-nav-link" href="collectibles.html">Bromides &amp; Omake</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="teigeki-stage">
+      <div class="page-header">
+        <h1>All 13 Heroines, Ogami &amp; Koubu Roles</h1>
+      </div>
+
+      <p class="lead-intro">
+        Profiles, base <span class="term" data-jp="光武" data-en="Koubu" data-tip="Spiricle Armor">光武</span> combat stats, individual <span class="term" data-jp="必殺攻撃" data-en="Special Attack" data-tip="Unit ultimate skill">必殺攻撃</span> names, unique dual-seat <span class="term" data-jp="双武" data-en="Soubu" data-tip="Two-pilot mecha">双武</span> finishers, and preferred <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Dialogue system">LIPS</span> responses for the entire combined cast.
+      </p>
+
+      <div class="completion-bar-wrap" data-counter-label="Cast Routes Mastered">
+        <div class="completion-meta">
+          <span class="completion-text">Cast Routes Mastered: 0/14 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+      </div>
+
+      <div class="filter-toolbar">
+        <button type="button" class="filter-btn active" data-group-filter="all">All Cast</button>
+        <button type="button" class="filter-btn" data-group-filter="teito">Teito</button>
+        <button type="button" class="filter-btn" data-group-filter="paris">Paris</button>
+        <button type="button" class="filter-btn active" data-status-filter="all">All Status</button>
+        <button type="button" class="filter-btn" data-status-filter="pending">Pending</button>
+        <button type="button" class="filter-btn" data-status-filter="done">Done</button>
+        <input type="search" class="search-input" data-page-search placeholder="Filter cast, Soubu skill, or squad...">
+      </div>
+
+      <div class="step-block" data-filter-item data-group="teito">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/ogami.jpg" alt="Ichiro Ogami">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain of Tokyo and Paris Divisions">大神一郎</span></h2>
+            <p><span class="term" data-jp="光武二式（大神機）" data-en="Koubu Type-2 (Ogami Custom)" data-tip="ATK 27 / DEF 18 / AP 7">光武二式（大神機）</span> and <span class="term" data-jp="双武" data-en="Soubu" data-tip="ATK 30 / DEF 14 / AP 7">双武</span> &middot; Captain &middot; ATK 27 (30) / DEF 18 (14) / AP 7</p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-1">
+            <div class="check-body">
+              <strong>Duty-Driven Vanguard &amp; Solo Ending.</strong> Anchor frontline formation with <span class="term" data-jp="隊長コマンド" data-en="Captain Command" data-tip="Wind, Forest, Fire, Mountain">隊長コマンド</span> mid-turn swaps from <span class="term" data-jp="火" data-en="Fire" data-tip="Charge">火</span> to <span class="term" data-jp="山" data-en="Mountain" data-tip="Guard and Heal">山</span> alongside <span class="term" data-jp="かばう" data-en="Protect" data-tip="Cover">かばう</span>. Choose earnest, decisive replies to raise <span class="term" data-jp="隊長値" data-en="Captain Value" data-tip="Leadership score">隊長値</span>, and tell Yoneda you think only of peace to clear the <span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Solo ending">大神一郎</span> Solo Ending.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="teito">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/sakura.jpg" alt="Sakura Shinguji">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Tokyo Flower Division">真宮寺さくら</span></h2>
+            <p><span class="term" data-jp="光武二式（さくら機）" data-en="Koubu Type-2 (Sakura Custom)" data-tip="Melee sword unit">光武二式（さくら機）</span> &middot; ATK 21 / DEF 15 / AP 7 &middot; Solo Skill: <span class="term" data-jp="破邪剣征・桜花放神" data-en="Evil-Crushing Blade: Sakura Release" data-tip="Sakura special attack">破邪剣征・桜花放神</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-2">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Responds best to heartfelt devotion, reassurance about Tokyo, and earnest theatrical dedication. In Act 3 pre-Mikasa free roam, visit <span class="term" data-jp="さくらの部屋" data-en="Sakura's Room" data-tip="2F bedroom">さくらの部屋</span> and pick <code>お父さんに見せてあげたいよ</code> for maximum gain. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="桜花絢爛" data-en="Ouka Kenran" data-tip="Splendid Cherry Blossoms">桜花絢爛</span>. Pairs naturally with <span class="term" data-jp="桜組" data-en="Sakura Squad" data-tip="Sakura + Erica core">桜組</span> and <span class="term" data-jp="紅組" data-en="Crimson Squad" data-tip="ATK+3 DEF+2 AP+1 AGI+3">紅組</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="teito">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/sumire.jpg" alt="Sumire Kanzaki">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Tokyo Flower Division">神崎すみれ</span></h2>
+            <p><span class="term" data-jp="光武二式（すみれ機）" data-en="Koubu Type-2 (Sumire Custom)" data-tip="Naginata sweep unit">光武二式（すみれ機）</span> &middot; ATK 20 / DEF 16 / AP 7 &middot; Solo Skill: <span class="term" data-jp="神崎風塵流・胡蝶の舞" data-en="Kanzaki Fujin-ryu: Butterfly Dance" data-tip="Sumire special attack">神崎風塵流・胡蝶の舞</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-3">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Respect her star pride while gently recognizing her vulnerability behind stage bravado. Visit <span class="term" data-jp="舞台" data-en="Stage" data-tip="1F main stage">舞台</span> in Act 3's final free roam and select <code>すみれくん……ふるえているよ</code> for her big boost and CG. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="阿吽の舞" data-en="Dance of Alpha and Omega" data-tip="Harmonized naginata dance">阿吽の舞</span>. Key member of <span class="term" data-jp="蒼組" data-en="Azure Squad" data-tip="ATK+2 DEF+3 AP+1 AGI+3">蒼組</span> and <span class="term" data-jp="ライバル組" data-en="Rival Squad" data-tip="ATK+3 DEF+2 AGI+2">ライバル組</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="teito">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/maria.jpg" alt="Maria Tachibana">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Tokyo Flower Division">マリア・タチバナ</span></h2>
+            <p><span class="term" data-jp="光武二式（マリア機）" data-en="Koubu Type-2 (Maria Custom)" data-tip="Long-range marksman">光武二式（マリア機）</span> &middot; ATK 21 / DEF 13 / AP 7 &middot; Solo Skill: <span class="term" data-jp="スネグーラチカ" data-en="Snegurochka" data-tip="Snow Maiden">スネグーラチカ</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-4">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Favors disciplined leadership mixed with honest personal reassurance. Complete her three-step stage rehearsal in Act 1 on <span class="term" data-jp="舞台" data-en="Stage" data-tip="1F stage">舞台</span> cleanly and promise to protect everyone in <span class="term" data-jp="作戦指令室" data-en="Command Room" data-tip="Basement war room">作戦指令室</span> during Act 3. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="ブードゥシシィ" data-en="Budushchee" data-tip="Future">ブードゥシシィ</span>. Anchors <span class="term" data-jp="守組" data-en="Guardian Squad" data-tip="DEF+3 AP+1 AGI+2">守組</span> and <span class="term" data-jp="大人組" data-en="Senior Squad" data-tip="ATK+3 DEF+1">大人組</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="teito">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/iris.jpg" alt="Iris Chateaubriand">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="アイリス" data-en="Iris" data-tip="Iris Chateaubriand">アイリス</span></h2>
+            <p><span class="term" data-jp="光武二式（アイリス機）" data-en="Koubu Type-2 (Iris Custom)" data-tip="Support and psychic healer">光武二式（アイリス機）</span> &middot; ATK 15 / DEF 16 / AP 7 &middot; Solo Skill: <span class="term" data-jp="イリス・マリオネット" data-en="Iris Marionette" data-tip="Jean-Paul support skill">イリス・マリオネット</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-5">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Treat her as a reliable teammate rather than a child, accept her plush gift in <span class="term" data-jp="アイリスの部屋" data-en="Iris's Room" data-tip="2F bedroom">アイリスの部屋</span> during Act 3, and trigger her Battle 1 shutter and Ferris wheel scenes. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="ファンタスティック・ベーゼ" data-en="Fantastic Baiser" data-tip="Dreamlike Kiss">ファンタスティック・ベーゼ</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="teito">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/kanna.jpg" alt="Kanna Kirishima">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Tokyo Flower Division">桐島カンナ</span></h2>
+            <p><span class="term" data-jp="光武二式（カンナ機）" data-en="Koubu Type-2 (Kanna Custom)" data-tip="Heavy close-quarters brawler">光武二式（カンナ機）</span> &middot; ATK 28 / DEF 18 / AP 7 &middot; Solo Skill: <span class="term" data-jp="一百林牌" data-en="Ippei Rinpai" data-tip="Martial arts finisher">一百林牌</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-6">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Highest base attack and defense among all heroines. Responds well to bold camaraderie, karate training, and hitting maximum strength (5) on her Act 3 punch <span class="term" data-jp="アナログLIPS" data-en="Analog LIPS" data-tip="Push stick to top">アナログLIPS</span> in <span class="term" data-jp="カンナの部屋" data-en="Kanna's Room" data-tip="2F bedroom">カンナの部屋</span>. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="白狼拳" data-en="White Wolf Fist" data-tip="White Wolf Fist">白狼拳</span>. Core of <span class="term" data-jp="紅組" data-en="Crimson Squad" data-tip="ATK+3 DEF+2 AP+1 AGI+3">紅組</span> and <span class="term" data-jp="戦組" data-en="Vanguard Squad" data-tip="ATK+4 DEF+1">戦組</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="teito">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/kohran.jpg" alt="Kohran Li">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Tokyo Flower Division">李紅蘭</span></h2>
+            <p><span class="term" data-jp="光武二式（紅蘭機）" data-en="Koubu Type-2 (Kohran Custom)" data-tip="Artillery and gadget unit">光武二式（紅蘭機）</span> &middot; ATK 18 / DEF 14 / AP 7 &middot; Solo Skill: <span class="term" data-jp="チビロボ" data-en="Chibi Robo" data-tip="Mini-robot barrage">チビロボ</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-7">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Encourage her inventions, cheer her on with natto in Act 1's <span class="term" data-jp="食堂" data-en="Dining Hall" data-tip="1F mess hall">食堂</span>, use low intensity (1) in Act 1's <span class="term" data-jp="格納庫" data-en="Hangar" data-tip="Basement hangar">格納庫</span>, and promise never to break her Koubu in Act 3. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="天地風雲" data-en="Heaven and Earth Tempest" data-tip="Storm of Heaven and Earth">天地風雲</span>. Key to <span class="term" data-jp="蒼組" data-en="Azure Squad" data-tip="ATK+2 DEF+3 AP+1 AGI+3">蒼組</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="teito">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/orihime.jpg" alt="Orihime Soletta">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="ソレッタ・織姫" data-en="Orihime Soletta" data-tip="Tokyo Flower Division">ソレッタ・織姫</span></h2>
+            <p><span class="term" data-jp="光武二式（織姫機）" data-en="Koubu Type-2 (Orihime Custom)" data-tip="Cross-range aerial attacker">光武二式（織姫機）</span> &middot; ATK 20 / DEF 12 / AP 7 &middot; Solo Skill: <span class="term" data-jp="クアットロ・スタジオーニ" data-en="Quattro Stagioni" data-tip="Four Seasons">クアットロ・スタジオーニ</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-8">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Show artistic appreciation, ask her to handle the music in Act 1 inside <span class="term" data-jp="音楽室" data-en="Music Room" data-tip="1F music room">音楽室</span>, watch her Top-5-sensitive Timing LIPS in Act 2 inside <span class="term" data-jp="織姫の部屋" data-en="Orihime's Room" data-tip="2F bedroom">織姫の部屋</span>, and tell her not to overwork in Act 3. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="ドゥエット" data-en="Duetto" data-tip="Duet">ドゥエット</span>. Key for <span class="term" data-jp="紅組" data-en="Crimson Squad" data-tip="ATK+3 DEF+2 AP+1 AGI+3">紅組</span> and <span class="term" data-jp="綺羅星組" data-en="Starlight Squad" data-tip="ATK+4">綺羅星組</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="teito">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/reni.jpg" alt="Reni Milchstrasse">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="レニ・ミルヒシュトラーセ" data-en="Reni Milchstrasse" data-tip="Tokyo Flower Division">レニ・ミルヒシュトラーセ</span></h2>
+            <p><span class="term" data-jp="光武二式（レニ機）" data-en="Koubu Type-2 (Reni Custom)" data-tip="High-ATK precision lancer">光武二式（レニ機）</span> &middot; ATK 26 / DEF 14 / AP 7 &middot; Solo Skill: <span class="term" data-jp="ブラウアー・フォーゲル" data-en="Blauer Vogel" data-tip="Blue Bird">ブラウアー・フォーゲル</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-9">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Second-highest base attack on the roster. Responds to gentle emotional warmth, noticing bonds in her Act 1 poster <span class="term" data-jp="クリックLIPS" data-en="Click LIPS" data-tip="Inspect poster twice">クリックLIPS</span>, and relieving pressure in Act 3 inside <span class="term" data-jp="レニの部屋" data-en="Reni's Room" data-tip="2F bedroom">レニの部屋</span>. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="グリュックリヒカイト" data-en="Glucklichkeit" data-tip="Happiness">グリュックリヒカイト</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="paris">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/erica.jpg" alt="Erica Fontaine">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="エリカ・フォンティーヌ" data-en="Erica Fontaine" data-tip="Paris Flower Division">エリカ・フォンティーヌ</span></h2>
+            <p><span class="term" data-jp="光武F2（エリカ機）" data-en="Koubu-F2 (Erica Custom)" data-tip="Support healer and machine-gunner">光武F2（エリカ機）</span> &middot; ATK 18 / DEF 15 / AP 7 &middot; Solo Skill: <span class="term" data-jp="サクレ・デ・リュミエール" data-en="Sacre de Lumiere" data-tip="Sacred Light healing">サクレ・デ・リュミエール</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-10">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Play along cheerfully with her enthusiasm, choose medium intensity (3) for both her Act 2 wasabi feed and Act 3 <span class="term" data-jp="中庭" data-en="Courtyard" data-tip="1F courtyard">中庭</span> catch, and offer to brew tea for her in Act 3's <span class="term" data-jp="サロン" data-en="Salon" data-tip="2F salon">サロン</span>. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="ベネディクスィオン" data-en="Benediction" data-tip="Blessing">ベネディクスィオン</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="paris">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/glycine.jpg" alt="Glycine Bleumer">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="グリシーヌ・ブルーメール" data-en="Glycine Bleumer" data-tip="Paris Flower Division">グリシーヌ・ブルーメール</span></h2>
+            <p><span class="term" data-jp="光武F2（グリシーヌ機）" data-en="Koubu-F2 (Glycine Custom)" data-tip="Heavy armored shield axe">光武F2（グリシーヌ機）</span> &middot; ATK 25 / DEF 19 / AP 7 &middot; Solo Skill: <span class="term" data-jp="グロース・ヴァーグ" data-en="Grosse Vague" data-tip="Great Wave">グロース・ヴァーグ</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-11">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Highest base defense in the game (DEF 19). Reassure her nobility with steady devotion, choose high-to-max flower arrangement in Act 3 during <span class="term" data-jp="華道" data-en="Flower Arrangement" data-tip="Act 3 outing">華道</span>, and visit <span class="term" data-jp="遊戯室" data-en="Rec Room" data-tip="2F rec room">遊戯室</span> before the finale. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="エテルネル・アムール" data-en="Eternel Amour" data-tip="Eternal Love">エテルネル・アムール</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="paris">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/coquelicot.jpg" alt="Coquelicot">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="コクリコ" data-en="Coquelicot" data-tip="Paris Flower Division">コクリコ</span></h2>
+            <p><span class="term" data-jp="光武F2（コクリコ機）" data-en="Koubu-F2 (Coquelicot Custom)" data-tip="High-evasion acrobatic unit">光武F2（コクリコ機）</span> &middot; ATK 17 / DEF 17 / AP 7 &middot; Solo Skill: <span class="term" data-jp="マジーク・ボンボン" data-en="Magique Bonbon" data-tip="Cat illusion barrage">マジーク・ボンボン</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-12">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Join her playful energy, lick her candy on the <span class="term" data-jp="下町" data-en="Shitamachi" data-tip="Act 3 downtown outing">下町</span> outing, inspect eyes and hair cleanly in Act 3's <span class="term" data-jp="厨房" data-en="Kitchen" data-tip="1F kitchen">厨房</span>, and accept her meal inside <span class="term" data-jp="食堂" data-en="Dining Hall" data-tip="1F mess hall">食堂</span> before the finale. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="アムール・ソルシエール" data-en="Amour Sorciere" data-tip="Love Magician">アムール・ソルシエール</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="paris">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/lobelia.jpg" alt="Lobelia Carlini">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="ロベリア・カルリーニ" data-en="Lobelia Carlini" data-tip="Paris Flower Division">ロベリア・カルリーニ</span></h2>
+            <p><span class="term" data-jp="光武F2（ロベリア機）" data-en="Koubu-F2 (Lobelia Custom)" data-tip="Claw and flame attacker">光武F2（ロベリア機）</span> &middot; ATK 22 / DEF 15 / AP 7 &middot; Solo Skill: <span class="term" data-jp="フィアンマ・ウンギア" data-en="Fiamma Unghia" data-tip="Claws of Flame">フィアンマ・ウンギア</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-13">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Respect her rebellious streak and share a drink rather than scolding her. In Act 3's final free roam on <span class="term" data-jp="テラス" data-en="Terrace" data-tip="2F terrace">テラス</span>, let the timer run out or praise her fierceness for a big gain. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="アモーレ・センツァ・フィーネ" data-en="Amore Senza Fine" data-tip="Endless Love">アモーレ・センツァ・フィーネ</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="step-block" data-filter-item data-group="paris">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/hanabi.jpg" alt="Hanabi Kitaoji">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="北大路花火" data-en="Hanabi Kitaoji" data-tip="Paris Flower Division">北大路花火</span></h2>
+            <p><span class="term" data-jp="光武F2（花火機）" data-en="Koubu-F2 (Hanabi Custom)" data-tip="Precision bow artillery">光武F2（花火機）</span> &middot; ATK 20 / DEF 13 / AP 7 &middot; Solo Skill: <span class="term" data-jp="一の舞 金枝玉葉" data-en="First Dance: Kinshi Gyokuyou" data-tip="Chrysanthemum arrow">一の舞 金枝玉葉</span></p>
+          </div>
+        </div>
+        <ul class="check-list">
+          <li class="check-item">
+            <input type="checkbox" class="check-box" data-check-id="her-14">
+            <div class="check-body">
+              <strong>LIPS Style &amp; Soubu Finisher.</strong> Reassure her traditional grace inside <span class="term" data-jp="図書室" data-en="Library" data-tip="2F library">図書室</span> during Act 3, ask to fold paper cranes together before the Mikasa battle, and stay considerate during <span class="term" data-jp="華道" data-en="Flower Arrangement" data-tip="Act 3 outing">華道</span>. Co-piloting <span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-seat unit">双武</span> unleashes <span class="term" data-jp="花鳥風月" data-en="Beauties of Nature" data-tip="Flower, Bird, Wind, Moon">花鳥風月</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

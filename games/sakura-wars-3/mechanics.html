@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Mechanics - Sakura Wars 3 Dreamcast Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="paris-layout">
+    <aside class="chattes-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="topic-fleur" aria-hidden="true"></span>
+          <span class="rail-title-tag">Chattes Noires Dossier</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="サクラ大戦3 〜巴里は燃えているか〜" data-en="Sakura Wars 3: Is Paris Burning?" data-tip="Sakura Wars 3: Is Paris Burning?">サクラ大戦3 〜巴里は燃えているか〜</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">Sega Dreamcast</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <a class="rail-nav-link" href="main-story.html">Main Story</a>
+        <div class="rail-nav-label">Squad &amp; Systems</div>
+        <a class="rail-nav-link" href="heroines.html">Heroines &amp; Squad</a>
+        <a class="rail-nav-link active" href="mechanics.html">Mechanics</a>
+        <a class="rail-nav-link" href="collectibles.html">Collectibles</a>
+        <div class="rail-nav-label">Reference</div>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="paris-stage">
+      <div class="page-header">
+        <h1>Game Mechanics</h1>
+      </div>
+
+      <p class="lead-intro">
+        Reference breakdown of the Dreamcast <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Live &amp; Interactive Picture System">LIPS</span> variants, <span class="term" data-jp="ARMS" data-en="ARMS" data-tip="Active &amp; Realtime Machine System">ARMS</span> real-time tactical combat, Captain progression, and <span class="term" data-jp="キネマトロン" data-en="Kinematron" data-tip="Apartment and handheld communication system">キネマトロン</span> directory numbers.
+      </p>
+
+      <div class="completion-bar-wrap" data-counter-label="Systems Mastered">
+        <div class="completion-meta">
+          <span class="completion-text">Systems Mastered: 0/6 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" id="page-progress-reset" class="page-reset-btn">Reset Page</button>
+      </div>
+
+      <div class="toc-box">
+        <div class="toc-title">On This Page</div>
+        <div class="toc-list">
+          <a href="#lips-types">All LIPS Dialogue Variants</a>
+          <a href="#arms-combat">ARMS Combat &amp; Dreamcast Controls</a>
+          <a href="#tactics-commands">Tactics, Protect &amp; Trust Modifiers</a>
+          <a href="#captain-combined">Captain Types &amp; Combined Attacks</a>
+          <a href="#kinematron-vmu">Kinematron Numbers &amp; VMU</a>
+        </div>
+      </div>
+
+      <div class="section-header" id="lips-types">
+        <h2>All LIPS Dialogue Variants</h2>
+      </div>
+
+      <div class="step-block">
+        <h3>Conversation &amp; Map Interaction Formats</h3>
+        <table class="prima-table">
+          <thead>
+            <tr>
+              <th>Variant</th>
+              <th>Behavior</th>
+              <th>Practical Handling</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="term" data-jp="通常LIPS" data-en="Standard LIPS" data-tip="Standard timed multiple choice">通常LIPS</span></td>
+              <td>Fixed list of choices under a single countdown bar.</td>
+              <td>Read all options cleanly before selecting, as choices remain static until timeout.</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="タイミングLIPS" data-en="Timing LIPS" data-tip="Choices shift at the halfway mark">タイミングLIPS</span></td>
+              <td>Choices rewrite or expand once the timer passes the halfway point.</td>
+              <td>Wait past 50 percent whenever a delayed fourth option yields the target trust gain.</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="ダブルLIPS" data-en="Double LIPS" data-tip="Outer ring chains consecutive prompts">ダブルLIPS</span></td>
+              <td>Outer ring meter chains back-to-back choices such as cooking or bomb disposal.</td>
+              <td>Follow the exact multi-step sequence listed in the walkthrough before the outer meter fills.</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="クリックLIPS" data-en="Click LIPS" data-tip="Pointer inspection on portraits or objects">クリックLIPS</span></td>
+              <td>Move the cursor over a character portrait or room object to inspect.</td>
+              <td>Inspect hair, eyes, mouth, or specific objects multiple times to trigger secret responses, while avoiding repeated chest inspections on <span class="term" data-jp="グリシーヌ・ブルーメール" data-en="Glycine Bleumer" data-tip="Glycine Bleumer">グリシーヌ・ブルーメール</span>.</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="高速LIPS" data-en="High-Speed LIPS" data-tip="Ultra-fast reaction prompt">高速LIPS</span></td>
+              <td>Short reflex prompt lasting only a couple of seconds.</td>
+              <td>Keep a thumb ready on A for sudden hazards in Episodes 1, 8, and 10.</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="アナログLIPS" data-en="Analog LIPS" data-tip="7-step analog stick intensity gauge">アナログLIPS</span></td>
+              <td>Single choice with a vertical 7-step intensity bar adjusted by the analog stick.</td>
+              <td>Level 7 delivers maximum energy (cheering, slamming), while levels 1 to 3 express quiet restraint or careful peeling.</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="無回答" data-en="Time Out" data-tip="Intentional silence">無回答</span></td>
+              <td>Letting the countdown reach zero without pressing A.</td>
+              <td>Triggers unique silence outcomes, including Episode 1 noble restraint, Episode 8 <span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Maria Tachibana">マリア・タチバナ</span> room silence, and Episode 10 Erica's switch.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="section-header" id="arms-combat">
+        <h2>ARMS Combat &amp; Dreamcast Controls</h2>
+      </div>
+
+      <div class="grid-main-side">
+        <div class="step-block">
+          <h3>Dreamcast Battle Pad Layout &amp; AP Economy</h3>
+          <ul class="bullet-steps">
+            <li><strong>Analog Stick</strong> steers your <span class="term" data-jp="光武F" data-en="Koubu-F" data-tip="Paris spiricle armor">光武F</span> freely across the 3D arena. Moving marks segments of the 7-slot <span class="term" data-jp="ARMSゲージ" data-en="ARMS Gauge" data-tip="Action Point gauge">ARMSゲージ</span> in red, and walking back toward your starting point refunds them until you execute another command.</li>
+            <li><strong>A Button</strong> executes a standard attack on a locked-on target in your front reticle. Pressing A repeatedly chains up to five strikes, with each hit dealing higher damage than the previous hit.</li>
+            <li><strong>B Button</strong> primes a <span class="term" data-jp="必殺攻撃" data-en="Special Attack" data-tip="Requires 100 Spirit Gauge">必殺攻撃</span> or <span class="term" data-jp="合体攻撃" data-en="Combined Attack" data-tip="Requires Ogami adjacent with both gauges at 100">合体攻撃</span> when <span class="term" data-jp="気合値" data-en="Spirit Gauge" data-tip="Red spirit bar">気合値</span> reaches 100 (confirm with A), or triggers <span class="term" data-jp="ため" data-en="Charge" data-tip="Raises Spirit Gauge">ため</span> when Spirit is under 100.</li>
+            <li><strong>X Button</strong> activates <span class="term" data-jp="防御" data-en="Guard" data-tip="Reduces incoming damage until next turn">防御</span> once per turn, reducing incoming damage until your next turn.</li>
+            <li><strong>Y Button</strong> casts <span class="term" data-jp="回復" data-en="Heal" data-tip="Restores unit HP">回復</span> to recover HP and clear status ailments such as AP drain.</li>
+            <li><strong>L &amp; R Triggers</strong> rotate the battlefield camera, while <strong>Start</strong> opens the pause and system menu.</li>
+            <li><strong>VMU Screen</strong> displays real-time expected destruction percentage (<span class="term" data-jp="破壊期待値" data-en="Destruction Forecast" data-tip="VMU LCD lock-on indicator">破壊期待値</span>) whenever your front reticle locks onto an enemy unit.</li>
+          </ul>
+        </div>
+
+        <figure class="screen-card">
+          <img src="resources/screens/gameplay_arms.jpg" alt="Dreamcast ARMS battle HUD with Tactics and Action Gauge">
+          <figcaption>Dreamcast <span class="term" data-jp="ARMS" data-en="ARMS" data-tip="Active &amp; Realtime Machine System">ARMS</span> gauge with B, X, and Y command markers, lock-on card, and Spirit bar.</figcaption>
+        </figure>
+      </div>
+
+      <div class="section-header" id="tactics-commands">
+        <h2>Tactics, Protect &amp; Trust Modifiers</h2>
+      </div>
+
+      <div class="step-block">
+        <h3><span class="term" data-jp="作戦コマンド" data-en="Tactics Command" data-tip="Wind, Forest, Fire, Mountain">作戦コマンド</span></h3>
+        <table class="prima-table">
+          <thead>
+            <tr>
+              <th>Tactic</th>
+              <th>AP &amp; Movement Effects</th>
+              <th>Disabled Command</th>
+              <th>Best Use Case</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="term" data-jp="風" data-en="Wind" data-tip="High mobility formation">風</span></td>
+              <td>Increases movement per AP and lowers Charge and Heal AP cost.</td>
+              <td><span class="term" data-jp="防御" data-en="Guard" data-tip="Guard">防御</span> unavailable</td>
+              <td>Racing to timed objectives such as Episode 10 bombs and rail switches.</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="林" data-en="Forest" data-tip="Balanced default formation">林</span></td>
+              <td>Grants access to every command at higher standard AP costs.</td>
+              <td>None</td>
+              <td>Default starting stance before switching to Mountain or Fire.</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="火" data-en="Fire" data-tip="Aggressive Spirit-building formation">火</span></td>
+              <td>Drops <span class="term" data-jp="ため" data-en="Charge" data-tip="Charge">ため</span> to 1 AP while raising <span class="term" data-jp="防御" data-en="Guard" data-tip="Guard">防御</span> to 4 AP.</td>
+              <td><span class="term" data-jp="回復" data-en="Heal" data-tip="Heal">回復</span> unavailable</td>
+              <td>Charging <span class="term" data-jp="気合値" data-en="Spirit Gauge" data-tip="Spirit Gauge">気合値</span> on <span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Ichiro Ogami">大神一郎</span> or sweeping weakened waves.</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="山" data-en="Mountain" data-tip="Defensive survival formation">山</span></td>
+              <td>Drops <span class="term" data-jp="防御" data-en="Guard" data-tip="Guard">防御</span> to 1 AP and <span class="term" data-jp="回復" data-en="Heal" data-tip="Heal">回復</span> to 3 AP.</td>
+              <td><span class="term" data-jp="ため" data-en="Charge" data-tip="Charge">ため</span> unavailable</td>
+              <td>Boss battles and heavy reinforcements where every pilot guards at turn end.</td>
+            </tr>
+          </tbody>
+        </table>
+        <ul class="bullet-steps" style="margin-top:0.85rem;">
+          <li><strong><span class="term" data-jp="かばう" data-en="Protect" data-tip="Intercept attacks for one ally">かばう</span></strong> lets <span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Ichiro Ogami">大神一郎</span> guard one squadmate per turn. Bosses always open Turn 1 with their signature Special Attack, so shielding fragile rear units nullifies early burst damage.</li>
+          <li><strong>Trust Battle Bonus</strong> scales each heroine's stats according to her current motivation, adding up to Attack +8, Defense +5, and Movement +2.</li>
+        </ul>
+      </div>
+
+      <div class="section-header" id="captain-combined">
+        <h2>Captain Types &amp; Combined Attacks</h2>
+      </div>
+
+      <div class="step-block">
+        <h3><span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Ichiro Ogami">大神一郎</span> Progression &amp; Dual-Pilot Specials</h3>
+        <ul class="bullet-steps">
+          <li><strong><span class="term" data-jp="隊長タイプ" data-en="Captain Type" data-tip="Normal, Attack, or Defense">隊長タイプ</span></strong> shifts dynamically based on dialogue boldness into <span class="term" data-jp="通常型" data-en="Normal Type" data-tip="Single-target adjacent Special Attack">通常型</span> (high single-target strike), <span class="term" data-jp="攻撃型" data-en="Attack Type" data-tip="Surrounding AoE Special Attack">攻撃型</span> (multi-enemy strike around Ogami), or <span class="term" data-jp="防御型" data-en="Defense Type" data-tip="Surrounding ally HP recovery">防御型</span> (heals nearby allies).</li>
+          <li><strong><span class="term" data-jp="黒髪の貴公子" data-en="Black-Haired Nobleman" data-tip="NG+ secret Captain title">黒髪の貴公子</span></strong> unlocks on a second playthrough or later once all Flower Division members and key Paris sub-characters reach high trust. It grants Attack +10, Defense +10, and the full-map Special <span class="term" data-jp="狼虎滅却・震天動地" data-en="Rouko Mekkyaku: Shinten Douchi" data-tip="Full-screen ultimate Captain Special">狼虎滅却・震天動地</span>.</li>
+          <li><strong><span class="term" data-jp="合体攻撃" data-en="Combined Attacks" data-tip="Dual-unit ultimate attack">合体攻撃</span></strong> replace normal Specials whenever Ogami stands adjacent to an eligible high-trust heroine and both units hold 100 <span class="term" data-jp="気合値" data-en="Spirit Gauge" data-tip="Spirit Gauge">気合値</span>. Activating from either pilot's turn spends both Spirit bars for massive burst damage or healing.</li>
+        </ul>
+      </div>
+
+      <div class="section-header" id="kinematron-vmu">
+        <h2>Kinematron Numbers &amp; VMU</h2>
+      </div>
+
+      <div class="step-block">
+        <h3>Apartment Directory &amp; Dreamcast VMU Integration</h3>
+        <table class="prima-table">
+          <thead>
+            <tr>
+              <th>Dial Number</th>
+              <th>Recipient / Channel</th>
+              <th>Notes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td><code>13510</code></td><td><span class="term" data-jp="帝国華撃団" data-en="Imperial Combat Revue" data-tip="Tokyo Flower Division">帝国華撃団</span></td><td>Requires <span class="term" data-jp="セーブデータ合体" data-en="Save Data Merge" data-tip="Dreamcast SW1/SW2 save merge">セーブデータ合体</span> from Dreamcast <span class="term" data-jp="サクラ大戦" data-en="Sakura Wars" data-tip="Sakura Wars 1">サクラ大戦</span> or <span class="term" data-jp="サクラ大戦2" data-en="Sakura Wars 2" data-tip="Sakura Wars 2">サクラ大戦2</span>.</td></tr>
+            <tr><td><code>13720</code></td><td><span class="term" data-jp="巴里ワイド" data-en="Paris Wide" data-tip="Variety broadcast">巴里ワイド</span></td><td>City broadcast channel.</td></tr>
+            <tr><td><code>14070</code></td><td><span class="term" data-jp="巴里ニュース" data-en="Paris News" data-tip="News broadcast">巴里ニュース</span></td><td>Updates with Paris Combat Revue events across episodes.</td></tr>
+            <tr><td><code>14200</code></td><td><span class="term" data-jp="グリシーヌ・ブルーメール" data-en="Glycine Bleumer" data-tip="Glycine Bleumer">グリシーヌ・ブルーメール</span></td><td>Direct line after Episode 6 directory unlock.</td></tr>
+            <tr><td><code>14400</code></td><td><span class="term" data-jp="シー" data-en="Ci" data-tip="Ci Caprice">シー</span></td><td>Theater shop staff line.</td></tr>
+            <tr><td><code>14500</code></td><td><span class="term" data-jp="メル" data-en="Mell" data-tip="Mell Raison">メル</span></td><td>Secretary office line.</td></tr>
+            <tr><td><code>14680</code></td><td><span class="term" data-jp="運命の水晶" data-en="Crystal of Destiny" data-tip="Fortune telling line">運命の水晶</span></td><td>Fortune channel.</td></tr>
+            <tr><td><code>14800</code></td><td><span class="term" data-jp="コクリコ" data-en="Coquelicot" data-tip="Coquelicot">コクリコ</span></td><td>Circus line.</td></tr>
+            <tr><td><code>15000</code></td><td><span class="term" data-jp="エリカ・フォンティーヌ" data-en="Erica Fontaine" data-tip="Erica Fontaine">エリカ・フォンティーヌ</span></td><td>Also dials in automatically during Episode 2 free roam.</td></tr>
+            <tr><td><code>15100</code></td><td><span class="term" data-jp="北大路花火" data-en="Hanabi Kitaoji" data-tip="Hanabi Kitaoji">北大路花火</span></td><td>Direct line after Episode 6 directory unlock.</td></tr>
+            <tr><td><code>15300</code></td><td><span class="term" data-jp="グラン・マ" data-en="Grand-Mere" data-tip="Isabel Lilac">グラン・マ</span></td><td>Commander line.</td></tr>
+            <tr><td><code>15400</code></td><td><span class="term" data-jp="ロベリア・カルリーニ" data-en="Lobelia Carlini" data-tip="Lobelia Carlini">ロベリア・カルリーニ</span></td><td>Direct line after Episode 6 directory unlock.</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="step-block">
+        <h3>Mechanics Verification Checklist</h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-01"><div class="check-body">Practice refunding red <span class="term" data-jp="ARMSゲージ" data-en="ARMS Gauge" data-tip="Action Point bar">ARMSゲージ</span> segments by walking back before attacking.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-02"><div class="check-body">Use <span class="term" data-jp="山" data-en="Mountain" data-tip="Mountain Tactics">山</span> Guard and <span class="term" data-jp="かばう" data-en="Protect" data-tip="Protect">かばう</span> to absorb a boss Turn 1 Special Attack.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-03"><div class="check-body">Trigger a <span class="term" data-jp="合体攻撃" data-en="Combined Attack" data-tip="Combined Attack">合体攻撃</span> with Ogami and a maxed-Spirit heroine standing adjacent.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-04"><div class="check-body">Dial all three Imperial Combat Revue Kinematron numbers (<code>13510</code>) across Episodes 7 to 9 with merged save data.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-05"><div class="check-body">Transfer the <span class="term" data-jp="巴里の二人" data-en="Pari no Futari" data-tip="Dreamcast VMU mini-game">巴里の二人</span> mini-game onto a Dreamcast <span class="term" data-jp="ビジュアルメモリ" data-en="Visual Memory System" data-tip="Dreamcast VMU">ビジュアルメモリ</span>.</div></li>
+          <li class="check-item" data-filter-item><input class="check-box" type="checkbox" data-check-id="mech-06"><div class="check-body">Unlock <span class="term" data-jp="黒髪の貴公子" data-en="Black-Haired Nobleman" data-tip="Secret NG+ Captain title">黒髪の貴公子</span> and <span class="term" data-jp="狼虎滅却・震天動地" data-en="Rouko Mekkyaku: Shinten Douchi" data-tip="Full-map ultimate Special">狼虎滅却・震天動地</span> on a second playthrough.</div></li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

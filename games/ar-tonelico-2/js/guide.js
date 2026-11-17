@@ -71,8 +71,12 @@
     document.body.appendChild(tipBox);
 
     function showTip(target) {
-      var tip = target.getAttribute('data-tip');
-      if (!tip) return;
+      var mode = document.documentElement.getAttribute('data-game-lang') === 'en' ? 'en' : 'jp';
+      var jp = target.getAttribute('data-jp');
+      var en = target.getAttribute('data-en');
+      var alt = mode === 'en' ? jp : en;
+      var tip = (alt && alt !== target.textContent) ? alt : target.getAttribute('data-tip');
+      if (!tip || tip === target.textContent) return;
       tipBox.textContent = tip;
       var rect = target.getBoundingClientRect();
       var left = Math.min(window.innerWidth - 295, Math.max(12, rect.left));

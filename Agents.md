@@ -62,6 +62,13 @@ JP -> "Use the spell ホリー to attack the 竜王"
 Avoid using parenthesis to provide alternative-language translation for words.
 Use tooltips and JP/EN swap javascript toggles instead.
 
+When using alternative-language tooltips, hovering a term MUST show the exact
+alternate-language translation of that term (the English name when Japanese is
+displayed, and the Japanese name when English is displayed) rather than a
+separate description, role label, or context note. Only use an explanatory
+tooltip when the Japanese and English forms of the term are identical (such as
+shared acronyms); otherwise suppress redundant tooltips.
+
 ## Directory Structure
 
 The repository structure contains a "games/" folder and "index.html" file.

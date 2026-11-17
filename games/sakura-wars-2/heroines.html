@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroines &amp; Ogami - サクラ大戦2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="taisho-layout">
+    <aside class="imperial-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="sakura-crest" aria-hidden="true"></span>
+          <span class="rail-title-tag">Taisho Imperial Archive</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="サクラ大戦2 〜君、死にたもうことなかれ〜" data-en="Sakura Wars 2: Thou Shalt Not Die" data-tip="Sakura Wars 2: Thou Shalt Not Die">サクラ大戦2 〜君、死にたもうことなかれ〜</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">Sega Dreamcast</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Beginner Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order &amp; Endings</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <div class="rail-nav-label">Campaign &amp; Cast</div>
+        <a class="rail-nav-link" href="main-story.html">Episodes 1 to 12</a>
+        <a class="rail-nav-link active" href="heroines.html">Heroines &amp; Ogami</a>
+        <div class="rail-nav-label">Systems &amp; Extras</div>
+        <a class="rail-nav-link" href="mechanics.html">Game Mechanics</a>
+        <a class="rail-nav-link" href="collectibles.html">Bromides &amp; Extras</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="taisho-stage">
+      <div class="page-header">
+        <h1>Heroines &amp; Ogami</h1>
+      </div>
+
+      <p class="lead-intro">
+        Every member of the <span class="term" data-jp="花組" data-en="Flower Division" data-tip="Imperial Combat Revue Flower Division">花組</span> carries distinct <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Live Interactive Picture System">LIPS</span> preferences, <span class="term" data-jp="キネマトロン" data-en="Kinematron" data-tip="Videophone directory">キネマトロン</span> call windows, attack ranges, and Special Attack progressions across <span class="term" data-jp="光武・改" data-en="Koubu-Kai" data-tip="Base chassis">光武・改</span>, <span class="term" data-jp="天武" data-en="Tenbu" data-tip="Mid-late chassis">天武</span>, and <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="Final battle chassis">光武・改2</span>.
+      </p>
+
+      <div class="toc-box">
+        <div class="toc-title">Roster Quick Jump</div>
+        <div class="toc-list">
+          <a href="#ogami"><span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain">大神一郎</span></a>
+          <a href="#sakura"><span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Heroine 1">真宮寺さくら</span></a>
+          <a href="#sumire"><span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Heroine 2">神崎すみれ</span></a>
+          <a href="#maria"><span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Heroine 3">マリア・タチバナ</span></a>
+          <a href="#iris"><span class="term" data-jp="アイリス" data-en="Iris Chateaubriand" data-tip="Heroine 4">アイリス</span></a>
+          <a href="#kohran"><span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Heroine 5">李紅蘭</span></a>
+          <a href="#kanna"><span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Heroine 6">桐島カンナ</span></a>
+          <a href="#orihime"><span class="term" data-jp="ソレッタ・織姫" data-en="Soletta Orihime" data-tip="Heroine 7">ソレッタ・織姫</span></a>
+          <a href="#reni"><span class="term" data-jp="レニ・ミルヒシュトラーセ" data-en="Reni Milchstrasse" data-tip="Heroine 8">レニ・ミルヒシュトラーセ</span></a>
+        </div>
+      </div>
+
+      <div class="completion-bar-wrap" data-counter-label="Squad Mastery">
+        <div class="completion-meta">
+          <span class="completion-text">Squad Mastery 0/9 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" id="page-progress-reset" class="page-reset-btn">Reset Page</button>
+      </div>
+
+      <section id="ogami" class="step-block">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/ogami.jpg" alt="Ichiro Ogami">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain of the Flower Division">大神一郎</span></h2>
+            <p>Captain &middot; Lucky Color White &middot; Melee Tank &amp; Stance Commander</p>
+          </div>
+        </div>
+        <ul class="bullet-steps">
+          <li><strong>Combat Role</strong> High durability melee anchor with 6 Move across all chassis tiers, <span class="term" data-jp="風林火山" data-en="Wind, Forest, Fire, Mountain" data-tip="Captain stances">風林火山</span> stance switching, and three charges of <span class="term" data-jp="かばう" data-en="Protect" data-tip="Zero-damage ally guard">かばう</span> per stage.</li>
+          <li><strong>Tactical Setup</strong> Open every turn with <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> to reach enemy clusters for <span class="term" data-jp="合体攻撃" data-en="Combined Attack" data-tip="5-tile AoE finisher">合体攻撃</span> positioning, then shift to <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> before attacking or <span class="term" data-jp="山" data-en="Mountain" data-tip="Def +3">山</span> before ending your turn near bosses.</li>
+          <li><strong>Chassis Stats &amp; Specials</strong> <span class="term" data-jp="光武・改" data-en="Koubu-Kai" data-tip="120 HP, 22 Atk, 15 Def, 6 Move">光武・改</span> (HP 120, Atk 22, Def 15, Move 6, <span class="term" data-jp="狼虎滅却・天地一矢" data-en="Rouko Mekkyaku: Tenchi Isshi" data-tip="Ogami Special 1">狼虎滅却・天地一矢</span>) &middot; <span class="term" data-jp="天武" data-en="Tenbu" data-tip="150 HP, 29 Atk, 19 Def, 6 Move">天武</span> (HP 150, Atk 29, Def 19, Move 6, <span class="term" data-jp="狼虎滅却・三刃成虎" data-en="Rouko Mekkyaku: Sanjin Seikou" data-tip="Ogami Special 2">狼虎滅却・三刃成虎</span>) &middot; <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="120 HP, 32 Atk, 23 Def, 6 Move">光武・改2</span> (HP 120, Atk 32, Def 23, Move 6, <span class="term" data-jp="狼虎滅却・天狼転化" data-en="Rouko Mekkyaku: Tenrou Tenka" data-tip="Ogami Special 3">狼虎滅却・天狼転化</span>).</li>
+        </ul>
+        <div class="check-item" style="margin-top:0.75rem;"><input class="check-box" type="checkbox" data-check-id="char-01"><div class="check-body">Configure Ogami's <span class="term" data-jp="硬派" data-en="Stoic" data-tip="Blue gauge">硬派</span> or <span class="term" data-jp="軟派" data-en="Flirtatious" data-tip="Pink gauge">軟派</span> alignment for the current run.</div></div>
+      </section>
+
+      <section id="sakura" class="step-block">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/sakura.jpg" alt="Sakura Shinguji">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Flower Division veteran">真宮寺さくら</span></h2>
+            <p>Preferred Gauge <span class="term" data-jp="硬派" data-en="Stoic" data-tip="Blue gauge bonus">硬派</span> &middot; Lucky Color Peach &middot; Melee Duelist &amp; Line Sweeper</p>
+          </div>
+        </div>
+        <ul class="bullet-steps">
+          <li><strong>LIPS &amp; Ending Threshold</strong> Honest, earnest replies raise her trust easily, while peeping or teasing about other members triggers sharp jealousy drops. Available from Episode 1 onward, stay polite during her Episode 4 summer dress scene and Episode 10 New Year preparation.</li>
+          <li><strong>Battle Role</strong> Balanced frontliner whose Special Attacks slice wide paths, making her ideal for clearing <span class="term" data-jp="御柱" data-en="Sacred Pillars" data-tip="Episode 12 pillars">御柱</span> and clustered infantry.</li>
+          <li><strong>Chassis Stats &amp; Specials</strong> <span class="term" data-jp="光武・改" data-en="Koubu-Kai" data-tip="120 HP, 17 Atk, 11 Def, 5 Move">光武・改</span> (HP 120, Atk 17, Def 11, Move 5, <span class="term" data-jp="破邪剣征・桜花霧翔" data-en="Haja Kensei: Ouka Mushou" data-tip="Sakura Special 1">破邪剣征・桜花霧翔</span>) &middot; <span class="term" data-jp="天武" data-en="Tenbu" data-tip="150 HP, 23 Atk, 16 Def, 5 Move">天武</span> (HP 150, Atk 23, Def 16, Move 5, <span class="term" data-jp="破邪剣征・百花斉放" data-en="Haja Kensei: Hyakka Seihou" data-tip="Sakura Special 2">破邪剣征・百花斉放</span>) &middot; <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="120 HP, 26 Atk, 20 Def, 5 Move">光武・改2</span> (HP 120, Atk 26, Def 20, Move 5, <span class="term" data-jp="破邪剣征極意・桜花爛満" data-en="Haja Kensei Gokui: Ouka Ranman" data-tip="Sakura Special 3">破邪剣征極意・桜花爛満</span>).</li>
+        </ul>
+        <div class="check-item" style="margin-top:0.75rem;"><input class="check-box" type="checkbox" data-check-id="char-02"><div class="check-body">Complete <span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Sakura route">真宮寺さくら</span>'s 3-step Chain Event (Episodes 5, 6, 7) and Ending.</div></div>
+      </section>
+
+      <section id="sumire" class="step-block">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/sumire.jpg" alt="Sumire Kanzaki">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Top Star of the Imperial Revue">神崎すみれ</span></h2>
+            <p>Preferred Gauge <span class="term" data-jp="軟派" data-en="Flirtatious" data-tip="Pink gauge bonus">軟派</span> &middot; Kinematron 13800 &middot; Lucky Color Purple &middot; Short-Range All-Around Sweeper</p>
+          </div>
+        </div>
+        <ul class="bullet-steps">
+          <li><strong>LIPS &amp; Ending Threshold</strong> Returns in Episode 3, so dial 13800 during Episodes 1 and 2 Free Events. Indulge her pride gracefully while stepping in firmly when she pushes too far. Complete her Tea Ceremony chain in Episodes 4, 6, and 7 (intentionally fail step 1 in Episode 4 so it continues).</li>
+          <li><strong>Battle Role</strong> Hits all adjacent enemies within Range 2 simultaneously, great for softening groups around Ogami or clearing escort obstacles.</li>
+          <li><strong>Chassis Stats &amp; Specials</strong> <span class="term" data-jp="光武・改" data-en="Koubu-Kai" data-tip="120 HP, 16 Atk, 11 Def, 5 Move">光武・改</span> (HP 120, Atk 16, Def 11, Move 5, <span class="term" data-jp="神崎風塵流・連雀の舞" data-en="Kanzaki Fuujin-ryuu: Renjaku no Mai" data-tip="Sumire Special 1">神崎風塵流・連雀の舞</span>) &middot; <span class="term" data-jp="天武" data-en="Tenbu" data-tip="150 HP, 22 Atk, 16 Def, 5 Move">天武</span> (HP 150, Atk 22, Def 16, Move 5, <span class="term" data-jp="神崎風塵流・飛竜の舞" data-en="Kanzaki Fuujin-ryuu: Hiryuu no Mai" data-tip="Sumire Special 2">神崎風塵流・飛竜の舞</span>) &middot; <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="120 HP, 25 Atk, 20 Def, 5 Move">光武・改2</span> (HP 120, Atk 25, Def 20, Move 5, <span class="term" data-jp="神崎風塵流奥義・不死鳥の舞" data-en="Kanzaki Fuujin-ryuu Ougi: Fushichou no Mai" data-tip="Sumire Special 3">神崎風塵流奥義・不死鳥の舞</span>).</li>
+        </ul>
+        <div class="check-item" style="margin-top:0.75rem;"><input class="check-box" type="checkbox" data-check-id="char-03"><div class="check-body">Complete <span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Sumire route">神崎すみれ</span>'s Tea Chain (Episodes 4, 6, 7), <span class="term" data-jp="舞ガール" data-en="Mai Girl" data-tip="Episode 7 mini-game">舞ガール</span>, and Ending.</div></div>
+      </section>
+
+      <section id="maria" class="step-block">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/maria.jpg" alt="Maria Tachibana">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Vice-Captain">マリア・タチバナ</span></h2>
+            <p>Preferred Gauge <span class="term" data-jp="硬派" data-en="Stoic" data-tip="Blue gauge bonus">硬派</span> &middot; Kinematron 13900 &middot; Lucky Color Black &middot; Long-Range Sniper</p>
+          </div>
+        </div>
+        <ul class="bullet-steps">
+          <li><strong>LIPS &amp; Ending Threshold</strong> Latest permanent joiner (joins at the Episode 4 boss fight), making <span class="term" data-jp="キネマトロン" data-en="Kinematron" data-tip="13900">キネマトロン</span> calls across Episodes 1 to 4 mandatory for her route. Pick sincere, dutiful <span class="term" data-jp="硬派" data-en="Stoic" data-tip="Blue gauge">硬派</span> answers and complete her Billiards Chain in Episodes 5, 6, and 7.</li>
+          <li><strong>Battle Role</strong> Longest single-target range (Range 5) with high Attack (22 to 27) and lowest Defense (9 to 18). Keep her behind melee tanks or under <span class="term" data-jp="かばう" data-en="Protect" data-tip="Guard command">かばう</span> while sniping ranged cannons and bosses.</li>
+          <li><strong>Chassis Stats &amp; Specials</strong> <span class="term" data-jp="光武・改" data-en="Koubu-Kai" data-tip="120 HP, 22 Atk, 9 Def, 5 Move">光武・改</span> (HP 120, Atk 22, Def 9, Move 5, <span class="term" data-jp="ピーカヴァヤ・ダーマ" data-en="Pikovaya Dama" data-tip="Maria Special 1">ピーカヴァヤ・ダーマ</span>) &middot; <span class="term" data-jp="天武" data-en="Tenbu" data-tip="150 HP, 24 Atk, 14 Def, 5 Move">天武</span> (HP 150, Atk 24, Def 14, Move 5, <span class="term" data-jp="トローイツァ" data-en="Troitsa" data-tip="Maria Special 2">トローイツァ</span>) &middot; <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="120 HP, 27 Atk, 18 Def, 5 Move">光武・改2</span> (HP 120, Atk 27, Def 18, Move 5, <span class="term" data-jp="シェルクーンチク" data-en="Shchelkunchik" data-tip="Maria Special 3">シェルクーンチク</span>).</li>
+        </ul>
+        <div class="check-item" style="margin-top:0.75rem;"><input class="check-box" type="checkbox" data-check-id="char-04"><div class="check-body">Complete <span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Maria route">マリア・タチバナ</span>'s Billiards Chain (Episodes 5, 6, 7), <span class="term" data-jp="雨に走れば" data-en="Running in the Rain" data-tip="Episode 6 mini-game">雨に走れば</span>, and Ending.</div></div>
+      </section>
+
+      <section id="iris" class="step-block">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/iris.jpg" alt="Iris Chateaubriand">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="アイリス" data-en="Iris Chateaubriand" data-tip="Psychic specialist">アイリス</span></h2>
+            <p>Preferred Gauge <span class="term" data-jp="軟派" data-en="Flirtatious" data-tip="Pink gauge bonus">軟派</span> &middot; Lucky Color Yellow &middot; Squad Healer &amp; Teleporter</p>
+          </div>
+        </div>
+        <ul class="bullet-steps">
+          <li><strong>LIPS &amp; Ending Threshold</strong> Present from Episode 1. Treat her as an equal teammate rather than a helpless child, support her letters and arithmetic lessons in Episodes 2, 4, and 5, and answer honestly when her parents appear in Episode 10.</li>
+          <li><strong>Battle Role</strong> Essential support unit whose Special Attacks restore HP to all allies in range and whose teleport movement ignores terrain gaps, though her regular Attack (13 to 23) stays low.</li>
+          <li><strong>Chassis Stats &amp; Specials</strong> <span class="term" data-jp="光武・改" data-en="Koubu-Kai" data-tip="120 HP, 13 Atk, 10 Def, 5 Move">光武・改</span> (HP 120, Atk 13, Def 10, Move 5, <span class="term" data-jp="イリス プティ・ジャンポール" data-en="Iris Petit Jean-Paul" data-tip="Iris Special 1">イリス プティ・ジャンポール</span>) &middot; <span class="term" data-jp="天武" data-en="Tenbu" data-tip="150 HP, 19 Atk, 15 Def, 5 Move">天武</span> (HP 150, Atk 19, Def 15, Move 5, <span class="term" data-jp="イリス ポワット・ド・スクール" data-en="Iris Boite de Secours" data-tip="Iris Special 2">イリス ポワット・ド・スクール</span>) &middot; <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="120 HP, 23 Atk, 19 Def, 5 Move">光武・改2</span> (HP 120, Atk 23, Def 19, Move 5, <span class="term" data-jp="イリス グラン・ジャンポール" data-en="Iris Grand Jean-Paul" data-tip="Iris Special 3">イリス グラン・ジャンポール</span>).</li>
+        </ul>
+        <div class="check-item" style="margin-top:0.75rem;"><input class="check-box" type="checkbox" data-check-id="char-05"><div class="check-body">Complete <span class="term" data-jp="アイリス" data-en="Iris Chateaubriand" data-tip="Iris route">アイリス</span>'s Arithmetic Chain (Episodes 4, 5, 7), <span class="term" data-jp="帝都の休日" data-en="Capital Holiday" data-tip="Episode 7 mini-game">帝都の休日</span>, and Ending.</div></div>
+      </section>
+
+      <section id="kohran" class="step-block">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/kohran.jpg" alt="Kohran Li">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Chief Mechanic and Inventor">李紅蘭</span></h2>
+            <p>Preferred Gauge <span class="term" data-jp="軟派" data-en="Flirtatious" data-tip="Pink gauge bonus">軟派</span> &middot; Kinematron 13700 &middot; Lucky Color Green &middot; Splash Artillery</p>
+          </div>
+        </div>
+        <ul class="bullet-steps">
+          <li><strong>LIPS &amp; Ending Threshold</strong> Rejoins permanently in Episode 4, so call 13700 during Episodes 1 to 3 (also listen to 13510 before dialing in Episode 2). Play along with her <span class="term" data-jp="軟派" data-en="Flirtatious" data-tip="Pink gauge">軟派</span> puns during her Hangar Chain Events in Episodes 5, 6, and 7 while remaining truthful.</li>
+          <li><strong>Battle Role</strong> Mid-long artillery (Range 4, Splash 1) that hits clustered targets safely from behind the frontline and triggers frequent <span class="term" data-jp="協力攻撃" data-en="Cooperative Attack" data-tip="Follow-up strike">協力攻撃</span> strikes from central tiles.</li>
+          <li><strong>Chassis Stats &amp; Specials</strong> <span class="term" data-jp="光武・改" data-en="Koubu-Kai" data-tip="120 HP, 16 Atk, 10 Def, 5 Move">光武・改</span> (HP 120, Atk 16, Def 10, Move 5, <span class="term" data-jp="雀牌ロボ" data-en="Mahjong Robo" data-tip="Kohran Special 1">雀牌ロボ</span>) &middot; <span class="term" data-jp="天武" data-en="Tenbu" data-tip="150 HP, 22 Atk, 15 Def, 5 Move">天武</span> (HP 150, Atk 22, Def 15, Move 5, <span class="term" data-jp="球電ロボ" data-en="Kyuden Robo" data-tip="Kohran Special 2">球電ロボ</span>) &middot; <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="120 HP, 25 Atk, 19 Def, 5 Move">光武・改2</span> (HP 120, Atk 25, Def 19, Move 5, <span class="term" data-jp="聖獣ロボ・改" data-en="Seijuu Robo Kai" data-tip="Kohran Special 3">聖獣ロボ・改</span>).</li>
+        </ul>
+        <div class="check-item" style="margin-top:0.75rem;"><input class="check-box" type="checkbox" data-check-id="char-06"><div class="check-body">Complete <span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Kohran route">李紅蘭</span>'s Pun Chain (Episodes 5, 6, 7), <span class="term" data-jp="烏！" data-en="Crows!" data-tip="Episode 5 mini-game">烏！</span>, and Ending.</div></div>
+      </section>
+
+      <section id="kanna" class="step-block">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/kanna.jpg" alt="Kanna Kirishima">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Ryukyu Karate Master">桐島カンナ</span></h2>
+            <p>Preferred Gauge <span class="term" data-jp="硬派" data-en="Stoic" data-tip="Blue gauge bonus">硬派</span> &middot; Kinematron 14000 &middot; Lucky Color Red &middot; Heavy Melee Brawler</p>
+          </div>
+        </div>
+        <ul class="bullet-steps">
+          <li><strong>LIPS &amp; Ending Threshold</strong> Rejoins in Episode 3, so call 14000 in Episodes 1 and 2. Answer sparring challenges head-on, finish all three massive meals in the Cafeteria during Episodes 4, 5, and 6, and treat her as a woman as well as a comrade.</li>
+          <li><strong>Battle Role</strong> Highest raw Attack in the division (24 to 34) with solid Defense (13 to 22), able to one-shot standard <span class="term" data-jp="脇侍" data-en="Wakiji" data-tip="Enemy mecha">脇侍</span> and <span class="term" data-jp="黄童子" data-en="Koudoji" data-tip="Kongou's guard units">黄童子</span> without buffs.</li>
+          <li><strong>Chassis Stats &amp; Specials</strong> <span class="term" data-jp="光武・改" data-en="Koubu-Kai" data-tip="120 HP, 24 Atk, 13 Def, 5 Move">光武・改</span> (HP 120, Atk 24, Def 13, Move 5, <span class="term" data-jp="三進転掌" data-en="Sanchin Tenshou" data-tip="Kanna Special 1">三進転掌</span>) &middot; <span class="term" data-jp="天武" data-en="Tenbu" data-tip="150 HP, 31 Atk, 18 Def, 5 Move">天武</span> (HP 150, Atk 31, Def 18, Move 5, <span class="term" data-jp="鷺牌五段" data-en="Rohai Godan" data-tip="Kanna Special 2">鷺牌五段</span>) &middot; <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="120 HP, 34 Atk, 22 Def, 5 Move">光武・改2</span> (HP 120, Atk 34, Def 22, Move 5, <span class="term" data-jp="三十六掌" data-en="Sanjuurokushou" data-tip="Kanna Special 3">三十六掌</span>).</li>
+        </ul>
+        <div class="check-item" style="margin-top:0.75rem;"><input class="check-box" type="checkbox" data-check-id="char-07"><div class="check-body">Complete <span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Kanna route">桐島カンナ</span>'s Cafeteria Chain (Episodes 4, 5, 6), <span class="term" data-jp="クライマー・クライマー" data-en="Climber Climber" data-tip="Episode 6 mini-game">クライマー・クライマー</span>, and Ending.</div></div>
+      </section>
+
+      <section id="orihime" class="step-block">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/orihime.jpg" alt="Soletta Orihime">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="ソレッタ・織姫" data-en="Soletta Orihime" data-tip="Former Star Division Ace">ソレッタ・織姫</span></h2>
+            <p>Preferred Gauge <span class="term" data-jp="軟派" data-en="Flirtatious" data-tip="Pink gauge bonus">軟派</span> &middot; Lucky Color Pink &middot; Mid-Range Area Sweeper</p>
+          </div>
+        </div>
+        <ul class="bullet-steps">
+          <li><strong>LIPS &amp; Ending Threshold</strong> Her chimes stay silent until the Episode 7 boss battle, where secret Orihime Points convert into massive affection. Stand your ground calmly against her sarcasm, succeed in the Episode 1 night patrol persuasion, complete her Attic Chain Events in Episodes 2, 3, and 4, and click her door three times in Episode 7 Free Event B.</li>
+          <li><strong>Battle Role</strong> Starts in her custom <span class="term" data-jp="アイゼンクライト" data-en="Eisenkleid" data-tip="140 HP, 17 Atk, 11 Def, 6 Move">アイゼンクライト</span> with 140 HP and Range 3 area fire (excluding directly adjacent tiles), pairing well with Iris on deck defense maps.</li>
+          <li><strong>Chassis Stats &amp; Specials</strong> <span class="term" data-jp="アイゼンクライト" data-en="Eisenkleid" data-tip="140 HP, 17 Atk, 11 Def, 6 Move">アイゼンクライト</span> (HP 140, Atk 17, Def 11, Move 6, <span class="term" data-jp="クアットロ・スタジオーニ" data-en="Quattro Stagioni" data-tip="Orihime Special 1">クアットロ・スタジオーニ</span>) &middot; <span class="term" data-jp="天武" data-en="Tenbu" data-tip="150 HP, 23 Atk, 15 Def, 5 Move">天武</span> (HP 150, Atk 23, Def 15, Move 5, <span class="term" data-jp="イル・フラウト・マジコ" data-en="Il Flauto Magico" data-tip="Orihime Special 2">イル・フラウト・マジコ</span>) &middot; <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="120 HP, 24 Atk, 18 Def, 5 Move">光武・改2</span> (HP 120, Atk 24, Def 18, Move 5, <span class="term" data-jp="ヴィアッジョ・ローズ" data-en="Viaggio Rose" data-tip="Orihime Special 3">ヴィアッジョ・ローズ</span>).</li>
+        </ul>
+        <div class="check-item" style="margin-top:0.75rem;"><input class="check-box" type="checkbox" data-check-id="char-08"><div class="check-body">Complete <span class="term" data-jp="ソレッタ・織姫" data-en="Soletta Orihime" data-tip="Orihime route">ソレッタ・織姫</span>'s Attic Chain (Episodes 2, 3, 4), <span class="term" data-jp="ピアノ・レッスン？" data-en="Piano Lesson?" data-tip="Episode 4 mini-game">ピアノ・レッスン？</span>, and Ending.</div></div>
+      </section>
+
+      <section id="reni" class="step-block">
+        <div class="char-banner">
+          <img class="char-portrait" src="resources/characters/reni.jpg" alt="Reni Milchstrasse">
+          <div class="char-banner-info">
+            <h2><span class="term" data-jp="レニ・ミルヒシュトラーセ" data-en="Reni Milchstrasse" data-tip="Former Star Division Prodigy">レニ・ミルヒシュトラーセ</span></h2>
+            <p>Preferred Gauge <span class="term" data-jp="硬派" data-en="Stoic" data-tip="Blue gauge bonus">硬派</span> &middot; Lucky Color Blue &middot; Precision Mid-Range Lancer</p>
+          </div>
+        </div>
+        <ul class="bullet-steps">
+          <li><strong>LIPS &amp; Ending Threshold</strong> Joins in Episode 2, with trust chimes hidden until her secret is revealed (earliest in Episode 3 Locker Room, or Episode 4 Pool, or Episode 5 Beach). Answer her Battle LIPS tactical question in Episode 2 ("How should we attack?"), pronounce her surname as <span class="term" data-jp="ミルヒシュトラーセ" data-en="Milchstrasse" data-tip="Correct pronunciation">ミルヒシュトラーセ</span>, and complete her Courtyard Dog Chain in Episodes 4, 5, and 7.</li>
+          <li><strong>Battle Role</strong> Single-target Range 3 spear strikes with high Attack (21 to 31) and 140 starting HP, ideal for destroying obstacles and piercing bosses without standing adjacent.</li>
+          <li><strong>Chassis Stats &amp; Specials</strong> <span class="term" data-jp="アイゼンクライト" data-en="Eisenkleid" data-tip="140 HP, 21 Atk, 12 Def, 6 Move">アイゼンクライト</span> (HP 140, Atk 21, Def 12, Move 6, <span class="term" data-jp="ダス・ラインゴルト" data-en="Das Rheingold" data-tip="Reni Special 1">ダス・ラインゴルト</span>) &middot; <span class="term" data-jp="天武" data-en="Tenbu" data-tip="150 HP, 28 Atk, 16 Def, 5 Move">天武</span> (HP 150, Atk 28, Def 16, Move 5, <span class="term" data-jp="ディ・ワリキューレ" data-en="Die Walkuere" data-tip="Reni Special 2">ディ・ワリキューレ</span>) &middot; <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="120 HP, 31 Atk, 19 Def, 5 Move">光武・改2</span> (HP 120, Atk 31, Def 19, Move 5, <span class="term" data-jp="ジークフリード" data-en="Siegfried" data-tip="Reni Special 3">ジークフリード</span>).</li>
+        </ul>
+        <div class="check-item" style="margin-top:0.75rem;"><input class="check-box" type="checkbox" data-check-id="char-09"><div class="check-body">Complete <span class="term" data-jp="レニ・ミルヒシュトラーセ" data-en="Reni Milchstrasse" data-tip="Reni route">レニ・ミルヒシュトラーセ</span>'s Dog Chain (Episodes 4, 5, 7), <span class="term" data-jp="おジョーズ！" data-en="O-Jaws!" data-tip="Episode 7 mini-game">おジョーズ！</span>, and Ending.</div></div>
+      </section>
+    </main>
+  </div>
+  <script src="js/guide.js"></script>
+</body>
+</html>

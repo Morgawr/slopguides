@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Game Mechanics - サクラ大戦4 〜恋せよ乙女〜 Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="teigeki-layout">
+    <aside class="hanagumi-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="sakura-crest" aria-hidden="true"></span>
+          <span class="rail-title-tag">Taisho Finale Archive</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="サクラ大戦4 〜恋せよ乙女〜" data-en="Sakura Wars 4: Fall in Love, Maidens" data-tip="Sakura Wars 4: Fall in Love, Maidens">サクラ大戦4 〜恋せよ乙女〜</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">Sega Dreamcast</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Beginner Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <a class="rail-nav-link" href="main-story.html">Main Story</a>
+        <div class="rail-nav-label">Cast &amp; Systems</div>
+        <a class="rail-nav-link" href="heroines.html">Heroines &amp; Koubu</a>
+        <a class="rail-nav-link active" href="mechanics.html">Game Mechanics</a>
+        <a class="rail-nav-link" href="collectibles.html">Bromides &amp; Omake</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="teigeki-stage">
+      <div class="page-header">
+        <h1>Game Mechanics &amp; Tactical Systems</h1>
+      </div>
+
+      <p class="lead-intro">
+        Every adventure conversation, Dreamcast analog input, and <span class="term" data-jp="ARMS" data-en="ARMS" data-tip="Active and Realtime Machine System">ARMS</span> turn feeds directly into <span class="term" data-jp="恋愛度" data-en="Love Rating" data-tip="Hidden character affection score">恋愛度</span>, <span class="term" data-jp="隊長値" data-en="Captain Value" data-tip="Hidden leadership score">隊長値</span>, and the final <span class="term" data-jp="大神華撃団" data-en="Ogami Combat Revue" data-tip="Joint Tokyo and Paris assault squad">大神華撃団</span> unit modifiers.
+      </p>
+
+      <div class="toc-box">
+        <div class="toc-title">On This Page</div>
+        <div class="toc-list">
+          <a href="#lips-variants">LIPS Variants</a>
+          <a href="#arms-refinements">ARMS Battle Refinements</a>
+          <a href="#captain-commands">Captain Commands &amp; Swap Trick</a>
+          <a href="#ogami-koubu">Ogami Koubu &amp; Soubu Mechanics</a>
+          <a href="#squad-formations">All 20 Squad Formations</a>
+          <a href="#vmu-features">Dreamcast VMU &amp; Peripherals</a>
+        </div>
+      </div>
+
+      <div class="section-header" id="lips-variants">
+        <h2>LIPS Dialogue Variants</h2>
+      </div>
+
+      <p>
+        Adventure scenes rely on <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Live and Interactive Picture System">LIPS</span> prompts that adjust <span class="term" data-jp="恋愛度" data-en="Love Rating" data-tip="Affection meter">恋愛度</span> and <span class="term" data-jp="隊長値" data-en="Captain Value" data-tip="Hidden leadership parameter">隊長値</span>, directly raising or lowering combat performance and deciding the Top-5 shortlist in <span class="term" data-jp="第三幕" data-en="Act 3" data-tip="Third act">第三幕</span>.
+      </p>
+
+      <table class="prima-table">
+        <thead>
+          <tr>
+            <th>Prompt Type</th>
+            <th>Dreamcast Input</th>
+            <th>Tactical Behavior</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="term" data-jp="ノーマルLIPS" data-en="Normal LIPS" data-tip="Standard timed three-choice prompt">ノーマルLIPS</span></td>
+            <td>D-Pad and A Button</td>
+            <td>Select one of three replies before the steam timer drains, or let time expire for unique silent outcomes.</td>
+          </tr>
+          <tr>
+            <td><span class="term" data-jp="アナログLIPS" data-en="Analog LIPS" data-tip="Thumbstick intensity gauge from 1 to 5">アナログLIPS</span></td>
+            <td>Dreamcast Analog Thumbstick Up or Down</td>
+            <td>Sets emotional strength across five tiers from 1 at the bottom to 5 at the top before confirming with A.</td>
+          </tr>
+          <tr>
+            <td><span class="term" data-jp="タイミングLIPS" data-en="Timing LIPS" data-tip="Mid-timer transforming choices">タイミングLIPS</span></td>
+            <td>Wait past half-gauge, then press A</td>
+            <td>Choices shift halfway through the bar, unlocking stronger replies for <span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Act 1 opening">李紅蘭</span>, <span class="term" data-jp="ソレッタ・織姫" data-en="Orihime Soletta" data-tip="Act 2 room event">ソレッタ・織姫</span>, and <span class="term" data-jp="ロベリア・カルリーニ" data-en="Lobelia Carlini" data-tip="Act 3 Command Room">ロベリア・カルリーニ</span>.</td>
+          </tr>
+          <tr>
+            <td><span class="term" data-jp="クリックLIPS" data-en="Click LIPS" data-tip="Direct cursor inspection">クリックLIPS</span></td>
+            <td>Move reticle and press A</td>
+            <td>Inspect eyes, mouth, hair, or props twice or three times, and click the empty background to trigger <span class="term" data-jp="結婚観" data-en="Marriage Views" data-tip="Bonus love question">結婚観</span>.</td>
+          </tr>
+          <tr>
+            <td><span class="term" data-jp="セレクト" data-en="Select Prompt" data-tip="Untimed story choice">セレクト</span></td>
+            <td>D-Pad and A Button</td>
+            <td>Untimed branch used for heroine photo selection, <span class="term" data-jp="結婚観" data-en="Marriage Views" data-tip="Marriage discussion">結婚観</span> activation, and outing destinations.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="section-header" id="arms-refinements">
+        <h2>ARMS Battle Refinements</h2>
+      </div>
+
+      <div class="grid-main-side">
+        <div class="step-block">
+          <h3>Movement, Actions &amp; Narrow Alley Trick</h3>
+          <ul class="bullet-steps">
+            <li><strong>Action Point Ring.</strong> All fifteen playable units share 7 <span class="term" data-jp="行動力" data-en="Action Points" data-tip="Movement and action pool per turn">行動力</span> per turn, and every unit executes two actions such as Attack, Special Attack, <span class="term" data-jp="ため" data-en="Charge" data-tip="Builds spiritual gauge">ため</span>, <span class="term" data-jp="防御" data-en="Guard" data-tip="Cuts damage taken">防御</span>, <span class="term" data-jp="回復" data-en="Recover" data-tip="Restores HP">回復</span>, or <span class="term" data-jp="かばう" data-en="Protect" data-tip="Absorbs hits for adjacent ally and boosts trust">かばう</span>.</li>
+            <li><strong>Analog Narrow-Gap Passage.</strong> When street rubble pinches a lane in Tokyo stages, push forward while rapidly wiggling the Dreamcast analog thumbstick left and right so your <span class="term" data-jp="光武" data-en="Koubu" data-tip="Spiricle Armor">光武</span> edges past tight obstructions.</li>
+            <li><strong>Assist Attacks over Pair Ultimates.</strong> Instead of paired <span class="term" data-jp="合体攻撃" data-en="Combination Attacks" data-tip="Paired ultimates from SW1-SW3">合体攻撃</span>, normal turns use proximity <span class="term" data-jp="協力攻撃" data-en="Assist Attacks" data-tip="Automatic follow-up strike based on bond">協力攻撃</span> between compatible allies, while the finale shifts to the dual-seat <span class="term" data-jp="双武" data-en="Soubu" data-tip="Two-pilot mecha">双武</span>.</li>
+            <li><strong>Protect Stacking.</strong> Guarding an ally with <span class="term" data-jp="かばう" data-en="Protect" data-tip="Cover action">かばう</span> protects fragile casters such as <span class="term" data-jp="アイリス" data-en="Iris" data-tip="Tokyo">アイリス</span> and <span class="term" data-jp="コクリコ" data-en="Coquelicot" data-tip="Paris">コクリコ</span> while steadily raising their combat trust.</li>
+          </ul>
+        </div>
+
+        <figure class="screen-card">
+          <img src="resources/screens/screen_03.jpg" alt="Paris Hanagumi Erica Koubu-F2 in Tokyo ARMS street battle">
+          <figcaption><span class="term" data-jp="エリカ・フォンティーヌ" data-en="Erica Fontaine" data-tip="Paris Flower Division">エリカ・フォンティーヌ</span> deploying her <span class="term" data-jp="光武F2" data-en="Koubu-F2" data-tip="Paris Spiricle Armor">光武F2</span> under the <span class="term" data-jp="林" data-en="Forest" data-tip="Balanced support command">林</span> stance.</figcaption>
+        </figure>
+      </div>
+
+      <div class="section-header" id="captain-commands">
+        <h2>Captain Commands &amp; Mid-Turn Swap</h2>
+      </div>
+
+      <div class="spec-panel spec-panel-steel">
+        <div class="spec-panel-head">風林火山 Stances &amp; Zero-Waste AP Pattern</div>
+        <div class="spec-panel-body">
+          <p>
+            Only <span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain">大神一郎</span> switches <span class="term" data-jp="隊長コマンド" data-en="Captain Command" data-tip="Tactical stance selector">隊長コマンド</span> freely during his turn without losing actions. Each stance alters attack, defense, mobility, and action AP costs across the whole squad.
+          </p>
+          <ul class="bullet-steps">
+            <li><strong><span class="term" data-jp="風" data-en="Wind" data-tip="Speed and movement stance">風</span>.</strong> Raises agility and movement efficiency for crossing large maps or reaching levers quickly.</li>
+            <li><strong><span class="term" data-jp="林" data-en="Forest" data-tip="Balanced support stance">林</span>.</strong> Balanced command supporting steady defense and standard recovery access.</li>
+            <li><strong><span class="term" data-jp="火" data-en="Fire" data-tip="Offense stance, disables Recover">火</span>.</strong> Maximizes attack power and minimizes AP cost for <span class="term" data-jp="ため" data-en="Charge" data-tip="Builds Special gauge">ため</span>, while disabling <span class="term" data-jp="回復" data-en="Recover" data-tip="Disabled under Fire">回復</span>.</li>
+            <li><strong><span class="term" data-jp="山" data-en="Mountain" data-tip="Defense and healing stance">山</span>.</strong> Maximizes defense and reduces AP costs for <span class="term" data-jp="防御" data-en="Guard" data-tip="Damage reduction">防御</span> and <span class="term" data-jp="回復" data-en="Recover" data-tip="Healing">回復</span>.</li>
+            <li><strong>Standard Boss Swap.</strong> On Ogami's turn, switch to <span class="term" data-jp="火" data-en="Fire" data-tip="Attack stance">火</span> to execute <span class="term" data-jp="ため" data-en="Charge" data-tip="Charge">ため</span> or strike cheaply, then toggle to <span class="term" data-jp="山" data-en="Mountain" data-tip="Defense stance">山</span> before performing <span class="term" data-jp="防御" data-en="Guard" data-tip="Guard">防御</span> or <span class="term" data-jp="回復" data-en="Recover" data-tip="Recover">回復</span> so the whole team enters the enemy phase fortified.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="section-header" id="ogami-koubu">
+        <h2>Ogami Koubu Variants &amp; Dual-Seat Soubu</h2>
+      </div>
+
+      <p>
+        Unlike <span class="term" data-jp="サクラ大戦3" data-en="Sakura Wars 3" data-tip="Third entry">サクラ大戦3</span>, Captain EXP upgrades do not carry into <span class="term" data-jp="サクラ大戦4" data-en="Sakura Wars 4" data-tip="Fourth entry">サクラ大戦4</span>. <span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain">大神一郎</span> pilots two fixed units across the campaign, while his final machine changes its Special Attack name and dialogue for all thirteen heroines.
+      </p>
+
+      <table class="prima-table">
+        <thead>
+          <tr>
+            <th>Unit</th>
+            <th>Availability</th>
+            <th>Base Stats</th>
+            <th>Combat Role</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><span class="term" data-jp="光武二式（大神機）" data-en="Koubu Type-2 (Ogami Custom)" data-tip="White dual-blade commander unit">光武二式（大神機）</span></td>
+            <td>Acts 1 &amp; 2</td>
+            <td>ATK 27 / DEF 18 / AP 7</td>
+            <td>High-durability frontline dual-blade vanguard anchoring <span class="term" data-jp="かばう" data-en="Protect" data-tip="Cover">かばう</span> and <span class="term" data-jp="隊長コマンド" data-en="Captain Command" data-tip="Stances">隊長コマンド</span>.</td>
+          </tr>
+          <tr>
+            <td><span class="term" data-jp="双武" data-en="Soubu" data-tip="Dual-pilot Spiricle Armor">双武</span></td>
+            <td>Act 3 Final Battle</td>
+            <td>ATK 30 / DEF 14 / AP 7</td>
+            <td>Two-seater unit co-piloted with the chosen Grand Heroine, unleashing heroine-specific <span class="term" data-jp="必殺攻撃" data-en="Special Attack" data-tip="Unique dual finisher">必殺攻撃</span> finishers.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="section-header" id="squad-formations">
+        <h2>All 20 Ogami Combat Revue Squad Formations</h2>
+      </div>
+
+      <p>
+        Selecting your Grand Heroine plus four assault members in <span class="term" data-jp="第三幕" data-en="Act 3" data-tip="Third act">第三幕</span> assigns one of twenty named <span class="term" data-jp="大神華撃団" data-en="Ogami Combat Revue" data-tip="Joint final assault squad">大神華撃団</span> formations on top of individual <span class="term" data-jp="やる気" data-en="Morale" data-tip="Trust-based unit buff">やる気</span> bonuses. Note that formation priority also checks recent LIPS choices when a five-woman lineup qualifies for multiple names.
+      </p>
+
+      <table class="prima-table">
+        <thead>
+          <tr>
+            <th>No.</th>
+            <th>Squad Name</th>
+            <th>Lineup Condition</th>
+            <th>ATK</th>
+            <th>DEF</th>
+            <th>AP</th>
+            <th>AGI</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>1</td><td><span class="term" data-jp="花組" data-en="Flower Division" data-tip="Default fallback squad">花組</span></td><td>Default fallback when no special set matches</td><td>+1</td><td>+1</td><td>+0</td><td>+1</td></tr>
+          <tr><td>2</td><td><span class="term" data-jp="紅組" data-en="Crimson Squad" data-tip="High-agility offense squad">紅組</span></td><td>Sakura, Kanna, Orihime, Erica, Coquelicot</td><td>+3</td><td>+2</td><td>+1</td><td>+3</td></tr>
+          <tr><td>3</td><td><span class="term" data-jp="蒼組" data-en="Azure Squad" data-tip="High-agility defense squad">蒼組</span></td><td>Sumire, Kohran, Reni, Glycine, Lobelia</td><td>+2</td><td>+3</td><td>+1</td><td>+3</td></tr>
+          <tr><td>4</td><td><span class="term" data-jp="守組" data-en="Guardian Squad" data-tip="Defense specialist team">守組</span></td><td>Includes Maria, Kohran, Erica, Hanabi</td><td>+0</td><td>+3</td><td>+1</td><td>+2</td></tr>
+          <tr><td>5</td><td><span class="term" data-jp="戦組" data-en="Vanguard Squad" data-tip="Heavy attack team">戦組</span></td><td>Includes Kanna, Reni, Glycine, Lobelia</td><td>+4</td><td>+1</td><td>+0</td><td>+0</td></tr>
+          <tr><td>6</td><td><span class="term" data-jp="帝都組" data-en="Tokyo Squad" data-tip="Pure Imperial team">帝都組</span></td><td>All 5 members from Tokyo Flower Division</td><td>+2</td><td>+2</td><td>+0</td><td>+2</td></tr>
+          <tr><td>7</td><td><span class="term" data-jp="巴里組" data-en="Paris Squad" data-tip="Pure Paris team">巴里組</span></td><td>All 5 members from Paris Flower Division</td><td>+2</td><td>+0</td><td>+1</td><td>+0</td></tr>
+          <tr><td>8</td><td><span class="term" data-jp="東洋組" data-en="Eastern Squad" data-tip="Japanese and Chinese roster">東洋組</span></td><td>Any 5 from Sakura, Sumire, Kanna, Kohran, Coquelicot, Hanabi</td><td>+2</td><td>+2</td><td>+1</td><td>+0</td></tr>
+          <tr><td>9</td><td><span class="term" data-jp="大人組" data-en="Senior Squad" data-tip="Older cast lineup">大人組</span></td><td>Includes Maria, Kanna, Lobelia, excludes Iris, Reni, Coquelicot</td><td>+3</td><td>+1</td><td>+0</td><td>+0</td></tr>
+          <tr><td>10</td><td><span class="term" data-jp="ミニ組" data-en="Junior Squad" data-tip="Younger cast lineup">ミニ組</span></td><td>Includes Iris, Reni, Coquelicot, excludes Maria, Kanna, Lobelia</td><td>+0</td><td>+1</td><td>+1</td><td>+3</td></tr>
+          <tr><td>11</td><td><span class="term" data-jp="綺羅星組" data-en="Starlight Squad" data-tip="Former Star Division leads">綺羅星組</span></td><td>Includes Orihime and Reni with one as Grand Heroine</td><td>+4</td><td>+0</td><td>+0</td><td>+0</td></tr>
+          <tr><td>12</td><td><span class="term" data-jp="貴族組" data-en="Noble Squad" data-tip="Aristocratic lineup">貴族組</span></td><td>Sumire, Iris, Orihime, Glycine, Hanabi</td><td>+2</td><td>+1</td><td>+1</td><td>+0</td></tr>
+          <tr><td>13</td><td><span class="term" data-jp="金銀組" data-en="Gold &amp; Silver Squad" data-tip="Blonde and silver hair lineup">金銀組</span></td><td>Maria, Iris, Reni, Glycine, Lobelia</td><td>+1</td><td>+2</td><td>+1</td><td>+2</td></tr>
+          <tr><td>14</td><td><span class="term" data-jp="ライバル組" data-en="Rival Squad" data-tip="Fierce rivals lineup">ライバル組</span></td><td>Includes Sumire, Kanna, Glycine, Lobelia</td><td>+3</td><td>+2</td><td>+0</td><td>+2</td></tr>
+          <tr><td>15</td><td><span class="term" data-jp="桜組" data-en="Sakura Squad" data-tip="Dual main leads">桜組</span></td><td>Includes Sakura and Erica as the Act 1 triangle pair</td><td>+1</td><td>+1</td><td>+1</td><td>+2</td></tr>
+          <tr><td>16</td><td><span class="term" data-jp="グルメ組" data-en="Gourmet Squad" data-tip="Food-loving lineup">グルメ組</span></td><td>Kanna, Iris, Kohran, Erica, Coquelicot</td><td>+0</td><td>+2</td><td>+1</td><td>+0</td></tr>
+          <tr><td>17</td><td><span class="term" data-jp="道組" data-en="Martial Way Squad" data-tip="Traditional discipline lineup">道組</span></td><td>Includes Sakura, Sumire, Glycine, Hanabi</td><td>+2</td><td>+1</td><td>+0</td><td>+0</td></tr>
+          <tr><td>18</td><td><span class="term" data-jp="おしゃれ組" data-en="Fashion Squad" data-tip="Stylish lineup">おしゃれ組</span></td><td>Includes Maria, Orihime, Reni, Lobelia</td><td>+1</td><td>+2</td><td>+0</td><td>+0</td></tr>
+          <tr><td>19</td><td><span class="term" data-jp="ギャグ組" data-en="Comedy Squad" data-tip="Comic relief trio core">ギャグ組</span></td><td>Includes Kohran, Erica, Coquelicot</td><td>+2</td><td>+0</td><td>+1</td><td>+2</td></tr>
+          <tr><td>20</td><td><span class="term" data-jp="絶対正義組" data-en="Absolute Justice Squad" data-tip="Hidden endgame squad">絶対正義組</span></td><td>SW1/2/3 merged data, Ogami Solo Ending cleared, high <span class="term" data-jp="隊長値" data-en="Captain Value" data-tip="Leadership score">隊長値</span>, and Top-5 high-morale squadmates</td><td>+9</td><td>+9</td><td>+0</td><td>+2</td></tr>
+        </tbody>
+      </table>
+
+      <div class="section-header" id="vmu-features">
+        <h2>Dreamcast VMU, Data Merge &amp; Peripherals</h2>
+      </div>
+
+      <div class="step-block">
+        <h3>Hardware Integration Specifics</h3>
+        <ul class="bullet-steps">
+          <li><strong>System &amp; Story Saves.</strong> <span class="term" data-jp="ビジュアルメモリ" data-en="VMU" data-tip="Dreamcast Visual Memory Unit">ビジュアルメモリ</span> stores global unlock flags inside <code>SAKURA_4.SYS</code> (3 blocks) and story saves as <code>SAKURA_4.001</code> onward (6 blocks each), displaying custom Sakura Wars LCD icons on the controller screen.</li>
+          <li><strong>Retroactive Data Merge.</strong> <span class="term" data-jp="データ合体" data-en="Data Merge" data-tip="Prior save import">データ合体</span> can be executed at any time, even after finishing a playthrough of <span class="term" data-jp="サクラ大戦4" data-en="Sakura Wars 4" data-tip="Fourth entry">サクラ大戦4</span>, to fold newly cleared <span class="term" data-jp="サクラ大戦" data-en="Sakura Wars" data-tip="First entry">サクラ大戦</span>, <span class="term" data-jp="サクラ大戦2" data-en="Sakura Wars 2" data-tip="Second entry">サクラ大戦2</span>, or <span class="term" data-jp="サクラ大戦3" data-en="Sakura Wars 3" data-tip="Third entry">サクラ大戦3</span> heroine flags into <code>SAKURA_4.SYS</code>.</li>
+          <li><strong>Puru Puru Pack.</strong> Inserting a <span class="term" data-jp="ぷるぷるぱっく" data-en="Jump Pack" data-tip="Dreamcast rumble accessory">ぷるぷるぱっく</span> provides tactile feedback during <span class="term" data-jp="ARMS" data-en="ARMS" data-tip="Battle system">ARMS</span> explosions, Koubu impacts, and theatrical cutscenes.</li>
+          <li><strong>Kinematron &amp; Drama Download Heritage.</strong> While Dreamcast online network services for <span class="term" data-jp="キネマトロン" data-en="Kinematron" data-tip="Portable communicator">キネマトロン</span> mail are offline, the Limited Edition packaged a bonus <span class="term" data-jp="サクラ大戦3" data-en="Sakura Wars 3" data-tip="Third entry">サクラ大戦3</span> Drama Download GD-ROM alongside the main game disc.</li>
+        </ul>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

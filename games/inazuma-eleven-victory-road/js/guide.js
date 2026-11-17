@@ -50,10 +50,10 @@
       var en = el.getAttribute('data-en');
       if (lang === 'en') {
         el.textContent = en;
-        el.setAttribute('data-tip', jp);
+        if (jp !== en) el.setAttribute('data-tip', jp);
       } else {
         el.textContent = jp;
-        el.setAttribute('data-tip', en);
+        if (jp !== en) el.setAttribute('data-tip', en);
       }
     }
 
@@ -97,7 +97,7 @@
       return;
     }
     var tipText = target.getAttribute('data-tip');
-    if (!tipText) {
+    if (!tipText || tipText === target.textContent) {
       hideTooltip();
       return;
     }

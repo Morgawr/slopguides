@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Episodes 1 to 12 Walkthrough - サクラ大戦2</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="taisho-layout">
+    <aside class="imperial-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="sakura-crest" aria-hidden="true"></span>
+          <span class="rail-title-tag">Taisho Imperial Archive</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="サクラ大戦2 〜君、死にたもうことなかれ〜" data-en="Sakura Wars 2: Thou Shalt Not Die" data-tip="Sakura Wars 2: Thou Shalt Not Die">サクラ大戦2 〜君、死にたもうことなかれ〜</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">Sega Dreamcast</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Beginner Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order &amp; Endings</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <div class="rail-nav-label">Campaign &amp; Cast</div>
+        <a class="rail-nav-link active" href="main-story.html">Episodes 1 to 12</a>
+        <a class="rail-nav-link" href="heroines.html">Heroines &amp; Ogami</a>
+        <div class="rail-nav-label">Systems &amp; Extras</div>
+        <a class="rail-nav-link" href="mechanics.html">Game Mechanics</a>
+        <a class="rail-nav-link" href="collectibles.html">Bromides &amp; Extras</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="taisho-stage">
+      <div class="page-header">
+        <h1>Episodes 1 to 12 Walkthrough</h1>
+      </div>
+
+      <p class="lead-intro">
+        Spoiler-safe step-by-step progression across all three Dreamcast GD-ROM discs. Free Event clocks list exact active hours and ending triggers so you can gather <span class="term" data-jp="ブロマイド" data-en="Bromide" data-tip="Souvenir shop portraits">ブロマイド</span> portraits, play every mini-game, and maintain zero-retreat <span class="term" data-jp="優" data-en="Superior" data-tip="Zero-retreat grade">優</span> battle ranks.
+      </p>
+
+      <div class="toc-box">
+        <div class="toc-title">Disc &amp; Episode Index</div>
+        <div class="toc-list">
+          <a href="#ep1">Ep 1 (Disc 1)</a>
+          <a href="#ep2">Ep 2</a>
+          <a href="#ep3">Ep 3</a>
+          <a href="#ep4">Ep 4</a>
+          <a href="#ep5">Ep 5</a>
+          <a href="#ep6">Ep 6 (Disc 2)</a>
+          <a href="#ep7">Ep 7</a>
+          <a href="#ep8">Ep 8</a>
+          <a href="#ep9">Ep 9</a>
+          <a href="#ep10">Ep 10</a>
+          <a href="#ep11">Ep 11 (Disc 3)</a>
+          <a href="#ep12">Ep 12</a>
+          <a href="#ep13">Ep 13 Epilogue</a>
+        </div>
+      </div>
+
+      <div class="completion-bar-wrap" data-counter-label="Campaign Milestones">
+        <div class="completion-meta">
+          <span class="completion-text">Campaign Milestones 0/28 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" id="page-progress-reset" class="page-reset-btn">Reset Page</button>
+      </div>
+
+      <div class="filter-toolbar">
+        <button type="button" class="filter-btn active" data-status-filter="all">All</button>
+        <button type="button" class="filter-btn" data-status-filter="pending">Pending</button>
+        <button type="button" class="filter-btn" data-status-filter="done">Done</button>
+        <input type="search" class="search-input" data-page-search placeholder="Filter episodes, locations, or bosses...">
+      </div>
+
+      <section id="ep1" class="step-block">
+        <h3>Episode 1 &middot; <span class="term" data-jp="花萌える帝都" data-en="The Capital Where Flowers Bloom" data-tip="Disc 1 Episode 1">花萌える帝都</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-01">
+            <div class="check-body">
+              <strong>Prologue &amp; Free Events A / B</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>At the <span class="term" data-jp="屋形船" data-en="Yakatabune" data-tip="Opening houseboat">屋形船</span>, answer <span class="term" data-jp="米田一基" data-en="Ikki Yoneda" data-tip="Commander">米田一基</span>'s question to pick your remembered heroine (requires SW1 clear data for <span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Sumire">神崎すみれ</span>, <span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Maria">マリア・タチバナ</span>, <span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Kohran">李紅蘭</span>, or <span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Kanna">桐島カンナ</span>). Answer Ginza at the pier for +3 Trust.</li>
+                <li>Free Event A (11:20 to 12:00, 8 visits). Visit the <span class="term" data-jp="事務局" data-en="Administration Office" data-tip="Submit arrival papers">事務局</span> first, check <span class="term" data-jp="空き部屋" data-en="Empty Room" data-tip="SW1 clear save bonus">空き部屋</span> if SW1 data is linked, buy <span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Sakura Bromide">真宮寺さくら</span>'s <span class="term" data-jp="ブロマイド" data-en="Bromide" data-tip="Shop portrait">ブロマイド</span> at the <span class="term" data-jp="売店" data-en="Souvenir Shop" data-tip="1F Lobby">売店</span>, and report to the Manager's Office between 11:50 and 12:00.</li>
+                <li>In Forced Event B, change cleanly by picking <span class="term" data-jp="ていねいに脱ぐ" data-en="Undress carefully" data-tip="Step 1">ていねいに脱ぐ</span>, <span class="term" data-jp="服をたたむ" data-en="Fold clothes" data-tip="Step 2">服をたたむ</span>, <span class="term" data-jp="ズボンをはく" data-en="Put on trousers" data-tip="Step 3">ズボンをはく</span>, then <span class="term" data-jp="髪をとかす" data-en="Comb hair" data-tip="Step 4">髪をとかす</span>. When <span class="term" data-jp="ソレッタ・織姫" data-en="Soletta Orihime" data-tip="Orihime arrives">ソレッタ・織姫</span> leaves, chase after her for Orihime Points.</li>
+                <li>Accept Sakura's night patrol invitation. To convince Orihime (+6 points), click her hair, click her eyes then let <span class="term" data-jp="タイムオーバー" data-en="Time Over" data-tip="Quiet gaze">タイムオーバー</span> pass, click her mouth, then choose direct invitation, good change of pace, 10:00, and guiding her around the theater.</li>
+                <li>Free Event B (21:30 to 22:00, 6 visits). Revisit the <span class="term" data-jp="売店" data-en="Souvenir Shop" data-tip="Sakura trust bonus">売店</span> while holding Sakura's portrait, answer William Shakespeare at 1F Seats and Turkish March at the Music Room, and visit the Costume Room to find Iris hiding in the shadow. In Forced Event C, answer 129 sheets for <span class="term" data-jp="高村椿" data-en="Tsubaki Takamura" data-tip="Shop clerk">高村椿</span>'s receipt question.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-02">
+            <div class="check-body">
+              <strong>Battle &middot; <span class="term" data-jp="帝劇前" data-en="In Front of Imperial Theater" data-tip="Episode 1 Battle">帝劇前</span> (<span class="term" data-jp="叉丹" data-en="Satan" data-tip="Episode 1 Boss">叉丹</span>)</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>For Battle LIPS, stand beside Sakura ("About two years" grants +1 Trust and Coop) and Iris ("Did you grow taller?" grants +1 Trust). Having Orihime defeat 3+ enemies at once lets you praise Star Division (pick Eisenkleid or your command only if intentionally lowering her trust).</li>
+                <li>Switch to <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> stance and assign <span class="term" data-jp="かばう" data-en="Protect" data-tip="Guard command">かばう</span> to your priority heroine. When <span class="term" data-jp="叉丹" data-en="Satan" data-tip="Boss">叉丹</span> appears, protect Orihime during the ambush prompt for +3 Orihime Points (or let it time out for Sakura-Orihime Coop), then burst the boss down directly since defeating him ends the stage.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep2" class="step-block">
+        <h3>Episode 2 &middot; <span class="term" data-jp="アイリスの手紙" data-en="Iris's Letter" data-tip="Disc 1 Episode 2">アイリスの手紙</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-03">
+            <div class="check-body">
+              <strong>Free Events A / B &amp; <span class="term" data-jp="レニ・ミルヒシュトラーセ" data-en="Reni Milchstrasse" data-tip="New recruit">レニ・ミルヒシュトラーセ</span> Arrival</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Help either Sakura (talk to Kasumi, Yuri, and Tsubaki) or Iris (fetch plate from Kitchen and bring to Dressing Room). Free Event A (11:00 to 11:50, 12 visits) ends when returning to the Dressing Room after finishing your task.</li>
+                <li>Avoid entering Orihime's room early if you want her Attic Chain Event 1 and Music Room scene. Dial <span class="term" data-jp="キネマトロン" data-en="Kinematron" data-tip="Captain's Room phone">キネマトロン</span> numbers for absent heroines (listen to 13510 before dialing Kohran at 13700) and visit Guest Entrance at 11:35 to 11:50 to see <span class="term" data-jp="影山サキ" data-en="Saki Kageyama" data-tip="Guest character">サキ</span>.</li>
+                <li>In Forced Event B, pronounce Reni's full name <span class="term" data-jp="ミルヒシュトラーセ" data-en="Milchstrasse" data-tip="Correct pronunciation">ミルヒシュトラーセ</span> accurately.</li>
+                <li>Free Event B (22:00 to 22:50, 12 visits) requires visiting the Prop Room (watch Saki's sprained ankle and click her free hand 3 times to finish cleanly without touching her ankle or chest) then heading to the Attic to end the phase.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-04">
+            <div class="check-body">
+              <strong>Battle 1 &middot; <span class="term" data-jp="鶯谷" data-en="Uguisudani" data-tip="Episode 2 First Battle">鶯谷</span> (<span class="term" data-jp="金剛" data-en="Kongou" data-tip="Five Demons brute">金剛</span>)</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Choosing Offense Focus in Forced Event B creates a cleaner lane layout than Defense Focus.</li>
+                <li>On Turn 1, answer Reni's tactical question ("How should we attack this enemy?") to raise trust and set her Episode 6 flag. Assign Reni to smash the line-firing <span class="term" data-jp="蒸気火箭" data-en="Steam Rocket" data-tip="Line turret">蒸気火箭</span> turrets (2 Defense, one-hit breakable).</li>
+                <li>Against <span class="term" data-jp="金剛" data-en="Kongou" data-tip="Kongou">金剛</span>, open with <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> to eliminate nearby <span class="term" data-jp="黄童子" data-en="Koudoji" data-tip="Escort drones">黄童子</span> on Turn 1, park Iris on the healing steam pad, then switch to <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> on Turn 2 for Special Attack burst.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-05">
+            <div class="check-body">
+              <strong>Battle 2 &middot; <span class="term" data-jp="渋谷" data-en="Shibuya" data-tip="Episode 2 Second Battle">渋谷</span> (<span class="term" data-jp="木喰" data-en="Mokujiki" data-tip="Five Demons tactician">木喰</span>)</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Choose Wait for Intel in Forced Event D so you only need to break the blue supply crates, clearing the first map in two turns via an Ogami-Iris <span class="term" data-jp="合体攻撃" data-en="Combined Attack" data-tip="5-tile AoE">合体攻撃</span>.</li>
+                <li>Against <span class="term" data-jp="木喰" data-en="Mokujiki" data-tip="3-action boss">木喰</span> (who acts 3 times per turn and deploys <span class="term" data-jp="円空" data-en="Enku" data-tip="Bit drones">円空</span> bits), climb quickly with <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span>, clear bits with a Combined Attack, and switch to <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> on Turn 2 to finish him before he retreats uphill.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep3" class="step-block">
+        <h3>Episode 3 &middot; <span class="term" data-jp="あぁ、お見合い" data-en="Ah, An Arranged Marriage" data-tip="Disc 1 Episode 3">あぁ、お見合い</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-06">
+            <div class="check-body">
+              <strong>Free Event A &amp; <span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Kanna returns">桐島カンナ</span> Sparring</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Free Event A (14:20 to 15:00, 8 visits) ends automatically at 15:05. Visit the Attic for Orihime Chain 2, then visit the Training Room followed by the Locker Room (14:25 to 14:45) and scrub Reni's back to unlock Reni's secret early.</li>
+                <li>At the Terrace (14:25 to 15:00), click outside Sakura's face/body to earn +2 Trust without offending her.</li>
+                <li>In Forced Event A sparring against Kanna, pick Head Guard, Torso Guard, Crouch (wait for second half if needed), Jump, and Crouch + Low Kick to score +3 Trust.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-07">
+            <div class="check-body">
+              <strong><span class="term" data-jp="神崎邸" data-en="Kanzaki Estate" data-tip="Episode 3 Estate Raid">神崎邸</span> &amp; <span class="term" data-jp="土蜘蛛" data-en="Tsuchigumo" data-tip="Episode 3 Boss">土蜘蛛</span> Battle</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>At the estate gate, choose whether to stop Kanna or egg her on (stopping her leaves a cleaner battle corridor and avoids Sumire's Episode 10 scolding). Crouch when dodging the ambush thrust (+3 Trust).</li>
+                <li>During the courtyard battle, choosing Sweeping the Enemies rewards speed with <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> and a Turn 2 <span class="term" data-jp="合体攻撃" data-en="Combined Attack" data-tip="Sumire or Kanna">合体攻撃</span>. Against <span class="term" data-jp="土蜘蛛" data-en="Tsuchigumo" data-tip="Phasing boss">土蜘蛛</span> (who phases through units), spend Sumire and Kanna's Specials on Turn 1 under <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> and switch to <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> on Turn 2.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep4" class="step-block">
+        <h3>Episode 4 &middot; <span class="term" data-jp="大暴れ！火の玉芸者ガールズ" data-en="Rampage! Fireball Geisha Girls" data-tip="Disc 1 Episode 4">大暴れ！火の玉芸者ガールズ</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-08">
+            <div class="check-body">
+              <strong>Hospital, Summer Uniforms &amp; Free Event A</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>If injured stepping outside the hospital (-1 Move), heal in the Infirmary or Bathhouse (15 min) during Free Event A (15:00 to 16:00, 12 visits, with Kohran's room after 15:45 ending the phase).</li>
+                <li>Pick your preferred puppy name in the Salon, watching the compliment order if targeting Sumire or Orihime.</li>
+                <li>Key Free Event A targets include the Music Room for Orihime's <span class="term" data-jp="ピアノ・レッスン？" data-en="Piano Lesson?" data-tip="Mini-game 1">ピアノ・レッスン？</span>, Courtyard for Reni Chain 1 and Sakura's <span class="term" data-jp="明日に向かって斬れ！" data-en="Slash Toward Tomorrow!" data-tip="Mini-game 2">明日に向かって斬れ！</span>, Cafeteria (15:30+) for Kanna Chain 1, Salon (15:35+, or 15:05 after Stage) for Sumire Chain 1 (pick tea first so the chain continues), Attic (15:35+, or 15:05 after Music Room) for Orihime Chain 3 (stay silent without calling out), and Pool (15:45+) if Reni's secret is still hidden.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-09">
+            <div class="check-body">
+              <strong>Deep River <span class="term" data-jp="料亭" data-en="Ryotei" data-tip="Fukagawa restaurant">料亭</span> &amp; <span class="term" data-jp="火車" data-en="Kasha" data-tip="Episode 4 Boss">火車</span> Battle</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>In the burning restaurant escape, open the sliding doors in reverse order of entry (Right, Center, Right, Left).</li>
+                <li>Choose Decoy Strategy before battle and bunch all units inside Iris's healing aura using <span class="term" data-jp="山" data-en="Mountain" data-tip="Def +3">山</span> stance for four easy turns.</li>
+                <li>Against <span class="term" data-jp="火車" data-en="Kasha" data-tip="3-action boss">火車</span>, move Ogami adjacent to <span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Rejoins here">マリア・タチバナ</span> and answer "...Welcome back" (+3 Trust and Coop), then surround Kasha under <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> stance to prevent him from fleeing three times per turn.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep5" class="step-block">
+        <h3>Episode 5 &middot; <span class="term" data-jp="嬉し恥ずかし夏休み" data-en="Happy, Bashful Summer Vacation" data-tip="Disc 1 Episode 5">嬉し恥ずかし夏休み</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-10">
+            <div class="check-body">
+              <strong>Theater Packing, Bus <span class="term" data-jp="トランプ大戦" data-en="Trump Battle" data-tip="Daifugo mini-game">トランプ大戦</span> &amp; <span class="term" data-jp="熱海" data-en="Atami" data-tip="Summer resort">熱海</span> Inn</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Free Event A (09:00 to 10:00, 12 visits, ending at Entrance after 09:50). Hit Sakura's Room (09:00 to 09:25) for Sakura Chain 1, Maria's Room (click diary once) then Recreation Room for Maria Chain 1, Hangar for Kohran Chain 1, Courtyard for Reni Chain 2 and <span class="term" data-jp="烏！" data-en="Crows!" data-tip="Kohran mini-game">烏！</span> (09:30+), and Cafeteria (09:30+) for Kanna Chain 2.</li>
+                <li>Play Daifugo with Iris on the bus to register <span class="term" data-jp="トランプ大戦" data-en="Trump Battle" data-tip="Mini-game unlock">トランプ大戦</span>. On Day 2 choose your target heroine's excursion group, namely Sea (Sumire, Iris, Reni), Mountain (Kanna, Kohran, Orihime), or Inn Hot Spring (Sakura, Maria).</li>
+                <li>In Free Event B at the inn (10:20 to 10:55), visit <span class="term" data-jp="朱雀の間" data-en="Suzaku Room" data-tip="Closes if left for last">朱雀の間</span> BEFORE visiting all six other rooms or you miss Maria's scene there. Never repeat a room or time runs short.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-11">
+            <div class="check-body">
+              <strong>Battle &middot; <span class="term" data-jp="熱海" data-en="Atami" data-tip="Episode 5 Coast Battle">熱海</span> (<span class="term" data-jp="水狐" data-en="Suiko" data-tip="Five Demons strategist">水狐</span> &amp; <span class="term" data-jp="金剛" data-en="Kongou" data-tip="Reinforcement boss">金剛</span>)</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Requesting reinforcements from the Mountain offers tighter enemy clusters so you can clear all <span class="term" data-jp="脇侍" data-en="Wakiji" data-tip="Enemy mecha">脇侍</span> within 3 turns before heavy black units spawn.</li>
+                <li>Against <span class="term" data-jp="水狐" data-en="Suiko" data-tip="Boss">水狐</span> and <span class="term" data-jp="金剛" data-en="Kongou" data-tip="Protects Suiko 9 times">金剛</span>, Kongou spawns two tiles behind Kohran and shields Suiko up to 9 times. Focus fire on Kongou first or ambush his spawn tile on Turn 1 under <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> then unleash <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> Specials on Turn 2.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep6" class="step-block">
+        <h3>Episode 6 &middot; <span class="term" data-jp="レニよ、銃をとれ" data-en="Reni, Take Up Your Gun" data-tip="Disc 2 Episode 6">レニよ、銃をとれ</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-12">
+            <div class="check-body">
+              <strong>Disc 2 Opening &amp; Free Events A / B</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Free Event A (17:00 to 17:55, 12 visits, ending when entering Reni's room). Visit Attic (17:00 to 17:25) for Kanna's <span class="term" data-jp="クライマー・クライマー" data-en="Climber Climber" data-tip="Avoid deep pit bug">クライマー・クライマー</span>, Recreation Room (17:00 to 17:25) for Maria Chain 2, Sakura's Room for Sakura Chain 2, Salon (17:30+) for Sumire Chain 2, Entrance (17:30+) for Maria's <span class="term" data-jp="雨に走れば" data-en="Running in the Rain" data-tip="Mini-game">雨に走れば</span>, and Cafeteria (17:30+) for Kanna Chain 3.</li>
+                <li>Free Event B (23:00 to 23:30, 6 visits, ending at Reni's or Iris's room). Visit Sakura's Room if you promised to check on her, and visit the Hangar for Kohran Chain 2.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-13">
+            <div class="check-body">
+              <strong>Battle &middot; <span class="term" data-jp="池袋" data-en="Ikebukuro" data-tip="Episode 6 Battle">池袋</span> (<span class="term" data-jp="水狐" data-en="Suiko" data-tip="Boss">水狐</span> &amp; <span class="spoiler"><span class="term" data-jp="影山サキ" data-en="Saki Kageyama" data-tip="Actually Suiko">影山サキ</span></span>)</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Before battle, tell Iris to call everyone if you want earlier reinforcements, or stay with Ogami for extra Iris trust.</li>
+                <li>Destroy the <span class="term" data-jp="雷撃砲" data-en="Lightning Cannons" data-tip="Long-range turrets">雷撃砲</span> early under <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span>, then brace with <span class="term" data-jp="山" data-en="Mountain" data-tip="Def +3">山</span> before <span class="term" data-jp="水狐" data-en="Suiko" data-tip="Uses Fire Mist">水狐</span> triggers her high-damage range sweep or suicide <span class="term" data-jp="火乱" data-en="Karan" data-tip="Explosive spheres">火乱</span> spheres.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep7" class="step-block">
+        <h3>Episode 7 &middot; <span class="term" data-jp="季節はずれの七夕" data-en="Unseasonable Tanabata" data-tip="Disc 2 Episode 7">季節はずれの七夕</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-14">
+            <div class="check-body">
+              <strong>Asakusa Festival &amp; Free Events A / B</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>In Forced Event A at Asakusa, inspect the stalls to play Iris's <span class="term" data-jp="帝都の休日" data-en="Capital Holiday" data-tip="Festival mini-game">帝都の休日</span>.</li>
+                <li>Free Event A (14:00 to 15:00, 12 visits, ending upon visiting Orihime's room). Complete Maria Chain 3 in Recreation Room (14:00 to 14:25), Salon Sumire Chain 3 (14:30+, warm cup with hot water then pour to the final drop), Courtyard Reni Chain 3 (14:00 to 14:25), Iris Room Chain 3 (14:30+), and Pool (14:30+) for Reni's <span class="term" data-jp="おジョーズ！" data-en="O-Jaws!" data-tip="Diving mini-game">おジョーズ！</span>.</li>
+                <li>In Forced Event B, ask about both <span class="term" data-jp="カリーノ・ソレッタ" data-en="Carino Soletta" data-tip="Orihime's father">カリーノ・ソレッタ</span> and Orihime. In Free Event B (21:30 to 22:00, 6 visits), visit Stage Wings for Sumire's <span class="term" data-jp="舞ガール" data-en="Mai Girl" data-tip="Spotlight mini-game">舞ガール</span>, Hangar for Kohran Chain 3, and click Orihime's door 3 times last, choosing <span class="term" data-jp="たしかに関係ない。でも……" data-en="It really has nothing to do with me, but..." data-tip="Orihime +3">たしかに関係ない。でも……</span> and <span class="term" data-jp="卑怯だぞ、織姫くん！" data-en="That is unfair, Orihime!" data-tip="Orihime +2">卑怯だぞ、織姫くん！</span> to cash out Orihime Points before the battle.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-15">
+            <div class="check-body">
+              <strong>Battle &middot; <span class="term" data-jp="浅草" data-en="Asakusa" data-tip="Episode 7 Battle">浅草</span> (<span class="term" data-jp="火車" data-en="Kasha" data-tip="Episode 7 Boss">火車</span>)</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Orihime's trust chimes fire at once during this battle, converting accumulated Orihime Points into massive stat bonuses.</li>
+                <li>Clear <span class="term" data-jp="十字焔" data-en="Cross Flame" data-tip="Turret">十字焔</span> and escort drones quickly under <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span>, avoid leaving fragile allies in front of exploding <span class="term" data-jp="火乱" data-en="Karan" data-tip="Explosive spheres">火乱</span>, and corner <span class="term" data-jp="火車" data-en="Kasha" data-tip="Boss">火車</span> with <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> Specials.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep8" class="step-block">
+        <h3>Episode 8 &middot; <span class="term" data-jp="帝都の一番長い日！？" data-en="The Capital's Longest Day!?" data-tip="Disc 2 Episode 8">帝都の一番長い日！？</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-16">
+            <div class="check-body">
+              <strong>Theater Escape &amp; <span class="term" data-jp="帝劇前" data-en="In Front of Imperial Theater" data-tip="Battle 1">帝劇前</span> (<span class="term" data-jp="木喰" data-en="Mokujiki" data-tip="Boss">木喰</span>)</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Escape underground with Sakura after speaking with Yoneda. At Hanayashiki, ask <span class="term" data-jp="加山雄一" data-en="Yuichi Kayama" data-tip="Moon Division Captain">加山雄一</span> to disable the cannons (Turn 3 destruction of <span class="term" data-jp="黒鬼砲" data-en="Black Demon Cannons" data-tip="Artillery">黒鬼砲</span> makes the stage much safer than disabling the barrier).</li>
+                <li>Switch to <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> to clear <span class="term" data-jp="帝防" data-en="Imperial Barrier" data-tip="150 HP barrier">帝防</span> walls and defeat <span class="term" data-jp="木喰" data-en="Mokujiki" data-tip="Boss">木喰</span>.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-17">
+            <div class="check-body">
+              <strong>Theater Recapture &amp; <span class="term" data-jp="新宿" data-en="Shinjuku" data-tip="Battle 2">新宿</span> (<span class="term" data-jp="土蜘蛛" data-en="Tsuchigumo" data-tip="Boss">土蜘蛛</span>)</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Before battle, read all briefing topics from <span class="spoiler"><span class="term" data-jp="京極慶吾" data-en="Keigo Kyogoku" data-tip="Coup leader">京極慶吾</span></span>'s files.</li>
+                <li>Use Special Attacks to smash obstacles rapidly under <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span>, then finish <span class="term" data-jp="土蜘蛛" data-en="Tsuchigumo" data-tip="Boss">土蜘蛛</span> cleanly with <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span>.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-18">
+            <div class="check-body">
+              <strong><span class="term" data-jp="赤坂" data-en="Akasaka" data-tip="Battle 3 Route Split">赤坂</span> Route Choice &amp; <span class="term" data-jp="闇神威" data-en="Yamikamui" data-tip="Oniou battle">闇神威</span> Battle</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Keep a save before the route split on the <span class="term" data-jp="翔鯨丸" data-en="Shougeimaru" data-tip="Airship carrier">翔鯨丸</span>. Infiltration fights through caves into <span class="term" data-jp="八葉" data-en="Hachiyou" data-tip="Suiko's mech">八葉</span> (start in <span class="term" data-jp="山" data-en="Mountain" data-tip="Def +3">山</span> on Turn 1 to survive her opening Special, then switch to <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span>), whereas Frontal Assault fights heavy reinforcements into <span class="term" data-jp="大日剣" data-en="Dainichiken" data-tip="Kongou's mech">大日剣</span> (kill <span class="term" data-jp="黄童子" data-en="Koudoji" data-tip="Protectors">黄童子</span> first).</li>
+                <li>In the final <span class="term" data-jp="闇神威" data-en="Yamikamui" data-tip="Boss">闇神威</span> battle, send two units south to destroy the <span class="term" data-jp="蒸気火箭" data-en="Steam Rocket" data-tip="Turrets">蒸気火箭</span> launchers and keep the squad together against awakening stone statues.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep9" class="step-block">
+        <h3>Episode 9 &middot; <span class="term" data-jp="劇場のメリークリスマス" data-en="Merry Christmas at the Theater" data-tip="Disc 2 Episode 9">劇場のメリークリスマス</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-19">
+            <div class="check-body">
+              <strong>Free Event A, Helper Choice &amp; Lead Selection</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Free Event A (16:15 to 16:45, 5 visits, ending when visiting Kaede's Room after 16:40). Buy any missing regular <span class="term" data-jp="ブロマイド" data-en="Bromide" data-tip="Last chance before Ep 10">ブロマイド</span> portraits now, and answer Reni in the Dressing Room ("Is it Reni?").</li>
+                <li>Choose which Wind Division girl (Kasumi, Yuri, or Tsubaki) to help, then save at the <span class="term" data-jp="煉瓦亭" data-en="Rengatei" data-tip="Master save anchor">煉瓦亭</span> save prompt.</li>
+                <li>During Forced Event C night patrol, you meet the top four <span class="term" data-jp="恋愛度" data-en="Affection" data-tip="Romance ranking">恋愛度</span> heroines. Confirming your lead in Forced Event D locks that heroine through the ending.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-20">
+            <div class="check-body">
+              <strong><span class="term" data-jp="奇跡の鐘" data-en="Bell of Miracles" data-tip="Christmas play">奇跡の鐘</span> &amp; Christmas Eve Date</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Direct the play's final acting cue to match your lead heroine for peak audience applause (Pure for Sakura/Maria/Iris/Reni, Bright for Kohran/Kanna, Elegant for Sumire/Orihime).</li>
+                <li>Complete Reni's birthday celebration and your chosen heroine's Christmas Eve date.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep10" class="step-block">
+        <h3>Episode 10 &middot; <span class="term" data-jp="巷に雪の降るごとく" data-en="As Snow Falls on the Streets" data-tip="Disc 2 Episode 10">巷に雪の降るごとく</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-21">
+            <div class="check-body">
+              <strong>New Year's Free Event &amp; <span class="term" data-jp="スペシャルブロマイド" data-en="Special Bromide" data-tip="Shop reward">スペシャルブロマイド</span></strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Free Event A (08:00 to 08:30, 6 visits, ending at Captain's Room). Visit the <span class="term" data-jp="売店" data-en="Souvenir Shop" data-tip="1F Lobby">売店</span> while holding all 8 regular bromides to buy one <span class="term" data-jp="スペシャルブロマイド" data-en="Special Bromide" data-tip="Bonus portrait">スペシャルブロマイド</span>.</li>
+                <li>Say goodbye to departing squadmates in their rooms before entering Ogami's room.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-22">
+            <div class="check-body">
+              <strong>Heroine New Year Excursion &amp; <span class="term" data-jp="王子" data-en="Oji" data-tip="Episode 10 Battle">王子</span> Rescue</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Enjoy your locked heroine's home-visit or New Year outing (including Iris's letter-memory callback and Kohran's gadget inspection at Howard's estate).</li>
+                <li>At <span class="term" data-jp="王子" data-en="Oji" data-tip="Episode 10 Battle">王子</span>, stay in <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> stance to sweep enemy infantry quickly and rescue every Flower Division unit without retreats.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep11" class="step-block">
+        <h3>Episode 11 &middot; <span class="term" data-jp="地上最大の作戦" data-en="The Greatest Operation on Earth" data-tip="Disc 3 Episode 11">地上最大の作戦</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-23">
+            <div class="check-body">
+              <strong>Squad Split, Engine Room Defense &amp; <span class="term" data-jp="土蜘蛛" data-en="Tsuchigumo" data-tip="Boss">土蜘蛛</span></strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Insert Disc 3. Your Episode 9 heroine automatically joins Ogami with maxed stat bonuses (+10 Atk, +6 Def, +2 Move). Pick three additional escorts (Kanna, Reni, and Maria make fast work of the boss, or bring Iris if you prefer heals) and keep a save before selecting.</li>
+                <li>Defend at least one of the seven <span class="term" data-jp="機関部" data-en="Engine Rooms" data-tip="130 HP objectives">機関部</span> under <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> stance, prioritizing long-range green <span class="term" data-jp="降魔" data-en="Kouma" data-tip="Demon units">降魔</span>.</li>
+                <li>Against <span class="term" data-jp="土蜘蛛" data-en="Tsuchigumo" data-tip="Color-shifting boss">土蜘蛛</span>, watch its color shifts after Specials. Purple gains Attack when hit (burst fast with <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> or hold <span class="term" data-jp="山" data-en="Mountain" data-tip="Def +3">山</span> if low on firepower), while White heals when struck (use that turn to recover and charge).</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-24">
+            <div class="check-body">
+              <strong><span class="term" data-jp="ミカサ" data-en="Mikasa" data-tip="Airship Mikasa">ミカサ</span> Deck Interception &amp; <span class="term" data-jp="土蜘蛛" data-en="Tsuchigumo" data-tip="3-turn timed boss">土蜘蛛</span> Round 2</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Prevent 8 <span class="term" data-jp="降魔" data-en="Kouma" data-tip="Enemy units">降魔</span> from diving into the central vent and protect the four anti-aircraft guns. Pair one heavy hitter with one support unit on each flank (Kanna + Iris, Maria + Kohran, Reni + Sumire, Sakura + Orihime) under <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span>. Have Ogami kill 5 enemies while your heroine stands un-retreated for +3 Trust and Coop.</li>
+                <li>Round 2 against <span class="term" data-jp="土蜘蛛" data-en="Tsuchigumo" data-tip="Must defeat in 3 turns">土蜘蛛</span> must be cleared within 3 turns before he dives into the vent. Advance with <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> on Turn 1, then unleash <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> Specials on Turn 2.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-25">
+            <div class="check-body">
+              <strong><span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="Final upgrade">光武・改2</span> Upgrade, <span class="spoiler"><span class="term" data-jp="武蔵" data-en="Musashi" data-tip="Enemy fortress">武蔵</span></span> Cannons &amp; <span class="term" data-jp="金剛" data-en="Kongou" data-tip="Boss">金剛</span></strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Speak with all eight squadmates aboard Mikasa to unlock <span class="term" data-jp="光武・改2" data-en="Koubu-Kai 2" data-tip="Final armor">光武・改2</span> (check your heroine's cabin for unique dialogue).</li>
+                <li>During the cannon assault, step onto the glowing pipes beside cannons to neutralize them while destroying <span class="term" data-jp="魔来器" data-en="Maraiki" data-tip="Summoning spawners">魔来器</span> spawners with upgraded wide Specials.</li>
+                <li>Against <span class="term" data-jp="金剛" data-en="Kongou" data-tip="Restricts to 1 action per turn">金剛</span>, the squad is restricted to one action per turn for 10 turns. Start in <span class="term" data-jp="山" data-en="Mountain" data-tip="Def +3">山</span> on Turn 1, box Kongou with melee units on Turn 2, eliminate the distant shielding <span class="term" data-jp="黄童子" data-en="Koudoji" data-tip="Shield drone">黄童子</span> on Turn 3, then finish with <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> Specials on Turn 4.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep12" class="step-block">
+        <h3>Episode 12 &middot; <span class="term" data-jp="乙女たちの挽歌" data-en="Elegy of the Maidens" data-tip="Disc 3 Final Episode">乙女たちの挽歌</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-26">
+            <div class="check-body">
+              <strong><span class="spoiler"><span class="term" data-jp="鬼王" data-en="Oniou" data-tip="Kazuma Shinguji in Yamikamui">鬼王</span></span> &amp; <span class="term" data-jp="御柱" data-en="Sacred Pillars" data-tip="8 pillars stage">御柱</span> Battles</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Against <span class="spoiler"><span class="term" data-jp="鬼王" data-en="Oniou" data-tip="Sakura's father Kazuma Shinguji">鬼王</span></span>, align Sakura, Ogami, and your heroine directly behind a raised stone pillar on Turn 1 to block his opening Special, and pick "For Sakura too..." when adjacent to Sakura (+3 Trust and Coop). Track the real body via the Communications command after he clones himself on Turn 2, then burst him down before he cycles through all Five Demons abilities.</li>
+                <li>In the <span class="term" data-jp="御柱" data-en="Sacred Pillars" data-tip="8 pillars">御柱</span> chamber, split into fast <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> teams and focus on whichever pillar glows pink each turn (1 Defense), clearing all 8 pillars to end the map immediately.</li>
+              </ul>
+            </div>
+          </li>
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-27">
+            <div class="check-body">
+              <strong>Final Boss &middot; <span class="spoiler"><span class="term" data-jp="新皇" data-en="Shinou" data-tip="Keigo Kyogoku's final mecha">新皇</span></span> (Forms 1 to 3) &amp; Ending</strong>
+              <ul class="bullet-steps" style="margin-top:0.4rem;">
+                <li>Ascend the stepped approach quickly under <span class="term" data-jp="風" data-en="Wind" data-tip="Move +2">風</span> to smash the turrets, then strike <span class="spoiler"><span class="term" data-jp="新皇" data-en="Shinou" data-tip="Final Boss">新皇</span></span> whenever its hands open (20 Defense exposed versus 51 guarded).</li>
+                <li><strong>Form 1.</strong> Hold <span class="term" data-jp="山" data-en="Mountain" data-tip="Def +3">山</span> stance while attacking its two warp positions.</li>
+                <li><strong>Form 2 (Both Arms &amp; Drones).</strong> Never park pilots between the two arms. Have Iris or ranged units clear the <span class="term" data-jp="従うモノ" data-en="Follower Drones" data-tip="Option drones">従うモノ</span>, charge everyone's <span class="term" data-jp="気力" data-en="Spirit" data-tip="Special gauge">気力</span> to full, and position melee units behind Kanna's side before landing the finishing hit in <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> stance (finishing Form 2 with a late-turn member like Kohran lets Ogami act immediately in Form 3).</li>
+                <li><strong>Form 3 (Core).</strong> Survive the opening full-map Special with Iris's heal or <span class="term" data-jp="山" data-en="Mountain" data-tip="Def +3">山</span> defense, then unleash a full-squad <span class="term" data-jp="火" data-en="Fire" data-tip="Atk +3">火</span> Special and Combined Attack barrage.</li>
+                <li>Visit your chosen heroine in the post-battle Free Event (Sakura Grand Staircase, Sumire Salon, Maria Terrace, Iris Room, Kohran Hangar, Kanna Cafeteria, Orihime Music Room, Reni Courtyard) to watch her ending.</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section id="ep13" class="step-block">
+        <h3>Secret Epilogue &middot; <span class="term" data-jp="第十三話「君がために汽笛は鳴る」" data-en="Episode 13: The Train Whistle Blows for Thee" data-tip="15+ War Record Points required">第十三話「君がために汽笛は鳴る」</span></h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item>
+            <input class="check-box" type="checkbox" data-check-id="ep-28">
+            <div class="check-body">
+              <strong>Unlock &amp; Clear Episode 13</strong>
+              <p style="margin-top:0.4rem;">
+                Triggered automatically after the credits whenever your cumulative War Record across Episodes 1 to 12 reaches 15 or more points (<span class="term" data-jp="優" data-en="Superior" data-tip="2 points">優</span> equals 2, <span class="term" data-jp="良" data-en="Good" data-tip="1 point">良</span> equals 1, <span class="term" data-jp="可" data-en="Passable" data-tip="0 points">可</span> equals 0). Accept Yoneda's naval assignment and share a final station farewell with your chosen heroine, then save your Dreamcast clear file for <span class="term" data-jp="帝都の長い一日" data-en="Long Day in the Capital" data-tip="Post-game mode">帝都の長い一日</span> and <span class="term" data-jp="サクラ大戦3 〜巴里は燃えているか〜" data-en="Sakura Wars 3: Is Paris Burning?" data-tip="Sequel save import">サクラ大戦3 〜巴里は燃えているか〜</span>.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="js/guide.js"></script>
+</body>
+</html>

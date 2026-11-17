@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bromides &amp; Omake - サクラ大戦4 〜恋せよ乙女〜 Guide</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="teigeki-layout">
+    <aside class="hanagumi-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="sakura-crest" aria-hidden="true"></span>
+          <span class="rail-title-tag">Taisho Finale Archive</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="サクラ大戦4 〜恋せよ乙女〜" data-en="Sakura Wars 4: Fall in Love, Maidens" data-tip="Sakura Wars 4: Fall in Love, Maidens">サクラ大戦4 〜恋せよ乙女〜</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">Sega Dreamcast</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Beginner Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <a class="rail-nav-link" href="main-story.html">Main Story</a>
+        <div class="rail-nav-label">Cast &amp; Systems</div>
+        <a class="rail-nav-link" href="heroines.html">Heroines &amp; Koubu</a>
+        <a class="rail-nav-link" href="mechanics.html">Game Mechanics</a>
+        <a class="rail-nav-link active" href="collectibles.html">Bromides &amp; Omake</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="teigeki-stage">
+      <div class="page-header">
+        <h1>Bromides, Memory Pictures &amp; Omake</h1>
+      </div>
+
+      <p class="lead-intro">
+        Collect all thirteen heroine <span class="term" data-jp="ブロマイド" data-en="Bromides" data-tip="Collectible cast portraits from Tsubaki's shop">ブロマイド</span> across multiple playthroughs, assemble every <span class="term" data-jp="思い出絵" data-en="Memory Picture" data-tip="Retrospective series CGs">思い出絵</span> via <span class="term" data-jp="データ合体" data-en="Data Merge" data-tip="Importing SW1, SW2, and SW3 VMU saves">データ合体</span>, and clear <span class="term" data-jp="サクラ大戦ジャン" data-en="Sakura Taisen Jan" data-tip="Bonus tile-matching minigame">サクラ大戦ジャン</span> inside <span class="term" data-jp="おまけ" data-en="Omake" data-tip="Post-clear bonus menu">おまけ</span>.
+      </p>
+
+      <div class="toc-box">
+        <div class="toc-title">On This Page</div>
+        <div class="toc-list">
+          <a href="#bromides">Heroine Bromides (Shop)</a>
+          <a href="#omake-gallery">Memory Pictures &amp; Post-Clear Unlocks</a>
+          <a href="#sakura-jan">Sakura Taisen Jan Unlocks &amp; Hands</a>
+        </div>
+      </div>
+
+      <div class="completion-bar-wrap" data-counter-label="Collectibles &amp; Omake">
+        <div class="completion-meta">
+          <span class="completion-text">Collectibles &amp; Omake: 0/20 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" class="page-reset-btn" id="page-progress-reset">Reset</button>
+      </div>
+
+      <div class="filter-toolbar">
+        <button type="button" class="filter-btn active" data-status-filter="all">All</button>
+        <button type="button" class="filter-btn" data-status-filter="pending">Pending</button>
+        <button type="button" class="filter-btn" data-status-filter="done">Done</button>
+        <input type="search" class="search-input" data-page-search placeholder="Filter bromide, unlock, or Jan hand...">
+      </div>
+
+      <div class="step-block" id="bromides">
+        <h3>Heroine Bromides (Two Per Playthrough)</h3>
+        <p>
+          <span class="term" data-jp="高村椿" data-en="Tsubaki Takamura" data-tip="1F shopkeeper">高村椿</span> sells exactly one bromide in <span class="term" data-jp="第一幕" data-en="Act 1" data-tip="00:35 slot">第一幕</span> (00:35 inside <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span>) and one bromide in <span class="term" data-jp="第三幕" data-en="Act 3" data-tip="00:00 slot">第三幕</span> (00:00 inside <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span>), capping each playthrough at two portraits. Purchases save to <code>SAKURA_4.SYS</code> upon clearing or saving system data.
+        </p>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-1"><div class="check-body"><strong><span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Tokyo">真宮寺さくら</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-2"><div class="check-body"><strong><span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Tokyo">神崎すみれ</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-3"><div class="check-body"><strong><span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Tokyo">マリア・タチバナ</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-4"><div class="check-body"><strong><span class="term" data-jp="アイリス" data-en="Iris" data-tip="Tokyo">アイリス</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-5"><div class="check-body"><strong><span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Tokyo">桐島カンナ</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-6"><div class="check-body"><strong><span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Tokyo">李紅蘭</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-7"><div class="check-body"><strong><span class="term" data-jp="ソレッタ・織姫" data-en="Orihime Soletta" data-tip="Tokyo">ソレッタ・織姫</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-8"><div class="check-body"><strong><span class="term" data-jp="レニ・ミルヒシュトラーセ" data-en="Reni Milchstrasse" data-tip="Tokyo">レニ・ミルヒシュトラーセ</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-9"><div class="check-body"><strong><span class="term" data-jp="エリカ・フォンティーヌ" data-en="Erica Fontaine" data-tip="Paris">エリカ・フォンティーヌ</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-10"><div class="check-body"><strong><span class="term" data-jp="グリシーヌ・ブルーメール" data-en="Glycine Bleumer" data-tip="Paris">グリシーヌ・ブルーメール</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-11"><div class="check-body"><strong><span class="term" data-jp="コクリコ" data-en="Coquelicot" data-tip="Paris">コクリコ</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-12"><div class="check-body"><strong><span class="term" data-jp="ロベリア・カルリーニ" data-en="Lobelia Carlini" data-tip="Paris">ロベリア・カルリーニ</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-13"><div class="check-body"><strong><span class="term" data-jp="北大路花火" data-en="Hanabi Kitaoji" data-tip="Paris">北大路花火</span> Bromide.</strong> Bought from <span class="term" data-jp="売店" data-en="Gift Shop" data-tip="1F">売店</span> in Act 1 at 00:35 or Act 3 at 00:00.</div></li>
+        </ul>
+      </div>
+
+      <div class="step-block" id="omake-gallery">
+        <h3>Memory Pictures, Gallery &amp; Post-Clear Unlocks</h3>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-14"><div class="check-body"><strong>First Clear Bonus, <span class="term" data-jp="こだわり設定" data-en="Preference Settings" data-tip="Text skip and playback options">こだわり設定</span> &amp; <span class="term" data-jp="おまけ" data-en="Omake" data-tip="Extras menu">おまけ</span>.</strong> Complete one full playthrough to unlock fast-forward skip options, CG/Movie/BGM viewers, and <span class="term" data-jp="サクラ大戦ジャン" data-en="Sakura Taisen Jan" data-tip="Minigame">サクラ大戦ジャン</span>.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-15"><div class="check-body"><strong>Complete <span class="term" data-jp="思い出絵" data-en="Memory Pictures" data-tip="Retrospective event illustrations">思い出絵</span> via VMU Merge.</strong> Import cleared saves for every heroine from <span class="term" data-jp="サクラ大戦" data-en="Sakura Wars" data-tip="First entry">サクラ大戦</span>, <span class="term" data-jp="サクラ大戦2" data-en="Sakura Wars 2" data-tip="Second entry">サクラ大戦2</span>, and <span class="term" data-jp="サクラ大戦3" data-en="Sakura Wars 3" data-tip="Third entry">サクラ大戦3</span> using <span class="term" data-jp="データ合体" data-en="Data Merge" data-tip="VMU system data merge">データ合体</span> so all flashback variations appear in the gallery.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-16"><div class="check-body"><strong>All-13 Heroines Completion Bonus Illustration.</strong> Clear all thirteen heroine endings on the same <code>SAKURA_4.SYS</code> file to unlock the extra post-credits illustration following Yoneda's farewell scene.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-17"><div class="check-body"><strong>Act 3 Pre-Mikasa Room Event CGs, All 13 Heroines.</strong> Visit every heroine during <span class="term" data-jp="第三幕" data-en="Act 3" data-tip="Third act">第三幕</span> Free Roam 2 to record her individual eve-of-battle illustration.</div></li>
+        </ul>
+      </div>
+
+      <div class="step-block" id="sakura-jan">
+        <h3><span class="term" data-jp="サクラ大戦ジャン 〜ロンせよ乙女〜" data-en="Sakura Taisen Jan" data-tip="Tile-matching minigame">サクラ大戦ジャン 〜ロンせよ乙女〜</span></h3>
+        <p>
+          Match four sets of three identical character tiles faster than your opponents. Clearing modes and assembling special hand combinations awards bonus illustrations in <span class="term" data-jp="おまけ" data-en="Omake" data-tip="Extras menu">おまけ</span>.
+        </p>
+        <ul class="check-list">
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-18"><div class="check-body"><strong>Win <span class="term" data-jp="勝ち抜き戦" data-en="Survival Match" data-tip="Five consecutive opponents">勝ち抜き戦</span>.</strong> Defeat five straight opponents to unlock <span class="term" data-jp="自由対戦" data-en="Free Match" data-tip="Single opponent mode">自由対戦</span> and <span class="term" data-jp="パイ編集" data-en="Tile Editor" data-tip="Custom deck rules">パイ編集</span>.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-19"><div class="check-body"><strong>Defeat All Opponents in <span class="term" data-jp="自由対戦" data-en="Free Match" data-tip="Free match">自由対戦</span>.</strong> Beat all 13 Hanagumi heroines to unlock the Three Maids, Kayama, Rose Division, Mell &amp; Ci, Yoneda, and Grand-Mère, then beat every newly unlocked opponent for a bonus CG.</div></li>
+          <li class="check-item" data-filter-item><input type="checkbox" class="check-box" data-check-id="col-20"><div class="check-body"><strong>Complete All <span class="term" data-jp="特殊役" data-en="Special Hands" data-tip="Character-pair and trio hands">特殊役</span>.</strong> Form every character combo listed below to earn the final minigame reward CG.</div></li>
+        </ul>
+
+        <table class="prima-table">
+          <thead>
+            <tr><th>Special Hand</th><th>Required Tiles</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>演目【愛ゆえに】</td><td>Sakura + Maria</td></tr>
+            <tr><td>演目【西遊記】</td><td>Sumire + Kanna</td></tr>
+            <tr><td>演目【つばさ】</td><td>Iris + Kohran</td></tr>
+            <tr><td>演目【青い鳥】</td><td>Iris + Reni</td></tr>
+            <tr><td>演目【あぁ、無情】</td><td>Maria + Kohran</td></tr>
+            <tr><td>星組</td><td>Orihime + Reni</td></tr>
+            <tr><td>ルーブル潜入 / オランジュリー潜入</td><td>Erica + Lobelia / Glycine + Coquelicot</td></tr>
+            <tr><td>巴里で一番暑い夏 / 巴里の日本人</td><td>Coquelicot + Lobelia / Hanabi + Kayama</td></tr>
+            <tr><td>シャノワール司会コンビ / ダブルヒロイン</td><td>Mell + Ci / Sakura + Erica</td></tr>
+            <tr><td>花形スタァVSトップスタァ / 芸者ガールズ</td><td>Sakura + Sumire / Sakura + Kohran</td></tr>
+            <tr><td>高飛車お嬢様 / 麗しの男役</td><td>Sumire + Orihime / Maria + Kanna</td></tr>
+            <tr><td>華麗なるマジックショー / マラカス&amp;ギター</td><td>Erica + Coquelicot / Erica + Kayama</td></tr>
+            <tr><td>親友 / お菓子大好き!</td><td>Glycine + Hanabi / Erica + Ci</td></tr>
+            <tr><td>メルの憧れの人 / ネクタイピン / 司会の名コンビ?</td><td>Glycine + Mell / Mell + Ogami / Ci + Ogami</td></tr>
+            <tr><td>学友 / 優雅なティータイム / プリティキッズ</td><td>Kayama + Ogami / Sumire + Glycine / Iris + Coquelicot</td></tr>
+            <tr><td>ピアニスト / 銀色の髪 / 料理上手?</td><td>Orihime + Glycine / Reni + Lobelia / Sumire + Erica</td></tr>
+            <tr><td>日本のお嬢さま / 回復ならおまかせください!</td><td>Sumire + Hanabi / Iris + Erica</td></tr>
+            <tr><td>メガネ隊員 / 猛獣使い / 夏の風物詩</td><td>Kohran + Lobelia / Kanna + Coquelicot / Reni + Hanabi</td></tr>
+            <tr><td>帝劇スタッフ / 男の園</td><td>Ogami + Wind Division / Ogami + Rose Division</td></tr>
+            <tr><td>演目【リア王】三姉妹</td><td>Sakura + Sumire + Orihime</td></tr>
+            <tr><td>嬉し恥ずかし夏休み【温泉 / 山登り / 海水浴】</td><td>Sakura+Maria+Ogami / Kanna+Kohran+Orihime / Sumire+Iris+Reni</td></tr>
+            <tr><td>サンテ刑務所潜入 / メイド三姉妹?</td><td>Erica + Glycine + Coquelicot / Erica + Coquelicot + Ogami</td></tr>
+            <tr><td>大騒ぎ!春の大事件 / さあカジノへ</td><td>Erica + Mell + Ci / Lobelia + Mell + Ci</td></tr>
+            <tr><td>シャノワール観光 / シャノワールスタッフ</td><td>Mell + Ci + Kayama / Mell + Ci + Ogami</td></tr>
+            <tr><td>深川邸探索 / 帝劇古株組 / 帝劇転勤組</td><td>Sumire+Kanna+Ogami / Sumire+Maria+Kanna / Kohran+Orihime+Reni</td></tr>
+            <tr><td>巴里華撃団スカウト組 / 光は東方より</td><td>Coquelicot + Lobelia + Hanabi / Sakura + Sumire + Iris</td></tr>
+            <tr><td>巴里華撃団特別コーチ / ノートルダム潜入!</td><td>Maria + Kanna + Kohran / Orihime + Reni + Kayama</td></tr>
+            <tr><td>ヨーロッパ名門貴族 / 花組ブロンド三人娘</td><td>Iris + Orihime + Glycine / Maria + Iris + Glycine</td></tr>
+            <tr><td>花組黒髪三人娘 / 花組ちびっこ三人娘</td><td>Sakura + Orihime + Hanabi / Iris + Reni + Coquelicot</td></tr>
+            <tr><td>花組大和なでしこ三人娘 / 花組男役三人娘</td><td>Sakura + Sumire + Hanabi / Maria + Kanna + Reni</td></tr>
+            <tr><td>花組身長トップ3 / 剣豪 / 読書好き</td><td>Maria+Kanna+Lobelia / Sakura+Kayama+Ogami / Maria+Hanabi+Mell</td></tr>
+            <tr><td>トラブルメーカーズ / てんてこ舞い</td><td>Iris + Kohran + Erica / Orihime + Glycine + Hanabi</td></tr>
+            <tr><td>風組 / 薔薇組</td><td>Kasumi + Yuri + Tsubaki / Kotone + Kikunojo + Yokihiko</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/guide.js"></script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en" data-game-lang="jp">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heroines &amp; Combat Roles - サクラ大戦 (Dreamcast)</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="teigeki-layout">
+    <aside class="teigeki-rail">
+      <div class="rail-brand">
+        <div class="rail-emblem-row">
+          <span class="sakura-crest" aria-hidden="true"></span>
+          <span class="rail-title-tag">Taisho XII Archive</span>
+        </div>
+        <a class="guide-brand" href="index.html"><span class="term" data-jp="サクラ大戦" data-en="Sakura Wars" data-tip="Sakura Taisen (Sega Dreamcast)">サクラ大戦</span></a>
+        <div class="rail-meta-bar">
+          <span class="rail-platform">Dreamcast</span>
+          <a class="repo-back" href="../../index.html">All Guides</a>
+        </div>
+      </div>
+
+      <nav class="rail-nav-group" aria-label="Guide Sections">
+        <div class="rail-nav-label">Overview &amp; Route</div>
+        <a class="rail-nav-link" href="index.html">Overview</a>
+        <a class="rail-nav-link" href="beginners-tips.html">Beginner Tips</a>
+        <a class="rail-nav-link" href="roadmap.html">Play Order &amp; Endings</a>
+        <a class="rail-nav-link" href="missables.html">Missables</a>
+        <a class="rail-nav-link" href="main-story.html">Episodes 1 to 10</a>
+        <div class="rail-nav-label">Cast &amp; Systems</div>
+        <a class="rail-nav-link active" href="heroines.html">Heroines &amp; Combat Roles</a>
+        <a class="rail-nav-link" href="mechanics.html">Game Mechanics</a>
+        <a class="rail-nav-link" href="collectibles.html">Bromides &amp; Extras</a>
+        <a class="rail-nav-link" href="credits.html">Credits</a>
+      </nav>
+    </aside>
+
+    <main class="teigeki-stage">
+      <div class="page-header">
+        <h1>Heroines &amp; Combat Roles</h1>
+      </div>
+
+      <p class="lead-intro">
+        Each member of <span class="term" data-jp="帝国華撃団・花組" data-en="Imperial Combat Revue: Flower Division" data-tip="Teikoku Kagekidan Hanagumi">帝国華撃団・花組</span> pairs a distinct personality during <span class="term" data-jp="LIPS" data-en="LIPS" data-tip="Live and Interactive Picture System">LIPS</span> encounters with a fixed weapon profile aboard <span class="term" data-jp="光武" data-en="Koubu" data-tip="Episodes 1-8 spirit armor">光武</span> and <span class="term" data-jp="神武" data-en="Shinbu" data-tip="Episodes 8-10 spirit armor">神武</span>. Use these profiles to build route priority and assemble balanced strike teams.
+      </p>
+
+      <div class="completion-bar-wrap" data-counter-label="Routes &amp; Roles Mastered">
+        <div class="completion-meta">
+          <span class="completion-text">Routes &amp; Roles Mastered: 0/7 (0%)</span>
+          <div class="completion-track"><div class="completion-fill"></div></div>
+        </div>
+        <button type="button" id="page-progress-reset" class="page-reset-btn">Reset Page</button>
+      </div>
+
+      <div class="toc-box">
+        <div class="toc-title">Flower Division Roster</div>
+        <div class="toc-list">
+          <a href="#ogami"><span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain">大神一郎</span></a>
+          <a href="#sakura"><span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Main Heroine">真宮寺さくら</span></a>
+          <a href="#sumire"><span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Naginata">神崎すみれ</span></a>
+          <a href="#maria"><span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Revolver">マリア・タチバナ</span></a>
+          <a href="#iris"><span class="term" data-jp="アイリス" data-en="Iris" data-tip="Healer">アイリス</span></a>
+          <a href="#kohran"><span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Ordnance">李紅蘭</span></a>
+          <a href="#kanna"><span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Karate">桐島カンナ</span></a>
+        </div>
+      </div>
+
+      <div class="step-block">
+        <h3>Attack Range Comparison</h3>
+        <table class="prima-table">
+          <thead>
+            <tr>
+              <th>Pilot</th>
+              <th>Normal Attack</th>
+              <th><span class="term" data-jp="光武" data-en="Koubu" data-tip="Episodes 1-8">光武</span> Special</th>
+              <th><span class="term" data-jp="神武" data-en="Shinbu" data-tip="Episodes 8-10">神武</span> Special</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain">大神一郎</span></td>
+              <td>Adjacent tile</td>
+              <td>Adjacent tile</td>
+              <td>Adjacent tile</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Line sword wave">真宮寺さくら</span></td>
+              <td>Adjacent tile</td>
+              <td>Infinite straight line (1 column, blocked by walls/height)</td>
+              <td>Infinite straight line plus left and right adjacent columns (3 wide)</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Radial flame">神崎すみれ</span></td>
+              <td>2-tile line (pierces 2 enemies, ignores obstacles)</td>
+              <td>All tiles within 3-tile radius (ignores obstacles and height)</td>
+              <td>All tiles within 5-tile radius (ignores obstacles and height)</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Long-range shot">マリア・タチバナ</span></td>
+              <td>5-tile line (ignores obstacles, 1 step up, unlimited down)</td>
+              <td>5-tile target plus 4 adjacent cross tiles</td>
+              <td>5-tile target plus all tiles within 2-tile splash</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="アイリス" data-en="Iris" data-tip="Party heal &amp; teleport">アイリス</span></td>
+              <td>All tiles within 2-tile radius</td>
+              <td>Heals allies and refills Spirit within 3 tiles</td>
+              <td>Heals allies and refills Spirit within 3 tiles</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Artillery lob">李紅蘭</span></td>
+              <td>4-tile lob with 2-tile splash (ignores walls/height)</td>
+              <td>Single tile within 2-tile radius</td>
+              <td>Single tile within 2-tile radius</td>
+            </tr>
+            <tr>
+              <td><span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Brawler">桐島カンナ</span></td>
+              <td>Adjacent tile</td>
+              <td>Adjacent tile</td>
+              <td>Adjacent tile</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Ogami -->
+      <div class="char-banner" id="ogami">
+        <img class="char-portrait" src="resources/characters/ogami.png" alt="Ichiro Ogami portrait">
+        <div class="char-banner-info">
+          <h2><span class="term" data-jp="大神一郎" data-en="Ichiro Ogami" data-tip="Captain of Flower Division">大神一郎</span></h2>
+          <p>Captain of <span class="term" data-jp="帝国華撃団・花組" data-en="Imperial Combat Revue: Flower Division" data-tip="Hanagumi">帝国華撃団・花組</span>. Highest base melee attack and durable frontliner whose defeat triggers an instant mission loss.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <ul class="check-list">
+          <li class="check-item">
+            <input class="check-box" type="checkbox" data-check-id="hero-1">
+            <div class="check-body">
+              <strong>Tactical Role &amp; Moves.</strong> Specializes in <span class="term" data-jp="狼虎滅却・快刀乱麻" data-en="Rouko Mekkyaku: Kaitou Ranma" data-tip="Ogami's special attack">狼虎滅却・快刀乱麻</span> for single-target boss bursts and <span class="term" data-jp="かばう" data-en="Protect" data-tip="8 uses per battle">かばう</span> (eight charges per map) to nullify damage on a chosen heroine while earning trust. Stand beside your top heroine at 100% <span class="term" data-jp="気力" data-en="Spirit" data-tip="Full gauge">気力</span> from Episode 8 onward to execute <span class="term" data-jp="合体攻撃" data-en="Combination Attack" data-tip="5-tile AoE finisher">合体攻撃</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sakura -->
+      <div class="char-banner" id="sakura">
+        <img class="char-portrait" src="resources/characters/sakura.png" alt="Sakura Shinguji portrait">
+        <div class="char-banner-info">
+          <h2><span class="term" data-jp="真宮寺さくら" data-en="Sakura Shinguji" data-tip="Sendai swordswoman">真宮寺さくら</span></h2>
+          <p>Lead heroine from Sendai. Sincere, earnest, and quick to grow jealous when Ogami lingers with other women.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <ul class="check-list">
+          <li class="check-item">
+            <input class="check-box" type="checkbox" data-check-id="hero-2">
+            <div class="check-body">
+              <strong>Route &amp; Combat Role.</strong> Respond earnestly, remember her stage rehearsals, and visit her room immediately after Episode 2's repair misunderstanding. She unlocks the unique animated <span class="term" data-jp="初詣" data-en="New Year's Shrine Visit" data-tip="Episode 8 FMV">初詣</span> cutscene. In battle, she boasts the highest average mobility. Keep her at 100% <span class="term" data-jp="気力" data-en="Spirit" data-tip="Special gauge">気力</span> to sweep lines of enemies with <span class="term" data-jp="破邪剣征・桜花放神" data-en="Haja Kensei: Ouka Houshin" data-tip="Koubu line attack">破邪剣征・桜花放神</span> and the three-column <span class="term" data-jp="破邪剣征・百花繚乱" data-en="Haja Kensei: Hyakka Ryouran" data-tip="Shinbu wide line attack">破邪剣征・百花繚乱</span>, pairing with Ogami for <span class="term" data-jp="狼虎滅却・桜花絢爛" data-en="Rouko Mekkyaku: Ouka Kenran" data-tip="Combination attack">狼虎滅却・桜花絢爛</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Sumire -->
+      <div class="char-banner" id="sumire">
+        <img class="char-portrait" src="resources/characters/sumire.png" alt="Sumire Kanzaki portrait">
+        <div class="char-banner-info">
+          <h2><span class="term" data-jp="神崎すみれ" data-en="Sumire Kanzaki" data-tip="Kanzaki Zaibatsu heiress">神崎すみれ</span></h2>
+          <p>Aristocratic stage star. Sensitive to <span class="term" data-jp="信頼度" data-en="Trust" data-tip="Must hold Top 3 rank for warm dialogue">信頼度</span> rank, revealing genuine warmth when kept inside your top three.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <ul class="check-list">
+          <li class="check-item">
+            <input class="check-box" type="checkbox" data-check-id="hero-3">
+            <div class="check-body">
+              <strong>Route &amp; Combat Role.</strong> Indulge her refined pride, deliver her fan letter in Episode 1, scold her firmly after rescuing her in Episode 2 without peeking in the shower, and apologize in Episode 8 once Yuri explains her <span class="term" data-jp="神武" data-en="Shinbu" data-tip="Upgraded mech">神武</span> funding effort. High trust transforms her into the strongest crowd-clearing unit via obstacle-ignoring <span class="term" data-jp="神崎風塵流・胡蝶の舞" data-en="Kanzaki Fuujin-ryu: Kochou no Mai" data-tip="Koubu 3-tile radius">神崎風塵流・胡蝶の舞</span>, five-tile <span class="term" data-jp="神崎風塵流・鳳凰の舞" data-en="Kanzaki Fuujin-ryu: Houou no Mai" data-tip="Shinbu 5-tile radius">神崎風塵流・鳳凰の舞</span>, and <span class="term" data-jp="狼虎滅却・阿吽の舞" data-en="Rouko Mekkyaku: Aun no Mai" data-tip="Combination attack">狼虎滅却・阿吽の舞</span>.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Maria -->
+      <div class="char-banner" id="maria">
+        <img class="char-portrait" src="resources/characters/maria.png" alt="Maria Tachibana portrait">
+        <div class="char-banner-info">
+          <h2><span class="term" data-jp="マリア・タチバナ" data-en="Maria Tachibana" data-tip="Former Russian revolutionary">マリア・タチバナ</span></h2>
+          <p>Disciplined sharpshooter. Values duty, historical literacy, and calm leadership over bravado or flattery.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <ul class="check-list">
+          <li class="check-item">
+            <input class="check-box" type="checkbox" data-check-id="hero-4">
+            <div class="check-body">
+              <strong>Route &amp; Combat Role.</strong> Answer book and tactical questions accurately, shield the child yourself in Episode 3, stay silent when she vents in your quarters, and support her in Episodes 4 and 6. Statistically reliable regardless of trust level, she snipes from five tiles away over cover with <span class="term" data-jp="スネグーラチカ" data-en="Snegurochka" data-tip="Maria's special attack">スネグーラチカ</span> and pairs with Ogami for <span class="term" data-jp="狼虎滅却・ブードゥシシイ" data-en="Rouko Mekkyaku: Budushchiy" data-tip="Combination attack">狼虎滅却・ブードゥシシイ</span>. Always take her into Episode 7's strike team.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Iris -->
+      <div class="char-banner" id="iris">
+        <img class="char-portrait" src="resources/characters/iris.png" alt="Iris Chateaubriand portrait">
+        <div class="char-banner-info">
+          <h2><span class="term" data-jp="アイリス" data-en="Iris" data-tip="French psychic prodigy">アイリス</span></h2>
+          <p>Young French aristocrat with immense spiritual power. Dislikes being treated as a helpless child.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <ul class="check-list">
+          <li class="check-item">
+            <input class="check-box" type="checkbox" data-check-id="hero-5">
+            <div class="check-body">
+              <strong>Route &amp; Combat Role.</strong> Remember Jean-Paul in Episode 1, accept her Episode 4 birthday date, buy the top-right pendant, take responsibility before Yoneda, and choose to rescue her directly in Episode 4's battle. Her teleportation bypasses barricades to flip switches (Episodes 4 and 6), <span class="term" data-jp="イリス・マリオネット" data-en="Iris Marionette" data-tip="3-tile party heal + Spirit refill">イリス・マリオネット</span> heals allies and restores their Spirit (excluding herself), and <span class="term" data-jp="狼虎滅却・ファンタスティーク・ベゼ" data-en="Rouko Mekkyaku: Fantastique Baiser" data-tip="Combination attack">狼虎滅却・ファンタスティーク・ベゼ</span> gives her full boss-killing utility.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Kohran -->
+      <div class="char-banner" id="kohran">
+        <img class="char-portrait" src="resources/characters/kohran.png" alt="Kohran Li portrait">
+        <div class="char-banner-info">
+          <h2><span class="term" data-jp="李紅蘭" data-en="Kohran Li" data-tip="Chief engineer and inventor">李紅蘭</span></h2>
+          <p>Kansai-speaking inventor from China. Appreciates honesty, enthusiasm for her machines, and patient encouragement.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <ul class="check-list">
+          <li class="check-item">
+            <input class="check-box" type="checkbox" data-check-id="hero-6">
+            <div class="check-body">
+              <strong>Route &amp; Combat Role.</strong> Escort her directly in Episode 2 (stopping only at the Gift Shop), play Hanafuda on patrol, refuse stage repairs in Episode 2 so she joins you, support attack-type <span class="term" data-jp="光武" data-en="Koubu" data-tip="Episode 5 upgrade talk">光武</span> upgrades in Episode 5, and wait patiently outside her door in Episode 6. Her lobbed grenade normal attack hits across elevation and obstacles with a two-tile splash, while <span class="term" data-jp="チビロボ" data-en="Chibi Robo" data-tip="Single-target special">チビロボ</span> focuses single targets and <span class="term" data-jp="狼虎滅却・天地風雲" data-en="Rouko Mekkyaku: Tenchi Fuuun" data-tip="Combination attack">狼虎滅却・天地風雲</span> covers wide groups.
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Kanna -->
+      <div class="char-banner" id="kanna">
+        <img class="char-portrait" src="resources/characters/kanna.png" alt="Kanna Kirishima portrait">
+        <div class="char-banner-info">
+          <h2><span class="term" data-jp="桐島カンナ" data-en="Kanna Kirishima" data-tip="Okinawan karate heir">桐島カンナ</span></h2>
+          <p>Okinawan karate master joining in Episode 3. Respects straightforward courage, big appetites, and treating her as a woman.</p>
+        </div>
+      </div>
+      <div class="step-block">
+        <ul class="check-list">
+          <li class="check-item">
+            <input class="check-box" type="checkbox" data-check-id="hero-7">
+            <div class="check-body">
+              <strong>Route &amp; Combat Role.</strong> Eat her cooking patiently without nagging in Episode 3, stand your ground rather than fleeing if you enter the Episode 3 shower room, back her up in Episode 5's mansion, and claim a normal appetite in Episode 8's dining hall. In combat, she serves as a fast, high-HP melee vanguard using <span class="term" data-jp="一百林牌" data-en="Suupaa Rinpai" data-tip="Adjacent special punch">一百林牌</span> against bosses and <span class="term" data-jp="狼虎滅却・白狼拳" data-en="Rouko Mekkyaku: Hakurouken" data-tip="Combination attack">狼虎滅却・白狼拳</span> when paired with Ogami.
+            </div>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </div>
+  <script src="js/guide.js"></script>
+</body>
+</html>
