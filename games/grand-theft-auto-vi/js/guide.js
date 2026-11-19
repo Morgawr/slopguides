@@ -1,0 +1,207 @@
+(function () {
+  var CHECK_KEY = 'gtavi_checks_v1';
+
+  function getSavedChecks() {
+    try {
+      return JSON.parse(localStorage.getItem(CHECK_KEY) || '{}');
+    } catch (e) {
+      return {};
+    }
+  }
+
+  function saveChecks(map) {
+    try {
+      localStorage.setItem(CHECK_KEY, JSON.stringify(map));
+    } catch (e) {}
+  }
+
+  function updateCounters() {
+    var checks = getSavedChecks();
+    var boxes = Array.prototype.slice.call(
+      document.querySelectorAll('input.check-box[data-check-id]')
+    );
+
+    if (boxes.length) {
+      var done = boxes.filter(function (cb) {
+        return cb.checked;
+      }).length;
+      var total = boxes.length;
+      var pct = total ? Math.round((done / total) * 100) : 0;
+      var wrap = document.querySelector('.completion-bar-wrap');
+      if (wrap) {
+        var label = wrap.getAttribute('data-counter-label') || 'completed';
+        var txt = wrap.querySelector('.completion-text');
+        var fill = wrap.querySelector('.completion-fill');
+        if (txt) {
+          txt.textContent = done + '/' + total + ' ' + label + ' (' + pct + '%)';
+        }
+        if (fill) {
+          fill.style.width = pct + '%';
+        }
+      }
+    }
+
+    document.querySelectorAll('[data-group-counter]').forEach(function (el) {
+      var group = el.getAttribute('data-group-counter');
+      var groupBoxes = Array.prototype.slice.call(
+        document.querySelectorAll('input.check-box[data-check-group="' + group + '"]')
+      );
+      var gTotal = groupBoxes.length;
+      var gDone = groupBoxes.filter(function (cb) {
+        return cb.checked;
+      }).length;
+      var gPct = gTotal ? Math.round((gDone / gTotal) * 100) : 0;
+      el.textContent = gDone + '/' + gTotal + ' (' + gPct + '%)';
+    });
+
+    document.querySelectorAll('[data-hub-prefix]').forEach(function (el) {
+      var prefix = el.getAttribute('data-hub-prefix');
+      var hTotal = parseInt(el.getAttribute('data-hub-total') || '0', 10);
+      var count = 0;
+      Object.keys(checks).forEach(function (key) {
+        if (checks[key] && key.indexOf(prefix) === 0) {
+          count++;
+        }
+      });
+      if (count > hTotal) count = hTotal;
+      var hPct = hTotal ? Math.round((count / hTotal) * 100) : 0;
+      el.textContent = count + '/' + hTotal + ' (' + hPct + '%)';
+    });
+  }
+
+  function applyFilters() {
+    var rows = document.querySelectorAll('[data-check-row], [data-filter-item]');
+    if (!rows.length) return;
+
+    var activeBtn = document.querySelector('.filter-btn.active');
+    var status = activeBtn ? activeBtn.getAttribute('data-status-filter') : 'all';
+    var searchEl = document.querySelector('[data-page-search]');
+    var query = searchEl ? searchEl.value.trim().toLowerCase() : '';
+
+    rows.forEach(function (row) {
+      var cb = row.querySelector('input.check-box[data-check-id]');
+      var isDone = cb ? cb.checked : false;
+      var textMatch = !query || row.textContent.toLowerCase().indexOf(query) !== -1;
+      var statusMatch =
+        status === 'all' ||
+        (status === 'done' && isDone) ||
+        ((status === 'todo' || status === 'pending') && !isDone);
+      row.style.display = textMatch && statusMatch ? '' : 'none';
+    });
+  }
+
+  function initChecklists() {
+    var checks = getSavedChecks();
+    var boxes = document.querySelectorAll('input.check-box[data-check-id]');
+
+    boxes.forEach(function (cb) {
+      var id = cb.getAttribute('data-check-id');
+      cb.checked = !!checks[id];
+      var host = cb.closest('[data-check-row], .check-item, .entry-block, tr');
+      if (host) host.classList.toggle('is-checked', cb.checked);
+
+      cb.addEventListener('change', function () {
+        var current = getSavedChecks();
+        if (cb.checked) {
+          current[id] = true;
+        } else {
+          delete current[id];
+        }
+        saveChecks(current);
+        var row = cb.closest('[data-check-row], .check-item, .entry-block, tr');
+        if (row) row.classList.toggle('is-checked', cb.checked);
+        updateCounters();
+        applyFilters();
+      });
+    });
+
+    var resetBtn = document.getElementById('page-progress-reset');
+    if (resetBtn) {
+      resetBtn.addEventListener('click', function () {
+        var current = getSavedChecks();
+        boxes.forEach(function (cb) {
+          cb.checked = false;
+          delete current[cb.getAttribute('data-check-id')];
+          var row = cb.closest('[data-check-row], .check-item, .entry-block, tr');
+          if (row) row.classList.remove('is-checked');
+        });
+        saveChecks(current);
+        updateCounters();
+        applyFilters();
+      });
+    }
+
+    updateCounters();
+  }
+
+  function initFilters() {
+    document.querySelectorAll('.filter-btn[data-status-filter]').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        document.querySelectorAll('.filter-btn').forEach(function (b) {
+          b.classList.remove('active');
+        });
+        btn.classList.add('active');
+        applyFilters();
+      });
+    });
+
+    var searchEl = document.querySelector('[data-page-search]');
+    if (searchEl) {
+      searchEl.addEventListener('input', applyFilters);
+    }
+  }
+
+  function initTooltips() {
+    var tipBox = document.createElement('div');
+    tipBox.className = 'tooltip-float';
+    document.body.appendChild(tipBox);
+
+    function showTip(target) {
+      var tip = target.getAttribute('data-tip');
+      if (!tip) return;
+      tipBox.textContent = tip;
+      var rect = target.getBoundingClientRect();
+      var left = Math.min(window.innerWidth - 295, Math.max(12, rect.left));
+      var top = rect.top > 56 ? rect.top - tipBox.offsetHeight - 8 : rect.bottom + 8;
+      tipBox.style.left = left + 'px';
+      tipBox.style.top = Math.max(8, top) + 'px';
+      tipBox.classList.add('visible');
+    }
+
+    function hideTip() {
+      tipBox.classList.remove('visible');
+    }
+
+    document.addEventListener('mouseover', function (e) {
+      var el = e.target.closest('[data-tip]');
+      if (el) showTip(el);
+    });
+    document.addEventListener('mouseout', function (e) {
+      if (e.target.closest('[data-tip]')) hideTip();
+    });
+  }
+
+  function initSpoilers() {
+    document.querySelectorAll('.spoiler').forEach(function (el) {
+      el.setAttribute('tabindex', '0');
+      el.setAttribute('role', 'button');
+      el.setAttribute('aria-label', 'Spoiler content');
+      el.addEventListener('click', function () {
+        el.classList.toggle('revealed');
+      });
+      el.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter' || e.key === ' ') {
+          e.preventDefault();
+          el.classList.toggle('revealed');
+        }
+      });
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    initChecklists();
+    initFilters();
+    initTooltips();
+    initSpoilers();
+  });
+})();
