@@ -1091,6 +1091,221 @@ body.xcxde-modal-open {
   text-decoration: underline;
 }
 
+/* Multi-Route Branching Quest Layout (BLADE Tactical / Prima Print — zero blue tints, zero left-border callouts) */
+.route-flow {
+  margin: 4px 0 8px 0;
+}
+
+.route-phase-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--stone-600);
+  margin: 6px 0 4px 0;
+}
+
+.route-common-steps {
+  margin: 0 0 7px 0;
+  padding-left: 20px;
+}
+
+.route-common-steps li {
+  margin-bottom: 3.5px;
+}
+
+.route-branch-bar {
+  background-color: var(--bg-alt);
+  border: 1px solid #b6b0a4;
+  border-top: 2px solid var(--blade-amber);
+  padding: 6.5px 10px;
+  margin: 7px 0 8px 0;
+  font-size: 0.84rem;
+  line-height: 1.45;
+  color: var(--text-main);
+}
+
+.route-branch-bar strong.route-branch-kicker {
+  color: var(--gunmetal-950);
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-right: 4px;
+}
+
+.route-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin: 0 0 8px 0;
+  align-items: stretch;
+}
+
+.route-col {
+  background-color: #faf9f5;
+  border: 1px solid #c6c0b4;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.quest-entry.is-checked .route-col {
+  background-color: #f4f8f1;
+}
+
+.route-col-head {
+  padding: 5px 10px;
+  color: #ffffff;
+  font-size: 0.76rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.route-col-a .route-col-head {
+  background-color: var(--gunmetal-900);
+  border-bottom: 2px solid var(--blade-orange);
+}
+
+.route-col-b .route-col-head {
+  background-color: var(--gunmetal-800);
+  border-bottom: 2px solid var(--xcx-crimson);
+}
+
+.route-col-sub {
+  font-size: 0.73rem;
+  font-weight: 700;
+  color: var(--blade-amber);
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.route-col-body {
+  padding: 8px 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  line-height: 1.44;
+}
+
+.route-steps {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.route-steps li {
+  margin-bottom: 4px;
+}
+
+.route-steps li:last-child {
+  margin-bottom: 0;
+}
+
+.route-end-note {
+  margin: 0;
+  font-style: italic;
+  color: var(--stone-600);
+  font-size: 0.83rem;
+}
+
+.route-outcome {
+  margin: 7px 0 0 0;
+  padding-top: 6px;
+  border-top: 1px dashed var(--stone-300);
+  font-size: 0.81rem;
+  color: var(--stone-700);
+}
+
+.route-converge {
+  margin-top: 2px;
+}
+
+/* Branched Rewards Comparison Block */
+.quest-reward-branched {
+  margin: 8px 0 0 0;
+  padding-top: 7px;
+  border-top: 1px dashed var(--stone-300);
+  font-size: 0.84rem;
+  color: var(--stone-700);
+}
+
+.reward-common {
+  margin: 0 0 6px 0;
+  line-height: 1.45;
+}
+
+.reward-same-note {
+  margin: 0;
+  font-size: 0.81rem;
+  color: var(--stone-600);
+}
+
+.reward-diff-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.reward-diff-cell {
+  background-color: #faf9f5;
+  border: 1px solid var(--stone-300);
+  padding: 6px 9px;
+  font-size: 0.82rem;
+  line-height: 1.42;
+}
+
+.quest-entry.is-checked .reward-diff-cell {
+  background-color: #f4f8f1;
+}
+
+.reward-diff-cell.route-diff-a {
+  border-top: 2px solid var(--blade-orange);
+}
+
+.reward-diff-cell.route-diff-b {
+  border-top: 2px solid var(--xcx-crimson);
+}
+
+.reward-diff-cell.is-highlight {
+  background-color: #fdf6ea;
+}
+
+.quest-entry.is-checked .reward-diff-cell.is-highlight {
+  background-color: #f0f5ea;
+}
+
+.reward-diff-label {
+  font-size: 0.72rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--gunmetal-900);
+  margin-bottom: 2px;
+}
+
+.reward-diff-val strong {
+  color: var(--gunmetal-950);
+}
+
+.reward-delta {
+  color: var(--mira-sage);
+  font-weight: 700;
+}
+
+.reward-penalty {
+  color: var(--xcx-crimson);
+  font-weight: 700;
+}
+
 @media (max-width: 960px) {
   .grid-main-side,
   .grid-2,
@@ -1103,5 +1318,12 @@ body.xcxde-modal-open {
   }
   .prima-sheet {
     padding: 14px 12px 32px;
+  }
+}
+
+@media (max-width: 780px) {
+  .route-grid,
+  .reward-diff-grid {
+    grid-template-columns: 1fr;
   }
 }
