@@ -528,9 +528,14 @@ img.ico-lg {
   background-color: #fcf3e3;
 }
 
-.prima-table tr.is-checked td {
+.prima-table tbody tr.is-checked td {
   background-color: #edf4e8;
-  color: var(--stone-600);
+  border-color: #c5d8be;
+  color: #465741;
+}
+
+.prima-table tbody tr.is-checked:hover td {
+  background-color: #e2eedb;
 }
 
 .prima-table tr:target td,
@@ -552,8 +557,20 @@ img.ico-lg {
 
 .quest-entry.is-checked {
   background-color: #edf4e8;
+  border-color: #adc2a5;
   border-top-color: var(--mira-sage);
-  color: var(--stone-600);
+  color: #465741;
+}
+
+.quest-entry.is-checked .quest-head {
+  border-bottom-color: #c5d8be;
+}
+
+.quest-entry.is-checked .quest-meta,
+.quest-entry.is-checked .quest-prereq,
+.quest-entry.is-checked .quest-reward {
+  color: #4e6149;
+  border-top-color: #c5d8be;
 }
 
 .quest-head {
@@ -612,6 +629,10 @@ input.check-box {
   cursor: pointer;
   margin: 0;
   vertical-align: -2px;
+}
+
+input.check-box:checked {
+  accent-color: var(--mira-sage);
 }
 
 .todo-list {
@@ -1150,10 +1171,6 @@ body.xcxde-modal-open {
   min-width: 0;
 }
 
-.quest-entry.is-checked .route-col {
-  background-color: #f4f8f1;
-}
-
 .route-col-head {
   padding: 5px 10px;
   color: #ffffff;
@@ -1263,10 +1280,6 @@ body.xcxde-modal-open {
   line-height: 1.42;
 }
 
-.quest-entry.is-checked .reward-diff-cell {
-  background-color: #f4f8f1;
-}
-
 .reward-diff-cell.route-diff-a {
   border-top: 2px solid var(--blade-orange);
 }
@@ -1277,10 +1290,6 @@ body.xcxde-modal-open {
 
 .reward-diff-cell.is-highlight {
   background-color: #fdf6ea;
-}
-
-.quest-entry.is-checked .reward-diff-cell.is-highlight {
-  background-color: #f0f5ea;
 }
 
 .reward-diff-label {
@@ -1304,6 +1313,81 @@ body.xcxde-modal-open {
 .reward-penalty {
   color: var(--xcx-crimson);
   font-weight: 700;
+}
+
+/* Checked Quest Green-Tinted State (Cohesive Mira-Sage override for all multi-route boxes) */
+.quest-entry.is-checked .route-phase-label,
+.quest-entry.is-checked .route-branch-bar strong.route-branch-kicker {
+  color: #35522c;
+}
+
+.quest-entry.is-checked .route-branch-bar {
+  background-color: #e1eed9;
+  border-color: #b4c9ab;
+  border-top-color: var(--mira-sage);
+  color: #3d4f38;
+}
+
+.quest-entry.is-checked .route-col {
+  background-color: #e6f0e0;
+  border-color: #b4c9ab;
+}
+
+.quest-entry.is-checked .route-col-a .route-col-head {
+  background-color: #35492f;
+  border-bottom-color: var(--mira-sage);
+  color: #eef5ea;
+}
+
+.quest-entry.is-checked .route-col-b .route-col-head {
+  background-color: #41573a;
+  border-bottom-color: #7ea067;
+  color: #eef5ea;
+}
+
+.quest-entry.is-checked .route-col-sub {
+  color: #cfe3c4;
+}
+
+.quest-entry.is-checked .route-end-note,
+.quest-entry.is-checked .reward-same-note {
+  color: #53664d;
+}
+
+.quest-entry.is-checked .route-outcome,
+.quest-entry.is-checked .quest-reward-branched {
+  border-top-color: #bfd3b7;
+  color: #465741;
+}
+
+.quest-entry.is-checked .reward-diff-cell {
+  background-color: #e6f0e0;
+  border-color: #b4c9ab;
+}
+
+.quest-entry.is-checked .reward-diff-cell.route-diff-a {
+  border-top-color: var(--mira-sage);
+}
+
+.quest-entry.is-checked .reward-diff-cell.route-diff-b {
+  border-top-color: #7ea067;
+}
+
+.quest-entry.is-checked .reward-diff-cell.is-highlight {
+  background-color: #dcebd3;
+}
+
+.quest-entry.is-checked .reward-diff-label,
+.quest-entry.is-checked .reward-diff-val strong {
+  color: #2f4528;
+}
+
+.quest-entry.is-checked .reward-delta {
+  color: #3e642d;
+}
+
+.quest-entry.is-checked .reward-penalty {
+  color: #6b5a55;
 }
 
 @media (max-width: 960px) {
