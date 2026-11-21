@@ -33,6 +33,7 @@
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--masthead-height, 0px) + 16px);
 }
 
 body {
@@ -51,6 +52,9 @@ body {
 
 /* BLADE Masthead & Navigation */
 .blade-masthead {
+  position: sticky;
+  top: 0;
+  z-index: 120;
   background: linear-gradient(180deg, var(--gunmetal-950) 0%, var(--gunmetal-900) 100%);
   border-bottom: 2px solid var(--xcx-crimson);
   color: #f8f7f4;
@@ -154,7 +158,7 @@ body {
 /* Sticky Completion Progress Bar */
 .completion-bar-wrap {
   position: sticky;
-  top: 0;
+  top: var(--masthead-height, 0px);
   z-index: 90;
   background-color: var(--gunmetal-900);
   color: #faf9f6;

@@ -564,7 +564,21 @@
     });
   }
 
+  function initStickyMastheadOffset() {
+    var masthead = document.querySelector('.blade-masthead');
+    if (!masthead) return;
+    var update = function () {
+      document.documentElement.style.setProperty('--masthead-height', masthead.offsetHeight + 'px');
+    };
+    update();
+    if (typeof ResizeObserver !== 'undefined') {
+      new ResizeObserver(update).observe(masthead);
+    }
+    window.addEventListener('resize', update);
+  }
+
   function boot() {
+    initStickyMastheadOffset();
     initTooltips();
     initLangButton();
     initCheckboxes();
